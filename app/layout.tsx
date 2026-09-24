@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Inter } from 'next/font/google';
+import { DM_Sans, Inter } from 'next/font/google';
 import { Analytics } from '@/components/analytics/Analytics';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
@@ -14,11 +14,17 @@ const inter = Inter({
   display: 'swap',
 });
 
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+});
+
 export const metadata = rootMetadata;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang={site.locale} className={inter.variable}>
+    <html lang={site.locale} className={`${inter.variable} ${dmSans.variable}`}>
       <body className="flex min-h-dvh flex-col">
         <a
           href="#main"

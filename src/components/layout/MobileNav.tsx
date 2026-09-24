@@ -35,7 +35,7 @@ export function MobileNav() {
         type="button"
         aria-expanded={open}
         aria-controls="mobile-nav"
-        className="inline-flex size-11 items-center justify-center rounded-md hover:bg-neutral-100 md:hidden"
+        className="inline-flex size-11 items-center justify-center rounded-md hover:bg-neutral-100 lg:hidden"
         onClick={() => setOpen((value) => !value)}
       >
         <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
@@ -45,7 +45,7 @@ export function MobileNav() {
       {open && (
         <div
           id="mobile-nav"
-          className="bg-surface-base fixed inset-0 `top-(--header-h,4.5rem)` z-40 overflow-y-auto overscroll-contain md:hidden"
+          className="bg-surface-base fixed inset-x-0 top-20 bottom-0 z-40 overflow-y-auto overscroll-contain lg:hidden"
         >
           <Container as="nav" gap="none" aria-label="Mobile" className="py-4 pb-[max(2rem,env(safe-area-inset-bottom))]">
             <ul className="flex w-full flex-col">

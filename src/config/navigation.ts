@@ -13,6 +13,7 @@ export interface NavLink {
 
 export interface MegaColumn {
   heading?: string;
+  href?: string;
   links: NavLink[];
 }
 
@@ -47,94 +48,155 @@ export interface NavigationConfig {
   legal: NavLink[];
 }
 
+const adhesives: NavLink[] = [
+  { label: 'Single Component', href: '/equipment-options/adhesives-sealants/single-component' },
+  { label: 'Two Component Systems (2k)', href: '/equipment-options/adhesives-sealants/two-component' },
+  { label: 'Putty & Paste', href: '/equipment-options/adhesives-sealants/putty-paste' },
+  { label: 'SMC / IMC Molding', href: '/equipment-options/adhesives-sealants/smc-imc-molding' },
+  {
+    label: 'Tooling Paste & Seamless Modeling Paste',
+    href: '/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste',
+  },
+];
+
+const composites: NavLink[] = [
+  { label: 'Closed Mold Technology', href: '/equipment-options/composites/closed-mold-technology' },
+  { label: 'Filament Winding', href: '/equipment-options/composites/filament-winding' },
+  { label: 'Open Mold Technology', href: '/equipment-options/composites/open-mold-technology' },
+  { label: 'Pull Winding', href: '/equipment-options/composites/pull-winding' },
+  { label: 'Pultrusion', href: '/equipment-options/composites/pultrusion' },
+];
+
+const lubrication: NavLink[] = [
+  { label: 'Metering', href: '/equipment-options/lubrication/metering' },
+  { label: 'Pressure Control', href: '/equipment-options/lubrication/pressure-control' },
+  { label: 'Flow Regulation', href: '/equipment-options/lubrication/flow-regulation' },
+  { label: 'Dispensing', href: '/equipment-options/lubrication/dispensing' },
+  { label: 'Feeding and Supply', href: '/equipment-options/lubrication/feeding-and-supply' },
+];
+
+const paint: NavLink[] = [
+  { label: 'Protective Coatings', href: '/equipment-options/paint-coatings/protective-coatings' },
+  { label: 'Specialty Finishes', href: '/equipment-options/paint-coatings/specialty-finishes' },
+  { label: 'Spray Systems', href: '/equipment-options/paint-coatings/spray-systems' },
+];
+
+const processControl: NavLink[] = [
+  { label: 'Integration / Automation', href: '/equipment-options/process-control/integration-automation' },
+  { label: 'Monitoring / Analytics', href: '/equipment-options/process-control/monitoring-analytics' },
+  { label: 'Process Control Computer', href: '/equipment-options/process-control/process-control-computer' },
+];
+
+const polyurethane: NavLink[] = [
+  { label: 'Bulk Chemical Storage', href: '/bulk-chemical-storage' },
+  { label: 'Fill Mix', href: '/fill-mix' },
+  { label: 'High Pressure Metering', href: '/equipment-options/polyurethane-processing-equipment/high-pressure-metering' },
+  { label: 'Low Pressure Metering', href: '/equipment-options/polyurethane-processing-equipment/low-pressure-metering' },
+  {
+    label: 'Pentane Capable Metering Machines',
+    href: '/equipment-options/polyurethane-processing-equipment/pentane-capable-metering-machines',
+  },
+  { label: 'Urethane Foam Mixing Guns', href: '/equipment-options/polyurethane-processing-equipment/urethane-foam-mixing-guns' },
+];
+
+const industries: NavLink[] = [
+  { label: 'Aerospace', href: '/industry/aerospace' },
+  { label: 'Automation / Assembly Platforms', href: '/industry/automation-assembly-platforms' },
+  { label: 'Automotive', href: '/industry/automotive' },
+  { label: 'Automotive Lighting', href: '/industry/automotive/automotive-lighting' },
+  { label: 'Commercial Automotive Vehicle Industry', href: '/industry/automotive/commercial-automotive-vehicle-industry' },
+  { label: 'Personal Automotive Vehicle Industry', href: '/industry/automotive/personal-automotive-vehicle-industry' },
+  { label: 'Composites', href: '/industry/composites' },
+  { label: 'Construction', href: '/industry/construction' },
+  { label: 'Structural Panels', href: '/industry/construction/structural-panels' },
+  { label: 'Windows & Doors Manufacturing Solutions', href: '/industry/construction/windows-doors-manufacturing-solutions' },
+  { label: 'Consumer Goods', href: '/industry/consumer-goods' },
+  { label: 'Electrical', href: '/industry/electrical' },
+  { label: 'Fenestration', href: '/industry/fenestration' },
+  { label: 'Filters & Membranes', href: '/industry/filters-membranes' },
+  { label: 'General Industrial', href: '/industry/general-industrial' },
+  { label: 'Lamination and Packaging', href: '/industry/lamination-and-packaging' },
+  { label: 'Marine', href: '/industry/marine' },
+  { label: 'Military Armor', href: '/industry/military-armor' },
+  { label: 'Non-Woven Materials Manufacturing', href: '/industry/non-woven-materials-manufacturing' },
+  { label: 'Paper Packing and Bookbinding', href: '/industry/paper-packing-and-bookbinding' },
+];
+
+const resources: NavLink[] = [
+  { label: 'Resin Dispensing & Molding', href: '/resin-dispensing-molding' },
+  { label: 'Rebuild & Repair', href: '/rebuild-repair' },
+  { label: 'Training & Education', href: '/training-education' },
+  { label: 'In-Field Installation', href: '/in-field-installation' },
+  { label: 'Request a Quote', href: '/request-a-quote' },
+];
+
 export const navigation: NavigationConfig = {
   primary: [
-    { label: 'Home', href: '/' },
     {
-      label: 'Services',
-      href: '/services',
-      panel: {
-        kind: 'mega',
-        columns: [
-          {
-            heading: 'Residential',
-            links: [
-              {
-                label: 'Repairs & Maintenance',
-                href: '/services/repairs',
-                description: 'Fast turnaround on everyday problems.',
-                icon: 'Wrench',
-              },
-              {
-                label: 'Installations',
-                href: '/services/installations',
-                description: 'New systems, fitted and tested.',
-                icon: 'Hammer',
-              },
-            ],
-          },
-          {
-            heading: 'Commercial',
-            links: [
-              {
-                label: 'Service Contracts',
-                href: '/services/contracts',
-                description: 'Scheduled upkeep with priority response.',
-                icon: 'ClipboardCheck',
-              },
-              {
-                label: 'Emergency Callout',
-                href: '/services/emergency',
-                description: 'Around-the-clock cover.',
-                icon: 'Siren',
-              },
-            ],
-          },
-        ],
-        featured: {
-          title: 'Not sure what you need?',
-          body: 'Tell us what is going on and we will point you at the right service.',
-          href: '/contact',
-          cta: 'Talk to us',
-        },
-      },
-    },
-    {
-      label: 'About',
+      label: 'About Us',
       panel: {
         kind: 'links',
         links: [
-          { label: 'Our Story', href: '/about' },
-          { label: 'The Team', href: '/about/team' },
-          { label: 'Service Area', href: '/about/service-area' },
+          { label: 'ABNOX Partner & Supplier', href: '/abnox' },
+          { label: 'About Us', href: '/about-us' },
         ],
       },
     },
-    { label: 'Contact', href: '/contact' },
+    {
+      label: 'Products & Systems',
+      href: '/equipment-options',
+      panel: {
+        kind: 'mega',
+        columns: [
+          { heading: 'Adhesives & Sealants', href: '/equipment-options/adhesives-sealants', links: adhesives },
+          { heading: 'Composites', href: '/equipment-options/composites', links: composites },
+          { heading: 'Lubrication', href: '/equipment-options/lubrication', links: lubrication },
+          { heading: 'Paint & Coatings', href: '/equipment-options/paint-coatings', links: paint },
+          { heading: 'Process Control', href: '/equipment-options/process-control', links: processControl },
+          {
+            heading: 'Polyurethane',
+            href: '/equipment-options/polyurethane-processing-equipment',
+            links: polyurethane,
+          },
+        ],
+      },
+    },
+    {
+      label: 'Industries',
+      panel: {
+        kind: 'links',
+        links: industries,
+      },
+    },
+    {
+      label: 'Resources',
+      panel: {
+        kind: 'links',
+        links: resources,
+      },
+    },
+    {
+      label: 'Support',
+      panel: {
+        kind: 'links',
+        links: [
+          { label: 'ABNOX Products & Parts', href: '/abnox' },
+          { label: 'Contact Us', href: '/contact-us' },
+          { label: 'Request a Quote', href: '/request-a-quote' },
+        ],
+      },
+    },
   ],
 
-  cta: { label: 'Request a Quote', href: '/contact' },
+  cta: { label: 'Get a Quote', href: '/quote' },
 
   footer: [
-    {
-      heading: 'Services',
-      links: [
-        { label: 'Repairs & Maintenance', href: '/services/repairs' },
-        { label: 'Installations', href: '/services/installations' },
-        { label: 'Service Contracts', href: '/services/contracts' },
-      ],
-    },
-    {
-      heading: 'Company',
-      links: [
-        { label: 'About', href: '/about' },
-        { label: 'Contact', href: '/contact' },
-      ],
-    },
+    { heading: 'Adhesives & Sealants', links: adhesives },
+    { heading: 'Composites', links: composites },
+    { heading: 'Polyurethane', links: polyurethane },
+    { heading: 'Lubrication', links: lubrication },
+    { heading: 'Resources', links: resources },
   ],
 
-  legal: [
-    { label: 'Privacy Policy', href: '/privacy' },
-    { label: 'Terms of Service', href: '/terms' },
-  ],
+  legal: [],
 };

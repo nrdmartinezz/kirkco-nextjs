@@ -42,7 +42,7 @@ export function Heading({
   return (
     <Tag
       className={cn(
-        'font-semibold tracking-tight',
+        'font-heading font-semibold tracking-tight',
         sizes[size ?? defaultSizeForLevel[level]],
         balance && 'text-balance',
         className,

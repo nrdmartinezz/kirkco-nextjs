@@ -1,6 +1,6 @@
 {
   "container": {
-    "page": { "$value": "1350px", "$type": "dimension" },
+    "page": { "$value": "1200px", "$type": "dimension" },
     "reading": { "$value": "70ch", "$type": "dimension" },
     "narrow": { "$value": "900px", "$type": "dimension" }
   },
@@ -19,8 +19,8 @@
   },
   "radius": {
     "sm": { "$value": "0.25rem", "$type": "dimension" },
-    "md": { "$value": "0.5rem", "$type": "dimension" },
-    "lg": { "$value": "0.875rem", "$type": "dimension" },
+    "md": { "$value": "0.375rem", "$type": "dimension" },
+    "lg": { "$value": "0.75rem", "$type": "dimension" },
     "xl": { "$value": "1.5rem", "$type": "dimension" },
     "full": { "$value": "9999px", "$type": "dimension" }
   },

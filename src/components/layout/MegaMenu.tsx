@@ -10,7 +10,7 @@ export function MegaMenu() {
   const pathname = usePathname();
 
   return (
-    <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
+    <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
       {navigation.primary.map((item) => {
         const sublinks = panelLinks(item);
         const current = item.href ? isCurrentPath(pathname, item.href) : false;
@@ -50,13 +50,21 @@ export function MegaMenu() {
               </span>
             )}
 
-            <div className="invisible absolute top-full left-0 z-50 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-              <div className="border-line-base bg-surface-base min-w-64 rounded-lg border p-3 shadow-md">
+            <div className="invisible absolute top-full left-1/2 z-50 -translate-x-1/2 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="border-line-base bg-surface-base max-h-[70vh] min-w-64 overflow-y-auto rounded-lg border p-3 shadow-lg">
                 {item.panel?.kind === 'mega' ? (
-                  <div className="flex gap-6">
+                  <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
                     {item.panel.columns.map((column) => (
                       <div key={column.heading ?? column.links[0]?.href} className="flex min-w-44 flex-col gap-1">
-                        {column.heading && (
+                        {column.heading && column.href && (
+                          <Link
+                            href={column.href}
+                            className="text-brand-700 px-2 text-xs font-semibold tracking-wide uppercase no-underline"
+                          >
+                            {column.heading}
+                          </Link>
+                        )}
+                        {column.heading && !column.href && (
                           <p className="text-ink-muted px-2 text-xs font-semibold tracking-wide uppercase">
                             {column.heading}
                           </p>

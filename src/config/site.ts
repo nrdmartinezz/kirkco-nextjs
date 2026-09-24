@@ -88,36 +88,30 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  url: 'https://example.com',
-  name: 'Demo Business',
-  legalName: 'Demo Business LLC',
-  tagline: 'Straightforward work, done right the first time.',
+  url: 'https://kirkcocorp.com',
+  name: 'Kirkco',
+  legalName: 'Kirkco Corporation',
+  tagline: 'Precision metering, mixing, controlling, and dispensing for all applications.',
   description:
-    'Demo Business is a placeholder used by the starter template. Replace this copy during project setup.',
+    'Kirkco Corporation designs and integrates metering, mixing, and dispensing systems for polyurethane, epoxy, silicone, and lubrication manufacturing.',
   locale: 'en-US',
 
   business: {
     schemaType: 'LocalBusiness',
-    phone: '(555) 010-4477',
-    phoneHref: '+15550104477',
-    email: 'hello@example.com',
+    phone: '800.828.7234',
+    phoneHref: '+18008287234',
+    email: 'sales@kirkcocorp.com',
     address: {
-      street: '1200 Market Street, Suite 400',
-      locality: 'Columbus',
-      region: 'OH',
-      postalCode: '43215',
+      street: 'P.O. Box 509',
+      locality: 'Monroe',
+      region: 'NC',
+      postalCode: '28111',
       country: 'US',
     },
-    geo: { latitude: 39.9612, longitude: -82.9988 },
-    hours: ['Mo-Fr 08:00-17:00', 'Sa 09:00-13:00'],
-    priceRange: '$$',
+    hours: [],
   },
 
-  social: {
-    facebook: 'https://facebook.com/example',
-    instagram: 'https://instagram.com/example',
-    linkedin: 'https://linkedin.com/company/example',
-  },
+  social: {},
 
   defaultOgImage: '/og-default.png',
 
