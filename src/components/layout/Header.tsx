@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { navigation } from '@/config/navigation';
 import { site } from '@/config/site';
 import { Button } from '@/components/ui/Button';
@@ -10,6 +10,26 @@ import { MobileNav } from './MobileNav';
 
 export function Header() {
   return (
+    <>
+    <div className="bg-brand-900 text-[12px] text-white">
+      <Container as="div" layout="bar" gap="none" className="justify-between gap-4 py-2">
+        <p className="truncate text-white/90">{site.tagline}</p>
+        <ul className="flex shrink-0 items-center gap-4">
+          <li>
+            <a href={`tel:${site.business.phoneHref}`} className="inline-flex items-center gap-1.5 no-underline hover:text-brand-100">
+              <Phone className="size-3" aria-hidden="true" />
+              {site.business.phone}
+            </a>
+          </li>
+          <li className="hidden sm:block">
+            <a href={`mailto:${site.business.email}`} className="inline-flex items-center gap-1.5 no-underline hover:text-brand-100">
+              <Mail className="size-3" aria-hidden="true" />
+              {site.business.email}
+            </a>
+          </li>
+        </ul>
+      </Container>
+    </div>
     <header className="border-line-base bg-surface-base sticky top-0 z-50 w-full border-b shadow-sm">
       <Container as="div" layout="bar" gap="none" className="justify-between gap-4 py-3">
         <Link href="/" className="shrink-0 no-underline">
@@ -37,5 +57,6 @@ export function Header() {
         </div>
       </Container>
     </header>
+    </>
   );
 }

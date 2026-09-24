@@ -113,7 +113,7 @@ export function IndustriesCarousel() {
                 priority={slideIndex === 1}
               />
               <div className="relative z-10 flex w-full max-w-xl flex-col justify-center self-stretch bg-brand-700/80 p-8 pb-16 text-white md:w-[46%] md:p-10 md:pb-16">
-                <h3 className="font-heading text-3xl font-semibold">{slide.title}</h3>
+                <h3 className="font-heading text-2xl font-semibold">{slide.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-white/95">{slide.body}</p>
                 <Link
                   href={slide.href}
@@ -149,7 +149,7 @@ export function IndustriesCarousel() {
         {moreIndustries.map((industry) => (
           <li key={industry.title}>
             <Link href={industry.href} className="group relative block h-40 overflow-hidden rounded-xl no-underline">
-              <Image src={industry.image} alt="" fill className="object-cover" sizes="280px" />
+              <Image src={industry.image} alt="" fill className="object-cover transition duration-700 ease-out group-hover:scale-105" sizes="280px" />
               <span className="absolute inset-0 bg-brand-700/55 transition group-hover:bg-brand-700/70" />
               <span className="relative flex h-full flex-col justify-end p-4 text-white">
                 <span className="font-heading text-lg font-semibold">{industry.title}</span>
