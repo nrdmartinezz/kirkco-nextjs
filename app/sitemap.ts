@@ -3,7 +3,9 @@ import { navigation } from '@/config/navigation';
 import { site } from '@/config/site';
 import { getProducts } from '@/lib/products';
 
-function collectHrefs() {
+export const revalidate = 60;
+
+async function collectHrefs() {
   const hrefs = new Set<string>(['/', '/thank-you']);
 
   for (const item of navigation.primary) {
@@ -21,13 +23,14 @@ function collectHrefs() {
   }
 
   for (const link of navigation.legal) hrefs.add(link.href);
-  for (const product of getProducts()) hrefs.add(`/${product.slug}`);
+  hrefs.add(navigation.cta.href);
+  for (const product of await getProducts()) hrefs.add(`/${product.slug}`);
 
   return [...hrefs];
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return collectHrefs().map((path) => ({
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  return (await collectHrefs()).map((path) => ({
     url: new URL(path, site.url).href,
     lastModified: new Date(),
   }));

@@ -1,4 +1,9 @@
-import productsJson from '@/content/products.json';
+import { cache } from 'react';
+import { productCategories, type ProductCategory } from '@/content/product-categories';
+import { supabaseAnon } from '@/lib/supabase';
+
+export type { ProductCategory };
+export { productCategories };
 
 export type ProductImage = {
   src: string;
@@ -26,71 +31,120 @@ export type Product = {
   thin?: boolean;
 };
 
-export type ProductCategory = {
+export type BreadcrumbCrumb = {
+  name: string;
+  href?: string;
+};
+
+type ProductRow = {
+  slug: string;
+  title: string;
+  updated: string;
+  tagline: string | null;
+  summary: string | null;
+  image: (ProductImage & { alt?: string }) | null;
+  sections: ProductSection[] | null;
+  thin: boolean;
+  product_category_links: { category_slug: string; sort: number }[] | null;
+};
+
+type CategoryRow = {
   slug: string;
   name: string;
   href: string;
-  group: string;
+  group_name: string;
+  sort: number;
 };
 
-/** Equipment groups from the nav. Product records store these slugs. */
-export const productCategories: ProductCategory[] = [
-  { slug: 'adhesives-sealants', name: 'Adhesives & Sealants', href: '/equipment-options/adhesives-sealants', group: 'Adhesives & Sealants' },
-  { slug: 'single-component', name: 'Single Component', href: '/equipment-options/adhesives-sealants/single-component', group: 'Adhesives & Sealants' },
-  { slug: 'two-component', name: 'Two Component Systems (2k)', href: '/equipment-options/adhesives-sealants/two-component', group: 'Adhesives & Sealants' },
-  { slug: 'putty-paste', name: 'Putty & Paste', href: '/equipment-options/adhesives-sealants/putty-paste', group: 'Adhesives & Sealants' },
-  { slug: 'smc-imc-molding', name: 'SMC / IMC Molding', href: '/equipment-options/adhesives-sealants/smc-imc-molding', group: 'Adhesives & Sealants' },
-  { slug: 'tooling-paste', name: 'Tooling Paste & Seamless Modeling Paste', href: '/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste', group: 'Adhesives & Sealants' },
-  { slug: 'composites', name: 'Composites', href: '/equipment-options/composites', group: 'Composites' },
-  { slug: 'closed-mold-technology', name: 'Closed Mold Technology', href: '/equipment-options/composites/closed-mold-technology', group: 'Composites' },
-  { slug: 'filament-winding', name: 'Filament Winding', href: '/equipment-options/composites/filament-winding', group: 'Composites' },
-  { slug: 'open-mold-technology', name: 'Open Mold Technology', href: '/equipment-options/composites/open-mold-technology', group: 'Composites' },
-  { slug: 'pull-winding', name: 'Pull Winding', href: '/equipment-options/composites/pull-winding', group: 'Composites' },
-  { slug: 'lubrication', name: 'Lubrication', href: '/equipment-options/lubrication', group: 'Lubrication' },
-  { slug: 'metering', name: 'Metering', href: '/equipment-options/lubrication/metering', group: 'Lubrication' },
-  { slug: 'pressure-control', name: 'Pressure Control', href: '/equipment-options/lubrication/pressure-control', group: 'Lubrication' },
-  { slug: 'flow-regulation', name: 'Flow Regulation', href: '/equipment-options/lubrication/flow-regulation', group: 'Lubrication' },
-  { slug: 'dispensing', name: 'Dispensing', href: '/equipment-options/lubrication/dispensing', group: 'Lubrication' },
-  { slug: 'feeding-and-supply', name: 'Feeding and Supply', href: '/equipment-options/lubrication/feeding-and-supply', group: 'Lubrication' },
-  { slug: 'paint-coatings', name: 'Paint & Coatings', href: '/equipment-options/paint-coatings', group: 'Paint & Coatings' },
-  { slug: 'protective-coatings', name: 'Protective Coatings', href: '/equipment-options/paint-coatings/protective-coatings', group: 'Paint & Coatings' },
-  { slug: 'spray-systems', name: 'Spray Systems', href: '/equipment-options/paint-coatings/spray-systems', group: 'Paint & Coatings' },
-  { slug: 'process-control', name: 'Process Control', href: '/equipment-options/process-control', group: 'Process Control' },
-  { slug: 'integration-automation', name: 'Integration / Automation', href: '/equipment-options/process-control/integration-automation', group: 'Process Control' },
-  { slug: 'monitoring-analytics', name: 'Monitoring / Analytics', href: '/equipment-options/process-control/monitoring-analytics', group: 'Process Control' },
-  { slug: 'process-control-computer', name: 'Process Control Computer', href: '/equipment-options/process-control/process-control-computer', group: 'Process Control' },
-  { slug: 'polyurethane', name: 'Polyurethane', href: '/equipment-options/polyurethane-processing-equipment', group: 'Polyurethane' },
-  { slug: 'bulk-chemical-storage', name: 'Bulk Chemical Storage', href: '/bulk-chemical-storage', group: 'Polyurethane' },
-  { slug: 'high-pressure-metering', name: 'High Pressure Metering', href: '/equipment-options/polyurethane-processing-equipment/high-pressure-metering', group: 'Polyurethane' },
-  { slug: 'low-pressure-metering', name: 'Low Pressure Metering', href: '/equipment-options/polyurethane-processing-equipment/low-pressure-metering', group: 'Polyurethane' },
-  { slug: 'pentane-capable-metering-machines', name: 'Pentane Capable Metering Machines', href: '/equipment-options/polyurethane-processing-equipment/pentane-capable-metering-machines', group: 'Polyurethane' },
-  { slug: 'urethane-foam-mixing-guns', name: 'Urethane Foam Mixing Guns', href: '/equipment-options/polyurethane-processing-equipment/urethane-foam-mixing-guns', group: 'Polyurethane' },
-];
-
-const products = productsJson as Product[];
-
-const bySlug = new Map(products.map((product) => [product.slug, product]));
-const categoriesBySlug = new Map(productCategories.map((category) => [category.slug, category]));
-
-export function getProducts() {
-  return products;
+function toProduct(row: ProductRow): Product {
+  const links = [...(row.product_category_links ?? [])].sort((a, b) => a.sort - b.sort);
+  return {
+    slug: row.slug,
+    title: row.title,
+    updated: row.updated,
+    categories: links.map((link) => link.category_slug),
+    tagline: row.tagline ?? undefined,
+    summary: row.summary ?? undefined,
+    sections: row.sections ?? undefined,
+    image: row.image ? { src: row.image.src, alt: row.image.alt ?? '' } : undefined,
+    thin: row.thin || undefined,
+  };
 }
 
-export function getProduct(slug: string) {
-  return bySlug.get(slug);
+function toCategory(row: CategoryRow): ProductCategory {
+  return { slug: row.slug, name: row.name, href: row.href, group: row.group_name };
 }
 
-export function getProductsByCategory(slug: string) {
+export const getCategories = cache(async () => {
+  const { data, error } = await supabaseAnon()
+    .from('product_categories')
+    .select('slug, name, href, group_name, sort')
+    .order('sort');
+  if (error) throw new Error(error.message);
+  return ((data ?? []) as CategoryRow[]).map(toCategory);
+});
+
+export const getProducts = cache(async () => {
+  const { data, error } = await supabaseAnon()
+    .from('products')
+    .select('slug, title, updated, tagline, summary, image, sections, thin, product_category_links(category_slug, sort)')
+    .order('title');
+  if (error) throw new Error(error.message);
+  return ((data ?? []) as ProductRow[]).map(toProduct);
+});
+
+export const getProduct = cache(async (slug: string) => {
+  const { data, error } = await supabaseAnon()
+    .from('products')
+    .select('slug, title, updated, tagline, summary, image, sections, thin, product_category_links(category_slug, sort)')
+    .eq('slug', slug)
+    .maybeSingle();
+  if (error) throw new Error(error.message);
+  return data ? toProduct(data as ProductRow) : undefined;
+});
+
+export async function getProductsByCategory(slug: string) {
+  const products = await getProducts();
   return products.filter((product) => product.categories.includes(slug));
 }
 
-export function getCategory(slug: string) {
-  return categoriesBySlug.get(slug);
+export async function getCategory(slug: string) {
+  const categories = await getCategories();
+  return categories.find((category) => category.slug === slug);
 }
 
-export function categoriesFor(product: Product) {
+export function categoriesFor(product: Product, categories: ProductCategory[]) {
+  const bySlug = new Map(categories.map((category) => [category.slug, category]));
   return product.categories.flatMap((slug) => {
-    const category = categoriesBySlug.get(slug);
+    const category = bySlug.get(slug);
     return category ? [category] : [];
+  });
+}
+
+export function categoryByHref(href: string, categories: ProductCategory[]) {
+  return categories.find((category) => category.href === href);
+}
+
+/** One trail per category: Home, equipment group, category, product name. */
+export function breadcrumbTrails(product: Product, categories: ProductCategory[]): BreadcrumbCrumb[][] {
+  const productCategoriesForProduct = categoriesFor(product, categories);
+  const productCrumb: BreadcrumbCrumb = { name: product.title };
+  if (productCategoriesForProduct.length === 0) {
+    return [[{ name: 'Home', href: '/' }, productCrumb]];
+  }
+
+  const groupByName = new Map(
+    categories.filter((category) => category.name === category.group).map((category) => [category.group, category]),
+  );
+
+  return productCategoriesForProduct.map((category) => {
+    const group = groupByName.get(category.group);
+    const crumbs: BreadcrumbCrumb[] = [{ name: 'Home', href: '/' }];
+    if (group && group.href !== category.href) {
+      crumbs.push({ name: group.name, href: group.href });
+    }
+    crumbs.push({ name: category.name, href: category.href });
+    crumbs.push(productCrumb);
+    return crumbs;
   });
 }

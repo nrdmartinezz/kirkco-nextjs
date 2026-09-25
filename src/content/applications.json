@@ -1,0 +1,88 @@
+[
+  {
+    "id": "adhesives-quality-framework",
+    "title": "Adhesives & Sealants Quality Framework for Industrial Manufacturing Systems",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an Adhesives & Sealants Quality Framework to govern precision bonding, sealing, and material application across industrial manufacturing environments. This architecture establishes repeatable process control, bond-line integrity, and lifecycle reliability while supporting diverse chemistries and application geometries."
+        ]
+      },
+      {
+        "heading": "Market & Performance Drivers",
+        "paragraphs": [
+          "Manufacturers rely on adhesive and sealant systems to provide structural integrity, environmental sealing, and protection of sensitive components. Variability in manual application, cure conditions, and material handling introduces risk to product performance, warranty exposure, and production yield. A standardized application architecture is required to ensure consistent outcomes."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Adhesive and sealant applications require controlled dispensing with repeatable bead geometry, accurate volumetric delivery, and predictable cure behavior. The framework supports single- and multi-component materials, temperature-conditioned supply, and clean cutoff at the point of application."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The framework governs precision metering, mixing, and dispensing platforms configured for adhesives and sealants. Architectures may include piston, gear, or progressive cavity metering, with static or dynamic mixing and application-specific dispense valves."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage dispense volume, ratio (where applicable), bead placement, and process interlocks. Validation confirms bond-line consistency, adhesion performance, and repeatability across production runs."
+        ]
+      },
+      {
+        "heading": "Governed Applications",
+        "paragraphs": [
+          "This framework governs a range of adhesive and sealant implementations, including electronics bonding, medical cartridge sealing, automotive module assembly, LED housing sealing, and general industrial bonding. Each execution-level application inherits the quality principles defined herein."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "industrial-adhesive-dispensing",
+    "title": "Industrial Adhesive Dispensing Systems",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an industrial adhesive dispensing architecture designed to deliver repeatable bonding and sealing performance across high-mix, high-volume manufacturing environments. The architecture supports consistent material application, controlled bead geometry, and stable production output across diverse industrial assemblies."
+        ]
+      },
+      {
+        "heading": "Market & Performance Drivers",
+        "paragraphs": [
+          "Industrial manufacturers require adhesive dispensing systems that can maintain quality across multiple product variants, shifts, and operators. Manual application introduces variability that impacts bond strength, cosmetic appearance, and rework rates. A controlled dispensing architecture is required to stabilize quality and throughput."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Applications require accurate volumetric dispensing of single- and multi-component adhesives with repeatable bead width, placement, and cure behavior. Processes may include component bonding, gasket forming, seam sealing, and surface coating in automated or semi-automated cells."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The dispensing platform utilizes positive-displacement metering technologies, including piston, gear, or progressive cavity pumps, selected based on material viscosity and flow requirements. Static or dynamic mixing solutions are applied where multi-component materials are used, with application-specific valves ensuring clean cutoff and repeatable starts and stops."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage dispense volume, ratio control, dispense speed, and process interlocks. Validation confirms repeatable adhesive output, consistent bead geometry, and reliable adhesion performance across production cycles."
+        ]
+      },
+      {
+        "heading": "Adhesives & Sealants Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Adhesives & Sealants Quality Framework, which standardizes material handling, dispense accuracy, bead geometry control, and validation practices across industrial bonding and sealing systems."
+        ]
+      }
+    ]
+  }
+]

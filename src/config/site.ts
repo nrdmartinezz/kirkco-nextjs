@@ -115,7 +115,7 @@ export const site: SiteConfig = {
 
   defaultOgImage: '/og-default.png',
 
-  formEndpoint: '',
+  formEndpoint: '/api/contact',
   recaptchaSiteKey: '',
 
   analytics: {

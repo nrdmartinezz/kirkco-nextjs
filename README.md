@@ -28,6 +28,7 @@ Blank analytics, verification, and form fields ship nothing. Fill them only when
 | `npm run build` | Generates the theme, then production build |
 | `npm start` | Serves the production build |
 | `npm run lint` | ESLint |
+| `npm run db:seed` | Upserts products, categories, applications, and equipment pages into Supabase |
 | `npm run tokens` | Regenerates `src/styles/theme.css` from `tokens/*.json` |
 
 ## Docs
@@ -65,4 +66,4 @@ Responsive is **desktop-first** using Tailwind `max-*` variants. See `docs/RESPO
 
 ## Deploying
 
-This app runs on a Node host or a Next.js platform. It does not build a static `dist/` for cPanel. `site.url` is the production origin; `/robots.txt` and `/sitemap.xml` are generated from it. See `docs/HOSTING.md`.
+This app deploys on Vercel. Products, equipment pages, applications, and form submissions are stored in Supabase. `site.url` is the production origin; `/robots.txt` and `/sitemap.xml` are generated from it. See `docs/HOSTING.md`.

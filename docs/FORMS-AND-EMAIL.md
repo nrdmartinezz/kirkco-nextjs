@@ -14,10 +14,12 @@ Browser form
   → reCAPTCHA v3 token attached (client), when a site key is set
   → POST to the Route Handler (JSON)
   → honeypot + reCAPTCHA verified (server)
-  → mail sent to the team
-  → optional autoreply to the submitter
+  → row inserted in Supabase `submissions`
   → redirect to /thank-you
 ```
+
+The stored row is the record. Notification mail is a later step on the same
+handler. A missing SMTP setup must not drop the lead.
 
 **Config** (`src/config/site.ts`):
 
@@ -29,13 +31,15 @@ Browser form
 
 | Env var              | Purpose                                      |
 | -------------------- | -------------------------------------------- |
-| `RECAPTCHA_SECRET`   | Google reCAPTCHA v3 secret                   |
-| `NOTIFY_TO`          | Where lead notifications go                  |
-| `FROM_EMAIL`         | From address on outbound mail                |
-| `FROM_NAME`          | From display name                            |
-| `SMTP_HOST`          | Optional. With user + pass, send via SMTP    |
-| `SMTP_USER`          | Optional                                     |
-| `SMTP_PASS`          | Optional                                     |
+| `SUPABASE_URL`       | Supabase project URL. See `docs/HOSTING.md`  |
+| `SUPABASE_SERVICE_ROLE_KEY` | Inserts the submission row. Server only |
+| `RECAPTCHA_SECRET`   | Google reCAPTCHA v3 secret. Later, with the site key |
+| `NOTIFY_TO`          | Later. Where lead notifications go           |
+| `FROM_EMAIL`         | Later. From address on outbound mail         |
+| `FROM_NAME`          | Later. From display name                     |
+| `SMTP_HOST`          | Later. With user + pass, send via SMTP       |
+| `SMTP_USER`          | Later                                        |
+| `SMTP_PASS`          | Later                                        |
 
 `.env*` is gitignored. Document the keys in the host's env UI, not in a committed
 file. Copy names into `.env.local` for local submits.
@@ -46,14 +50,16 @@ when that path is absent.
 
 ## Route Handler
 
-Add `app/api/contact/route.ts`. It runs on the server. It does not import the
-public site key for verification — only `RECAPTCHA_SECRET`.
+Add `app/api/contact/route.ts`. It runs on the server. It inserts into
+`submissions` with the service role key. It does not import the public site key
+for verification — only `RECAPTCHA_SECRET`. Browsers cannot read or write that
+table.
 
 Expected JSON body:
 
 | Field        | Required | Notes                                      |
 | ------------ | -------- | ------------------------------------------ |
-| `form_type`  | yes      | `contact` until a second form exists      |
+| `form_type`  | yes      | `contact`, `quote`, or `request-a-quote` |
 | `name`       | yes      |                                            |
 | `email`      | yes      | Validate before using it as a recipient    |
 | `phone`      | no       |                                            |
@@ -62,8 +68,9 @@ Expected JSON body:
 | `_gotcha`    | no       | Honeypot. Any value is a bot               |
 
 Return `200` with `{ ok: true }` on success so the client can navigate to
-`/thank-you`. Return `400` for validation and `503` when mail config is missing,
-with a short message safe to show in the form.
+`/thank-you`. Return `400` for validation and `503` when the service role key
+is missing, or when the reCAPTCHA site key is set and `RECAPTCHA_SECRET` is
+not, with a short message safe to show in the form.
 
 ## Per-form settings
 
@@ -80,7 +87,9 @@ public phone. Use inline CSS — email clients strip `<style>` blocks inconsiste
 
 | `form_type` | Page                         |
 | ----------- | ---------------------------- |
-| `contact`   | `app/contact/page.tsx`       |
+| `contact`   | `app/contact/page.tsx` (`/contact-us` redirects here) |
+| `quote`     | `app/quote/page.tsx`         |
+| `request-a-quote` | `app/request-a-quote/page.tsx` |
 
 The page posts with `fetch` to `site.formEndpoint`. It does not use a native
 navigation to the API route. On `{ ok: true }`, `router.push('/thank-you')`.
@@ -110,31 +119,30 @@ different threshold next to the check. Do not ship the secret to the client.
 npm run dev
 ```
 
-Fill `.env.local`, set `formEndpoint` to `/api/contact` and the site key, submit
-on `http://localhost:3000/contact`, and confirm the redirect to `/thank-you`.
+Fill `.env.local` with the Supabase vars from `docs/HOSTING.md`. `formEndpoint` is
+`/api/contact`. Submit on `http://localhost:3000/contact`, `/quote`, and
+`/request-a-quote`, and confirm the redirect to `/thank-you` plus a row in
+`submissions`.
 
-`localhost` often cannot send real mail. Use the SMTP vars against a development
-inbox, or log the payload in development and send for real only when the env
-vars are present. Do not log message bodies in production.
+Mail is not sent yet. Do not log message bodies in production.
 
 ## Production checklist
 
-1. Set `RECAPTCHA_SECRET`, `NOTIFY_TO`, `FROM_EMAIL`, `FROM_NAME` on the host.
-2. Set `formEndpoint` and `recaptchaSiteKey` in `site.ts`.
-3. Submit the form on the live origin. Confirm the notification arrives in the
-   inbox, not spam, and that `/thank-you` is what the visitor sees.
-4. If deliverability is poor, turn on SMTP and configure SPF/DKIM for `FROM_EMAIL`'s
-   domain.
+1. Set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` on the host. Apply the
+   migration in `docs/HOSTING.md` first.
+2. Set `formEndpoint` to `/api/contact`. Leave `recaptchaSiteKey` blank until
+   `RECAPTCHA_SECRET` is set.
+3. Submit each form on the live origin. Confirm a row appears in `submissions`
+   and that `/thank-you` is what the visitor sees.
+4. Mail (`NOTIFY_TO`, `FROM_EMAIL`, optional SMTP) is not wired yet. Add it on
+   this handler when the inbox is ready.
 
 ## Security
 
 - Secrets never ship in git or in `site.ts`.
-- Honeypot `_gotcha` — bots get `{ ok: true }` and no mail.
+- Honeypot `_gotcha` — bots get `{ ok: true }` and no row.
 - reCAPTCHA v3 is verified server-side when a secret is configured. If the site
-  key is set and the secret is missing, fail closed (503), do not send.
-- Rate limit by IP in the Route Handler before sending mail.
-- Escape every interpolated field in HTML mail. Use the raw address only in
-  `mailto:` hrefs you have already validated.
+  key is set and the secret is missing, fail closed (503), do not insert.
 - Do not reflect the submitted message back onto a public page.
 
 ## Troubleshooting
@@ -142,8 +150,7 @@ vars are present. Do not log message bodies in production.
 | Symptom                         | Likely cause                                              |
 | ------------------------------- | --------------------------------------------------------- |
 | Form never appears              | `formEndpoint` is still blank                            |
-| "Form is temporarily unavailable" | Mail env vars missing on the host                      |
+| "Form is temporarily unavailable" | `SUPABASE_SERVICE_ROLE_KEY` missing, or site key set without `RECAPTCHA_SECRET` |
 | "Verification failed"           | Secret mismatch, or the domain is not on the reCAPTCHA key |
-| Notification never arrives      | No SMTP and the host has no local mail                    |
-| Lands in spam                   | SPF/DKIM missing; From address is not on the sending domain |
+| No row in `submissions`         | Migration not applied, or the honeypot field was filled  |
 | 500 on submit                   | Uncaught throw in the Route Handler — read the host logs  |

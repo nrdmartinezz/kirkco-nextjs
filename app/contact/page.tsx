@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { LeadForm } from '@/components/forms/LeadForm';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { formattedAddress, site } from '@/config/site';
 
@@ -10,9 +11,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <SimplePage title="Contact">
-      <p className="text-ink-muted mt-4">
-        Reach {site.name} by phone or email. This copy is assembled from{' '}
-        <code className="text-ink-base">src/config/site.ts</code>.
+      <p className="text-ink-muted mt-4 max-w-xl">
+        Call, email, or send a note. We will reply from {site.business.email}.
       </p>
       <ul className="mt-8 flex flex-col gap-3">
         <li>
@@ -27,6 +27,7 @@ export default function ContactPage() {
         </li>
         <li>{formattedAddress}</li>
       </ul>
+      <LeadForm formType="contact" />
     </SimplePage>
   );
 }

@@ -28,6 +28,7 @@ type ButtonProps = {
   children?: ReactNode;
   href?: string;
   type?: 'button' | 'submit';
+  disabled?: boolean;
 };
 
 export function Button({
@@ -37,6 +38,7 @@ export function Button({
   children,
   href,
   type = 'button',
+  disabled = false,
 }: ButtonProps) {
   const classes = cn(baseClass, variants[variant], sizes[size], className);
 
@@ -58,7 +60,7 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes}>
+    <button type={type} disabled={disabled} className={classes}>
       {children}
     </button>
   );
