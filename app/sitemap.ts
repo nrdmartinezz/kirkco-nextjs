@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { navigation } from '@/config/navigation';
 import { site } from '@/config/site';
+import { getProducts } from '@/lib/products';
 
 function collectHrefs() {
   const hrefs = new Set<string>(['/', '/thank-you']);
@@ -20,6 +21,7 @@ function collectHrefs() {
   }
 
   for (const link of navigation.legal) hrefs.add(link.href);
+  for (const product of getProducts()) hrefs.add(`/${product.slug}`);
 
   return [...hrefs];
 }
