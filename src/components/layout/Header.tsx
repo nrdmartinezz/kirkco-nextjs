@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Mail, Phone } from 'lucide-react';
 import { navigation } from '@/config/navigation';
 import { site } from '@/config/site';
-import { Button } from '@/components/ui/Button';
+import { QuoteCta } from '@/components/quote/QuoteCta';
 import { Container } from '@/components/ui/Container';
 import { MegaMenu } from './MegaMenu';
 import { MobileNav } from './MobileNav';
@@ -47,11 +47,7 @@ export function Header() {
             {site.business.phone}
           </a>
 
-          {navigation.cta && (
-            <Button href={navigation.cta.href} size="sm" className="max-lg:hidden rounded-full px-5">
-              {navigation.cta.label}
-            </Button>
-          )}
+          {navigation.cta && <QuoteCta size="sm" className="max-lg:hidden px-5" />}
 
           <MobileNav />
         </div>

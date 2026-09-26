@@ -8,7 +8,7 @@ import { navigation } from '@/config/navigation';
 import { site } from '@/config/site';
 import { isCurrentPath, panelLinks } from '@/lib/nav';
 import { cn } from '@/lib/cn';
-import { Button } from '@/components/ui/Button';
+import { QuoteCta } from '@/components/quote/QuoteCta';
 import { Container } from '@/components/ui/Container';
 
 const linkClass =
@@ -102,11 +102,7 @@ export function MobileNav() {
               >
                 {site.business.phone}
               </a>
-              {navigation.cta && (
-                <Button href={navigation.cta.href} className="w-full">
-                  {navigation.cta.label}
-                </Button>
-              )}
+              {navigation.cta && <QuoteCta className="w-full" />}
             </div>
           </Container>
         </div>

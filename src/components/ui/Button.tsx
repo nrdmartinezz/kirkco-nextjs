@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { ReactNode } from 'react';
+import type { MouseEventHandler, ReactNode } from 'react';
 import { cn } from '@/lib/cn';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'inverse';
@@ -29,6 +29,7 @@ type ButtonProps = {
   href?: string;
   type?: 'button' | 'submit';
   disabled?: boolean;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
 export function Button({
@@ -39,6 +40,7 @@ export function Button({
   href,
   type = 'button',
   disabled = false,
+  onClick,
 }: ButtonProps) {
   const classes = cn(baseClass, variants[variant], sizes[size], className);
 
@@ -60,7 +62,7 @@ export function Button({
   }
 
   return (
-    <button type={type} disabled={disabled} className={classes}>
+    <button type={type} disabled={disabled} onClick={onClick} className={classes}>
       {children}
     </button>
   );

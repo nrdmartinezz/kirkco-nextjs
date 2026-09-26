@@ -127,7 +127,7 @@ const resources: NavLink[] = [
   { label: 'Rebuild & Repair', href: '/rebuild-repair' },
   { label: 'Training & Education', href: '/training-education' },
   { label: 'In-Field Installation', href: '/in-field-installation' },
-  { label: 'Request a Quote', href: '/request-a-quote' },
+  { label: 'Request a Quote', href: '/quote' },
 ];
 
 export const navigation: NavigationConfig = {
@@ -182,7 +182,7 @@ export const navigation: NavigationConfig = {
         links: [
           { label: 'ABNOX Products & Parts', href: '/abnox' },
           { label: 'Contact Us', href: '/contact-us' },
-          { label: 'Request a Quote', href: '/request-a-quote' },
+          { label: 'Request a Quote', href: '/quote' },
         ],
       },
     },
