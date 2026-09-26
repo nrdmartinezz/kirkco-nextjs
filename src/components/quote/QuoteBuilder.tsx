@@ -127,20 +127,23 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
             Your quote
           </Heading>
           {lines.length === 0 ? (
-            <p className="border-line-base text-ink-muted mt-4 rounded-lg border border-dashed p-6">
+            <p className="text-ink-muted mt-4 rounded-2xl border border-dashed border-brand-200 bg-brand-50 p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]">
               Add equipment from a product page or search below.
             </p>
           ) : (
             <ul className="mt-4 flex flex-col gap-4">
               {lines.map((line) => (
-                <li key={line.slug} className="border-line-base rounded-lg border p-4">
+                <li
+                  key={line.slug}
+                  className="rounded-2xl border border-brand-100 border-l-4 border-l-brand-500 bg-brand-50 p-4 shadow-[0_1px_3px_rgba(21,101,192,0.1)]"
+                >
                   <div className="flex items-start justify-between gap-3">
                     <Link href={`/${line.slug}`} className="text-brand-700 font-semibold no-underline hover:text-brand-500">
                       {line.title}
                     </Link>
                     <button
                       type="button"
-                      className="text-ink-muted hover:text-ink-base inline-flex size-9 items-center justify-center rounded-md"
+                      className="text-ink-muted hover:text-ink-base inline-flex size-9 items-center justify-center rounded-md hover:bg-white"
                       onClick={() => remove(line.slug)}
                     >
                       <span className="sr-only">Remove {line.title}</span>
@@ -148,7 +151,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
                     </button>
                   </div>
                   <div className="mt-3 flex flex-wrap items-center gap-3">
-                    <div className="border-line-base inline-flex items-center rounded-md border">
+                    <div className="inline-flex items-center rounded-md border border-brand-100 bg-white">
                       <button
                         type="button"
                         className="inline-flex size-9 items-center justify-center"
