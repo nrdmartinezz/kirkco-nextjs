@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/Button';
+import { AddToQuoteButton } from '@/components/quote/AddToQuoteButton';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
@@ -71,9 +71,7 @@ export function ProductPage({ product, categories }: { product: Product; categor
                 ))}
               </ul>
             )}
-            <Button href="/quote" className="mt-8 w-fit rounded-full">
-              Get a Quote
-            </Button>
+            <AddToQuoteButton slug={product.slug} title={product.title} />
           </div>
         </div>
 

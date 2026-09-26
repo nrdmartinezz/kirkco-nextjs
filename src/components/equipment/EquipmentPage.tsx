@@ -68,7 +68,7 @@ export function EquipmentPage({
               {page.title}
             </Heading>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button href="/request-a-quote" className="rounded-full">
+              <Button href="/quote" className="rounded-full">
                 Talk to an Engineer
               </Button>
               <Link

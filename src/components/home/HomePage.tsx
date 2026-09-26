@@ -24,7 +24,7 @@ export function HomePage() {
               Precision Metering System for Accuracy in your Process
             </Heading>
             <Button
-              href="/request-a-quote"
+              href="/quote"
               className="mt-8 rounded-full motion-safe:animate-[rise-in_700ms_ease-out_both] motion-safe:[animation-delay:120ms]"
             >
               Talk to an Engineer
@@ -246,7 +246,7 @@ export function HomePage() {
             <p className="mt-4 text-brand-100">
               Have a process challenge that cannot be solved with off-the-shelf equipment?
             </p>
-            <Button href="/request-a-quote" variant="inverse" className="mt-6 rounded-full">
+            <Button href="/quote" variant="inverse" className="mt-6 rounded-full">
               Talk to an Engineer
             </Button>
           </div>

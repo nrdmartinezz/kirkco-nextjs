@@ -1,6 +1,11 @@
 import { cache } from 'react';
 import { productCategories, type ProductCategory } from '@/content/product-categories';
+import productsJson from '@/content/products.json';
 import { supabaseAnon } from '@/lib/supabase';
+
+function hasSupabase() {
+  return Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY);
+}
 
 export type { ProductCategory };
 export { productCategories };
@@ -75,7 +80,19 @@ function toCategory(row: CategoryRow): ProductCategory {
   return { slug: row.slug, name: row.name, href: row.href, group: row.group_name };
 }
 
+function productsFromJson(): Product[] {
+  return [...(productsJson as Product[])]
+    .map((product) => ({
+      ...product,
+      tagline: product.tagline || undefined,
+      summary: product.summary || undefined,
+      thin: product.thin || undefined,
+    }))
+    .sort((left, right) => left.title.localeCompare(right.title));
+}
+
 export const getCategories = cache(async () => {
+  if (!hasSupabase()) return productCategories;
   const { data, error } = await supabaseAnon()
     .from('product_categories')
     .select('slug, name, href, group_name, sort')
@@ -85,6 +102,7 @@ export const getCategories = cache(async () => {
 });
 
 export const getProducts = cache(async () => {
+  if (!hasSupabase()) return productsFromJson();
   const { data, error } = await supabaseAnon()
     .from('products')
     .select('slug, title, updated, tagline, summary, image, sections, thin, product_category_links(category_slug, sort)')
@@ -94,6 +112,7 @@ export const getProducts = cache(async () => {
 });
 
 export const getProduct = cache(async (slug: string) => {
+  if (!hasSupabase()) return productsFromJson().find((product) => product.slug === slug);
   const { data, error } = await supabaseAnon()
     .from('products')
     .select('slug, title, updated, tagline, summary, image, sections, thin, product_category_links(category_slug, sort)')

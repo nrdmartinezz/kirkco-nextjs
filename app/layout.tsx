@@ -3,6 +3,7 @@ import { DM_Sans, Inter } from 'next/font/google';
 import { Analytics } from '@/components/analytics/Analytics';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
+import { QuoteProvider } from '@/components/quote/QuoteProvider';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { site } from '@/config/site';
 import { rootMetadata } from '@/lib/seo';
@@ -32,13 +33,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           Skip to content
         </a>
-        <Header />
-        <main id="main" className="flex-1">
-          {children}
-        </main>
-        <Footer />
-        <JsonLd />
-        <Analytics />
+        <QuoteProvider>
+          <Header />
+          <main id="main" className="flex-1">
+            {children}
+          </main>
+          <Footer />
+          <JsonLd />
+          <Analytics />
+        </QuoteProvider>
       </body>
     </html>
   );

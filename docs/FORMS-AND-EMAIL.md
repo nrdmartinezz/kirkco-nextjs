@@ -63,9 +63,37 @@ Expected JSON body:
 | `name`       | yes      |                                            |
 | `email`      | yes      | Validate before using it as a recipient    |
 | `phone`      | no       |                                            |
-| `message`    | yes      |                                            |
+| `message`    | contact / `request-a-quote`: yes. `quote`: no (store `''` when empty) |
+| `payload`    | `quote`: yes | See quote payload below. Other types store `{}`. |
 | `recaptcha`  | when on  | Token from the v3 widget                   |
 | `_gotcha`    | no       | Honeypot. Any value is a bot               |
+
+### Quote payload
+
+`form_type: quote` is the product-basket RFQ on `/quote`. The handler resolves product titles from the catalog and rejects unknown slugs, duplicate slugs, empty baskets, and any `country` field.
+
+```json
+{
+  "lines": [
+    { "slug": "eldo-mix", "qty": 2, "notes": "Prefer the 202 class" }
+  ],
+  "company": {
+    "name": "Acme Coatings",
+    "address": {
+      "street": "100 Plant Rd",
+      "city": "Monroe",
+      "state": "NC",
+      "zip": "28110"
+    }
+  }
+}
+```
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `payload.lines` | yes | 1–25 items. Each has a known `slug`, integer `qty` 1–999, optional `notes`. |
+| `payload.company.name` | yes | |
+| `payload.company.address` | no | All-or-nothing US address: street, city, 50-state + DC `state`, ZIP `12345` or `12345-6789`. Omit or `null` if unused. No country field. |
 
 Return `200` with `{ ok: true }` on success so the client can navigate to
 `/thank-you`. Return `400` for validation and `503` when the service role key
@@ -88,8 +116,8 @@ public phone. Use inline CSS — email clients strip `<style>` blocks inconsiste
 | `form_type` | Page                         |
 | ----------- | ---------------------------- |
 | `contact`   | `app/contact/page.tsx` (`/contact-us` redirects here) |
-| `quote`     | `app/quote/page.tsx`         |
-| `request-a-quote` | `app/request-a-quote/page.tsx` |
+| `quote`     | `app/quote/page.tsx` — product basket, company name, optional US address |
+| `request-a-quote` | Legacy type only. `/request-a-quote` redirects to `/quote`. |
 
 The page posts with `fetch` to `site.formEndpoint`. It does not use a native
 navigation to the API route. On `{ ok: true }`, `router.push('/thank-you')`.
@@ -120,9 +148,9 @@ npm run dev
 ```
 
 Fill `.env.local` with the Supabase vars from `docs/HOSTING.md`. `formEndpoint` is
-`/api/contact`. Submit on `http://localhost:3000/contact`, `/quote`, and
-`/request-a-quote`, and confirm the redirect to `/thank-you` plus a row in
-`submissions`.
+`/api/contact`. Submit on `http://localhost:3000/contact` and `/quote` (add at
+least one product on the quote builder), and confirm the redirect to `/thank-you`
+plus a row in `submissions`. `/request-a-quote` should land on `/quote`.
 
 Mail is not sent yet. Do not log message bodies in production.
 
