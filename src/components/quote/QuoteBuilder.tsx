@@ -14,6 +14,8 @@ import { useQuote } from './QuoteProvider';
 const fieldClass =
   'border-line-base bg-surface-base text-ink-base mt-1 w-full rounded-md border px-3 py-2 font-normal';
 
+const CATALOG_CHUNK = 8;
+
 type QuoteBuilderProps = {
   catalog: QuoteCatalogItem[];
   initialProductSlug?: string;
@@ -23,7 +25,9 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
   const router = useRouter();
   const { lines, ready, add, addIfMissing, setQty, setNotes, remove, clear } = useQuote();
   const addedDeepLink = useRef(false);
+  const canLoadMore = useRef(true);
   const [query, setQuery] = useState('');
+  const [visibleCount, setVisibleCount] = useState(CATALOG_CHUNK);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const [street, setStreet] = useState('');
@@ -38,16 +42,27 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
     addedDeepLink.current = true;
   }, [addIfMissing, catalog, initialProductSlug, ready]);
 
-  const matches = useMemo(() => {
+  const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    const items = needle
-      ? catalog.filter(
-          (product) =>
-            product.title.toLowerCase().includes(needle) || product.tagline?.toLowerCase().includes(needle),
-        )
-      : catalog;
-    return items.slice(0, needle ? 20 : 8);
+    if (!needle) return catalog;
+    return catalog.filter(
+      (product) =>
+        product.title.toLowerCase().includes(needle) || product.tagline?.toLowerCase().includes(needle),
+    );
   }, [catalog, query]);
+
+  const matches = filtered.slice(0, visibleCount);
+
+  function loadMoreIfNeeded(list: HTMLUListElement) {
+    const nearBottom = list.scrollHeight - list.scrollTop - list.clientHeight <= 48;
+    if (!nearBottom) {
+      canLoadMore.current = true;
+      return;
+    }
+    if (!canLoadMore.current || visibleCount >= filtered.length) return;
+    canLoadMore.current = false;
+    setVisibleCount((count) => Math.min(filtered.length, count + CATALOG_CHUNK));
+  }
 
   const addressRequired = addressHasAnyField({ street, city, state, zip });
 
@@ -191,13 +206,17 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
               <input
                 type="search"
                 value={query}
-                onChange={(event) => setQuery(event.target.value)}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  setVisibleCount(CATALOG_CHUNK);
+                  canLoadMore.current = true;
+                }}
                 placeholder="Search by name"
                 className={`${fieldClass} mt-0 pl-9`}
               />
             </span>
           </label>
-          <ul className="mt-4 max-h-80 overflow-y-auto">
+          <ul className="mt-4 max-h-80 overflow-y-auto" onScroll={(event) => loadMoreIfNeeded(event.currentTarget)}>
             {matches.map((product) => {
               const inQuote = lines.some((line) => line.slug === product.slug);
               return (
