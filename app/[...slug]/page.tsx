@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { EquipmentPage } from '@/components/equipment/EquipmentPage';
+import { SingleComponentPage } from '@/components/equipment/SingleComponentPage';
+import { singleComponent } from '@/content/equipment/single-component';
 import { ProductPage } from '@/components/products/ProductPage';
 import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
 import { SimplePage } from '@/components/ui/SimplePage';
@@ -41,6 +43,15 @@ export async function generateMetadata({ params }: CatchAllProps): Promise<Metad
   }
 
   const href = `/${slug.join('/')}`;
+  if (href === singleComponent.href) {
+    return buildMetadata({
+      title: singleComponent.title,
+      description: singleComponent.description,
+      titleExact: true,
+      path: singleComponent.href,
+    });
+  }
+
   const equipment = await getEquipmentPage(href);
   if (equipment) {
     return buildMetadata({
@@ -63,6 +74,16 @@ export default async function CatchAllPage({ params }: CatchAllProps) {
   }
 
   const href = `/${slug.join('/')}`;
+  if (href === singleComponent.href) {
+    const [categories, products] = await Promise.all([getCategories(), getProducts()]);
+    return (
+      <>
+        <RememberEquipmentPage href={singleComponent.href} />
+        <SingleComponentPage page={singleComponent} categories={categories} products={products} />
+      </>
+    );
+  }
+
   const equipment = await getEquipmentPage(href);
   if (equipment) {
     const [categories, studies] = await Promise.all([getCategories(), getApplications(equipment.applicationIds)]);
