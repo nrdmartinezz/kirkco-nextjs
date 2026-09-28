@@ -247,7 +247,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
 
       <div className="lg:sticky lg:top-28">
         <Heading level={2} size="md">
-          Contact
+          Your Information (required)
         </Heading>
         {site.formEndpoint ? (
           <form onSubmit={onSubmit} className="relative mt-4 flex flex-col gap-4">
@@ -270,7 +270,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
               <input name="phone" type="tel" autoComplete="tel" className={fieldClass} />
             </label>
             <label className="text-brand-700 text-sm font-semibold">
-              Company
+              Company (optional)
               <input name="company" required autoComplete="organization" className={fieldClass} />
             </label>
             <fieldset className="flex flex-col gap-4">

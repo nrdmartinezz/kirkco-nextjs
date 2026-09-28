@@ -34,10 +34,12 @@ export default async function QuotePage({
   return (
     <Section>
       <Container>
-        <Heading level={1}>Get a Quote</Heading>
-        <p className="text-ink-muted mt-4 max-w-xl">
-          Add the equipment you need, then tell us about the material, the process, and what the system should do.
-        </p>
+        <div>
+          <Heading level={1}>Get a Quote</Heading>
+          <p className="text-ink-muted mt-2 max-w-xl">
+            Add the equipment you need, then tell us about the material, the process, and what the system should do.
+          </p>
+        </div>
         <QuoteBuilder catalog={catalog} initialProductSlug={firstParam(params.product)} />
       </Container>
     </Section>
