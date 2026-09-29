@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { EquipmentPage } from '@/components/equipment/EquipmentPage';
-import { SingleComponentPage } from '@/components/equipment/SingleComponentPage';
-import { singleComponent } from '@/content/equipment/single-component';
+import { EquipmentSubcategoryPage } from '@/components/equipment/EquipmentSubcategoryPage';
+import { getEquipmentSubcategoryPage } from '@/lib/equipment-content';
 import { ProductPage } from '@/components/products/ProductPage';
 import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
 import { SimplePage } from '@/components/ui/SimplePage';
@@ -43,12 +43,13 @@ export async function generateMetadata({ params }: CatchAllProps): Promise<Metad
   }
 
   const href = `/${slug.join('/')}`;
-  if (href === singleComponent.href) {
+  const subcategory = getEquipmentSubcategoryPage(href);
+  if (subcategory) {
     return buildMetadata({
-      title: singleComponent.title,
-      description: singleComponent.description,
+      title: subcategory.title,
+      description: subcategory.description,
       titleExact: true,
-      path: singleComponent.href,
+      path: subcategory.href,
     });
   }
 
@@ -74,12 +75,17 @@ export default async function CatchAllPage({ params }: CatchAllProps) {
   }
 
   const href = `/${slug.join('/')}`;
-  if (href === singleComponent.href) {
-    const [categories, products] = await Promise.all([getCategories(), getProducts()]);
+  const subcategory = getEquipmentSubcategoryPage(href);
+  if (subcategory) {
+    const [categories, products, studies] = await Promise.all([
+      getCategories(),
+      getProducts(),
+      getApplications(subcategory.applicationIds ?? []),
+    ]);
     return (
       <>
-        <RememberEquipmentPage href={singleComponent.href} />
-        <SingleComponentPage page={singleComponent} categories={categories} products={products} />
+        <RememberEquipmentPage href={subcategory.href} />
+        <EquipmentSubcategoryPage page={subcategory} categories={categories} products={products} studies={studies} />
       </>
     );
   }

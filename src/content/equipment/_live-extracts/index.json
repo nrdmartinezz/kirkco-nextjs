@@ -1,0 +1,147 @@
+[
+  {
+    "path": "/equipment-options/adhesives-sealants/two-component/",
+    "file": "equipment-options__adhesives-sealants__two-component.txt",
+    "title": "Two-Component Adhesive Metering &amp; Mixing Systems"
+  },
+  {
+    "path": "/equipment-options/adhesives-sealants/putty-paste/",
+    "file": "equipment-options__adhesives-sealants__putty-paste.txt",
+    "title": "High-Viscosity Putty &amp; Paste Dispensing Systems"
+  },
+  {
+    "path": "/equipment-options/adhesives-sealants/smc-imc-molding/",
+    "file": "equipment-options__adhesives-sealants__smc-imc-molding.txt",
+    "title": "SMC Molding &amp; In-Mold Coating (IMC) Solutions"
+  },
+  {
+    "path": "/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste/",
+    "file": "equipment-options__adhesives-sealants__tooling-paste-seamless-modeling-paste.txt",
+    "title": "Tooling Paste &amp; Seamless Modeling Paste Systems"
+  },
+  {
+    "path": "/equipment-options/composites/",
+    "file": "equipment-options__composites.txt",
+    "title": "Composites Application Systems"
+  },
+  {
+    "path": "/equipment-options/composites/closed-mold-technology/",
+    "file": "equipment-options__composites__closed-mold-technology.txt",
+    "title": "Closed Mold Technology"
+  },
+  {
+    "path": "/equipment-options/composites/filament-winding/",
+    "file": "equipment-options__composites__filament-winding.txt",
+    "title": "Filament Winding"
+  },
+  {
+    "path": "/equipment-options/composites/open-mold-technology/",
+    "file": "equipment-options__composites__open-mold-technology.txt",
+    "title": "Open Mold Technology"
+  },
+  {
+    "path": "/equipment-options/composites/pull-winding/",
+    "file": "equipment-options__composites__pull-winding.txt",
+    "title": "Pull Winding"
+  },
+  {
+    "path": "/equipment-options/composites/pultrusion/",
+    "file": "equipment-options__composites__pultrusion.txt",
+    "title": "Pultrusion"
+  },
+  {
+    "path": "/equipment-options/lubrication/",
+    "file": "equipment-options__lubrication.txt",
+    "title": "Precision Lubrication &amp; Grease Metering Systems"
+  },
+  {
+    "path": "/equipment-options/lubrication/metering/",
+    "file": "equipment-options__lubrication__metering.txt",
+    "title": "Lubrication System Metering"
+  },
+  {
+    "path": "/equipment-options/lubrication/pressure-control/",
+    "file": "equipment-options__lubrication__pressure-control.txt",
+    "title": "Pressure Control"
+  },
+  {
+    "path": "/equipment-options/lubrication/flow-regulation/",
+    "file": "equipment-options__lubrication__flow-regulation.txt",
+    "title": "Flow Regulation"
+  },
+  {
+    "path": "/equipment-options/lubrication/dispensing/",
+    "file": "equipment-options__lubrication__dispensing.txt",
+    "title": "Industrial Lubrication Dispensing Systems"
+  },
+  {
+    "path": "/equipment-options/lubrication/feeding-and-supply/",
+    "file": "equipment-options__lubrication__feeding-and-supply.txt",
+    "title": "Lubricant Feeding and Supply Systems"
+  },
+  {
+    "path": "/equipment-options/paint-coatings/",
+    "file": "equipment-options__paint-coatings.txt",
+    "title": "Paint &#038; Coatings"
+  },
+  {
+    "path": "/equipment-options/paint-coatings/protective-coatings/",
+    "file": "equipment-options__paint-coatings__protective-coatings.txt",
+    "title": "Protective Coatings"
+  },
+  {
+    "path": "/equipment-options/paint-coatings/specialty-finishes/",
+    "file": "equipment-options__paint-coatings__specialty-finishes.txt",
+    "title": "Specialty Finishes"
+  },
+  {
+    "path": "/equipment-options/paint-coatings/spray-systems/",
+    "file": "equipment-options__paint-coatings__spray-systems.txt",
+    "title": "Spray Systems"
+  },
+  {
+    "path": "/equipment-options/process-control/",
+    "file": "equipment-options__process-control.txt",
+    "title": "Process Control"
+  },
+  {
+    "path": "/equipment-options/process-control/integration-automation/",
+    "file": "equipment-options__process-control__integration-automation.txt",
+    "title": "Integration / Automation"
+  },
+  {
+    "path": "/equipment-options/process-control/monitoring-analytics/",
+    "file": "equipment-options__process-control__monitoring-analytics.txt",
+    "title": "Monitoring / Analytics"
+  },
+  {
+    "path": "/equipment-options/process-control/process-control-computer/",
+    "file": "equipment-options__process-control__process-control-computer.txt",
+    "title": "Process Control Computer"
+  },
+  {
+    "path": "/equipment-options/polyurethane-processing-equipment/",
+    "file": "equipment-options__polyurethane-processing-equipment.txt",
+    "title": "Industrial Polyurethane Processing Equipment"
+  },
+  {
+    "path": "/equipment-options/polyurethane-processing-equipment/high-pressure-metering/",
+    "file": "equipment-options__polyurethane-processing-equipment__high-pressure-metering.txt",
+    "title": "High-Pressure Polyurethane Metering Systems"
+  },
+  {
+    "path": "/equipment-options/polyurethane-processing-equipment/low-pressure-metering/",
+    "file": "equipment-options__polyurethane-processing-equipment__low-pressure-metering.txt",
+    "title": "Industrial Low Pressure Metering Polyurethane Equipment"
+  },
+  {
+    "path": "/equipment-options/polyurethane-processing-equipment/pentane-capable-metering-machines/",
+    "file": "equipment-options__polyurethane-processing-equipment__pentane-capable-metering-machines.txt",
+    "title": "Industrial Pentane Capable Metering Machines"
+  },
+  {
+    "path": "/equipment-options/polyurethane-processing-equipment/urethane-foam-mixing-guns/",
+    "file": "equipment-options__polyurethane-processing-equipment__urethane-foam-mixing-guns.txt",
+    "title": "Urethane Foam Mixing Guns"
+  }
+]

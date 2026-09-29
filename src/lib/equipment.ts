@@ -1,5 +1,6 @@
 import { cache } from 'react';
 import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealants';
+import { getLocalEquipmentPage } from '@/lib/equipment-content';
 import { supabaseAnon } from '@/lib/supabase';
 
 type EquipmentRow = {
@@ -47,6 +48,9 @@ function toPage(row: EquipmentRow): EquipmentPageContent {
 }
 
 export const getEquipmentPage = cache(async (href: string) => {
+  const local = getLocalEquipmentPage(href);
+  if (local) return local;
+
   const { data, error } = await supabaseAnon().from('equipment_pages').select('*').eq('href', href).maybeSingle();
   if (error) throw new Error(error.message);
   return data ? toPage(data as EquipmentRow) : undefined;

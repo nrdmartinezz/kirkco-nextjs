@@ -1,0 +1,492 @@
+{
+  "/equipment-options/process-control": {
+    "href": "/equipment-options/process-control",
+    "title": "Process Control",
+    "description": "Automation & Controls governs the intelligent orchestration of metering, mixing, dispensing, bulk storage, composite processing, coating systems, and material handling platforms. These systems coordinate the core technologies that power mod",
+    "breadcrumb": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Equipment Options",
+        "href": "/equipment-options"
+      },
+      {
+        "label": "Process Control"
+      }
+    ],
+    "heroImage": "/images/equipment-hero.webp",
+    "heroAlt": "Process Control equipment on a production line",
+    "overviewImage": "/images/electronics.jpg",
+    "overviewImageAlt": "Process monitoring and control equipment",
+    "overviewHeading": "Process Control Systems for Material Dispensing",
+    "overview": [
+      "Automation & Controls governs the intelligent orchestration of metering, mixing, dispensing, bulk storage, composite processing, coating systems, and material handling platforms. These systems coordinate the core technologies that power modern industrial production.",
+      "Automation architecture establishes process control over PLC systems, servo motion platforms, human-machine interfaces, industrial data acquisition, safety interlocks, and full production line synchronization.",
+      "As the operational backbone for advanced manufacturing systems, automation ensures stable process execution, repeatability, traceability, and scalable system expansion across complex industrial environments."
+    ],
+    "systems": [
+      {
+        "title": "Integration / Automation",
+        "description": "PLC integration and automation for dispensing lines",
+        "href": "/equipment-options/process-control/integration-automation",
+        "categorySlug": "integration-automation"
+      },
+      {
+        "title": "Monitoring / Analytics",
+        "description": "Sensors and analytics for process verification",
+        "href": "/equipment-options/process-control/monitoring-analytics",
+        "categorySlug": "monitoring-analytics"
+      },
+      {
+        "title": "Process Control Computer",
+        "description": "Process control computers and HMI platforms",
+        "href": "/equipment-options/process-control/process-control-computer",
+        "categorySlug": "process-control-computer"
+      }
+    ],
+    "engagementHeading": "Talk to an Engineer",
+    "engagementBody": "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process.",
+    "platformsHeading": "Technical Platforms",
+    "platforms": [
+      {
+        "heading": "Process Control Systems for Material Dispensing",
+        "items": [
+          "PLC-based sequencing platforms",
+          "Distributed I/O networks",
+          "Ethernet/IP and industrial communication protocols",
+          "Safety-rated PLC integration",
+          "Redundant control strategies for mission‑critical systems"
+        ]
+      },
+      {
+        "heading": "Motion & Servo Integration",
+        "items": [
+          "Servo-driven piston metering synchronization",
+          "CNC gantry positioning systems",
+          "Robotic cell coordination",
+          "Multi-axis interpolation control",
+          "Closed-loop encoder feedback"
+        ]
+      },
+      {
+        "heading": "Monitoring, Analytics & Data Logging",
+        "items": [
+          "Batch data logging",
+          "Ratio deviation recording",
+          "Temperature and pressure trending",
+          "Material consumption tracking",
+          "Alarm and fault tracking",
+          "Historical process analytics"
+        ]
+      }
+    ],
+    "architectures": [],
+    "applicationIds": [
+      "equipment-options-process-control"
+    ],
+    "closing": "Precision Metering System for Accuracy in your Process"
+  },
+  "/equipment-options/paint-coatings": {
+    "href": "/equipment-options/paint-coatings",
+    "title": "Paint & Coatings",
+    "description": "Whether protecting infrastructure, applying decorative finishes, or automating high-speed production lines, this organized structure highlights strategic solutions for each major coating requirement.",
+    "breadcrumb": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Equipment Options",
+        "href": "/equipment-options"
+      },
+      {
+        "label": "Paint & Coatings"
+      }
+    ],
+    "heroImage": "/images/equipment-hero.webp",
+    "heroAlt": "Paint & Coatings equipment on a production line",
+    "overviewImage": "/images/automotive.jpg",
+    "overviewImageAlt": "Coated automotive manufacturing application",
+    "overviewHeading": "Why Choose Kirkco Paint & Coatings Solutions",
+    "overview": [
+      "Whether protecting infrastructure, applying decorative finishes, or automating high-speed production lines, this organized structure highlights strategic solutions for each major coating requirement."
+    ],
+    "systems": [
+      {
+        "title": "Protective Coatings",
+        "description": "Protective coating application systems",
+        "href": "/equipment-options/paint-coatings/protective-coatings",
+        "categorySlug": "protective-coatings"
+      },
+      {
+        "title": "Specialty Finishes",
+        "description": "Specialty finish and coating platforms",
+        "href": "/equipment-options/paint-coatings/specialty-finishes",
+        "categorySlug": "specialty-finishes"
+      },
+      {
+        "title": "Spray Systems",
+        "description": "Manual and automatic spray application systems",
+        "href": "/equipment-options/paint-coatings/spray-systems",
+        "categorySlug": "spray-systems"
+      }
+    ],
+    "engagementHeading": "Talk to an Engineer",
+    "engagementBody": "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process.",
+    "platformsHeading": "Technical Platforms",
+    "platforms": [
+      {
+        "heading": "Integration & Support Across Categories",
+        "items": [
+          "Complete material supply solutions (pumps, tanks, mix systems)",
+          "Application-matched spray equipment (electrostatic, airless, air-assisted)",
+          "Turnkey system design, installation, and service support",
+          "Customization and engineering support for unique production requirements"
+        ]
+      },
+      {
+        "heading": "Why Choose Kirkco Paint & Coatings Solutions",
+        "items": [
+          "Achieve consistent coating quality across all substrates",
+          "Scale from manual to fully automated processes",
+          "Integrate material handling with the application and finishing",
+          "Reduce operating and maintenance costs with efficient systems"
+        ]
+      }
+    ],
+    "architectures": [],
+    "applicationIds": [
+      "equipment-options-paint-coatings"
+    ],
+    "closing": "Precision Metering System for Accuracy in your Process"
+  },
+  "/equipment-options/polyurethane-processing-equipment": {
+    "href": "/equipment-options/polyurethane-processing-equipment",
+    "title": "Industrial Polyurethane Processing Equipment",
+    "description": "At Kirkco Corporation, we engineer specialized Polyurethane Processing Equipment designed to handle, meter, mix, and dispense two-component polyurethane materials with uncompromising precision. From rigid insulating foams and structural pol",
+    "breadcrumb": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Equipment Options",
+        "href": "/equipment-options"
+      },
+      {
+        "label": "Polyurethane"
+      }
+    ],
+    "heroImage": "/images/equipment-hero.webp",
+    "heroAlt": "Polyurethane equipment on a production line",
+    "overviewImage": "/images/equipment/polyurethane-overview.png",
+    "overviewImageAlt": "Polyurethane batch processing equipment",
+    "overviewHeading": "Industrial Polyurethane Processing Equipment for Precise Material Handling and Dispensing",
+    "overview": [
+      "At Kirkco Corporation, we engineer specialized Polyurethane Processing Equipment designed to handle, meter, mix, and dispense two-component polyurethane materials with uncompromising precision. From rigid insulating foams and structural polymers to flexible elastomers and sealants, our systems deliver accurate ratio control, consistent flow, and repeatable performance across your entire production floor. Whether you require small-batch discontinuous molding or fully automated, high-pressure continuous manufacturing lines, Kirkco provides the architecture to stabilize your throughput, reduce material waste, and ensure the highest quality outcomes."
+    ],
+    "systems": [
+      {
+        "title": "High Pressure Metering",
+        "description": "High-pressure polyurethane metering and mix heads",
+        "href": "/equipment-options/polyurethane-processing-equipment/high-pressure-metering",
+        "categorySlug": "high-pressure-metering"
+      },
+      {
+        "title": "Low Pressure Metering",
+        "description": "Low-pressure foam and polyurethane metering",
+        "href": "/equipment-options/polyurethane-processing-equipment/low-pressure-metering",
+        "categorySlug": "low-pressure-metering"
+      },
+      {
+        "title": "Pentane Capable Metering Machines",
+        "description": "Pentane-capable metering for foam applications",
+        "href": "/equipment-options/polyurethane-processing-equipment/pentane-capable-metering-machines",
+        "categorySlug": "pentane-capable-metering-machines"
+      },
+      {
+        "title": "Urethane Foam Mixing Guns",
+        "description": "Mixing guns for urethane foam processing",
+        "href": "/equipment-options/polyurethane-processing-equipment/urethane-foam-mixing-guns",
+        "categorySlug": "urethane-foam-mixing-guns"
+      }
+    ],
+    "engagementHeading": "Talk to an Engineer",
+    "engagementBody": "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process.",
+    "platformsHeading": "Technical Platforms",
+    "platforms": [],
+    "architectures": [],
+    "applicationIds": [
+      "equipment-options-polyurethane-processing-equipment"
+    ],
+    "closing": "Precision Metering System for Accuracy in your Process"
+  },
+  "/equipment-options/lubrication": {
+    "href": "/equipment-options/lubrication",
+    "title": "Precision Lubrication & Grease Metering Systems",
+    "description": "Lubrication and grease metering systems manage the handling, dosing, and automated delivery of high-viscosity lubricants used in modern industrial machinery. These systems ensure that equipment receives consistent lubrication at the correct",
+    "breadcrumb": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Equipment Options",
+        "href": "/equipment-options"
+      },
+      {
+        "label": "Lubrication"
+      }
+    ],
+    "heroImage": "/images/equipment-hero.webp",
+    "heroAlt": "Lubrication equipment on a production line",
+    "overviewImage": "/images/equipment/lubrication-overview.jpg",
+    "overviewImageAlt": "Grease application on industrial equipment",
+    "overviewHeading": "Precision Lubrication Delivery for Industrial Equipment",
+    "overview": [
+      "Lubrication and grease metering systems manage the handling, dosing, and automated delivery of high-viscosity lubricants used in modern industrial machinery.  These systems ensure that equipment receives consistent lubrication at the correct volume and pressure, improving operational reliability, reducing wear, and extending equipment lifespan.",
+      "Advanced lubrication infrastructure governs the movement of grease and heavy lubricants from bulk storage through pumping systems, metering valves, and automated delivery networks.  These architectures are essential for both precision mechanical systems and large-scale industrial equipment operating in demanding environments.  From automated manufacturing lines to energy infrastructure and heavy equipment operations, reliable lubrication delivery is essential for maintaining continuous system performance."
+    ],
+    "systems": [
+      {
+        "title": "Metering",
+        "description": "Precision lubrication metering valves and controls",
+        "href": "/equipment-options/lubrication/metering",
+        "categorySlug": "metering"
+      },
+      {
+        "title": "Pressure Control",
+        "description": "Regulators and pressure management for lubricant systems",
+        "href": "/equipment-options/lubrication/pressure-control",
+        "categorySlug": "pressure-control"
+      },
+      {
+        "title": "Flow Regulation",
+        "description": "Flow meters and regulating valves for stable delivery",
+        "href": "/equipment-options/lubrication/flow-regulation",
+        "categorySlug": "flow-regulation"
+      },
+      {
+        "title": "Dispensing",
+        "description": "Dispensing valves and application hardware",
+        "href": "/equipment-options/lubrication/dispensing",
+        "categorySlug": "dispensing"
+      },
+      {
+        "title": "Feeding and Supply",
+        "description": "Pumps, vessels, and supply packages",
+        "href": "/equipment-options/lubrication/feeding-and-supply",
+        "categorySlug": "feeding-and-supply"
+      }
+    ],
+    "engagementHeading": "Talk to an Engineer",
+    "engagementBody": "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process.",
+    "platformsHeading": "Technical Platforms",
+    "platforms": [
+      {
+        "heading": "Design Around Grease Rheology and Operating Conditions",
+        "items": [
+          "Lubricant type - Determines compatibility, supply method, seals, filters, valves, and cleaning expectations.",
+          "Viscosity and rheology - Affects pump selection, pressure requirements, flow stability, and response time.",
+          "Filler or additive loading - Can affect wear, filtration, settling, shear sensitivity, and delivery behavior.",
+          "Container format - Determines drum, tote, reservoir, follower-plate, and replenishment requirements.",
+          "Lubrication frequency - Helps define time-based, cycle-based, impulse, or condition-based control.",
+          "Supply distance and elevation - Influences pressure loss, line sizing, pump duty, and response at the point of use.",
+          "Required volume or shot size - Determines metering architecture, resolution, repeatability, and validation needs."
+        ]
+      },
+      {
+        "heading": "Lubrication & Grease Metering Systems",
+        "items": [
+          "Required volumetric accuracy and repeatability",
+          "Lubricant type (grease vs oil)",
+          "Application tolerance to variation",
+          "Cycle-based or condition-based lubrication strategy"
+        ]
+      }
+    ],
+    "architectures": [],
+    "applicationIds": [
+      "equipment-options-lubrication"
+    ],
+    "closing": "Precision Metering System for Accuracy in your Process"
+  },
+  "/equipment-options/composites": {
+    "href": "/equipment-options/composites",
+    "title": "Composites Application Systems",
+    "description": "Composite Application Systems govern the engineered processing of fiber‑reinforced materials, including resin infusion systems, structural composite panels , encapsulation platforms , filament winding, pultrusion, and closed‑mold manufactur",
+    "breadcrumb": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Equipment Options",
+        "href": "/equipment-options"
+      },
+      {
+        "label": "Composites"
+      }
+    ],
+    "heroImage": "/images/equipment-hero.webp",
+    "heroAlt": "Composites equipment on a production line",
+    "overviewImage": "/images/structural-panels.jpg",
+    "overviewImageAlt": "Structural composite panel manufacturing",
+    "overviewHeading": "Comprehensive Composite Manufacturing Solutions for Closed Mold, Filament Winding, Pultrusion, and Open Mold Processes",
+    "overview": [
+      "Composite Application Systems govern the engineered processing of fiber‑reinforced materials, including resin infusion systems, structural composite panels , encapsulation platforms , filament winding, pultrusion, and closed‑mold manufacturing architectures.",
+      "These systems establish process control over resin delivery, fiber impregnation, metering accuracy, mixing integrity, automation integration, and full production line architecture.",
+      "Composite manufacturing requires precise governance of resin delivery, fiber wet‑out, bond integrity, and cure kinetics, all of which directly influence load‑bearing performance and long‑term durability.",
+      "Composite processing frequently intersects with polyurethane foam systems , adhesive technologies, bulk chemical infrastructure , marine fabrication , aerospace structures , transportation lightweighting, and energy infrastructure applications."
+    ],
+    "systems": [
+      {
+        "title": "Closed Mold Technology",
+        "description": "RTM, VARTM, and closed-mold resin infusion architectures",
+        "href": "/equipment-options/composites/closed-mold-technology",
+        "categorySlug": "closed-mold-technology"
+      },
+      {
+        "title": "Filament Winding",
+        "description": "Controlled fiber wet-out and resin delivery for wound structures",
+        "href": "/equipment-options/composites/filament-winding",
+        "categorySlug": "filament-winding"
+      },
+      {
+        "title": "Open Mold Technology",
+        "description": "Spray-up, chopper, and open mold lamination systems",
+        "href": "/equipment-options/composites/open-mold-technology",
+        "categorySlug": "open-mold-technology"
+      },
+      {
+        "title": "Pull Winding",
+        "description": "Pull-winding process equipment and resin metering",
+        "href": "/equipment-options/composites/pull-winding",
+        "categorySlug": "pull-winding"
+      },
+      {
+        "title": "Pultrusion",
+        "description": "Continuous pultrusion resin delivery and process control",
+        "href": "/equipment-options/composites/pultrusion",
+        "categorySlug": "pultrusion"
+      }
+    ],
+    "engagementHeading": "Talk to an Engineer",
+    "engagementBody": "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process.",
+    "platformsHeading": "Technical Platforms",
+    "platforms": [
+      {
+        "heading": "Composite Manufacturing Methods Supported",
+        "items": [
+          "Resin Transfer Molding (RTM)",
+          "Vacuum Assisted Resin Transfer Molding (VARTM)",
+          "Closed‑Mold Resin Infusion",
+          "Filament Winding Systems",
+          "Pultrusion Processing",
+          "Open Mold Lamination and Spray‑Up",
+          "Structural Sandwich Panel Manufacturing",
+          "Structural Foam Core Integration",
+          "Encapsulation of electrical and structural components"
+        ]
+      },
+      {
+        "heading": "Composite Process Doctrine",
+        "items": [
+          "Resin viscosity stability",
+          "Fiber impregnation efficiency",
+          "Vacuum integrity",
+          "Cure kinetics and gel profile",
+          "Temperature‑controlled exotherm management",
+          "Air void mitigation",
+          "Bond‑line integrity control"
+        ]
+      },
+      {
+        "heading": "Resin Metering & Delivery Architecture",
+        "items": [
+          "Precision gear metering pumps",
+          "Servo‑driven piston metering assemblies",
+          "Progressive cavity pumps for filled resin systems",
+          "Coriolis mass‑flow monitoring is required where applicable",
+          "Heated hose assemblies",
+          "Recirculation stabilization loops",
+          "Static and dynamic mixing heads"
+        ]
+      }
+    ],
+    "architectures": [],
+    "applicationIds": [
+      "equipment-options-composites"
+    ],
+    "closing": "Precision Metering System for Accuracy in your Process"
+  },
+  "/equipment-options/adhesives-sealants": {
+    "href": "/equipment-options/adhesives-sealants",
+    "title": "Adhesives & Sealants",
+    "description": "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process.",
+    "breadcrumb": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Equipment Options",
+        "href": "/equipment-options"
+      },
+      {
+        "label": "Adhesives & Sealants"
+      }
+    ],
+    "heroImage": "/images/equipment-hero.webp",
+    "heroAlt": "Adhesives & Sealants equipment on a production line",
+    "overviewImage": "/images/equipment/adhesives-overview.jpg",
+    "overviewImageAlt": "Adhesive bonding on a manufactured assembly",
+    "overviewHeading": "Precision Metering, Mixing, and Structural Bonding Automation",
+    "overview": [
+      "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process."
+    ],
+    "systems": [
+      {
+        "title": "Single Component Systems",
+        "description": "Dispensing valves, metering valves, pump & pressure packages for 1K adhesives",
+        "href": "/equipment-options/adhesives-sealants/single-component",
+        "categorySlug": "single-component"
+      },
+      {
+        "title": "Two Component Systems (2K)",
+        "description": "Gear metering, piston metering, shot metering, mixing valves, LSR processing",
+        "href": "/equipment-options/adhesives-sealants/two-component",
+        "categorySlug": "two-component"
+      },
+      {
+        "title": "Tooling Paste & Seamless Molding",
+        "description": "Eldo-Mix 401T, GP 401 TPD for precision tooling and modeling applications",
+        "href": "/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste",
+        "categorySlug": "tooling-paste"
+      },
+      {
+        "title": "SMC/IMC Molding",
+        "description": "IMC Coatec metering systems for sheet molding and in-mold coating applications",
+        "href": "/equipment-options/adhesives-sealants/smc-imc-molding",
+        "categorySlug": "smc-imc-molding"
+      },
+      {
+        "title": "Putty & Paste Systems",
+        "description": "GP 401 APD, CF Versa, and GP 401 TPD for high-viscosity paste dispensing",
+        "href": "/equipment-options/adhesives-sealants/putty-paste",
+        "categorySlug": "putty-paste"
+      }
+    ],
+    "engagementHeading": "Talk to an Engineer",
+    "engagementBody": "Kirkco supports confidential engineering engagements under NDA. Discuss your application requirements with our team and receive a system architecture tailored to your process.",
+    "platformsHeading": "Technical Platforms",
+    "platforms": [],
+    "architectures": [],
+    "applicationIds": [
+      "equipment-options-adhesives-sealants"
+    ],
+    "closing": "Precision Metering System for Accuracy in your Process"
+  }
+}

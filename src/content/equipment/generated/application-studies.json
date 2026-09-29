@@ -1,0 +1,669 @@
+[
+  {
+    "id": "equipment-options-process-control",
+    "title": "Process Control Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Engineering Industrial Automation Systems",
+        "paragraphs": [
+          "Industrial automation enables manufacturers to scale production while maintaining strict process control and quality assurance.",
+          "Advanced automation and control systems combine PLC architecture, motion control, data monitoring, and safety governance to create intelligent manufacturing environments capable of supporting complex industrial processes.",
+          "Contact Us To Discuss Process Control! Process Control Computer Monitoring & Analytics Integration & Automation Control & Interface Systems Automated Metering & Dispensing Control Sensor Integration & Feedback Loops Control Architecture Modern industrial automation systems rely on robust control architectures capable of coordinating multiple processing platforms simultaneously.",
+          "Core control frameworks typically include:",
+          "Control architecture must be designed for modular expansion, remote diagnostics, and long-term lifecycle maintainability."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
+        ]
+      },
+      {
+        "heading": "Material & Chemistry Considerations",
+        "paragraphs": [
+          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
+        ]
+      },
+      {
+        "heading": "Automation & Controls",
+        "paragraphs": [
+          "Automation synchronizes motion control, metering, and validation checkpoints, providing traceability."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-paint-coatings",
+    "title": "Paint & Coatings Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Market & Performance Drivers",
+        "paragraphs": [
+          "Direct glazing applications demand high cosmetic quality, structural integrity, and long-term environmental resistance. Manual or semi-manual glazing introduces variability in bead placement and thickness, leading to rework, leaks, or cosmetic defects. An automated architecture is required to ensure repeatable quality at production scale."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Applications require controlled dispensing of single- or two-component glazing adhesives and sealants with accurate volumetric delivery, stable bead profile, and clean cutoff. Processes may include windshield installation, panel glazing, and transparent enclosure sealing."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The automated glazing platform integrates positive-displacement metering with robotic or gantry-based motion systems. Static or dynamic mixing solutions are selected based on material chemistry, while application-specific dispense valves ensure consistent bead formation during continuous motion."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC- and robot-integrated controls manage dispense synchronization, bead start/stop logic, ratio control where applicable, and process interlocks. Validation procedures confirm bead consistency, adhesion performance, and repeatability across production cycles."
+        ]
+      },
+      {
+        "heading": "Adhesives & Sealants Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Adhesives & Sealants Quality Framework, which standardizes dispense accuracy, bead geometry control, and validation practices across automated bonding and sealing systems."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a dynamic mixing retrofit architecture to modernize glass façade sealing and bonding operations, reducing operating costs and material waste."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Add-on dynamic mixer integrated into existing sealing and bonding lines."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-polyurethane-processing-equipment",
+    "title": "Polyurethane Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Critical applications require accurate volumetric dispensing of single-component adhesives with repeatable bead width, precise placement, and predictable cure behavior. Processes may include component bonding, gasket forming, seam sealing, and surface coating in automated or semi-automated cells. Our systems accommodate a wide range of substrates—including metal skins, composite panels, and internal stiffeners—without squeeze-out or void formation."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-lubrication",
+    "title": "Lubrication Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a lubrication quality framework to ensure repeatable, contamination-controlled, and volume-accurate lubrication across precision mechanical systems. This architecture elevates lubrication from a maintenance task to a controlled manufacturing and lifecycle process aligned with reliability, uptime, and asset protection objectives."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The lubrication process required precise volumetric delivery of grease or oil at defined intervals and locations. Requirements included repeatable shot accuracy, clean material handling, contamination prevention, and compatibility with a range of viscosities and lubrication points."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The lubrication platform is based on centralized or distributed metering systems utilizing precision pumps and metering valves. Bulk material supply, short delivery paths, and controlled dispense logic ensure consistent lubrication volumes while minimizing waste and environmental exposure."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage lubrication timing, volume, and sequence. Validation procedures confirm delivered lubricant volume, cycle completion, and system readiness, ensuring repeatable lubrication performance across assemblies and operating conditions."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation of the lubrication quality framework reduced bearing and actuator failures, stabilized equipment performance, and improved overall system uptime. Lubrication variability was eliminated as a root cause of premature wear."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-composites",
+    "title": "Composites Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Market & Structural Drivers",
+        "paragraphs": [
+          "Composite manufacturers operate in environments demanding lightweight construction, high strength-to-weight ratios, corrosion resistance, and vibration dampening. Variability in resin delivery, impregnation quality, bonding integrity, or cure behavior directly impacts structural performance and lifecycle reliability."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Composite application systems integrate precision resin metering, controlled injection or infusion delivery, vacuum management, and application-specific tooling. Structural bonding systems incorporate accurate adhesive or resin dispense, fixturing, and controlled cure environments to ensure repeatable load-bearing performance."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based and process-integrated control architectures manage resin flow rates, injection pressures, vacuum levels, and cure timing. Validation procedures confirm fiber impregnation quality, void content control, bond-line consistency, and structural repeatability."
+        ]
+      },
+      {
+        "heading": "Governed Applications",
+        "paragraphs": [
+          "This framework governs RTM and infusion systems, structural composite panel assemblies, vibration- and damping-composite systems, and marine structural composite components, including fenders, bumpers, and hull-adjacent structures."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Framework-driven implementations improve structural consistency, reduce rework, and support reliable composite performance under mechanical, thermal, and environmental loading."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports scalability from prototype and pilot production to full-scale manufacturing, accommodating changes in resin chemistry, fiber architecture, and automation level without redesign of the core system."
+        ]
+      },
+      {
+        "heading": "Relationship to Other Quality Frameworks",
+        "paragraphs": [
+          "The Composite Application Systems Quality Framework operates adjacent to Kirkco’s Adhesives & Sealants and Polyurethane Foam Systems frameworks. Encapsulation and lubrication processes are explicitly excluded unless required as secondary supporting functions."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a Marine Composite Systems Quality Framework to govern the design, manufacture, and surface engineering of composite structures deployed in harsh marine environments. This authority framework consolidates structural composites, filament winding, in-mold coating (IMC) , and gelcoat processes into a unified system architecture optimized for corrosion resistance, fatigue durability, and long-term environmental exposure."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-adhesives-sealants",
+    "title": "Adhesives & Sealants Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Market & Performance Drivers",
+        "paragraphs": [
+          "Manufacturers rely on adhesive and sealant systems to provide structural integrity, environmental sealing, and protection of sensitive components. Variability in manual application, cure conditions, and material handling introduces risk to product performance, warranty exposure, and production yield. A standardized application architecture is required to ensure consistent outcomes."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Adhesive and sealant applications require controlled dispensing with repeatable bead geometry, accurate volumetric delivery, and predictable cure behavior. The framework supports single- and multi-component materials, temperature-conditioned supply, and clean cutoff at the point of application."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The framework governs precision metering, mixing, and dispensing platforms configured for adhesives and sealants. Architectures may include piston, gear, or progressive cavity metering, with static or dynamic mixing and application-specific dispense valves."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage dispense volume, ratio (where applicable), bead placement, and process interlocks. Validation confirms bond-line consistency, adhesion performance, and repeatability across production runs."
+        ]
+      },
+      {
+        "heading": "Governed Applications",
+        "paragraphs": [
+          "This framework governs a range of adhesive and sealant implementations, including electronics bonding, medical cartridge sealing, automotive module assembly , LED housing sealing , and general industrial bonding. Each execution-level application inherits the quality principles defined herein."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an industrial adhesive dispensing architecture designed to deliver repeatable bonding and sealing performance across high-mix, high-volume manufacturing environments. The architecture supports consistent material application, controlled bead geometry, and stable production output across diverse industrial assemblies."
+        ]
+      },
+      {
+        "heading": "Market & Performance Drivers",
+        "paragraphs": [
+          "Industrial manufacturers require adhesive dispensing systems that can maintain quality across multiple product variants, shifts, and operators. Manual application introduces variability that impacts bond strength, cosmetic appearance, and rework rates. A controlled dispensing architecture is required to stabilize quality and throughput."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Applications require accurate volumetric dispensing of single- and multi-component adhesives with repeatable bead width, placement, and cure behavior. Processes may include component bonding, gasket forming, seam sealing, and surface coating in automated or semi-automated cells."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-polyurethane-processing-equipment-urethane-foam-mixing-guns-architecture",
+    "title": "Urethane Foam Mixing Guns Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a Polyurethane Foam Systems Quality Framework to govern high-performance foam processing systems across industrial manufacturing environments. This architecture establishes repeatable process control, material integrity, throughput stability, and lifecycle scalability for polyurethane foam production and dispensing systems."
+        ]
+      },
+      {
+        "heading": "Market & Production Drivers",
+        "paragraphs": [
+          "Polyurethane foam manufacturers face increasing pressure to improve yield, reduce scrap, stabilize throughput, and support a wider range of product variants. Variability in mixing quality, temperature control, and material handling introduces significant production and quality risk. A standardized foam systems architecture is required to ensure consistent outcomes at scale."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The foam systems platform utilizes precision metering technologies, including high-pressure piston systems and low-pressure gear or pump-based systems. Mixing heads, laydown devices, molds, and conveyor-based processes are selected based on chemistry, output rate, and production configuration."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based control architectures manage material temperatures, metering ratios, output rates, and safety interlocks. Validation procedures confirm foam density consistency, cell structure quality, adhesion performance, and repeatable production behavior across shifts and product variants."
+        ]
+      },
+      {
+        "heading": "Governed Applications",
+        "paragraphs": [
+          "This framework governs multiple polyurethane foam implementations, including high-pressure metering systems, continuous panel production lines, discontinuous molded foam systems, and foam recycling or regrind integration processes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-polyurethane-processing-equipment-high-pressure-metering-architecture",
+    "title": "High-Pressure Polyurethane Metering Systems Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "System Architecture & Controls",
+        "paragraphs": [
+          "The metering platform utilizes high-pressure piston pumps with closed-loop ratio control and temperature-managed material supply. High-performance mixing heads provide intensive component mixing immediately prior to dispense, minimizing residence time and ensuring consistent foam reaction. PLC-based control architectures manage pump synchronization, ratio monitoring, material temperatures, and safety interlocks."
+        ]
+      },
+      {
+        "heading": "Market & Production Drivers",
+        "paragraphs": [
+          "Manufacturers utilizing polyurethane foam face increasing pressure to improve part consistency, reduce scrap, and maintain throughput as formulations and product geometries evolve. Variability in ratio control, temperature stability, or mixing quality can result in density variation, surface defects, and compromised mechanical performance."
+        ]
+      },
+      {
+        "heading": "Polyurethane Foam Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Polyurethane Foam Systems Quality Framework, which standardizes process control, mixing quality, validation methodology, and lifecycle scalability across foam production systems. Implementation improves foam quality consistency, stabilizes production throughput, and reduces scrap by eliminating ratio and mixing variability as failure modes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-composites-open-mold-technology-architecture",
+    "title": "Open Mold Technology Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The system integrates precision metering and mixing, controlled adhesive dispensing, panel fixturing, and cure management. Dispense strategies are selected to maintain consistent bond geometry across large-format panels and multi-axis assemblies."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Process controls manage dispense rate, bead geometry, open time, and cure sequencing. Validation procedures confirm bond strength, stiffness targets, vibration response, and repeatable structural performance."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Framework-driven implementations reduce rework, eliminate fastener-related failure modes, and deliver consistent structural behavior across production runs."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports additional panel formats, higher production volumes, and evolving adhesive chemistries without redesign of the core bonding platform."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered anti-vibration and dampening composite system architectures for applications requiring controlled energy absorption, vibration isolation, and long-term mechanical stability. These architectures combine structural composites and elastomeric systems to mitigate dynamic loads, noise, and fatigue across industrial, transportation, and marine environments."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Validation procedures confirm vibration attenuation, frequency response consistency, fatigue resistance, and repeatable performance under cyclic loading."
+        ]
+      },
+      {
+        "heading": "Composite Application Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Composite Application Systems Quality Framework , with manufacturing cross-alignment to the Polyurethane Foam Systems Quality Framework when PU-based dampening elements are employed."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Framework-driven implementations reduce rework, eliminate fastener-related failure modes, and deliver consistent structural behavior across production runs."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports additional panel formats, higher production volumes, and evolving adhesive chemistries without redesign of the core bonding platform."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-composites-closed-mold-technology-architecture",
+    "title": "Closed Mold Technology Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Market & Structural Drivers",
+        "paragraphs": [
+          "Composite manufacturers increasingly rely on RTM and infusion processes to achieve lightweight, high-strength structures with reduced void content and improved surface quality. Uncontrolled resin flow, inconsistent vacuum management, or improper cure sequencing directly impact structural integrity, cosmetic quality, and yield."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "RTM and infusion processes require precise control of resin metering, injection pressure or vacuum level, flow front progression, and cure timing. The architecture must support epoxy, polyurethane, vinyl ester, and polyester resins while maintaining consistent impregnation across complex fiber geometries."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The system integrates precision resin metering units, controlled injection or infusion manifolds, vacuum management hardware, and application-specific tooling. Flow control devices, sensors, and valves are configured to manage resin distribution and prevent dry spots or resin-rich zones."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based and process-integrated control systems manage resin flow rates, pressure differentials, vacuum stability, and cure sequencing. Validation procedures confirm fiber wet-out quality, void fraction control, laminate consistency, and repeatable mechanical performance."
+        ]
+      },
+      {
+        "heading": "Composite Application Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Composite Application Systems Quality Framework, which standardizes resin processing control, validation methodology, and lifecycle scalability across structural composite systems."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-adhesives-sealants-single-component-pumps-and-packages-architecture",
+    "title": "Pumps & Packages Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
+        ]
+      },
+      {
+        "heading": "Material & Chemistry Considerations",
+        "paragraphs": [
+          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
+        ]
+      },
+      {
+        "heading": "Automation & Controls",
+        "paragraphs": [
+          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-adhesives-sealants-single-component-dispensing-valves-architecture",
+    "title": "Single-Component Dispensing Valves Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a lubrication quality framework to ensure repeatable, contamination-controlled, and volume-accurate lubrication across precision mechanical systems. This architecture elevates lubrication from a maintenance task to a controlled manufacturing and lifecycle process aligned with reliability, uptime, and asset protection objectives."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The lubrication process required precise volumetric delivery of grease or oil at defined intervals and locations. Requirements included repeatable shot accuracy, clean material handling, contamination prevention, and compatibility with a range of viscosities and lubrication points."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The lubrication platform is based on centralized or distributed metering systems utilizing precision pumps and metering valves. Bulk material supply, short delivery paths, and controlled dispense logic ensure consistent lubrication volumes while minimizing waste and environmental exposure."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage lubrication timing, volume, and sequence. Validation procedures confirm delivered lubricant volume, cycle completion, and system readiness, ensuring repeatable lubrication performance across assemblies and operating conditions."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation of the lubrication quality framework reduced bearing and actuator failures, stabilized equipment performance, and improved overall system uptime. Lubrication variability was eliminated as a root cause of premature wear."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-adhesives-sealants-smc-imc-molding-architecture",
+    "title": "SMC Molding & In-Mold Coating (IMC) Solutions Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered the In-Mold Coating (IMC) Quality Framework to govern surface-engineered composite processes. This architecture defines a standardized, NDA-safe framework for integrating precision metering, controlled shot delivery, and press communication in advanced manufacturing environments."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Applications governed by this architecture demand repeatability and risk reduction. Our control systems monitor pressure and volume to confirm coating thickness uniformity and optimal substrate adhesion. This validation ensures that every molded part exits the press meeting stringent OEM surface specifications."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "Designed for high-volume production, the IMC Coatec architecture supports integration with multiple presses and adapts to evolving coating chemistries. Kirkco supports manufacturers implementing IMC systems through confidential engineering engagements under NDA, aligning equipment architecture with specific production objectives and quality requirements."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines an IMC Coatec-based system for precision in-mold coating of composite components."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The IMC Coatec platform integrates precision metering, controlled shot delivery, and press communication."
+        ]
+      },
+      {
+        "heading": "Controls & Press Integration",
+        "paragraphs": [
+          "PLC-based controls synchronize coating injection with press states."
+        ]
+      },
+      {
+        "heading": "Framework Alignment",
+        "paragraphs": [
+          "Governed by Composite and IMC Quality Frameworks."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-adhesives-sealants-two-component-architecture",
+    "title": "Two-Component Adhesive Metering & Mixing Systems Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
+        ]
+      },
+      {
+        "heading": "Automation & Controls",
+        "paragraphs": [
+          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
+        ]
+      },
+      {
+        "heading": "Material & Chemistry Considerations",
+        "paragraphs": [
+          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equipment-options-adhesives-sealants-putty-paste-architecture",
+    "title": "High-Viscosity Putty & Paste Dispensing Systems Application Architecture",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a polyurethane bonding architecture for elevator panel and cab assemblies where structural integrity, vibration damping, and cosmetic finish are critical to passenger safety and long-term performance. The system was designed to deliver consistent bond lines across dissimilar substrates while supporting repeatable production workflows."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Elevator manufacturers face stringent safety standards, aesthetic requirements, and warranty exposure. Manual adhesive application introduced variability in bond thickness and cure behavior, increasing the risk of rework and inconsistent panel performance over the service life of the equipment."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required precise dispensing of one- or two-component polyurethane adhesives with controlled bead geometry and predictable open time. Adhesive placement needed to accommodate metal skins, composite panels, and internal stiffeners without squeeze-out or void formation."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The bonding platform utilizes bulk-fed PU metering equipment configured for stable ratio control and smooth material flow. Dispensing valves are selected to provide clean cutoff and repeatable start-stop behavior, enabling consistent application across panel sizes and configurations."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage dispense parameters, timing, and interlocks to ensure repeatable adhesive output. Process settings were validated to maintain consistent bond performance across multiple elevator models and production shifts."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "The architecture reduced material waste, improved cosmetic consistency, and stabilized cycle times. Production throughput increased by eliminating manual variability and reducing downstream inspection and rework."
+        ]
+      }
+    ]
+  }
+]

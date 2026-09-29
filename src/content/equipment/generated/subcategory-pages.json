@@ -1,0 +1,960 @@
+{
+  "/equipment-options/process-control/monitoring-analytics": {
+    "href": "/equipment-options/process-control/monitoring-analytics",
+    "title": "Monitoring / Analytics",
+    "description": "Monitoring & Analytics represents the measurement and verification layer within Kirkco dispensing systems. This category includes devices and systems that capture real-time process data—such as flow, pressure, shot count, and material prese",
+    "parentHref": "/equipment-options/process-control",
+    "parentLabel": "Process Control",
+    "breadcrumbLeaf": "Monitoring / Analytics",
+    "categorySlug": "monitoring-analytics",
+    "overview": "Monitoring & Analytics represents the measurement and verification layer within Kirkco dispensing systems. This category includes devices and systems that capture real-time process data—such as flow, pressure, shot count, and material presence—to provide visibility into dispensing performance and system behavior.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Dosing Inspection System",
+          "Flow Meters",
+          "Light Barrier",
+          "Micro-flow Sensor",
+          "Pressure Sensors"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/process-control/process-control-computer": {
+    "href": "/equipment-options/process-control/process-control-computer",
+    "title": "Process Control Computer",
+    "description": "Process Control Computers form the core control layer for Kirkco dispensing and metering systems. This category represents the systems responsible for executing dispensing logic, managing recipes, coordinating system components, and maintai",
+    "parentHref": "/equipment-options/process-control",
+    "parentLabel": "Process Control",
+    "breadcrumbLeaf": "Process Control Computer",
+    "categorySlug": "process-control-computer",
+    "overview": "Process Control Computers form the core control layer for Kirkco dispensing and metering systems. This category represents the systems responsible for executing dispensing logic, managing recipes, coordinating system components, and maintaining consistent process conditions during production.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Electronic Metering",
+          "Gear Flow Meter",
+          "Light Barrier",
+          "Micro-flow Sensor",
+          "MR40 Metering Control Unit",
+          "Pressure Sensors",
+          "Stroke Detection"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/process-control/integration-automation": {
+    "href": "/equipment-options/process-control/integration-automation",
+    "title": "Integration / Automation",
+    "description": "Integration & Automation represents the system layer that connects Kirkco dispensing, metering, and monitoring equipment into coordinated manufacturing workflows. This category focuses on how individual components—such as control computers,",
+    "parentHref": "/equipment-options/process-control",
+    "parentLabel": "Process Control",
+    "breadcrumbLeaf": "Integration / Automation",
+    "categorySlug": "integration-automation",
+    "overview": "Integration & Automation represents the system layer that connects Kirkco dispensing, metering, and monitoring equipment into coordinated manufacturing workflows. This category focuses on how individual components—such as control computers, metering units, and sensors—interface with higher-level automation systems to enable synchronized, repeatable production. Rather than describing standalone devices, Integration & Automation abstracts how Kirkco equipment operates within automated cells, production lines, and factory control architectures. These systems support communication between dispensing hardware and external controls, allowing processes to be triggered, adjusted, and verified as part of broader manufacturing operations.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Pressure Sensors"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/paint-coatings/specialty-finishes": {
+    "href": "/equipment-options/paint-coatings/specialty-finishes",
+    "title": "Specialty Finishes",
+    "description": "Kirkco partners with leading coating manufacturers to supply a broad range of liquid paints, primers, and specialty finish materials. These solutions support everything from corrosion resistance and surface preparation to high-end decorativ",
+    "parentHref": "/equipment-options/paint-coatings",
+    "parentLabel": "Paint & Coatings",
+    "breadcrumbLeaf": "Specialty Finishes",
+    "overview": "Kirkco partners with leading coating manufacturers to supply a broad range of liquid paints, primers, and specialty finish materials. These solutions support everything from corrosion resistance and surface preparation to high-end decorative and functional finishes.",
+    "groups": [],
+    "sections": []
+  },
+  "/equipment-options/paint-coatings/protective-coatings": {
+    "href": "/equipment-options/paint-coatings/protective-coatings",
+    "title": "Protective Coatings",
+    "description": "Kirkco’s protective coating solutions are engineered for large-area and demanding environments, including bridges, pipelines, storage tanks, shipping vessels, wind turbines, solar plants, and industrial steel structures. These systems deliv",
+    "parentHref": "/equipment-options/paint-coatings",
+    "parentLabel": "Paint & Coatings",
+    "breadcrumbLeaf": "Protective Coatings",
+    "categorySlug": "protective-coatings",
+    "overview": "Kirkco’s protective coating solutions are engineered for large-area and demanding environments, including bridges, pipelines, storage tanks, shipping vessels, wind turbines, solar plants, and industrial steel structures. These systems deliver thick-film corrosion protection and durable surface defense even under harsh conditions.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "PROTEC 2K Mixing & Dosing Unit",
+          "TWINCONTROL 2K Mixing & Dosing Unit"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/paint-coatings/spray-systems/manual-spray-applications": {
+    "href": "/equipment-options/paint-coatings/spray-systems/manual-spray-applications",
+    "title": "Manual Spray Applications",
+    "description": "Manual spray systems (manual booths and spray walls) provide cost-effective, flexible coating environments for powder and paint applications where automatic systems aren’t required. These solutions are ideal for batch production, job shops,",
+    "parentHref": "/equipment-options/paint-coatings",
+    "parentLabel": "Paint & Coatings",
+    "breadcrumbLeaf": "Manual Spray Applications",
+    "overview": "Manual spray systems (manual booths and spray walls) provide cost-effective, flexible coating environments for powder and paint applications where automatic systems aren’t required. These solutions are ideal for batch production, job shops, single parts, or small series runs — and are also compatible with conveyor or ergonomic setups.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "ID Spray Wall",
+          "Spray Wall Basic 8000"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/paint-coatings/spray-systems/automatic-spray-applications": {
+    "href": "/equipment-options/paint-coatings/spray-systems/automatic-spray-applications",
+    "title": "Automatic Spray Applications",
+    "description": "Automatic spray systems are integrated coating solutions designed for high-volume, repeatable application of paints, powders, and protective finishes. These systems combine controlled spray environments with automation-ready architecture —",
+    "parentHref": "/equipment-options/paint-coatings",
+    "parentLabel": "Paint & Coatings",
+    "breadcrumbLeaf": "Automatic Spray Applications",
+    "overview": "Automatic spray systems are integrated coating solutions designed for high-volume, repeatable application of paints, powders, and protective finishes. These systems combine controlled spray environments with automation-ready architecture — enabling manufacturers to achieve consistent film build, efficient material use, and repeatable quality with minimal manual input.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "ICF – Integral Compact Filter Spray System",
+          "ICM – Integral Compact Multicyclone Spray System",
+          "M-Cube",
+          "Super Cube"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/paint-coatings/spray-systems": {
+    "href": "/equipment-options/paint-coatings/spray-systems",
+    "title": "Spray Systems",
+    "description": "Automatic spray systems are integrated coating solutions designed for high-volume, repeatable application of paints, powders, and protective finishes. These systems combine controlled spray environments with automation-ready architecture —",
+    "parentHref": "/equipment-options/paint-coatings",
+    "parentLabel": "Paint & Coatings",
+    "breadcrumbLeaf": "Spray Systems",
+    "categorySlug": "spray-systems",
+    "overview": "Automatic spray systems are integrated coating solutions designed for high-volume, repeatable application of paints, powders, and protective finishes. These systems combine controlled spray environments with automation-ready architecture — enabling manufacturers to achieve consistent film build, efficient material use, and repeatable quality with minimal manual input. Kirkco’s automatic spray systems are engineered to support production environments where throughput, durability, and system integration are critical to operational success.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "ICF – Integral Compact Filter Spray System",
+          "ICM – Integral Compact Multicyclone Spray System",
+          "ID Spray Wall",
+          "M-Cube",
+          "Spray Wall Basic 8000",
+          "Super Cube"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/polyurethane-processing-equipment/pentane-capable-metering-machines": {
+    "href": "/equipment-options/polyurethane-processing-equipment/pentane-capable-metering-machines",
+    "title": "Industrial Pentane Capable Metering Machines",
+    "description": "Pentane capable metering machines are specialized polyurethane foam metering and mixing systems designed to handle hydrocarbon blowing agents like pentane. Unlike standard PU metering machines, these units are engineered to safely meter, mi",
+    "parentHref": "/equipment-options/polyurethane-processing-equipment",
+    "parentLabel": "Polyurethane",
+    "breadcrumbLeaf": "Industrial Pentane Capable Metering Machines",
+    "categorySlug": "pentane-capable-metering-machines",
+    "overview": "Pentane capable metering machines are specialized polyurethane foam metering and mixing systems designed to handle hydrocarbon blowing agents like pentane. Unlike standard PU metering machines, these units are engineered to safely meter, mix, and dispense formulations that include pentane — enabling high-quality closed-cell foam production with reduced environmental impact. Pentane is commonly used as a blowing agent in rigid and integral skin foams due to its effective foaming characteristics and its suitability for producing high-insulation and structurally robust PU foam.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "ECO MIX",
+          "ULTRAMIX"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/polyurethane-processing-equipment/urethane-foam-mixing-guns": {
+    "href": "/equipment-options/polyurethane-processing-equipment/urethane-foam-mixing-guns",
+    "title": "Urethane Foam Mixing Guns",
+    "description": "Urethane foam mixing guns are purpose-built dispense tools used to apply two-component polyurethane foam materials with precise mix quality and accurate control over foam output. These guns integrate metered components, internal mix chamber",
+    "parentHref": "/equipment-options/polyurethane-processing-equipment",
+    "parentLabel": "Polyurethane",
+    "breadcrumbLeaf": "Urethane Foam Mixing Guns",
+    "categorySlug": "urethane-foam-mixing-guns",
+    "overview": "Urethane foam mixing guns are purpose-built dispense tools used to apply two-component polyurethane foam materials with precise mix quality and accurate control over foam output. These guns integrate metered components, internal mix chambers, and ergonomic controls to support a wide range of foam applications — from insulation and core fill to sealing and structural foam tasks. Whether used for insulation, assembly, or production applications, properly configured mixing guns help ensure homogeneous blending and consistent foam performance directly at the point of dispense.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "High Pressure Impingement Mixing Valve",
+          "Low Pressure Impingement Mixing Valve"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-polyurethane-processing-equipment-urethane-foam-mixing-guns-architecture"
+    ]
+  },
+  "/equipment-options/polyurethane-processing-equipment/low-pressure-metering": {
+    "href": "/equipment-options/polyurethane-processing-equipment/low-pressure-metering",
+    "title": "Industrial Low Pressure Metering Polyurethane Equipment",
+    "description": "Low-pressure metering refers to systems designed to meter and mix two-component polyurethane materials at moderate pressures, making them ideal for small to medium production runs, low-pressure foams, elastomers, coatings, and C. A. S. E. p",
+    "parentHref": "/equipment-options/polyurethane-processing-equipment",
+    "parentLabel": "Polyurethane",
+    "breadcrumbLeaf": "Industrial Low Pressure Metering Polyurethane Equipment",
+    "categorySlug": "low-pressure-metering",
+    "overview": "Low-pressure metering refers to systems designed to meter and mix two-component polyurethane materials at moderate pressures, making them ideal for small to medium production runs, low-pressure foams, elastomers, coatings, and C. A. S. E. polyurethanes (coatings, adhesives, sealants, and elastomers). These machines deliver accurate metering and mixing at lower operating pressures, while handling a broad range of component viscosities and production requirements. Low-pressure metering is often chosen when gentler dispensing is needed — such as when materials are shear-sensitive, require multiple independent stream processing, or when pump wear must be minimized over extended service life.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "I MIX"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/polyurethane-processing-equipment/high-pressure-metering": {
+    "href": "/equipment-options/polyurethane-processing-equipment/high-pressure-metering",
+    "title": "High-Pressure Polyurethane Metering Systems",
+    "description": "High-pressure metering is the industrial standard for the precise delivery, ratio control, and mixing of two-component polyurethane materials. Engineered for demanding production environments, Kirkco’s high-pressure polyurethane metering sy",
+    "parentHref": "/equipment-options/polyurethane-processing-equipment",
+    "parentLabel": "Polyurethane",
+    "breadcrumbLeaf": "High-Pressure Polyurethane Metering Systems",
+    "categorySlug": "high-pressure-metering",
+    "overview": "High-pressure metering is the industrial standard for the precise delivery, ratio control, and mixing of two-component polyurethane materials. Engineered for demanding production environments, Kirkco’s high-pressure polyurethane metering systems ensure accurate stoichiometric ratios, repeatable shot sizes, and perfectly homogeneous mixing before discharge. Whether you are manufacturing rigid structural foams, continuous elastomers, or microcellular NVH dampening components, our architectures combine robust high-pressure piston pumps, closed-loop VFD/servo controls, and advanced impingement mixing heads to stabilize your throughput and eliminate material variability.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "ALFAMIX",
+          "ECO MIX",
+          "RIM MIX",
+          "ULTRAMIX",
+          "ULTRAMIX 10-S MICRO DOSING",
+          "ULTRAMIX P",
+          "ULTRAMIX PLUS"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-polyurethane-processing-equipment-high-pressure-metering-architecture"
+    ]
+  },
+  "/equipment-options/lubrication/flow-regulation": {
+    "href": "/equipment-options/lubrication/flow-regulation",
+    "title": "Flow Regulation",
+    "description": "In lubrication and fluid delivery systems, flow regulation ensures that grease, oil, and other fluids move through the system at the right rate — regardless of pressure or pump variation. Stable flow improves performance of downstream meter",
+    "parentHref": "/equipment-options/lubrication",
+    "parentLabel": "Lubrication",
+    "breadcrumbLeaf": "Flow Regulation",
+    "categorySlug": "flow-regulation",
+    "overview": "In lubrication and fluid delivery systems, flow regulation ensures that grease, oil, and other fluids move through the system at the right rate — regardless of pressure or pump variation. Stable flow improves performance of downstream metering valves, reduces material waste, and enhances repeatability in automated and manual lubrication processes.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Volume Counter",
+          "Material Filter",
+          "Flow Regulating Valve",
+          "Flow Meters"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/lubrication/pressure-control": {
+    "href": "/equipment-options/lubrication/pressure-control",
+    "title": "Pressure Control",
+    "description": "In lubrication systems, pressure control and flow regulation components ensure that grease, oil, and other lubricant media are delivered at the correct pressure and flow rate to metering valves, dispensers, and lubrication points. These com",
+    "parentHref": "/equipment-options/lubrication",
+    "parentLabel": "Lubrication",
+    "breadcrumbLeaf": "Pressure Control",
+    "categorySlug": "pressure-control",
+    "overview": "In lubrication systems, pressure control and flow regulation components ensure that grease, oil, and other lubricant media are delivered at the correct pressure and flow rate to metering valves, dispensers, and lubrication points. These components stabilize variations from pumps and line resistance, improving the consistency, precision, and reliability of lubrication delivery.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Material Fluid Pressure Regulator",
+          "Electronic Metering"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/lubrication/feeding-and-supply": {
+    "href": "/equipment-options/lubrication/feeding-and-supply",
+    "title": "Lubricant Feeding and Supply Systems",
+    "description": "Lubrication feeding and supply systems are engineered to transport greases, oils, and other lubricant materials from storage containers — such as drums, pails, cartridges, or tanks — to lubrication points, metering valves, and dispensing eq",
+    "parentHref": "/equipment-options/lubrication",
+    "parentLabel": "Lubrication",
+    "breadcrumbLeaf": "Lubricant Feeding and Supply Systems",
+    "categorySlug": "feeding-and-supply",
+    "overview": "Lubrication feeding and supply systems are engineered to transport greases, oils, and other lubricant materials from storage containers — such as drums, pails, cartridges, or tanks — to lubrication points, metering valves, and dispensing equipment. These systems ensure consistent flow and pressure for reliable machine lubrication, maintenance, and production operations.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Pump Packages",
+          "Modular Pump Systems",
+          "Medium Pressure Pumps",
+          "High Pressure Pumps",
+          "Drum Pumps For Lubricants"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/lubrication/dispensing": {
+    "href": "/equipment-options/lubrication/dispensing",
+    "title": "Industrial Lubrication Dispensing Systems",
+    "description": "Apply the right lubricant in the right pattern, volume, and location with dispensing hardware engineered around your process. Kirkco designs lubrication dispensing systems for the controlled application of grease, oil, and other lubricant m",
+    "parentHref": "/equipment-options/lubrication",
+    "parentLabel": "Lubrication",
+    "breadcrumbLeaf": "Industrial Lubrication Dispensing Systems",
+    "categorySlug": "dispensing",
+    "overview": "Apply the right lubricant in the right pattern, volume, and location with dispensing hardware engineered around your process. Kirkco designs lubrication dispensing systems for the controlled application of grease, oil, and other lubricant media across machinery, assembly stations, maintenance operations, and production lines. Dispensing options support dot or shot application, continuous flow, spray, and time-pressure methods for repeatable material delivery. A complete dispensing system combines the valve with the supply pump, pressure-control equipment, delivery lines, controls, and—when required—flow or pressure monitoring. The result is a dispensing architecture selected around the lubricant, application point, cycle time, dispense pattern, and production environment.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Spray Valves",
+          "Shot Dispensing Valves",
+          "Needle Dispensing Valve",
+          "High Speed Dispensing Valves",
+          "Handheld Dispensing Valves",
+          "Diaphragm Dispensing Valve"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/lubrication/metering": {
+    "href": "/equipment-options/lubrication/metering",
+    "title": "Lubrication System Metering",
+    "description": "Lubrication metering valves are engineered to control and dispense precise amounts of greases, oils, and lubricants in industrial systems where accuracy and repeatability are essential. These valves provide consistent lubrication delivery —",
+    "parentHref": "/equipment-options/lubrication",
+    "parentLabel": "Lubrication",
+    "breadcrumbLeaf": "Lubrication System Metering",
+    "categorySlug": "metering",
+    "overview": "Lubrication metering valves are engineered to control and dispense precise amounts of greases, oils, and lubricants in industrial systems where accuracy and repeatability are essential. These valves provide consistent lubrication delivery — whether in dot (shot), continuous, or spray applications — across manufacturing, assembly, and maintenance operations.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Progressive Cavity Valves",
+          "Vecdos eOne",
+          "Needle Metering Valve",
+          "Chamber Metering Valve",
+          "Cartridge Metering Valve"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/composites/pultrusion": {
+    "href": "/equipment-options/composites/pultrusion",
+    "title": "Pultrusion",
+    "description": "Pultrusion is a continuous, automated composite manufacturing process used to produce long, straight profiles with a uniform cross‑section and exceptional longitudinal strength and rigidity. The word “pultrusion” combines pull and extrusion",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Pultrusion",
+    "overview": "Pultrusion is a continuous, automated composite manufacturing process used to produce long, straight profiles with a uniform cross‑section and exceptional longitudinal strength and rigidity. The word “pultrusion” combines pull and extrusion — reflecting how reinforcing fibers are pulled through resin and a heated die to form cured composite shapes.",
+    "groups": [],
+    "sections": []
+  },
+  "/equipment-options/composites/open-mold-technology/chopping-lamination": {
+    "href": "/equipment-options/composites/open-mold-technology/chopping-lamination",
+    "title": "Chopping & Lamination",
+    "description": "Kirkco understands the importance of precision when processing multi-component materials. Different systems are required for different materials. There are three mixing systems available to process variances in viscosity, mixture properties",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Chopping & Lamination",
+    "overview": "Kirkco understands the importance of precision when processing multi-component materials. Different systems are required for different materials. There are three mixing systems available to process variances in viscosity, mixture properties, short pot life, etc.",
+    "groups": [],
+    "sections": []
+  },
+  "/equipment-options/composites/open-mold-technology/gel-coat": {
+    "href": "/equipment-options/composites/open-mold-technology/gel-coat",
+    "title": "Gel Coat",
+    "description": "Gel coat is a specialized resin applied to the surface of a composite mold before reinforcing laminate materials. It cures to form a pigmented, weather-resistant surface that protects the composite part and provides a finished appearance on",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Gel Coat",
+    "overview": "Gel coat is a specialized resin applied to the surface of a composite mold before reinforcing laminate materials. It cures to form a pigmented, weather-resistant surface that protects the composite part and provides a finished appearance once demolded. Gel coats are widely used in open-mold processes, such as hand lay-up and spray lay-up, to deliver cosmetic quality and environmental protection to finished FRP parts.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "2C Gel Coat",
+          "Conti-Flow Versa",
+          "FRP Gel Coat Systems",
+          "GP-301"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/composites/open-mold-technology": {
+    "href": "/equipment-options/composites/open-mold-technology",
+    "title": "Open Mold Technology",
+    "description": "Open mold technology refers to composite manufacturing processes where reinforcements and resin are applied into an open mold cavity and allowed to cure while exposed to air. This technique offers flexibility for part size and design, and r",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Open Mold Technology",
+    "categorySlug": "open-mold-technology",
+    "overview": "Open mold technology refers to composite manufacturing processes where reinforcements and resin are applied into an open mold cavity and allowed to cure while exposed to air. This technique offers flexibility for part size and design, and remains a widely used method for producing large composite components.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "2C Gel Coat",
+          "Conti-Flow Versa",
+          "FRP Gel Coat Systems",
+          "GP-301"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-composites-open-mold-technology-architecture"
+    ]
+  },
+  "/equipment-options/composites/pull-winding": {
+    "href": "/equipment-options/composites/pull-winding",
+    "title": "Pull Winding",
+    "description": "Pull winding is a continuous composite manufacturing process that combines elements of pultrusion and filament winding to produce hollow, thin-walled profiles with excellent mechanical properties. The process involves winding resin-impregna",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Pull Winding",
+    "categorySlug": "pull-winding",
+    "overview": "Pull winding is a continuous composite manufacturing process that combines elements of pultrusion and filament winding to produce hollow, thin-walled profiles with excellent mechanical properties. The process involves winding resin-impregnated reinforcements onto a mandrel and pulling them through a heated die, where the resin cures into a solid composite structure.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "GP-301",
+          "GP-703"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/composites/filament-winding": {
+    "href": "/equipment-options/composites/filament-winding",
+    "title": "Filament Winding",
+    "description": "Filament winding is a composite manufacturing process in which continuous fiber reinforcements such as glass, carbon, or aramid are impregnated with resin and wound under tension over a rotating mandrel to create hollow or cylindrical compo",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Filament Winding",
+    "categorySlug": "filament-winding",
+    "overview": "Filament winding is a composite manufacturing process in which continuous fiber reinforcements such as glass, carbon, or aramid are impregnated with resin and wound under tension over a rotating mandrel to create hollow or cylindrical composite parts. The precise control of fiber placement and resin saturation allows the production of components with high structural performance, excellent dimensional control, and minimal waste.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Conti-Flow Vario",
+          "GP-301",
+          "GP-703"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/composites/closed-mold-technology/vacuum-infusion-molding": {
+    "href": "/equipment-options/composites/closed-mold-technology/vacuum-infusion-molding",
+    "title": "Vacuum Infusion Molding",
+    "description": "Vacuum infusion molding (also known as vacuum-assisted resin transfer molding or VIM) is a closed mold composite manufacturing process that uses vacuum pressure to draw resin through dry reinforcement materials contained in a sealed mold. T",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Vacuum Infusion Molding",
+    "overview": "Vacuum infusion molding (also known as vacuum-assisted resin transfer molding or VIM) is a closed mold composite manufacturing process that uses vacuum pressure to draw resin through dry reinforcement materials contained in a sealed mold. The vacuum pulls catalyzed resin through the reinforcement layers, resulting in uniform fiber wet-out and parts with excellent structural integrity and surface finish.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "2C 3C Infusion Resin Systems",
+          "2C Infusion Resin",
+          "3C Glue Resins"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/composites/closed-mold-technology/resin-transfer-molding": {
+    "href": "/equipment-options/composites/closed-mold-technology/resin-transfer-molding",
+    "title": "Resin Transfer Molding",
+    "description": "Resin Transfer Molding (RTM) is a closed mold composite manufacturing process in which dry reinforcement materials such as fiberglass or carbon fiber are placed into a sealed mold cavity, and catalyzed resin is injected under pressure to fu",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Resin Transfer Molding",
+    "overview": "Resin Transfer Molding (RTM) is a closed mold composite manufacturing process in which dry reinforcement materials such as fiberglass or carbon fiber are placed into a sealed mold cavity, and catalyzed resin is injected under pressure to fully impregnate the reinforcement and cure into a finished part. This closed mold environment helps control material flow, improve fiber wet-out, and produce parts with consistent thickness and superior surface finish on both sides.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Conti-Flow Compact",
+          "Conti-Flow Vario",
+          "Eldo-Mix",
+          "GP-301",
+          "GP-703"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/composites/closed-mold-technology/resin-injection-molding": {
+    "href": "/equipment-options/composites/closed-mold-technology/resin-injection-molding",
+    "title": "Resin Injection Molding",
+    "description": "Resin injection molding is a closed mold process in composite manufacturing where material is injected under pressure into a sealed mold cavity containing dry reinforcement materials. This enables consistent part quality, high fiber wet-out",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Resin Injection Molding",
+    "overview": "Resin injection molding is a closed mold process in composite manufacturing where material is injected under pressure into a sealed mold cavity containing dry reinforcement materials. This enables consistent part quality, high fiber wet-out, and excellent surface finish, while minimizing air entrapment and defects commonly found in open mold techniques. Closed mold methods also reduce volatile emissions and improve worker safety.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Conti-Flow Versa",
+          "Eldo-Mix",
+          "GP 302"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/composites/closed-mold-technology": {
+    "href": "/equipment-options/composites/closed-mold-technology",
+    "title": "Closed Mold Technology",
+    "description": "Closed mold technology refers to composite manufacturing processes in which reinforcement materials are enclosed in a sealed mold cavity and resin is introduced under controlled pressure or vacuum. This approach produces parts with tight di",
+    "parentHref": "/equipment-options/composites",
+    "parentLabel": "Composites",
+    "breadcrumbLeaf": "Closed Mold Technology",
+    "categorySlug": "closed-mold-technology",
+    "overview": "Closed mold technology refers to composite manufacturing processes in which reinforcement materials are enclosed in a sealed mold cavity and resin is introduced under controlled pressure or vacuum. This approach produces parts with tight dimensional control, excellent surface quality, and repeatable mechanical properties compared to open mold methods.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Conti-Flow Versa",
+          "Eldo-Mix",
+          "GP 302",
+          "Conti-Flow Vario",
+          "Conti-Flow Compact",
+          "GP-301",
+          "GP-703",
+          "2C 3C Infusion Resin Systems",
+          "2C Infusion Resin",
+          "3C Glue Resins"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-composites-closed-mold-technology-architecture"
+    ]
+  },
+  "/equipment-options/adhesives-sealants/two-component/gear-metering/conti-flow": {
+    "href": "/equipment-options/adhesives-sealants/two-component/gear-metering/conti-flow",
+    "title": "Conti-Flow",
+    "description": "The Conti-Flow product line represents a comprehensive range of precision gear metering and mixing systems designed for processing liquid to high-viscous two-component materials, such as epoxies, silicones, polyurethanes, and polysulfides.",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Conti-Flow",
+    "overview": "The Conti-Flow product line represents a comprehensive range of precision gear metering and mixing systems designed for processing liquid to high-viscous two-component materials, such as epoxies, silicones, polyurethanes, and polysulfides. Conti-Flow systems ensure controlled, reproducible meter mix performance to deliver stable production quality and consistent application results.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Conti-Flow Versa",
+          "Conti-Flow Vario",
+          "Conti-Flow Lab",
+          "Conti-Flow Compact"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/two-component/gear-metering": {
+    "href": "/equipment-options/adhesives-sealants/two-component/gear-metering",
+    "title": "Gear Metering",
+    "description": "Gear metering systems use positive displacement gear pumps to deliver highly controlled flow of multi-component materials such as epoxies, silicones, and polyurethanes. Electrically driven or servo-controlled gear pumps provide continuous,",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Gear Metering",
+    "overview": "Gear metering systems use positive displacement gear pumps to deliver highly controlled flow of multi-component materials such as epoxies, silicones, and polyurethanes. Electrically driven or servo-controlled gear pumps provide continuous, pulse-free output with fine speed adjustment, enabling precise ratio and flow control in demanding production environments.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Eldo-Mix",
+          "GP-301"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/single-component/pumps-and-packages": {
+    "href": "/equipment-options/adhesives-sealants/single-component/pumps-and-packages",
+    "title": "Pumps & Packages",
+    "description": "Kirkco offers a wide range of material supply transfer and drum pumps to transport low to high viscosity media directly from the original container to the desired application point, or complete circulation systems for continuous supply to m",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Pumps & Packages",
+    "overview": "Kirkco offers a wide range of material supply transfer and drum pumps to transport low to high viscosity media directly from the original container to the desired application point, or complete circulation systems for continuous supply to multiple application points.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Transfer Pump",
+          "Pressure Vessels",
+          "Piston Pumps",
+          "Double Ram Pump",
+          "Air Operated Diaphragm Pumps"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-adhesives-sealants-single-component-pumps-and-packages-architecture"
+    ]
+  },
+  "/equipment-options/adhesives-sealants/single-component/metering-valves": {
+    "href": "/equipment-options/adhesives-sealants/single-component/metering-valves",
+    "title": "Adhesive and Sealant Metering and Dispensing",
+    "description": "Adhesive and Sealant Metering and Dispensing valves from Kirkco demonstrate all the qualities that are essential for optimum results in Metering Adhesives and special 1K or single component materials : high precision , excellent repeatabili",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Adhesive and Sealant Metering and Dispensing",
+    "overview": "Adhesive and Sealant Metering and Dispensing valves from Kirkco demonstrate all the qualities that are essential for optimum results in Metering Adhesives and special 1K or single component materials : high precision , excellent repeatability, and high quality. The Kirkco precision metering valve range includes various valve types, all of which are based on one of two dispensing principles.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Progressive Cavity Valves",
+          "Vecdos eOne",
+          "Needle Metering Valve",
+          "Chamber Metering Valve",
+          "Cartridge Metering Valve"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/single-component/dispensing-valves": {
+    "href": "/equipment-options/adhesives-sealants/single-component/dispensing-valves",
+    "title": "Single-Component Dispensing Valves",
+    "description": "Kirkco offers single-component dispensing valves for processing materials ranging from low-viscosity fluids to pasty media. Valve selection is based on the material, supply pressure, required flow or shot behavior, application geometry, cyc",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Single-Component Dispensing Valves",
+    "overview": "Kirkco offers single-component dispensing valves for processing materials ranging from low-viscosity fluids to pasty media. Valve selection is based on the material, supply pressure, required flow or shot behavior, application geometry, cycle rate, automation level, and need for clean cutoff or monitoring.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Shot Dispensing Valves",
+          "Needle Dispensing Valve",
+          "High Speed Dispensing Valves",
+          "Handheld Dispensing Valves",
+          "Diaphragm Dispensing Valve"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-adhesives-sealants-single-component-dispensing-valves-architecture"
+    ]
+  },
+  "/equipment-options/adhesives-sealants/two-component/shot-metering": {
+    "href": "/equipment-options/adhesives-sealants/two-component/shot-metering",
+    "title": "Shot Metering",
+    "description": "Dual piston metering units are designed for processing two-component (2K) materials, particularly in applications that require short cycle times and high dispensing accuracy. These systems deliver consistent performance when paired with the",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Shot Metering",
+    "overview": "Dual piston metering units are designed for processing two-component (2K) materials, particularly in applications that require short cycle times and high dispensing accuracy. These systems deliver consistent performance when paired with the appropriate material supply and a metering calculator.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Micro Mix",
+          "Vecdos eTwin"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/two-component/piston-metering": {
+    "href": "/equipment-options/adhesives-sealants/two-component/piston-metering",
+    "title": "Piston Metering",
+    "description": "A Kirkco piston pump type metering and mixing system, is used to handle low to high viscosity multi component media such as epoxy resins, polyurethanes or silicones. They can be unfilled, filled as well as abrasive. The system is available",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Piston Metering",
+    "overview": "A Kirkco piston pump type metering and mixing system, is used to handle low to high viscosity multi component media such as epoxy resins, polyurethanes or silicones. They can be unfilled, filled as well as abrasive. The system is available in contentious or shot dispense configurations and is used in different types of manual or automatic applications. The positive displacement piston metering system is built in a variety of different configurations to meet process applications.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Econo-Mix",
+          "Ecostar EVO",
+          "Graco 8900",
+          "Graco Hydra Cat",
+          "Vario Mix"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/two-component/mixing-valves": {
+    "href": "/equipment-options/adhesives-sealants/two-component/mixing-valves",
+    "title": "Mixing Valves",
+    "description": "Kirkco understands the importance of precision when processing multi-component materials. Different systems are required for different materials. There are three mixing systems available to process variances in viscosity, mixture properties",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Mixing Valves",
+    "overview": "Kirkco understands the importance of precision when processing multi-component materials. Different systems are required for different materials. There are three mixing systems available to process variances in viscosity, mixture properties, short pot life, etc.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "Dyna Static",
+          "Dynamic Static Mixers",
+          "High Pressure Impingement Mixing Valve",
+          "Static Mixer System"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/two-component/lsr-processing-equipment": {
+    "href": "/equipment-options/adhesives-sealants/two-component/lsr-processing-equipment",
+    "title": "LSR Processing Equipment",
+    "description": "The LSR 200 ELA and LSR 20 ELA represent the latest generation of 1:1 mixing and metering plants for Liquid Silicone Rubber.",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "LSR Processing Equipment",
+    "overview": "The LSR 200 ELA and LSR 20 ELA represent the latest generation of 1:1 mixing and metering plants for Liquid Silicone Rubber.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "LSR Conti Mix 200",
+          "LSR-20 ELA & LSR-200 ELA",
+          "LSR-20 LC",
+          "Silco Mix"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/smc-imc-molding": {
+    "href": "/equipment-options/adhesives-sealants/smc-imc-molding",
+    "title": "SMC Molding & In-Mold Coating (IMC) Solutions",
+    "description": "At Kirkco Corporation, we engineer precision metering and dispensing systems that elevate the quality and efficiency of composite manufacturing. Our specialized equipment for Sheet Molding Compound (SMC) and In-Mold Coating (IMC) processes",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "SMC Molding & In-Mold Coating (IMC) Solutions",
+    "categorySlug": "smc-imc-molding",
+    "overview": "At Kirkco Corporation, we engineer precision metering and dispensing systems that elevate the quality and efficiency of composite manufacturing. Our specialized equipment for Sheet Molding Compound (SMC) and In-Mold Coating (IMC) processes empowers manufacturers to produce lightweight, high-strength composite parts with flawless, paint-ready surfaces straight out of the press. By integrating our advanced IMC Coatec metering systems into your compression molding workflow, you can eliminate costly secondary surface preparation, reduce cycle times, and consistently achieve the \"Class A\" surface finishes demanded by the automotive, commercial vehicle, and recreational marine industries.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "IMC Coatec Metering"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-adhesives-sealants-smc-imc-molding-architecture"
+    ]
+  },
+  "/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste": {
+    "href": "/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste",
+    "title": "Tooling Paste & Seamless Modeling Paste Systems",
+    "description": "Meter, mix, and dispense high-viscosity tooling and modeling pastes with an equipment architecture built around your material, surface, and production requirements. Kirkco designs dispensing systems for pasty two-component materials used in",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Tooling Paste & Seamless Modeling Paste Systems",
+    "categorySlug": "tooling-paste",
+    "overview": "Meter, mix, and dispense high-viscosity tooling and modeling pastes with an equipment architecture built around your material, surface, and production requirements. Kirkco designs dispensing systems for pasty two-component materials used in composite tooling, modeling, pattern development, sealing, and related manufacturing processes. Our equipment is engineered to support controlled material delivery from standard containers, consistent blending, smooth application, and repeatable production workflows. The tooling paste portfolio includes the GP 401 TPD and Eldo-Mix 401T & Tooling Mix, systems identified by Kirkco for pasty two-component materials such as polyurethanes, epoxy resins, and microball-filled materials.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "GP 401 TPD",
+          "Eldo-Mix 401T & Tooling Mix"
+        ]
+      }
+    ],
+    "sections": []
+  },
+  "/equipment-options/adhesives-sealants/two-component": {
+    "href": "/equipment-options/adhesives-sealants/two-component",
+    "title": "Two-Component Adhesive Metering & Mixing Systems",
+    "description": "Control ratio, flow, mixing, and application with a 2K system engineered around your material chemistry and production process. Kirkco designs two-component equipment for industrial adhesives and sealants that require controlled metering, r",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "Two-Component Adhesive Metering & Mixing Systems",
+    "categorySlug": "two-component",
+    "overview": "Control ratio, flow, mixing, and application with a 2K system engineered around your material chemistry and production process. Kirkco designs two-component equipment for industrial adhesives and sealants that require controlled metering, reliable mixing, and repeatable dispensing. From continuous-flow bonding and sealing to shot dispensing, potting, encapsulation, coating, and molding, Kirkco helps manufacturers select a system architecture that aligns material behavior with production requirements. Our platform supports multi-component materials including epoxies, polyurethanes, silicones, and filled systems, with technology options spanning gear metering, piston metering, shot metering, mixing valves, progressive-cavity metering, and liquid silicone rubber processing.",
+    "groups": [
+      {
+        "title": "Gear Metering",
+        "intro": "Positive-displacement delivery for highly controlled continuous or shot flow.",
+        "body": "",
+        "names": [
+          "Conti-Flow",
+          "Eldo Mix",
+          "GP-301"
+        ]
+      },
+      {
+        "title": "Piston Metering",
+        "intro": "Metering architecture for applications where piston-based delivery and system configuration are appropriate.",
+        "body": "",
+        "names": [
+          "Econo-Mix",
+          "Ecostar EVO",
+          "Graco 8900",
+          "Graco Hydra Cat",
+          "Vario Mix"
+        ]
+      },
+      {
+        "title": "Shot Metering",
+        "intro": "Controlled delivery of discrete material shots.",
+        "body": "",
+        "names": [
+          "Micro Mix",
+          "Vecdos ETwin"
+        ]
+      },
+      {
+        "title": "LSR Processing Equipment",
+        "intro": "Processing systems for liquid silicone rubber applications.",
+        "body": "",
+        "names": [
+          "LSR-20 ELA & LSR-200 ELA",
+          "LSR-20 LC",
+          "LSR Conti-Mix 200",
+          "Silco Mix"
+        ]
+      },
+      {
+        "title": "Mixing Valves",
+        "intro": "Static and dynamic mixing for two-component delivery.",
+        "body": "",
+        "names": [
+          "Dyna Static",
+          "Dynamic Static Mixers",
+          "Low Pressure Impingement Mixing Valve",
+          "High Pressure Impingement Mixing Valve"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-adhesives-sealants-two-component-architecture"
+    ]
+  },
+  "/equipment-options/adhesives-sealants/putty-paste": {
+    "href": "/equipment-options/adhesives-sealants/putty-paste",
+    "title": "High-Viscosity Putty & Paste Dispensing Systems",
+    "description": "Meter, mix, and dispense demanding putty and paste materials with a system engineered around your chemistry, viscosity, ratio, and production goals. Kirkco designs industrial dispensing equipment for high-viscosity materials that are diffic",
+    "parentHref": "/equipment-options/adhesives-sealants",
+    "parentLabel": "Adhesives & Sealants",
+    "breadcrumbLeaf": "High-Viscosity Putty & Paste Dispensing Systems",
+    "categorySlug": "putty-paste",
+    "overview": "Meter, mix, and dispense demanding putty and paste materials with a system engineered around your chemistry, viscosity, ratio, and production goals. Kirkco designs industrial dispensing equipment for high-viscosity materials that are difficult to move, meter, mix, and apply consistently by hand. Our putty and paste systems support application-specific configurations for adhesive dispensing, sealing, modeling, tooling, and other production processes where material control directly affects throughput, finish quality, and rework.",
+    "groups": [
+      {
+        "title": "Equipment options",
+        "intro": "",
+        "body": "",
+        "names": [
+          "GP 401 TPD",
+          "GP 401 APD & CF Versa"
+        ]
+      }
+    ],
+    "applicationIds": [
+      "equipment-options-adhesives-sealants-putty-paste-architecture"
+    ]
+  }
+}

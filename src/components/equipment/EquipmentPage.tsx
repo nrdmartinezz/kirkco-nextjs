@@ -155,32 +155,34 @@ export function EquipmentPage({
               </div>
             </div>
 
-            <div className="mt-12">
-              <p className="text-brand-700 flex items-center gap-2 text-[11px] font-semibold tracking-wide uppercase">
-                <span aria-hidden className="bg-brand-700 h-px w-4" />
-                {page.platformsHeading}
-              </p>
-              <div className="mt-6 grid gap-4 md:grid-cols-2">
-                {page.platforms.map((platform) => (
-                  <div
-                    key={platform.heading}
-                    className="rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]"
-                  >
-                    <Heading level={2} size="md">
-                      {platform.heading}
-                    </Heading>
-                    <ul className="mt-4 flex flex-col gap-2">
-                      {platform.items.map((item) => (
-                        <li key={item} className="text-brand-700 flex items-start gap-2 hover:text-brand-500">
-                          <span aria-hidden className="bg-current mt-1.5 size-2 shrink-0 rounded-full" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+            {page.platforms.length > 0 && (
+              <div className="mt-12">
+                <p className="text-brand-700 flex items-center gap-2 text-[11px] font-semibold tracking-wide uppercase">
+                  <span aria-hidden className="bg-brand-700 h-px w-4" />
+                  {page.platformsHeading}
+                </p>
+                <div className="mt-6 grid gap-4 md:grid-cols-2">
+                  {page.platforms.map((platform) => (
+                    <div
+                      key={platform.heading}
+                      className="rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]"
+                    >
+                      <Heading level={2} size="md">
+                        {platform.heading}
+                      </Heading>
+                      <ul className="mt-4 flex flex-col gap-2">
+                        {platform.items.map((item) => (
+                          <li key={item} className="text-brand-700 flex items-start gap-2 hover:text-brand-500">
+                            <span aria-hidden className="bg-current mt-1.5 size-2 shrink-0 rounded-full" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {page.architectures.map((architecture) => (
               <div key={architecture.heading} className="mt-12">
