@@ -37,6 +37,21 @@ function chunks<T>(items: T[], size: number) {
   return groups;
 }
 
+/** Families keep their model list. A standalone product stores itself as its only variant. */
+function seedVariants(product: SeedProduct) {
+  if (Array.isArray(product.variants) && product.variants.length > 0) return product.variants;
+  return [
+    {
+      slug: product.slug,
+      title: product.title,
+      ...(product.tagline ? { tagline: product.tagline } : {}),
+      ...(product.summary ? { summary: product.summary } : {}),
+      ...(product.sections ? { sections: product.sections } : {}),
+      ...(product.image ? { image: product.image } : {}),
+    },
+  ];
+}
+
 const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 if (!url || !key) {
@@ -96,7 +111,7 @@ for (const group of chunks(products, 100)) {
       image: product.image ?? null,
       sections: product.sections ?? null,
       thin: product.thin ?? false,
-      variants: product.variants ?? [],
+      variants: seedVariants(product),
     })),
     { onConflict: 'slug' },
   );
