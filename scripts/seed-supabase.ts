@@ -15,6 +15,7 @@ type SeedProduct = {
   sections?: unknown;
   image?: { src: string; alt?: string };
   thin?: boolean;
+  variants?: unknown;
 };
 
 type SeedStudy = {
@@ -95,10 +96,20 @@ for (const group of chunks(products, 100)) {
       image: product.image ?? null,
       sections: product.sections ?? null,
       thin: product.thin ?? false,
+      variants: product.variants ?? [],
     })),
     { onConflict: 'slug' },
   );
   stop(error, 'products');
+}
+
+const { data: existingProducts, error: listError } = await supabase.from('products').select('slug');
+stop(listError, 'products list');
+const keep = new Set(products.map((product) => product.slug));
+const retired = (existingProducts ?? []).map((row) => row.slug).filter((slug) => !keep.has(slug));
+for (const group of chunks(retired, 100)) {
+  const { error } = await supabase.from('products').delete().in('slug', group);
+  stop(error, 'products delete');
 }
 
 const { error: clearLinksError } = await supabase.from('product_category_links').delete().gte('sort', 0);
@@ -154,5 +165,5 @@ const { error: equipmentError } = await supabase.from('equipment_pages').upsert(
 stop(equipmentError, 'equipment_pages');
 
 console.log(
-  `Seeded ${productCategories.length} categories, ${products.length} products, ${links.length} category links, ${studies.length} applications, and 1 equipment page.`,
+  `Seeded ${productCategories.length} categories, ${products.length} products, ${links.length} category links, ${studies.length} applications, and 1 equipment page. Removed ${retired.length} retired products.`,
 );

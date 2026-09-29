@@ -24,12 +24,23 @@ export default async function QuotePage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const [products, params] = await Promise.all([getProducts(), searchParams]);
-  const catalog: QuoteCatalogItem[] = products.map((product) => ({
-    slug: product.slug,
-    title: product.title,
-    tagline: product.tagline,
-    image: product.image,
-  }));
+  const catalog: QuoteCatalogItem[] = products.flatMap((product) => {
+    const family: QuoteCatalogItem = {
+      slug: product.slug,
+      title: product.title,
+      tagline: product.tagline,
+      image: product.image,
+    };
+    const variants = (product.variants ?? [])
+      .filter((variant) => variant.slug !== product.slug)
+      .map((variant) => ({
+        slug: variant.slug,
+        title: variant.title,
+        tagline: variant.tagline,
+        image: variant.image ?? product.image,
+      }));
+    return [family, ...variants];
+  });
 
   return (
     <Section>

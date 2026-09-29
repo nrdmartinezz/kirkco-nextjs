@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { navigation } from '@/config/navigation';
 import { site } from '@/config/site';
-import { getProducts } from '@/lib/products';
+import { getProducts, variantPath } from '@/lib/products';
 
 export const revalidate = 60;
 
@@ -24,7 +24,12 @@ async function collectHrefs() {
 
   for (const link of navigation.legal) hrefs.add(link.href);
   hrefs.add(navigation.cta.href);
-  for (const product of await getProducts()) hrefs.add(`/${product.slug}`);
+  for (const product of await getProducts()) {
+    hrefs.add(`/${product.slug}`);
+    for (const variant of product.variants ?? []) {
+      if (variant.slug !== product.slug) hrefs.add(variantPath(product, variant));
+    }
+  }
 
   return [...hrefs];
 }

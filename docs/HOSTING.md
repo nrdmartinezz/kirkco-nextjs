@@ -48,9 +48,11 @@ and do not put them in `site.ts`.
 | `SUPABASE_ANON_KEY` | Content reads. Row level security allows `select` only |
 | `SUPABASE_SERVICE_ROLE_KEY` | Seed script and form inserts. Bypasses row level security |
 
-Apply `supabase/migrations/20260925140000_content_and_submissions.sql` in the
-Supabase SQL editor, then seed from the JSON and equipment content already in
-the repo:
+Apply these files in the Supabase SQL editor, in order, then seed from the JSON
+and equipment content already in the repo:
+
+- `supabase/migrations/20260925140000_content_and_submissions.sql`
+- `supabase/migrations/20260929120000_product_variants.sql`
 
 ```bash
 npm run db:seed
@@ -74,7 +76,7 @@ Form submissions are inserted with the service role key. Mail env vars in
    live in `site.ts`, and blank means that vendor is omitted from the page.
 4. `site.url` is already `https://kirkcocorp.com`. Confirm the business NAP in
    `site.ts` before the first production build.
-5. Apply the SQL migration and run `npm run db:seed`.
+5. Apply the SQL migrations in `supabase/migrations/` and run `npm run db:seed`.
 
 ## Deploying
 
