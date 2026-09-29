@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronRight, Menu, X } from 'lucide-react';
-import { navigation } from '@/config/navigation';
+import { navigation, type NavLink } from '@/config/navigation';
 import { site } from '@/config/site';
-import { isCurrentPath, matchingMegaColumn, megaColumnKey, panelLinks } from '@/lib/nav';
+import { isCurrentPath, matchingMobileSection, megaColumnKey, nestLinks } from '@/lib/nav';
 import { cn } from '@/lib/cn';
 import { QuoteCta } from '@/components/quote/QuoteCta';
 import { Container } from '@/components/ui/Container';
@@ -14,9 +14,85 @@ import { Container } from '@/components/ui/Container';
 const linkClass =
   'flex min-h-12 items-center gap-3 rounded-md px-2 text-base no-underline text-ink-base aria-[current=page]:text-ink-brand aria-[current=page]:font-medium';
 
+function sectionId(label: string) {
+  return `mobile-section-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+}
+
+function NestedLinks({
+  link,
+  children,
+  pathname,
+  expanded,
+  onToggle,
+}: {
+  link: NavLink;
+  children: NavLink[];
+  pathname: string;
+  expanded: boolean;
+  onToggle: () => void;
+}) {
+  if (children.length === 0) {
+    return (
+      <li>
+        <Link
+          href={link.href}
+          aria-current={isCurrentPath(pathname, link.href) ? 'page' : undefined}
+          className={cn(linkClass, 'pl-6 text-sm')}
+        >
+          {link.label}
+        </Link>
+      </li>
+    );
+  }
+
+  const panelId = `mobile-nested-${link.href.replace(/[^a-z0-9]+/gi, '-')}`;
+
+  return (
+    <li>
+      <div className="flex items-center">
+        <Link
+          href={link.href}
+          aria-current={isCurrentPath(pathname, link.href) ? 'page' : undefined}
+          className={cn(linkClass, 'flex-1 pl-6 text-sm font-semibold', expanded && 'text-brand-500')}
+        >
+          {link.label}
+        </Link>
+        <button
+          type="button"
+          aria-expanded={expanded}
+          aria-controls={panelId}
+          onClick={onToggle}
+          className="inline-flex size-11 shrink-0 items-center justify-center rounded-md"
+        >
+          <span className="sr-only">
+            {expanded ? 'Hide' : 'Show'} {link.label}
+          </span>
+          <ChevronRight aria-hidden className={cn('size-4 transition', expanded && 'rotate-90 text-brand-500')} />
+        </button>
+      </div>
+      {expanded && (
+        <ul id={panelId} className="pb-2">
+          {children.map((child) => (
+            <li key={child.href}>
+              <Link
+                href={child.href}
+                aria-current={isCurrentPath(pathname, child.href) ? 'page' : undefined}
+                className={cn(linkClass, 'pl-10 text-sm')}
+              >
+                {child.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+}
+
 export function MobileNav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [openSection, setOpenSection] = useState<string | null>(null);
   const [openGroup, setOpenGroup] = useState<string | null>(null);
 
   useEffect(() => {
@@ -25,14 +101,9 @@ export function MobileNav() {
 
   useEffect(() => {
     if (!open) return;
-    const products = navigation.primary.find((item) => item.panel?.kind === 'mega');
-    const panel = products?.panel;
-    if (!panel || panel.kind !== 'mega') return;
-    const matched = matchingMegaColumn(panel.columns, pathname);
-    const onGroup =
-      (matched.href ? isCurrentPath(pathname, matched.href) : false) ||
-      matched.links.some((link) => isCurrentPath(pathname, link.href));
-    setOpenGroup(onGroup ? megaColumnKey(matched) : null);
+    const match = matchingMobileSection(navigation.primary, pathname);
+    setOpenSection(match?.label ?? null);
+    setOpenGroup(match?.group ?? null);
   }, [open, pathname]);
 
   useEffect(() => {
@@ -41,6 +112,21 @@ export function MobileNav() {
       document.body.style.overflow = '';
     };
   }, [open]);
+
+  function toggleSection(label: string) {
+    if (openSection === label) {
+      setOpenSection(null);
+      setOpenGroup(null);
+      return;
+    }
+    const match = matchingMobileSection(navigation.primary, pathname);
+    setOpenSection(label);
+    setOpenGroup(match?.label === label ? match.group : null);
+  }
+
+  function toggleGroup(key: string) {
+    setOpenGroup((current) => (current === key ? null : key));
+  }
 
   return (
     <>
@@ -71,39 +157,64 @@ export function MobileNav() {
           >
             <ul className="flex w-full flex-col">
               {navigation.primary.map((item) => {
-                const sublinks = panelLinks(item);
+                const expanded = openSection === item.label;
+                const panelId = sectionId(item.label);
+                const sectionClass = cn(
+                  'flex min-h-12 flex-1 items-center rounded-md px-2 text-left text-base font-semibold',
+                  expanded ? 'text-brand-500' : 'text-brand-700',
+                );
 
-                if (sublinks.length === 0) {
-                  return (
-                    <li key={item.label} className="border-line-base border-b">
-                      <Link
-                        href={item.href ?? '/'}
-                        aria-current={item.href && isCurrentPath(pathname, item.href) ? 'page' : undefined}
-                        className={linkClass}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  );
-                }
-
-                if (item.panel?.kind === 'mega') {
-                  return (
-                    <li key={item.label} className="border-line-base border-b">
-                      {item.href && (
+                return (
+                  <li key={item.label} className="border-line-base border-b">
+                    <div className="flex items-center">
+                      {item.href ? (
                         <Link
                           href={item.href}
                           aria-current={isCurrentPath(pathname, item.href) ? 'page' : undefined}
-                          className={cn(linkClass, 'font-semibold')}
+                          className={cn(sectionClass, 'no-underline')}
                         >
                           {item.label}
                         </Link>
+                      ) : (
+                        <button
+                          type="button"
+                          aria-expanded={expanded}
+                          aria-controls={panelId}
+                          onClick={() => toggleSection(item.label)}
+                          className={cn(sectionClass, 'justify-between')}
+                        >
+                          {item.label}
+                          <ChevronRight
+                            aria-hidden
+                            className={cn('size-4 transition', expanded && 'rotate-90 text-brand-500')}
+                          />
+                        </button>
                       )}
-                      <ul className="pb-2">
+                      {item.href && (
+                        <button
+                          type="button"
+                          aria-expanded={expanded}
+                          aria-controls={panelId}
+                          onClick={() => toggleSection(item.label)}
+                          className="inline-flex size-11 shrink-0 items-center justify-center rounded-md"
+                        >
+                          <span className="sr-only">
+                            {expanded ? 'Hide' : 'Show'} {item.label}
+                          </span>
+                          <ChevronRight
+                            aria-hidden
+                            className={cn('size-4 transition', expanded && 'rotate-90 text-brand-500')}
+                          />
+                        </button>
+                      )}
+                    </div>
+
+                    {expanded && item.panel?.kind === 'mega' && (
+                      <ul id={panelId} className="pb-2">
                         {item.panel.columns.map((column) => {
                           const key = megaColumnKey(column);
-                          const expanded = openGroup === key;
-                          const panelId = `mobile-${key}`;
+                          const groupOpen = openGroup === key;
+                          const groupId = `mobile-${key.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
                           return (
                             <li key={key}>
                               <div className="flex items-center">
@@ -112,41 +223,41 @@ export function MobileNav() {
                                     href={column.href}
                                     aria-current={isCurrentPath(pathname, column.href) ? 'page' : undefined}
                                     className={cn(
-                                      'flex min-h-12 flex-1 items-center gap-1.5 rounded-md px-2 text-base font-semibold no-underline',
-                                      expanded ? 'text-brand-500' : 'text-brand-700',
+                                      'flex min-h-12 flex-1 items-center rounded-md px-2 pl-6 text-sm font-semibold no-underline',
+                                      groupOpen ? 'text-brand-500' : 'text-brand-700',
                                     )}
                                   >
                                     {column.heading}
                                   </Link>
                                 ) : (
-                                  <span className={cn('flex-1 px-2 font-semibold', expanded && 'text-brand-500')}>
+                                  <span className={cn('flex-1 px-2 pl-6 text-sm font-semibold', groupOpen && 'text-brand-500')}>
                                     {column.heading}
                                   </span>
                                 )}
                                 <button
                                   type="button"
-                                  aria-expanded={expanded}
-                                  aria-controls={panelId}
-                                  onClick={() => setOpenGroup(expanded ? null : key)}
+                                  aria-expanded={groupOpen}
+                                  aria-controls={groupId}
+                                  onClick={() => toggleGroup(key)}
                                   className="inline-flex size-11 shrink-0 items-center justify-center rounded-md"
                                 >
                                   <span className="sr-only">
-                                    {expanded ? 'Hide' : 'Show'} {column.heading}
+                                    {groupOpen ? 'Hide' : 'Show'} {column.heading}
                                   </span>
                                   <ChevronRight
                                     aria-hidden
-                                    className={cn('size-4 transition', expanded && 'rotate-90 text-brand-500')}
+                                    className={cn('size-4 transition', groupOpen && 'rotate-90 text-brand-500')}
                                   />
                                 </button>
                               </div>
-                              {expanded && (
-                                <ul id={panelId} className="pb-2">
+                              {groupOpen && (
+                                <ul id={groupId} className="pb-2">
                                   {column.links.map((link) => (
                                     <li key={link.href}>
                                       <Link
                                         href={link.href}
                                         aria-current={isCurrentPath(pathname, link.href) ? 'page' : undefined}
-                                        className={cn(linkClass, 'pl-8 text-sm')}
+                                        className={cn(linkClass, 'pl-10 text-sm')}
                                       >
                                         {link.label}
                                       </Link>
@@ -158,34 +269,23 @@ export function MobileNav() {
                           );
                         })}
                       </ul>
-                    </li>
-                  );
-                }
-
-                return (
-                  <li key={item.label} className="border-line-base border-b">
-                    {item.href && (
-                      <Link
-                        href={item.href}
-                        aria-current={isCurrentPath(pathname, item.href) ? 'page' : undefined}
-                        className={cn(linkClass, 'font-semibold')}
-                      >
-                        {item.label}
-                      </Link>
                     )}
-                    <ul className="pb-2">
-                      {sublinks.map((link) => (
-                        <li key={link.href}>
-                          <Link
-                            href={link.href}
-                            aria-current={isCurrentPath(pathname, link.href) ? 'page' : undefined}
-                            className={cn(linkClass, 'pl-6 text-sm')}
+
+                    {expanded && item.panel?.kind === 'links' && (
+                      <ul id={panelId} className="pb-2">
+                        {nestLinks(item.panel.links).map((node) => (
+                          <NestedLinks
+                            key={node.link.href}
+                            link={node.link}
+                            pathname={pathname}
+                            expanded={openGroup === node.link.href}
+                            onToggle={() => toggleGroup(node.link.href)}
                           >
-                            {link.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                            {node.children}
+                          </NestedLinks>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 );
               })}
