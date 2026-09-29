@@ -41,9 +41,8 @@ export function Header() {
         <div className="flex items-center gap-2">
           <a
             href={`tel:${site.business.phoneHref}`}
-            className="text-brand-700 hidden min-h-11 items-center gap-2 px-2 text-sm font-semibold no-underline xl:inline-flex"
+            className="text-ink-base hidden min-h-11 items-center rounded-md px-3 text-sm font-medium no-underline hover:bg-neutral-100 md:inline-flex"
           >
-            <Phone className="size-4" aria-hidden="true" />
             {site.business.phone}
           </a>
 
