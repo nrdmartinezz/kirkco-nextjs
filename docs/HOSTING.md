@@ -53,6 +53,7 @@ and equipment content already in the repo:
 
 - `supabase/migrations/20260925140000_content_and_submissions.sql`
 - `supabase/migrations/20260929120000_product_variants.sql`
+- `supabase/migrations/20260929180000_backfill_product_variants.sql`
 
 ```bash
 npm run db:seed

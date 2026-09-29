@@ -4,7 +4,7 @@ Product copy lives in `src/content/products.json`. Pages read it only through `s
 
 Each product is a standalone page at `/{slug}`, using the product name as the slug. The same record is what other pages should query when they need a product list.
 
-Some records are a family of models. `variants` on the record keeps each model's title, summary, image, and sections. The family page opens the model whose slug matches the product. Other models are `/{family}?variant={slug}`. The old top-level slug permanently redirects there. Supabase stores the same array on `products.variants`.
+Some records are a family of models. `variants` on the record keeps each model's title, summary, image, and sections. The family page opens the model whose slug matches the product. Other models are `/{family}?variant={slug}`. The old top-level slug permanently redirects there. Supabase stores the same array on `products.variants`. A product with one model stores that model as the only entry, copied from the product's title, summary, image, and sections. The model selector appears only when a product has more than one variant.
 
 `/bulk-chemical-storage` is a category page, not a product. The WordPress post with that slug was left out of the catalog. `/fill-mix` is a product page. The nav item points at that product.
 
