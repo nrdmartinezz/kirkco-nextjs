@@ -120,7 +120,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
   }
 
   return (
-    <div className="mt-10 grid items-start gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(20rem,0.8fr)]">
+    <div className="mt-10 grid w-full items-start gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(20rem,0.8fr)]">
       <div className="flex min-w-0 flex-col gap-10">
         <section>
           <Heading level={2} size="md">
