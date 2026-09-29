@@ -37,7 +37,7 @@ export function buildMetadata({
 
   return {
     metadataBase: new URL(site.url),
-    title: resolvedTitle,
+    title: titleExact ? { absolute: resolvedTitle } : resolvedTitle,
     description,
     alternates: { canonical },
     robots: noindex

@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { EquipmentOptionsPage } from '@/components/equipment/EquipmentOptionsPage';
 import { EquipmentPage } from '@/components/equipment/EquipmentPage';
 import { EquipmentSubcategoryPage } from '@/components/equipment/EquipmentSubcategoryPage';
+import { equipmentOptionsDescription } from '@/content/equipment/equipment-options';
 import { getEquipmentSubcategoryPage } from '@/lib/equipment-content';
 import { ProductPage } from '@/components/products/ProductPage';
 import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
@@ -43,6 +45,15 @@ export async function generateMetadata({ params }: CatchAllProps): Promise<Metad
   }
 
   const href = `/${slug.join('/')}`;
+  if (href === '/equipment-options') {
+    return buildMetadata({
+      title: 'Equipment Options for Advanced Manufacturing | Kirkco',
+      description: equipmentOptionsDescription,
+      titleExact: true,
+      path: href,
+    });
+  }
+
   const subcategory = getEquipmentSubcategoryPage(href);
   if (subcategory) {
     return buildMetadata({
@@ -75,6 +86,11 @@ export default async function CatchAllPage({ params }: CatchAllProps) {
   }
 
   const href = `/${slug.join('/')}`;
+  if (href === '/equipment-options') {
+    const categories = await getCategories();
+    return <EquipmentOptionsPage categories={categories} />;
+  }
+
   const subcategory = getEquipmentSubcategoryPage(href);
   if (subcategory) {
     const [categories, products, studies] = await Promise.all([
