@@ -8,9 +8,12 @@ import { getEquipmentSubcategoryPage } from '@/lib/equipment-content';
 import { ProductPage } from '@/components/products/ProductPage';
 import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
 import { SimplePage } from '@/components/ui/SimplePage';
+import { IndustryPage } from '@/components/industries/IndustryPage';
+import { getIndustryPage } from '@/content/industries';
 import { getApplications } from '@/lib/applications';
 import { getEquipmentPage } from '@/lib/equipment';
 import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
+import { site } from '@/config/site';
 import { buildMetadata } from '@/lib/seo';
 import { stubTitles } from '@/lib/stubs';
 
@@ -52,6 +55,18 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
   }
 
   const href = `/${slug.join('/')}`;
+  const industry = getIndustryPage(href);
+  if (industry) {
+    return buildMetadata({
+      title: `${industry.title} | ${site.name}`,
+      description: industry.description || industry.title,
+      titleExact: true,
+      path: industry.href,
+      image: industry.heroImage,
+      imageAlt: industry.heroImageAlt,
+    });
+  }
+
   if (href === '/equipment-options') {
     return buildMetadata({
       title: 'Equipment Options for Advanced Manufacturing | Kirkco',
@@ -94,6 +109,9 @@ export default async function CatchAllPage({ params, searchParams }: CatchAllPro
   }
 
   const href = `/${slug.join('/')}`;
+  const industry = getIndustryPage(href);
+  if (industry) return <IndustryPage page={industry} />;
+
   if (href === '/equipment-options') {
     const categories = await getCategories();
     return <EquipmentOptionsPage categories={categories} />;

@@ -39,8 +39,24 @@ export function IndustriesCarousel() {
     return () => window.cancelAnimationFrame(frame);
   }, [animate]);
 
+  useEffect(() => {
+    if (index > count + 1 || index < 0) {
+      setAnimate(false);
+      const wrapped = ((index % count) + count) % count;
+      setIndex(wrapped === 0 ? count : wrapped);
+      return;
+    }
+    if (index !== 0 && index !== count + 1) return;
+    const timer = window.setTimeout(() => {
+      setAnimate(false);
+      setIndex(index === 0 ? count : 1);
+    }, 560);
+    return () => window.clearTimeout(timer);
+  }, [index, count]);
+
   function onPointerDown(event: React.PointerEvent<HTMLDivElement>) {
-    if ((event.target as HTMLElement).closest('button')) return;
+    const target = event.target;
+    if (target instanceof Element && target.closest('a, button')) return;
     drag.current = { startX: event.clientX, dx: 0 };
     suppressClick.current = false;
     setDragging(true);
@@ -66,6 +82,11 @@ export function IndustriesCarousel() {
   }
 
   function onClickCapture(event: React.MouseEvent) {
+    const target = event.target;
+    if (target instanceof Element && target.closest('a')) {
+      suppressClick.current = false;
+      return;
+    }
     if (!suppressClick.current) return;
     event.preventDefault();
     event.stopPropagation();

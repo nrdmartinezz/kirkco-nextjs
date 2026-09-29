@@ -50,6 +50,7 @@ function toPage(row: EquipmentRow): EquipmentPageContent {
 export const getEquipmentPage = cache(async (href: string) => {
   const local = getLocalEquipmentPage(href);
   if (local) return local;
+  if (!process.env.SUPABASE_URL || !process.env.SUPABASE_ANON_KEY) return undefined;
 
   const { data, error } = await supabaseAnon().from('equipment_pages').select('*').eq('href', href).maybeSingle();
   if (error) throw new Error(error.message);
