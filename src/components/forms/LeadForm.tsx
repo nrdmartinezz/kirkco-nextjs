@@ -54,7 +54,7 @@ export function LeadForm({ formType }: LeadFormProps) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="relative mt-8 flex flex-col gap-4">
+    <form onSubmit={onSubmit} className="relative mt-8 flex w-full flex-col gap-4">
       <div className="absolute left-[-9999px] h-0 overflow-hidden" aria-hidden="true">
         <label>
           Leave this field empty
