@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { DM_Sans, Inter } from 'next/font/google';
 import { Analytics } from '@/components/analytics/Analytics';
+import { ContactDrawer } from '@/components/layout/ContactDrawer';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 import { QuoteProvider } from '@/components/quote/QuoteProvider';
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Footer />
           <JsonLd />
           <Analytics />
+          <ContactDrawer />
         </QuoteProvider>
       </body>
     </html>
