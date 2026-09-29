@@ -22,6 +22,15 @@ export type ProductSection = {
   images?: ProductImage[];
 };
 
+export type ProductVariant = {
+  slug: string;
+  title: string;
+  tagline?: string;
+  summary?: string;
+  sections?: ProductSection[];
+  image?: ProductImage & { alt: string };
+};
+
 export type Product = {
   slug: string;
   title: string;
@@ -34,6 +43,8 @@ export type Product = {
   image?: ProductImage & { alt: string };
   /** True when the source had no body. Tagline and summary are the page. */
   thin?: boolean;
+  /** Selectable models on this page. The first matching slug is this product. */
+  variants?: ProductVariant[];
 };
 
 export type BreadcrumbCrumb = {
@@ -50,6 +61,7 @@ type ProductRow = {
   image: (ProductImage & { alt?: string }) | null;
   sections: ProductSection[] | null;
   thin: boolean;
+  variants: ProductVariant[] | null;
   product_category_links: { category_slug: string; sort: number }[] | null;
 };
 
@@ -61,8 +73,20 @@ type CategoryRow = {
   sort: number;
 };
 
+function toVariant(variant: ProductVariant): ProductVariant {
+  return {
+    slug: variant.slug,
+    title: variant.title,
+    tagline: variant.tagline || undefined,
+    summary: variant.summary || undefined,
+    sections: variant.sections ?? undefined,
+    image: variant.image ? { src: variant.image.src, alt: variant.image.alt ?? '' } : undefined,
+  };
+}
+
 function toProduct(row: ProductRow): Product {
   const links = [...(row.product_category_links ?? [])].sort((a, b) => a.sort - b.sort);
+  const variants = (row.variants ?? []).map(toVariant);
   return {
     slug: row.slug,
     title: row.title,
@@ -73,6 +97,7 @@ function toProduct(row: ProductRow): Product {
     sections: row.sections ?? undefined,
     image: row.image ? { src: row.image.src, alt: row.image.alt ?? '' } : undefined,
     thin: row.thin || undefined,
+    variants: variants.length > 0 ? variants : undefined,
   };
 }
 
@@ -87,6 +112,7 @@ function productsFromJson(): Product[] {
       tagline: product.tagline || undefined,
       summary: product.summary || undefined,
       thin: product.thin || undefined,
+      variants: product.variants?.length ? product.variants.map(toVariant) : undefined,
     }))
     .sort((left, right) => left.title.localeCompare(right.title));
 }
@@ -105,7 +131,7 @@ export const getProducts = cache(async () => {
   if (!hasSupabase()) return productsFromJson();
   const { data, error } = await supabaseAnon()
     .from('products')
-    .select('slug, title, updated, tagline, summary, image, sections, thin, product_category_links(category_slug, sort)')
+    .select('slug, title, updated, tagline, summary, image, sections, thin, variants, product_category_links(category_slug, sort)')
     .order('title');
   if (error) throw new Error(error.message);
   return ((data ?? []) as ProductRow[]).map(toProduct);
@@ -115,7 +141,7 @@ export const getProduct = cache(async (slug: string) => {
   if (!hasSupabase()) return productsFromJson().find((product) => product.slug === slug);
   const { data, error } = await supabaseAnon()
     .from('products')
-    .select('slug, title, updated, tagline, summary, image, sections, thin, product_category_links(category_slug, sort)')
+    .select('slug, title, updated, tagline, summary, image, sections, thin, variants, product_category_links(category_slug, sort)')
     .eq('slug', slug)
     .maybeSingle();
   if (error) throw new Error(error.message);
@@ -166,4 +192,38 @@ export function breadcrumbTrails(product: Product, categories: ProductCategory[]
     crumbs.push(productCrumb);
     return crumbs;
   });
+}
+
+export function productVariants(product: Product): ProductVariant[] {
+  if (product.variants?.length) return product.variants;
+  return [
+    {
+      slug: product.slug,
+      title: product.title,
+      tagline: product.tagline,
+      summary: product.summary,
+      sections: product.sections,
+      image: product.image,
+    },
+  ];
+}
+
+export function selectedVariant(product: Product, slug?: string): ProductVariant {
+  const variants = productVariants(product);
+  const primary = variants.find((variant) => variant.slug === product.slug) ?? variants[0];
+  if (!slug || slug === product.slug) return primary;
+  return variants.find((variant) => variant.slug === slug) ?? primary;
+}
+
+export function variantPath(product: Product, variant: ProductVariant) {
+  if (variant.slug === product.slug) return `/${product.slug}`;
+  return `/${product.slug}?variant=${encodeURIComponent(variant.slug)}`;
+}
+
+export function findQuotedProduct(products: Product[], slug: string) {
+  for (const product of products) {
+    if (product.slug === slug) return { slug: product.slug, title: product.title };
+    const variant = product.variants?.find((item) => item.slug === slug);
+    if (variant) return { slug: variant.slug, title: variant.title };
+  }
 }

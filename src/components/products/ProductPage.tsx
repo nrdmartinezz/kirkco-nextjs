@@ -6,7 +6,16 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import { ProductBreadcrumb } from '@/components/products/ProductBreadcrumb';
 import { site } from '@/config/site';
-import { breadcrumbTrails, categoriesFor, type BreadcrumbCrumb, type Product, type ProductCategory } from '@/lib/products';
+import {
+  breadcrumbTrails,
+  categoriesFor,
+  productVariants,
+  variantPath,
+  type BreadcrumbCrumb,
+  type Product,
+  type ProductCategory,
+  type ProductVariant,
+} from '@/lib/products';
 
 function BreadcrumbList({ crumbs, productHref }: { crumbs: BreadcrumbCrumb[]; productHref: string }) {
   const jsonLd = {
@@ -23,9 +32,22 @@ function BreadcrumbList({ crumbs, productHref }: { crumbs: BreadcrumbCrumb[]; pr
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
-export function ProductPage({ product, categories }: { product: Product; categories: ProductCategory[] }) {
+export function ProductPage({
+  product,
+  categories,
+  variant,
+}: {
+  product: Product;
+  categories: ProductCategory[];
+  variant: ProductVariant;
+}) {
   const productCategories = categoriesFor(product, categories);
-  const trails = breadcrumbTrails(product, categories);
+  const variants = productVariants(product);
+  const trails = breadcrumbTrails(product, categories).map((trail) =>
+    trail.map((crumb, index) => (index === trail.length - 1 ? { ...crumb, name: variant.title } : crumb)),
+  );
+  const hero = variant.image ?? product.image;
+  const sections = variant.sections;
   const choices = productCategories.map((category) => {
     const group = trails.find((trail) => trail.some((crumb) => crumb.href === category.href));
     const groupHref = group?.find((crumb) => crumb.href && crumb.href !== category.href && crumb.href !== '/')?.href ?? category.href;
@@ -34,15 +56,15 @@ export function ProductPage({ product, categories }: { product: Product; categor
 
   return (
     <Section spacing="none" className="pt-6 pb-section md:pt-8">
-      <BreadcrumbList crumbs={trails[0] ?? []} productHref={`/${product.slug}`} />
+      <BreadcrumbList crumbs={trails[0] ?? []} productHref={variantPath(product, variant)} />
       <Container gap="lg">
         <ProductBreadcrumb trails={trails} choices={choices} />
         <div className="flex w-full flex-col items-start gap-8 md:flex-row md:gap-12">
-          {product.image && (
+          {hero && (
             <div className="bg-neutral-50 relative aspect-square w-full shrink-0 overflow-hidden rounded-lg md:w-[46%]">
               <Image
-                src={product.image.src}
-                alt={product.image.alt}
+                src={hero.src}
+                alt={hero.alt || variant.title}
                 fill
                 priority
                 className="object-contain p-4"
@@ -53,10 +75,35 @@ export function ProductPage({ product, categories }: { product: Product; categor
 
           <div className="flex min-w-0 flex-1 flex-col">
             <Heading level={1} size="xl">
-              {product.title}
+              {variant.title}
             </Heading>
-            {product.tagline && <p className="text-brand-500 mt-3 text-lg font-semibold">{product.tagline}</p>}
-            {product.summary && <p className="text-ink-muted mt-4 leading-relaxed">{product.summary}</p>}
+            {variant.tagline && <p className="text-brand-500 mt-3 text-lg font-semibold">{variant.tagline}</p>}
+            {variants.length > 1 && (
+              <div className="mt-6">
+                <p className="text-sm font-semibold">Models</p>
+                <ul className="mt-2 flex flex-wrap gap-2">
+                  {variants.map((option) => {
+                    const selected = option.slug === variant.slug;
+                    return (
+                      <li key={option.slug}>
+                        <Link
+                          href={variantPath(product, option)}
+                          aria-current={selected ? 'page' : undefined}
+                          className={
+                            selected
+                              ? 'bg-brand-500 inline-flex rounded-full px-3 py-1 text-sm font-semibold text-white no-underline'
+                              : 'bg-brand-100 text-brand-700 inline-flex rounded-full px-3 py-1 text-sm font-semibold no-underline transition-colors hover:bg-brand-500 hover:text-white'
+                          }
+                        >
+                          {option.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+            {variant.summary && <p className="text-ink-muted mt-4 leading-relaxed">{variant.summary}</p>}
             {productCategories.length > 0 && (
               <ul className="mt-6 flex flex-wrap gap-2">
                 {productCategories.map((category) => (
@@ -71,13 +118,13 @@ export function ProductPage({ product, categories }: { product: Product; categor
                 ))}
               </ul>
             )}
-            <AddToQuoteButton slug={product.slug} title={product.title} />
+            <AddToQuoteButton slug={variant.slug} title={variant.title} />
           </div>
         </div>
 
-        {product.sections && product.sections.length > 0 && (
+        {sections && sections.length > 0 && (
           <div className="flex w-full flex-col gap-10">
-            {product.sections.map((section, index) => (
+            {sections.map((section, index) => (
               <div key={`${section.heading ?? 'section'}-${index}`}>
                 {section.heading && <Heading level={2}>{section.heading}</Heading>}
                 {section.paragraphs?.map((paragraph) => (

@@ -44,8 +44,7 @@ export const singleComponent: SingleComponentPageContent = {
       intro: 'Metering valves operate on positive displacement principles to ensure exact volumetric delivery.',
       body: 'For applications where shot-to-shot accuracy is non-negotiable, Kirkco metering valves operate on positive displacement principles to ensure exact volumetric delivery regardless of temperature or viscosity fluctuations. Each cycle completely empties the defined chamber volume, providing high repetition accuracy and the flexibility to adjust output volume for different product configurations.',
       names: [
-        'Cartridge Metering Valves',
-        'Chamber Metering Valves',
+        'Chamber Metering Valve',
         'Handheld Dispensing Valves',
         'Positive Displacement',
         'Progressive Cavity Valves',

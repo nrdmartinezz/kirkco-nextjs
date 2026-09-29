@@ -65,7 +65,7 @@ export const adhesivesSealants: EquipmentPageContent = {
     },
     {
       title: 'Tooling Paste & Seamless Molding',
-      description: 'Eldo-Mix 401T, GP 401 TPD for precision tooling and modeling applications',
+      description: 'Eldo-Mix for precision tooling and modeling applications',
       href: '/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste',
       categorySlug: 'tooling-paste',
     },
@@ -77,7 +77,7 @@ export const adhesivesSealants: EquipmentPageContent = {
     },
     {
       title: 'Putty & Paste Systems',
-      description: 'GP 401 APD, CF Versa, and GP 401 TPD for high-viscosity paste dispensing',
+      description: 'Conti-Flow Versa and Eldo-Mix for high-viscosity paste dispensing',
       href: '/equipment-options/adhesives-sealants/putty-paste',
       categorySlug: 'putty-paste',
     },
@@ -141,8 +141,7 @@ export const adhesivesSealants: EquipmentPageContent = {
         {
           title: 'Tooling Paste',
           links: [
-            { label: 'Eldo-Mix 401T & Tooling Mix', href: '/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste' },
-            { label: 'GP 401 TPD', href: '/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste' },
+            { label: 'Eldo-Mix', href: '/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste' },
           ],
         },
         {
@@ -152,8 +151,8 @@ export const adhesivesSealants: EquipmentPageContent = {
         {
           title: 'Putty & Paste',
           links: [
-            { label: 'GP 401 APD & CF Versa', href: '/equipment-options/adhesives-sealants/putty-paste' },
-            { label: 'GP 401 TPD', href: '/equipment-options/adhesives-sealants/putty-paste' },
+            { label: 'Conti-Flow Versa', href: '/equipment-options/adhesives-sealants/putty-paste' },
+            { label: 'Eldo-Mix', href: '/equipment-options/adhesives-sealants/putty-paste' },
           ],
         },
       ],

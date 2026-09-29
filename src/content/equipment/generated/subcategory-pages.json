@@ -41,10 +41,7 @@
         "names": [
           "Electronic Metering",
           "Gear Flow Meter",
-          "Light Barrier",
-          "Micro-flow Sensor",
           "MR40 Metering Control Unit",
-          "Pressure Sensors",
           "Stroke Detection"
         ]
       }
@@ -60,16 +57,7 @@
     "breadcrumbLeaf": "Integration / Automation",
     "categorySlug": "integration-automation",
     "overview": "Integration & Automation represents the system layer that connects Kirkco dispensing, metering, and monitoring equipment into coordinated manufacturing workflows. This category focuses on how individual components—such as control computers, metering units, and sensors—interface with higher-level automation systems to enable synchronized, repeatable production. Rather than describing standalone devices, Integration & Automation abstracts how Kirkco equipment operates within automated cells, production lines, and factory control architectures. These systems support communication between dispensing hardware and external controls, allowing processes to be triggered, adjusted, and verified as part of broader manufacturing operations.",
-    "groups": [
-      {
-        "title": "Equipment options",
-        "intro": "",
-        "body": "",
-        "names": [
-          "Pressure Sensors"
-        ]
-      }
-    ],
+    "groups": [],
     "sections": []
   },
   "/equipment-options/paint-coatings/specialty-finishes": {
@@ -98,8 +86,7 @@
         "intro": "",
         "body": "",
         "names": [
-          "PROTEC 2K Mixing & Dosing Unit",
-          "TWINCONTROL 2K Mixing & Dosing Unit"
+          "PROTEC 2K Mixing & Dosing Unit"
         ]
       }
     ],
@@ -119,8 +106,7 @@
         "intro": "",
         "body": "",
         "names": [
-          "ID Spray Wall",
-          "Spray Wall Basic 8000"
+          "ID Spray Wall"
         ]
       }
     ],
@@ -141,9 +127,7 @@
         "body": "",
         "names": [
           "ICF – Integral Compact Filter Spray System",
-          "ICM – Integral Compact Multicyclone Spray System",
-          "M-Cube",
-          "Super Cube"
+          "M-Cube"
         ]
       }
     ],
@@ -165,11 +149,8 @@
         "body": "",
         "names": [
           "ICF – Integral Compact Filter Spray System",
-          "ICM – Integral Compact Multicyclone Spray System",
           "ID Spray Wall",
-          "M-Cube",
-          "Spray Wall Basic 8000",
-          "Super Cube"
+          "M-Cube"
         ]
       }
     ],
@@ -212,8 +193,7 @@
         "intro": "",
         "body": "",
         "names": [
-          "High Pressure Impingement Mixing Valve",
-          "Low Pressure Impingement Mixing Valve"
+          "High Pressure Impingement Mixing Valve"
         ]
       }
     ],
@@ -260,10 +240,7 @@
           "ALFAMIX",
           "ECO MIX",
           "RIM MIX",
-          "ULTRAMIX",
-          "ULTRAMIX 10-S MICRO DOSING",
-          "ULTRAMIX P",
-          "ULTRAMIX PLUS"
+          "ULTRAMIX"
         ]
       }
     ],
@@ -384,10 +361,9 @@
         "body": "",
         "names": [
           "Progressive Cavity Valves",
-          "Vecdos eOne",
+          "Vecdos eTwin",
           "Needle Metering Valve",
-          "Chamber Metering Valve",
-          "Cartridge Metering Valve"
+          "Chamber Metering Valve"
         ]
       }
     ],
@@ -429,7 +405,7 @@
         "intro": "",
         "body": "",
         "names": [
-          "2C Gel Coat",
+          "Eldo-Mix",
           "Conti-Flow Versa",
           "FRP Gel Coat Systems",
           "GP-301"
@@ -453,7 +429,7 @@
         "intro": "",
         "body": "",
         "names": [
-          "2C Gel Coat",
+          "Eldo-Mix",
           "Conti-Flow Versa",
           "FRP Gel Coat Systems",
           "GP-301"
@@ -480,7 +456,7 @@
         "body": "",
         "names": [
           "GP-301",
-          "GP-703"
+          "Eldo-Mix"
         ]
       }
     ],
@@ -501,9 +477,9 @@
         "intro": "",
         "body": "",
         "names": [
-          "Conti-Flow Vario",
+          "Conti-Flow Versa",
           "GP-301",
-          "GP-703"
+          "Eldo-Mix"
         ]
       }
     ],
@@ -523,9 +499,7 @@
         "intro": "",
         "body": "",
         "names": [
-          "2C 3C Infusion Resin Systems",
-          "2C Infusion Resin",
-          "3C Glue Resins"
+          "Eldo-Mix"
         ]
       }
     ],
@@ -545,11 +519,9 @@
         "intro": "",
         "body": "",
         "names": [
-          "Conti-Flow Compact",
-          "Conti-Flow Vario",
+          "Conti-Flow Versa",
           "Eldo-Mix",
-          "GP-301",
-          "GP-703"
+          "GP-301"
         ]
       }
     ],
@@ -571,7 +543,7 @@
         "names": [
           "Conti-Flow Versa",
           "Eldo-Mix",
-          "GP 302"
+          "GP-301"
         ]
       }
     ],
@@ -594,14 +566,7 @@
         "names": [
           "Conti-Flow Versa",
           "Eldo-Mix",
-          "GP 302",
-          "Conti-Flow Vario",
-          "Conti-Flow Compact",
-          "GP-301",
-          "GP-703",
-          "2C 3C Infusion Resin Systems",
-          "2C Infusion Resin",
-          "3C Glue Resins"
+          "GP-301"
         ]
       }
     ],
@@ -623,10 +588,7 @@
         "intro": "",
         "body": "",
         "names": [
-          "Conti-Flow Versa",
-          "Conti-Flow Vario",
-          "Conti-Flow Lab",
-          "Conti-Flow Compact"
+          "Conti-Flow Versa"
         ]
       }
     ],
@@ -694,10 +656,9 @@
         "body": "",
         "names": [
           "Progressive Cavity Valves",
-          "Vecdos eOne",
+          "Vecdos eTwin",
           "Needle Metering Valve",
-          "Chamber Metering Valve",
-          "Cartridge Metering Valve"
+          "Chamber Metering Valve"
         ]
       }
     ],
@@ -812,8 +773,6 @@
         "body": "",
         "names": [
           "LSR Conti Mix 200",
-          "LSR-20 ELA & LSR-200 ELA",
-          "LSR-20 LC",
           "Silco Mix"
         ]
       }
@@ -851,15 +810,14 @@
     "parentLabel": "Adhesives & Sealants",
     "breadcrumbLeaf": "Tooling Paste & Seamless Modeling Paste Systems",
     "categorySlug": "tooling-paste",
-    "overview": "Meter, mix, and dispense high-viscosity tooling and modeling pastes with an equipment architecture built around your material, surface, and production requirements. Kirkco designs dispensing systems for pasty two-component materials used in composite tooling, modeling, pattern development, sealing, and related manufacturing processes. Our equipment is engineered to support controlled material delivery from standard containers, consistent blending, smooth application, and repeatable production workflows. The tooling paste portfolio includes the GP 401 TPD and Eldo-Mix 401T & Tooling Mix, systems identified by Kirkco for pasty two-component materials such as polyurethanes, epoxy resins, and microball-filled materials.",
+    "overview": "Meter, mix, and dispense high-viscosity tooling and modeling pastes with an equipment architecture built around your material, surface, and production requirements. Kirkco designs dispensing systems for pasty two-component materials used in composite tooling, modeling, pattern development, sealing, and related manufacturing processes. Our equipment is engineered to support controlled material delivery from standard containers, consistent blending, smooth application, and repeatable production workflows. The tooling paste portfolio is the Eldo-Mix family, including the GP 401 TPD and 401T tooling configurations for pasty two-component materials such as polyurethanes, epoxy resins, and microball-filled materials.",
     "groups": [
       {
         "title": "Equipment options",
         "intro": "",
         "body": "",
         "names": [
-          "GP 401 TPD",
-          "Eldo-Mix 401T & Tooling Mix"
+          "Eldo-Mix"
         ]
       }
     ],
@@ -911,9 +869,7 @@
         "intro": "Processing systems for liquid silicone rubber applications.",
         "body": "",
         "names": [
-          "LSR-20 ELA & LSR-200 ELA",
-          "LSR-20 LC",
-          "LSR Conti-Mix 200",
+          "LSR Conti Mix 200",
           "Silco Mix"
         ]
       },
@@ -924,7 +880,6 @@
         "names": [
           "Dyna Static",
           "Dynamic Static Mixers",
-          "Low Pressure Impingement Mixing Valve",
           "High Pressure Impingement Mixing Valve"
         ]
       }
@@ -948,8 +903,8 @@
         "intro": "",
         "body": "",
         "names": [
-          "GP 401 TPD",
-          "GP 401 APD & CF Versa"
+          "Eldo-Mix",
+          "Conti-Flow Versa"
         ]
       }
     ],

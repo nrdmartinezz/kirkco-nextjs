@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { site } from '@/config/site';
-import { getProducts } from '@/lib/products';
+import { findQuotedProduct, getProducts } from '@/lib/products';
 import { parseQuoteCompany, parseSubmittedQuoteLines } from '@/lib/quote';
 import { supabaseAdmin } from '@/lib/supabase';
 
@@ -54,10 +54,9 @@ async function quotePayload(record: Record<string, unknown>) {
   if (!company.ok) return company;
 
   const products = await getProducts();
-  const bySlug = new Map(products.map((product) => [product.slug, product]));
   const lines = [];
   for (const line of submitted) {
-    const product = bySlug.get(line.slug);
+    const product = findQuotedProduct(products, line.slug);
     if (!product) return { ok: false as const, message: 'That product is not available.' };
     lines.push({ slug: product.slug, title: product.title, qty: line.qty, ...(line.notes ? { notes: line.notes } : {}) });
   }

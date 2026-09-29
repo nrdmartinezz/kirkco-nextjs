@@ -10,7 +10,7 @@ import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { getApplications } from '@/lib/applications';
 import { getEquipmentPage } from '@/lib/equipment';
-import { categoryByHref, getCategories, getProduct, getProducts } from '@/lib/products';
+import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
 import { buildMetadata } from '@/lib/seo';
 import { stubTitles } from '@/lib/stubs';
 
@@ -18,7 +18,12 @@ export const revalidate = 60;
 
 type CatchAllProps = {
   params: Promise<{ slug: string[] }>;
+  searchParams: Promise<{ variant?: string | string[] }>;
 };
+
+function firstParam(value: string | string[] | undefined) {
+  return typeof value === 'string' ? value : value?.[0];
+}
 
 export async function generateStaticParams() {
   const params = new Map<string, { slug: string[] }>();
@@ -31,16 +36,18 @@ export async function generateStaticParams() {
   return [...params.values()];
 }
 
-export async function generateMetadata({ params }: CatchAllProps): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: CatchAllProps): Promise<Metadata> {
   const { slug } = await params;
   const product = slug.length === 1 ? await getProduct(slug[0]) : undefined;
   if (product) {
+    const variant = selectedVariant(product, firstParam((await searchParams).variant));
+    const image = variant.image ?? product.image;
     return buildMetadata({
-      title: product.title,
-      description: product.summary || product.tagline || product.title,
-      path: `/${product.slug}`,
-      image: product.image?.src,
-      imageAlt: product.image?.alt,
+      title: variant.title,
+      description: variant.summary || variant.tagline || variant.title,
+      path: variantPath(product, variant),
+      image: image?.src,
+      imageAlt: image?.alt,
     });
   }
 
@@ -77,12 +84,13 @@ export async function generateMetadata({ params }: CatchAllProps): Promise<Metad
   return { title: title ?? 'Page' };
 }
 
-export default async function CatchAllPage({ params }: CatchAllProps) {
+export default async function CatchAllPage({ params, searchParams }: CatchAllProps) {
   const { slug } = await params;
   const product = slug.length === 1 ? await getProduct(slug[0]) : undefined;
   if (product) {
     const categories = await getCategories();
-    return <ProductPage product={product} categories={categories} />;
+    const variant = selectedVariant(product, firstParam((await searchParams).variant));
+    return <ProductPage product={product} categories={categories} variant={variant} />;
   }
 
   const href = `/${slug.join('/')}`;

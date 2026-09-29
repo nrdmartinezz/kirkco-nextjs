@@ -1,62 +1,5 @@
 [
   {
-    "slug": "2c-3c-infusion-resin-systems",
-    "title": "2C 3C Infusion Resin Systems",
-    "updated": "2025-12-23",
-    "categories": [
-      "closed-mold-technology"
-    ],
-    "tagline": "Resin Infusion Systems",
-    "summary": "The Eldo-Mix newly developed metering system range for the processing of unfilled vacuum infusion resins combine highly accurate metering pumps with extremely fast control engineering. The Eldo-Mix vacuum infusion resin system has a mix ratio monitoring and regulating control package to insure contenuious and accurate metering ration accuracy of less than 1% deviation and the output rate during production can be modified in 2% steps.",
-    "thin": true,
-    "image": {
-      "src": "/products/vacuum-infusion-molding.jpg",
-      "alt": "Resign Infusion system"
-    }
-  },
-  {
-    "slug": "2c-gel-coat",
-    "title": "2C Gel Coat",
-    "updated": "2025-12-23",
-    "categories": [
-      "open-mold-technology"
-    ],
-    "summary": "The ELDO-MIX gel coat systems have been especiallydeveloped for processing highly thixotropic materials onto the untreated surfaces of rotor blades. By the use of gearmetering pumps\\ which are also suitable for abrasive fillersand magnetically coupled axial piston pumps for the Bcomponent; output rates of up to 5 l/min can be achieved. The material supply of the mobile system is carried out frommaterial pressure vessels that are installed on the chassis. Not only can materials with viscosities up to the flow limit beapplied with this gel coat system, but also the mixing ratiosare adjustable within a wide range.",
-    "thin": true,
-    "image": {
-      "src": "/products/Gel_Coat-2C.jpg",
-      "alt": "Eldo mix on portable dolly"
-    }
-  },
-  {
-    "slug": "2c-infusion-resin",
-    "title": "2C Infusion Resin",
-    "updated": "2025-12-23",
-    "categories": [
-      "closed-mold-technology"
-    ],
-    "summary": "The Eldo-Mix metering system range for the processing of unfilled vacuum infusion resins combine highly accurate metering pumps with extremely fast control engineering. The Eldo-Mix vacuum infusion resin system has a mix ratio monitoring and regulating control package to insure continuous and accurate metering ration accuracy of less than 1% deviation and the output rate during production can be modified in 2% steps",
-    "thin": true,
-    "image": {
-      "src": "/products/vacuum-infusion-molding.jpg",
-      "alt": "Resign Infusion system"
-    }
-  },
-  {
-    "slug": "3c-glue-resins",
-    "title": "3C Glue Resins",
-    "updated": "2025-12-23",
-    "categories": [
-      "closed-mold-technology"
-    ],
-    "summary": "The ELDO-MIX Glue Resin series metering \\ mixing and dispensing system was designed to process the extremely high viscosity resins required to bond two composite components together",
-    "thin": true,
-    "image": {
-      "src": "/products/vacuum-infusion-molding.jpg",
-      "alt": "Resign Infusion system"
-    }
-  },
-  {
     "slug": "air-operated-diaphragm-pumps",
     "title": "Air Operated Diaphragm Pumps",
     "updated": "2025-12-20",
@@ -100,9 +43,9 @@
         ]
       },
       {
-        "heading": "Unica 4\u2011270 Diaphragm Pump",
+        "heading": "Unica 4‑270 Diaphragm Pump",
         "paragraphs": [
-          "The Unica 4\u2011270 is a robust industrial diaphragm pump designed for smooth material transfer of adhesives, sealants, and similar fluids, minimizing shear and maintaining material integrity."
+          "The Unica 4‑270 is a robust industrial diaphragm pump designed for smooth material transfer of adhesives, sealants, and similar fluids, minimizing shear and maintaining material integrity."
         ],
         "images": [
           {
@@ -175,39 +118,6 @@
     }
   },
   {
-    "slug": "cartridge-metering-valve",
-    "title": "Cartridge Metering Valve",
-    "updated": "2025-12-11",
-    "categories": [
-      "metering"
-    ],
-    "tagline": "Metering Valves for Single Component Systems",
-    "summary": "The Cartridge Chamber Metering Valve is a new generation of precision metering valves based on a completely new principle. Example: Postive Displacement Cartridge Metering Valve. The metering chamber is an exchangeable cartridge contained within an aluminum valve body. The valve consists of two separate parts, a fluid section and a pneumatic section. This separation reduces the chance for leaking material to flow into the actuating air cylinder that might cause a malfunction of the valve. The needle is sealed by means of adjustable packing set. Speed of metering depends on the material viscosity and the material pressure.",
-    "sections": [
-      {
-        "heading": "Cartridge Chamber Metering Valve Features and Benefits",
-        "items": [
-          "Valve Body Made Of Aluminum",
-          "Capable Of Withstanding High Pressure",
-          "Snuff Back Suction",
-          "Electric Or Pneumatic Activation Control",
-          "Option - Fine Tuning Of Shot Size",
-          "Option - Double Sensor Receptacles For Monitoring The Stroke Needle Position",
-          "Option - Handle With Pneumatic Or Electric Control"
-        ],
-        "images": [
-          {
-            "src": "/products/Metering_Valves_Application.jpg"
-          }
-        ]
-      }
-    ],
-    "image": {
-      "src": "/products/418-valve2nsfa2.jpg",
-      "alt": "Cartridge metering valve on white background"
-    }
-  },
-  {
     "slug": "chamber-metering-valve",
     "title": "Chamber Metering Valve",
     "updated": "2025-12-11",
@@ -215,7 +125,7 @@
       "metering"
     ],
     "tagline": "Chamber Metering Valves",
-    "summary": "Kirkco uses Chamber metering valves for processing low to high-viscosity media. Example: Positive Displacement Chamber Metering Valve. The valve consists of two separate parts. A control valve section and a metering chamber section. This separation means that it is possible to change or repair the metering range of the valve without having to remove the unit from the production line. The control valve functions as both the supply inlet and dispensing outlet. The metering chamber is used to set the metering volume. The metering volume is fully adjustable within the chamber\u2019s given range. Standard sizes in different optional types allow a shot size from 0,050 up to 100,00 cm3",
+    "summary": "Kirkco uses Chamber metering valves for processing low to high-viscosity media. Example: Positive Displacement Chamber Metering Valve. The valve consists of two separate parts. A control valve section and a metering chamber section. This separation means that it is possible to change or repair the metering range of the valve without having to remove the unit from the production line. The control valve functions as both the supply inlet and dispensing outlet. The metering chamber is used to set the metering volume. The metering volume is fully adjustable within the chamber’s given range. Standard sizes in different optional types allow a shot size from 0,050 up to 100,00 cm3",
     "sections": [
       {
         "heading": "Cartridge Chamber Metering Valve Features and Benefits",
@@ -238,111 +148,67 @@
     "image": {
       "src": "/products/415-valveimsfa2.jpg",
       "alt": "Chamber metering valve"
-    }
-  },
-  {
-    "slug": "conti-flow-compact",
-    "title": "Conti-Flow Compact",
-    "updated": "2025-12-23",
-    "categories": [
-      "two-component",
-      "closed-mold-technology"
-    ],
-    "summary": "Compact and slim design with a small footprint for narrow workspaces. Manual applications, Ergonomic integration of the control panel.",
-    "thin": true,
-    "image": {
-      "src": "/products/conti-flow-compact.jpg",
-      "alt": "Conti-Flow Compact"
-    }
-  },
-  {
-    "slug": "conti-flow-lab",
-    "title": "Conti-Flow Lab",
-    "updated": "2025-12-22",
-    "categories": [
-      "two-component"
-    ],
-    "tagline": "Meter Mixing Unit for R&D and Prototype Applications",
-    "sections": [
+    },
+    "variants": [
       {
-        "paragraphs": [
-          "Conti-Flow Lab Benefits"
-        ],
-        "items": [
-          "Servo driven precision gear pumps",
-          "PLC control",
-          "Intuitive operator panel for easy programming",
-          "Inlet / Outlet pressure control",
-          "Pot life control",
-          "Robust 2K processing equipment for reliable operation in demanding R&D production environments",
-          "Smart metering control",
-          "Proven Precision"
+        "slug": "chamber-metering-valve",
+        "title": "Chamber Metering Valve",
+        "tagline": "Chamber Metering Valves",
+        "summary": "Kirkco uses Chamber metering valves for processing low to high-viscosity media. Example: Positive Displacement Chamber Metering Valve. The valve consists of two separate parts. A control valve section and a metering chamber section. This separation means that it is possible to change or repair the metering range of the valve without having to remove the unit from the production line. The control valve functions as both the supply inlet and dispensing outlet. The metering chamber is used to set the metering volume. The metering volume is fully adjustable within the chamber’s given range. Standard sizes in different optional types allow a shot size from 0,050 up to 100,00 cm3",
+        "image": {
+          "src": "/products/415-valveimsfa2.jpg",
+          "alt": "Chamber metering valve"
+        },
+        "sections": [
+          {
+            "heading": "Cartridge Chamber Metering Valve Features and Benefits",
+            "items": [
+              "Variable discharge rate from 0.002 ml",
+              "Output rate of 0.1 to 45 ml/min",
+              "Speed of 0 to 150 rev/min",
+              "Maximum input pressure of 6 bar",
+              "Maximum operating pressure of 10 bar",
+              "Ideally suitable for all viscosities from highly fluid to pasty",
+              "Snuff-back function",
+              "Option - Cartridge supply 10cc / 30cc / 55cc",
+              "Option - Pressure regulator and level control for cartridge supply",
+              "Option - Spray adaptor",
+              "Option - Servo controller",
+              "Option - Various needle tips"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "cartridge-metering-valve",
+        "title": "Cartridge Metering Valve",
+        "tagline": "Metering Valves for Single Component Systems",
+        "summary": "The Cartridge Chamber Metering Valve is a new generation of precision metering valves based on a completely new principle. Example: Postive Displacement Cartridge Metering Valve. The metering chamber is an exchangeable cartridge contained within an aluminum valve body. The valve consists of two separate parts, a fluid section and a pneumatic section. This separation reduces the chance for leaking material to flow into the actuating air cylinder that might cause a malfunction of the valve. The needle is sealed by means of adjustable packing set. Speed of metering depends on the material viscosity and the material pressure.",
+        "image": {
+          "src": "/products/418-valve2nsfa2.jpg",
+          "alt": "Cartridge metering valve on white background"
+        },
+        "sections": [
+          {
+            "heading": "Cartridge Chamber Metering Valve Features and Benefits",
+            "items": [
+              "Valve Body Made Of Aluminum",
+              "Capable Of Withstanding High Pressure",
+              "Snuff Back Suction",
+              "Electric Or Pneumatic Activation Control",
+              "Option - Fine Tuning Of Shot Size",
+              "Option - Double Sensor Receptacles For Monitoring The Stroke Needle Position",
+              "Option - Handle With Pneumatic Or Electric Control"
+            ],
+            "images": [
+              {
+                "src": "/products/Metering_Valves_Application.jpg"
+              }
+            ]
+          }
         ]
       }
-    ],
-    "image": {
-      "src": "/products/csm_Conti-Flow-Lab_9438983ada.png",
-      "alt": "Conti-Flow Lab"
-    }
-  },
-  {
-    "slug": "conti-flow-vario",
-    "title": "Conti-Flow Vario",
-    "updated": "2025-12-23",
-    "categories": [
-      "two-component",
-      "closed-mold-technology",
-      "filament-winding"
-    ],
-    "tagline": "Compact & Variable Two Component Epoxy Metering System",
-    "summary": "A compact and variable table-top unit for manual or automatic production processes. Proven Precision Servo-driven precision gear pumps provided the highest precision metering with low to medium-viscosity materials. Variable metering programs for optimized processes, including inlet and outlet pressure control.",
-    "sections": [
-      {
-        "heading": "Comprehensive Process Control:",
-        "items": [
-          "Intuitive Operation",
-          "Mold Pressure Control (MPC) Option For Various Composite Processes for Composite-Processing: Infusion, RTM, RIM",
-          "Configurable with Different Feeding Units, tanks, pails, drums, or totes.",
-          "Re-Circulation",
-          "Agitation",
-          "8 Channel Temperature Control"
-        ]
-      },
-      {
-        "heading": "Mixing:",
-        "items": [
-          "Gamma Mix Handgun",
-          "Static Emotionmix",
-          "Dynamic / Static"
-        ]
-      },
-      {
-        "heading": "Application",
-        "items": [
-          "Integration Into Automation System",
-          "Bonding",
-          "Sealing",
-          "Casting",
-          "Encapsulation"
-        ]
-      },
-      {
-        "heading": "Conti-Flow Vario Benefits",
-        "items": [
-          "Robust 1K and 2K processing equipment for reliable operation in demanding production environments",
-          "Smart metering control",
-          "Proven Precision",
-          "Comprehensive Process Control Possibilities",
-          "Mold-Pressure-Control (MPC) Option",
-          "Integration Into Manual or Automation System",
-          "Configurable with many useful options"
-        ]
-      }
-    ],
-    "image": {
-      "src": "/products/CF-vario-new-1.jpg",
-      "alt": "Conti flow vario for industrial dispensing automation applications"
-    }
+    ]
   },
   {
     "slug": "conti-flow-versa",
@@ -351,7 +217,9 @@
     "categories": [
       "two-component",
       "closed-mold-technology",
-      "open-mold-technology"
+      "open-mold-technology",
+      "filament-winding",
+      "putty-paste"
     ],
     "tagline": "Versatile & Flexible For Demanding Adhesive Meter Mixing Applications",
     "summary": "Mobile and compact meter mix system for liquid to high-viscous 2-component materials. This metering platform was developed to pump, proportion, mix, and dispense various two component sealants and adhesives. Typical materials this product is used for include: polysulfide, epoxy, silicone, and polyurethane materials for auto, truck/bus, window, and aircraft industries. Pumps move the fluid components from their respective containers on ratio eliminating an intermediate, variable or fixed ratio, proportioner. The Conti Flow Versa series proportioner synchronizes the volume of the two components through two precisely sized positive displacement gear pumps. Pumps are coated with protective material to prevent ware due to fillers. The fluids are delivered through hoses to a mixer assembly.",
@@ -385,7 +253,143 @@
     "image": {
       "src": "/products/csm_Conti-Flow-Versa_59010974af.png",
       "alt": "Conti-Flow Versa"
-    }
+    },
+    "variants": [
+      {
+        "slug": "conti-flow-versa",
+        "title": "Conti-Flow Versa",
+        "tagline": "Versatile & Flexible For Demanding Adhesive Meter Mixing Applications",
+        "summary": "Mobile and compact meter mix system for liquid to high-viscous 2-component materials. This metering platform was developed to pump, proportion, mix, and dispense various two component sealants and adhesives. Typical materials this product is used for include: polysulfide, epoxy, silicone, and polyurethane materials for auto, truck/bus, window, and aircraft industries. Pumps move the fluid components from their respective containers on ratio eliminating an intermediate, variable or fixed ratio, proportioner. The Conti Flow Versa series proportioner synchronizes the volume of the two components through two precisely sized positive displacement gear pumps. Pumps are coated with protective material to prevent ware due to fillers. The fluids are delivered through hoses to a mixer assembly.",
+        "image": {
+          "src": "/products/csm_Conti-Flow-Versa_59010974af.png",
+          "alt": "Conti-Flow Versa"
+        },
+        "sections": [
+          {
+            "paragraphs": [
+              "Selecting from standard pump availability determines the ratio range of the machine. A programmable electronic control allows for an adjustable variable ratio within a given range. With the optional ratio monitoring package, the computer will self-adjust automatically."
+            ]
+          },
+          {
+            "heading": "Conti-Flow Versa Benefits:",
+            "paragraphs": [
+              "The Gear Pump Two-component meter mix machines are designed for the efficient application of pasty / liquid synthetic reactive resin materials such as adhesives, polyurethanes, epoxies and silicones and is ideal for use in medium to large production runs.",
+              "Machine is used for bonding and sealing applications involving highly reactive materials in IG, molding, potting and encapsulation, foam filling of hollow spaces as well as for glazing."
+            ],
+            "items": [
+              "Robust 1K and 2K processing equipment for reliable operation in demanding production environments",
+              "Smart metering control",
+              "Proven Precision",
+              "Comprehensive Process Control Possibilities",
+              "Mold-Pressure-Control (MPC) Option",
+              "Integration Into Manual or Automation System",
+              "Configurable with many useful options",
+              "Versatile & flexible for demanding workspaces",
+              "High metering accuracy due to short distance from metering to dispensing",
+              "Highly comfortable operation with flexible boom and balancer support",
+              "Different options & features are configurable to meet requirements"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "conti-flow-compact",
+        "title": "Conti-Flow Compact",
+        "summary": "Compact and slim design with a small footprint for narrow workspaces. Manual applications, Ergonomic integration of the control panel.",
+        "image": {
+          "src": "/products/conti-flow-compact.jpg",
+          "alt": "Conti-Flow Compact"
+        }
+      },
+      {
+        "slug": "conti-flow-lab",
+        "title": "Conti-Flow Lab",
+        "tagline": "Meter Mixing Unit for R&D and Prototype Applications",
+        "image": {
+          "src": "/products/csm_Conti-Flow-Lab_9438983ada.png",
+          "alt": "Conti-Flow Lab"
+        },
+        "sections": [
+          {
+            "paragraphs": [
+              "Conti-Flow Lab Benefits"
+            ],
+            "items": [
+              "Servo driven precision gear pumps",
+              "PLC control",
+              "Intuitive operator panel for easy programming",
+              "Inlet / Outlet pressure control",
+              "Pot life control",
+              "Robust 2K processing equipment for reliable operation in demanding R&D production environments",
+              "Smart metering control",
+              "Proven Precision"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "conti-flow-vario",
+        "title": "Conti-Flow Vario",
+        "tagline": "Compact & Variable Two Component Epoxy Metering System",
+        "summary": "A compact and variable table-top unit for manual or automatic production processes. Proven Precision Servo-driven precision gear pumps provided the highest precision metering with low to medium-viscosity materials. Variable metering programs for optimized processes, including inlet and outlet pressure control.",
+        "image": {
+          "src": "/products/CF-vario-new-1.jpg",
+          "alt": "Conti flow vario for industrial dispensing automation applications"
+        },
+        "sections": [
+          {
+            "heading": "Comprehensive Process Control:",
+            "items": [
+              "Intuitive Operation",
+              "Mold Pressure Control (MPC) Option For Various Composite Processes for Composite-Processing: Infusion, RTM, RIM",
+              "Configurable with Different Feeding Units, tanks, pails, drums, or totes.",
+              "Re-Circulation",
+              "Agitation",
+              "8 Channel Temperature Control"
+            ]
+          },
+          {
+            "heading": "Mixing:",
+            "items": [
+              "Gamma Mix Handgun",
+              "Static Emotionmix",
+              "Dynamic / Static"
+            ]
+          },
+          {
+            "heading": "Application",
+            "items": [
+              "Integration Into Automation System",
+              "Bonding",
+              "Sealing",
+              "Casting",
+              "Encapsulation"
+            ]
+          },
+          {
+            "heading": "Conti-Flow Vario Benefits",
+            "items": [
+              "Robust 1K and 2K processing equipment for reliable operation in demanding production environments",
+              "Smart metering control",
+              "Proven Precision",
+              "Comprehensive Process Control Possibilities",
+              "Mold-Pressure-Control (MPC) Option",
+              "Integration Into Manual or Automation System",
+              "Configurable with many useful options"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "gp-401-apd-cf-versa",
+        "title": "GP 401 APD & CF Versa",
+        "summary": "Versatile & flexible for demanding workspaces High metering accuracy due to short distance from metering to dispensing Highly comfortable operation with flexible boom and balancer support. Different options & features are configurable to meet requirements",
+        "image": {
+          "src": "/products/csm_Conti-Flow-Versa_59010974af-1.png",
+          "alt": "Device for industrial dispensing"
+        }
+      }
+    ]
   },
   {
     "slug": "conti-pro",
@@ -418,7 +422,7 @@
       {
         "heading": "For Perfect Metering and Dosing Applications:",
         "paragraphs": [
-          "PCP Metering Valves have been designed for precise metering/dosing of fluids and pastes and are especially suitable for abrasive media and for Metering/Dosing and dispensing proportional to speed. Accuracy and repeatability is \u00b1 1%."
+          "PCP Metering Valves have been designed for precise metering/dosing of fluids and pastes and are especially suitable for abrasive media and for Metering/Dosing and dispensing proportional to speed. Accuracy and repeatability is ± 1%."
         ]
       },
       {
@@ -575,10 +579,10 @@
       "feeding-and-supply"
     ],
     "tagline": "Reliable Drum Pump Solutions for Grease, Oil & Lubricant Feeding",
-    "summary": "Kirkco\u2019s drum pumps for lubricants are engineered to reliably transfer low- to medium-viscosity greases and oils directly from their original containers, eliminating air pockets and material separation. These robust drum pump systems support both centralized and individual feed applications, making them ideal for supplying lubricant to metering valves, pump stations, or lubrication points in industrial settings.",
+    "summary": "Kirkco’s drum pumps for lubricants are engineered to reliably transfer low- to medium-viscosity greases and oils directly from their original containers, eliminating air pockets and material separation. These robust drum pump systems support both centralized and individual feed applications, making them ideal for supplying lubricant to metering valves, pump stations, or lubrication points in industrial settings.",
     "sections": [
       {
-        "heading": "How They\u2019re Used",
+        "heading": "How They’re Used",
         "items": [
           "Automated lubrication systems requiring steady supply to metering valves",
           "Machine tool lubrication stations",
@@ -664,12 +668,12 @@
     "categories": [
       "two-component"
     ],
-    "summary": "The most difficult to mix materials use true Dynamic Mixers. Dynamic mixers can mix materials with an extremely short pot life, widely differing viscosities and mixing ratios. The mixing rotor in the central chamber mixes the components evenly within a very short time. The mixer head can be operated either cooled or heated. The mixer motor drives are either pneumatic or electric. Welcome to the forefront of metering and mixing technology \u2013 your ultimate partner in the precise processing and application of single and multi-component adhesives and sealants. Our cutting-edge eMotionMix system offers a comprehensive solution, seamlessly integrating dynamic mixing heads, automation, and materials for unparalleled perfection and reliability.",
+    "summary": "The most difficult to mix materials use true Dynamic Mixers. Dynamic mixers can mix materials with an extremely short pot life, widely differing viscosities and mixing ratios. The mixing rotor in the central chamber mixes the components evenly within a very short time. The mixer head can be operated either cooled or heated. The mixer motor drives are either pneumatic or electric. Welcome to the forefront of metering and mixing technology – your ultimate partner in the precise processing and application of single and multi-component adhesives and sealants. Our cutting-edge eMotionMix system offers a comprehensive solution, seamlessly integrating dynamic mixing heads, automation, and materials for unparalleled perfection and reliability.",
     "sections": [
       {
         "heading": "eMotionMix: A One-stop Solution",
         "paragraphs": [
-          "Discover your technological advantage with eMotionMix \u2013 where perfection and reliability meet innovation in metering and mixing technology.",
+          "Discover your technological advantage with eMotionMix – where perfection and reliability meet innovation in metering and mixing technology.",
           "From foaming and bonding to sealing, potting, and automation, eMotionMix stands as the pinnacle of innovation in metering and mixing technology. The dynamic mixing head, boasting revolutionary valve technology, is engineered for the efficient mixing of low to high-viscosity polymeric reaction substances."
         ]
       },
@@ -726,7 +730,7 @@
       "pentane-capable-metering-machines"
     ],
     "tagline": "Polyurethane Processing Equipment",
-    "summary": "The strong international focus that has been placed on greenhouse gases and gases which are hostile to the ozone layer, has led ISC to deep and strong efforts for the development of efficient and environmentally friendly foaming processes. Today, ISC puts a lot of efforts to helping customers in shifting their equipment for hydrocarbons-blown foams all over the world, with a wide range of available metering systems dedicated to this process. The blending unit \u201cEcomix\u201d is an innovative, simple, and precise mixing system that allows the use of new generation blowing agents, including hydrocarbons, only when necessary. Combined with other complementary equipment it helps to optimize times and methods in the production process.",
+    "summary": "The strong international focus that has been placed on greenhouse gases and gases which are hostile to the ozone layer, has led ISC to deep and strong efforts for the development of efficient and environmentally friendly foaming processes. Today, ISC puts a lot of efforts to helping customers in shifting their equipment for hydrocarbons-blown foams all over the world, with a wide range of available metering systems dedicated to this process. The blending unit “Ecomix” is an innovative, simple, and precise mixing system that allows the use of new generation blowing agents, including hydrocarbons, only when necessary. Combined with other complementary equipment it helps to optimize times and methods in the production process.",
     "sections": [
       {
         "heading": "Equipment Packages",
@@ -761,14 +765,14 @@
     "categories": [
       "two-component"
     ],
-    "tagline": "DOPAG ECONO-MIX\u00ae piston type metering and mixing system",
+    "tagline": "DOPAG ECONO-MIX® piston type metering and mixing system",
     "summary": "Econo-Mix Metering and Mixing System for low to medium viscosity two-component reactive materials. We characterize the ECONO-MIX by its simplicity in function and design, friendliness of operation, and ease of maintenance. This system is a competitive starter model in two-component metering and mixing technology. This system is capable of processing most reactive polymers, like polyurethanes, silicones, and epoxy resins. They can be unfilled, filled as well, or slightly abrasive. The ECONO-MIX unit is a dependable and reliable two-component metering and mixing proportioning system that is best used for small to medium production applications. Customization of the base system is available as necessary for the specific application. The ECONO-MIX is a solvent-free, positive displacement piston pump type metering and mixing system, used to handle low to medium viscosity multi-component media such as epoxy resins, polyurethanes, or silicones with a volumetric mixing ratio of between 1:1 and 6.25:1.",
     "sections": [
       {
         "paragraphs": [
           "Low-pressure feed systems, such as diaphragm pumps or pressure vessels, are used to supply the material into the positive displacement piston metering pumps. Pressure tanks can be mounted onto the machine chassis, or a remote bulk feed unit is available for feeding directly from 55-gallon drums.",
           "The pumps are driven by a single air motor. A lever system connects the pumps and the drive. The pump for the A component is fixed to the lever system and shares the same stroke length as the drive motor. The pump for the B component is adjustable along a lever system providing a variable stroke length, which is used for the fine adjustment of the mixing ratio.",
-          "The ECONO-MIX is typically fitted with our standard two-component static mixing system that includes a twin snuffer valve combined with a disposable static mixer. The valve contains an infinitely adjustable \u201csnuff back\u201d effect to avoid dripping after metering has finished. Should mixed material be allowed to cure in the mixer, it can be replaced simply and inexpensively, thus avoiding a time-consuming, expensive, and environmentally damaging solvent flushing cycle.",
+          "The ECONO-MIX is typically fitted with our standard two-component static mixing system that includes a twin snuffer valve combined with a disposable static mixer. The valve contains an infinitely adjustable “snuff back” effect to avoid dripping after metering has finished. Should mixed material be allowed to cure in the mixer, it can be replaced simply and inexpensively, thus avoiding a time-consuming, expensive, and environmentally damaging solvent flushing cycle.",
           "Optionally, we can offer both dynamic mixers and/or dynamic static mixer valves where the material requires an aggressive blending cycle necessary to achieve its proper mix."
         ]
       },
@@ -917,10 +921,15 @@
     "updated": "2025-12-23",
     "categories": [
       "two-component",
-      "closed-mold-technology"
+      "closed-mold-technology",
+      "open-mold-technology",
+      "tooling-paste",
+      "filament-winding",
+      "pull-winding",
+      "putty-paste"
     ],
-    "tagline": "Dopag Eldo-Mix\u00ae Mixing and Metering",
-    "summary": "ELDO-MIX multi-component metering systems can process all polymers such as polyurethanes, silicones and epoxy resins. The ELDO-MIX is an electrically driven positive displacement gear metering system that is suitable for non-filled, non-abrasive, low to medium viscosity media. A special version of gear pumps is available for processing filled material applications. The ELDO-MIX series can obtain a wide range of mixing ratios and includes models that process more than two components simultaneously. The material delivery can be dispensed in a continuous flow or metered in a measured shot. The metering ratio is variable and selected via the electric motor speed and the metering pump selection. A metering computer operates the system automatically and enables an extremely varied range of monitoring, control and documentation functions. All ELDO-MIX models can be expanded to suit your needs by means of optional accessories. The standard version runs without flushing agents. \u201cSOLVENT FREE\u201d",
+    "tagline": "Dopag Eldo-Mix® Mixing and Metering",
+    "summary": "ELDO-MIX multi-component metering systems can process all polymers such as polyurethanes, silicones and epoxy resins. The ELDO-MIX is an electrically driven positive displacement gear metering system that is suitable for non-filled, non-abrasive, low to medium viscosity media. A special version of gear pumps is available for processing filled material applications. The ELDO-MIX series can obtain a wide range of mixing ratios and includes models that process more than two components simultaneously. The material delivery can be dispensed in a continuous flow or metered in a measured shot. The metering ratio is variable and selected via the electric motor speed and the metering pump selection. A metering computer operates the system automatically and enables an extremely varied range of monitoring, control and documentation functions. All ELDO-MIX models can be expanded to suit your needs by means of optional accessories. The standard version runs without flushing agents. “SOLVENT FREE”",
     "sections": [
       {
         "heading": "Eldo-Mix is Suitable For:",
@@ -964,21 +973,138 @@
     "image": {
       "src": "/products/eldo-mix-1z6mf82.jpg",
       "alt": "Eldo-Mix"
-    }
-  },
-  {
-    "slug": "eldo-mix-401t-tooling-mix",
-    "title": "Eldo-Mix 401T & Tooling Mix",
-    "updated": "2025-12-22",
-    "categories": [
-      "tooling-paste"
-    ],
-    "summary": "The ELDO-MIX 401 T has been specifically designed for handling pasty two component media\\including polyurethanes and epoxy resins\\ as well as for successfully processing microball-filled materials.",
-    "thin": true,
-    "image": {
-      "src": "/products/EM401T.jpg",
-      "alt": "Eldo mix and Tooling Mix on a red portable dolly"
-    }
+    },
+    "variants": [
+      {
+        "slug": "eldo-mix",
+        "title": "Eldo-Mix",
+        "tagline": "Dopag Eldo-Mix® Mixing and Metering",
+        "summary": "ELDO-MIX multi-component metering systems can process all polymers such as polyurethanes, silicones and epoxy resins. The ELDO-MIX is an electrically driven positive displacement gear metering system that is suitable for non-filled, non-abrasive, low to medium viscosity media. A special version of gear pumps is available for processing filled material applications. The ELDO-MIX series can obtain a wide range of mixing ratios and includes models that process more than two components simultaneously. The material delivery can be dispensed in a continuous flow or metered in a measured shot. The metering ratio is variable and selected via the electric motor speed and the metering pump selection. A metering computer operates the system automatically and enables an extremely varied range of monitoring, control and documentation functions. All ELDO-MIX models can be expanded to suit your needs by means of optional accessories. The standard version runs without flushing agents. “SOLVENT FREE”",
+        "image": {
+          "src": "/products/eldo-mix-1z6mf82.jpg",
+          "alt": "Eldo-Mix"
+        },
+        "sections": [
+          {
+            "heading": "Eldo-Mix is Suitable For:",
+            "items": [
+              "Casting",
+              "Coating",
+              "Sealant application",
+              "Gluing"
+            ]
+          },
+          {
+            "heading": "Eldo-Mix 101",
+            "paragraphs": [
+              "The ELDO-MIX 101 is a solvent free gear metering and mixing system used to handle low to medium viscosity multi component media such as epoxy resins polyurethanes or silicones with mixing ratios between 100:100 and 100:10.Special configurations to process high viscosity media are also available."
+            ]
+          },
+          {
+            "heading": "Eldo-Mix 202",
+            "paragraphs": [
+              "The ELDO-MIX 202 is a table top, solvent free gear metering and mixing system used to handle low to medium viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:5.Special configurations to process high viscosity media are also available."
+            ]
+          },
+          {
+            "heading": "Eldo-Mix 301, 302, 303",
+            "paragraphs": [
+              "The ELDO-MIX 300 series is a solvent free gear metering and mixing system used to handle low to medium viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:2.Special configurations to process high viscosity media are also available. This system can be customised for individual customer needs and integrated without difficulty into automation cells."
+            ]
+          },
+          {
+            "heading": "Eldo-Mix 701, 702, 703",
+            "paragraphs": [
+              "The Eldo-Mix 700 series is a newly developed metering system range for the processing of unfilled vacuum infusion resins combine highly accurate metering pumps with extremely fast control engineering. The Eldo-Mix vacuum infusion resin system has a mix ratio monitoring and regulating control package to insure continuous and accurate metering ration accuracy of less than 1% deviation and the output rate during production can be modified in 2% steps.",
+              "Get a Quote For Eldo-Mix 700 Series The ELDO-MIX 101 is a solvent free gear metering and mixing system used to handle low to medium viscosity multi component media such as epoxy resins polyurethanes or silicones with mixing ratios between 100:100 and 100:10.Special configurations to process high viscosity media are also available.",
+              "Get a Quote For Eldo-Mix 101 The ELDO-MIX 202 is a table top, solvent free gear metering and mixing system used to handle low to medium viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:5.Special configurations to process high viscosity media are also available.",
+              "Get a Quote For Eldo-Mix 202 The ELDO-MIX 300 series is a solvent free gear metering and mixing system used to handle low to medium viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:2.Special configurations to process high viscosity media are also available. This system can be customised for individual customer needs and integrated without difficulty into automation cells.",
+              "Get a Quote For Eldo-Mix 300 Series The Eldo-Mix 700 series is a newly developed metering system range for the processing of unfilled vacuum infusion resins combine highly accurate metering pumps with extremely fast control engineering. The Eldo-Mix vacuum infusion resin system has a mix ratio monitoring and regulating control package to insure continuous and accurate metering ration accuracy of less than 1% deviation and the output rate during production can be modified in 2% steps.",
+              "Get a Quote For Eldo-Mix 700 Series"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "2c-3c-infusion-resin-systems",
+        "title": "2C 3C Infusion Resin Systems",
+        "tagline": "Resin Infusion Systems",
+        "summary": "The Eldo-Mix newly developed metering system range for the processing of unfilled vacuum infusion resins combine highly accurate metering pumps with extremely fast control engineering. The Eldo-Mix vacuum infusion resin system has a mix ratio monitoring and regulating control package to insure contenuious and accurate metering ration accuracy of less than 1% deviation and the output rate during production can be modified in 2% steps.",
+        "image": {
+          "src": "/products/vacuum-infusion-molding.jpg",
+          "alt": "Resign Infusion system"
+        }
+      },
+      {
+        "slug": "2c-infusion-resin",
+        "title": "2C Infusion Resin",
+        "summary": "The Eldo-Mix metering system range for the processing of unfilled vacuum infusion resins combine highly accurate metering pumps with extremely fast control engineering. The Eldo-Mix vacuum infusion resin system has a mix ratio monitoring and regulating control package to insure continuous and accurate metering ration accuracy of less than 1% deviation and the output rate during production can be modified in 2% steps",
+        "image": {
+          "src": "/products/vacuum-infusion-molding.jpg",
+          "alt": "Resign Infusion system"
+        }
+      },
+      {
+        "slug": "3c-glue-resins",
+        "title": "3C Glue Resins",
+        "summary": "The ELDO-MIX Glue Resin series metering \\ mixing and dispensing system was designed to process the extremely high viscosity resins required to bond two composite components together",
+        "image": {
+          "src": "/products/vacuum-infusion-molding.jpg",
+          "alt": "Resign Infusion system"
+        }
+      },
+      {
+        "slug": "2c-gel-coat",
+        "title": "2C Gel Coat",
+        "summary": "The ELDO-MIX gel coat systems have been especiallydeveloped for processing highly thixotropic materials onto the untreated surfaces of rotor blades. By the use of gearmetering pumps\\ which are also suitable for abrasive fillersand magnetically coupled axial piston pumps for the Bcomponent; output rates of up to 5 l/min can be achieved. The material supply of the mobile system is carried out frommaterial pressure vessels that are installed on the chassis. Not only can materials with viscosities up to the flow limit beapplied with this gel coat system, but also the mixing ratiosare adjustable within a wide range.",
+        "image": {
+          "src": "/products/Gel_Coat-2C.jpg",
+          "alt": "Eldo mix on portable dolly"
+        }
+      },
+      {
+        "slug": "eldo-mix-401t-tooling-mix",
+        "title": "Eldo-Mix 401T & Tooling Mix",
+        "summary": "The ELDO-MIX 401 T has been specifically designed for handling pasty two component media\\including polyurethanes and epoxy resins\\ as well as for successfully processing microball-filled materials.",
+        "image": {
+          "src": "/products/EM401T.jpg",
+          "alt": "Eldo mix and Tooling Mix on a red portable dolly"
+        }
+      },
+      {
+        "slug": "gp-703",
+        "title": "GP-703",
+        "tagline": "Eldo Mix",
+        "summary": "The ELDO-MIX gel coat systems have been especiallydeveloped for processing highly thixotropic materials ontothe untreated surfaces of rotor blades. By the use of gearmetering pumps\\ which are also suitable for abrasive fillersand magnetically coupled axial piston pumps for the Bcomponent; output rates of up to 5 l/min can be achieved.The material supply of the mobile system is carried out frommaterial pressure vessels that are installed on the chassis. Not only can materials with viscosities up to the flow limit beapplied with this gel coat system but also the mixing ratiosare adjustable within a wide range.",
+        "image": {
+          "src": "/products/Gel_Coat-2C.jpg",
+          "alt": "Eldo mix on portable dolly"
+        }
+      },
+      {
+        "slug": "gp-401-tpd",
+        "title": "GP 401 TPD",
+        "summary": "The TOOL-MIX 401 GP has been specifically designed for handling pasty two component materials, including polyurethanes and epoxy resins, as well as for successfully processing micro-ball filled materials. It is especially suitable for use in such applications as model making in the automotive, aeronautical and shipbuilding industries as well as sealing and adhesive dispensing.",
+        "image": {
+          "src": "/products/tool-mix-401-gp.jpg",
+          "alt": "GP 401 TPD Device for industrial dispensing"
+        },
+        "sections": [
+          {
+            "heading": "The TOOL-MIX 401 GP is characterized by",
+            "items": [
+              "lower material degradation than similar systems due to the optimized construction of the gear pumps.",
+              "careful construction for gentle material feeding",
+              "minimum maintenance required, due to just a single pump for each component",
+              "The system is controlled by a high capacity metering computer.",
+              "Viscosity range (mPa s) 50,000 to 1,000,000",
+              "Mixing ratio (volumetric) 100:100 to 100:10",
+              "Flow rate (l/min) 0,7 to 5,0 depending on metering ratio and material properties"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "electronic-metering",
@@ -990,7 +1116,7 @@
       "process-control-computer"
     ],
     "tagline": "Electronic Metering & Control Systems for Precision Lubrication Delivery",
-    "summary": "Electronic metering refers to the use of digital control units and sensors to manage, monitor, and automate lubrication metering processes \u2014 ensuring precise flow, repeatable delivery, and real-time verification across lubrication systems. These systems bridge pumps, metering valves, and monitoring devices to deliver reliable, data-driven lubrication control.",
+    "summary": "Electronic metering refers to the use of digital control units and sensors to manage, monitor, and automate lubrication metering processes — ensuring precise flow, repeatable delivery, and real-time verification across lubrication systems. These systems bridge pumps, metering valves, and monitoring devices to deliver reliable, data-driven lubrication control.",
     "sections": [
       {
         "heading": "Key Features:",
@@ -1069,7 +1195,7 @@
       "monitoring-analytics"
     ],
     "tagline": "Precision Flow Meters for Accurate Lubricant Monitoring & Control",
-    "summary": "Flow meters are instruments designed to measure the volume or rate of fluid moving through a system \u2014 essential for verifying delivery, monitoring performance, and controlling lubricant usage in industrial lubrication and metering applications. They provide real-time feedback that helps ensure accurate flow rates, track material usage, and enable better process control across lubrication networks and automated dispense stations.",
+    "summary": "Flow meters are instruments designed to measure the volume or rate of fluid moving through a system — essential for verifying delivery, monitoring performance, and controlling lubricant usage in industrial lubrication and metering applications. They provide real-time feedback that helps ensure accurate flow rates, track material usage, and enable better process control across lubrication networks and automated dispense stations.",
     "thin": true,
     "image": {
       "src": "/products/megaflowmelter_CLEAN.jpg",
@@ -1085,7 +1211,7 @@
       "process-control"
     ],
     "tagline": "Flow Regulating Valves for Steady Lubricant Flow and Consistent Delivery",
-    "summary": "A flow regulating valve is a mechanical device used to control the rate of lubricant flow through a system, independent of variations in pressure. Unlike pressure regulators (which stabilize pressure), flow regulating valves ensure that the amount of material moving through the line remains consistent \u2014 which is vital in lubrication and metering systems where repeatable delivery rates directly impact performance and equipment life.",
+    "summary": "A flow regulating valve is a mechanical device used to control the rate of lubricant flow through a system, independent of variations in pressure. Unlike pressure regulators (which stabilize pressure), flow regulating valves ensure that the amount of material moving through the line remains consistent — which is vital in lubrication and metering systems where repeatable delivery rates directly impact performance and equipment life.",
     "sections": [
       {
         "heading": "Adjustable Flow Regulating Valve",
@@ -1168,7 +1294,7 @@
         "heading": "Why Choose Kirkco Flow Regulating Valves",
         "paragraphs": [
           "Kirkco flow regulating valves are engineered for:",
-          "When paired with flow meters, filters, and regulators, Kirkco\u2019s flow regulating valves help you build a precise, controlled lubrication system that supports both manual and automated applications."
+          "When paired with flow meters, filters, and regulators, Kirkco’s flow regulating valves help you build a precise, controlled lubrication system that supports both manual and automated applications."
         ],
         "items": [
           "Flow accuracy and stability across pressure variations",
@@ -1187,7 +1313,7 @@
       "open-mold-technology"
     ],
     "tagline": "Industrial Gel Coat Equipment for Durable, Premium Composite Surfaces",
-    "summary": "FRP gel coat systems are designed to apply pigmented resin coatings onto composite molds prior to laminate build\u2011up, providing the cosmetic finish and surface protection of open\u2011mold composite parts. Gel coat resins are typically sprayed onto the mold at a controlled thickness and later overlaid with reinforcing materials to complete the composite structure.",
+    "summary": "FRP gel coat systems are designed to apply pigmented resin coatings onto composite molds prior to laminate build‑up, providing the cosmetic finish and surface protection of open‑mold composite parts. Gel coat resins are typically sprayed onto the mold at a controlled thickness and later overlaid with reinforcing materials to complete the composite structure.",
     "thin": true,
     "image": {
       "src": "/products/frp-gel-coat.jpg",
@@ -1222,58 +1348,6 @@
     "image": {
       "src": "/products/electronically-Flow-Meter-Exp1bnv92.gif",
       "alt": "Flow Meter Expanded to see inside the device"
-    }
-  },
-  {
-    "slug": "gp-302",
-    "title": "GP 302",
-    "updated": "2025-12-23",
-    "categories": [
-      "closed-mold-technology"
-    ],
-    "summary": "The GP- 302 series is a mid-level solvent free gear metering and mixing system used to handle low to medium high viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:2. Special configurations to process high viscosity media are also available. This system can be customized for individual customer needs and integrated without difficulty into automation cells.",
-    "thin": true
-  },
-  {
-    "slug": "gp-401-apd-cf-versa",
-    "title": "GP 401 APD & CF Versa",
-    "updated": "2025-12-23",
-    "categories": [
-      "putty-paste"
-    ],
-    "summary": "Versatile & flexible for demanding workspaces High metering accuracy due to short distance from metering to dispensing Highly comfortable operation with flexible boom and balancer support. Different options & features are configurable to meet requirements",
-    "thin": true,
-    "image": {
-      "src": "/products/csm_Conti-Flow-Versa_59010974af-1.png",
-      "alt": "Device for industrial dispensing"
-    }
-  },
-  {
-    "slug": "gp-401-tpd",
-    "title": "GP 401 TPD",
-    "updated": "2025-12-23",
-    "categories": [
-      "putty-paste",
-      "tooling-paste"
-    ],
-    "summary": "The TOOL-MIX 401 GP has been specifically designed for handling pasty two component materials, including polyurethanes and epoxy resins, as well as for successfully processing micro-ball filled materials. It is especially suitable for use in such applications as model making in the automotive, aeronautical and shipbuilding industries as well as sealing and adhesive dispensing.",
-    "sections": [
-      {
-        "heading": "The TOOL-MIX 401 GP is characterized by",
-        "items": [
-          "lower material degradation than similar systems due to the optimized construction of the gear pumps.",
-          "careful construction for gentle material feeding",
-          "minimum maintenance required, due to just a single pump for each component",
-          "The system is controlled by a high capacity metering computer.",
-          "Viscosity range (mPa s) 50,000 to 1,000,000",
-          "Mixing ratio (volumetric) 100:100 to 100:10",
-          "Flow rate (l/min) 0,7 to 5,0 depending on metering ratio and material properties"
-        ]
-      }
-    ],
-    "image": {
-      "src": "/products/tool-mix-401-gp.jpg",
-      "alt": "GP 401 TPD Device for industrial dispensing"
     }
   },
   {
@@ -1391,24 +1465,123 @@
     "image": {
       "src": "/products/GP-301-for-bulk-feed.jpg",
       "alt": "GP-301"
-    }
-  },
-  {
-    "slug": "gp-703",
-    "title": "GP-703",
-    "updated": "2025-12-23",
-    "categories": [
-      "closed-mold-technology",
-      "filament-winding",
-      "pull-winding"
-    ],
-    "tagline": "Eldo Mix",
-    "summary": "The ELDO-MIX gel coat systems have been especiallydeveloped for processing highly thixotropic materials ontothe untreated surfaces of rotor blades. By the use of gearmetering pumps\\ which are also suitable for abrasive fillersand magnetically coupled axial piston pumps for the Bcomponent; output rates of up to 5 l/min can be achieved.The material supply of the mobile system is carried out frommaterial pressure vessels that are installed on the chassis. Not only can materials with viscosities up to the flow limit beapplied with this gel coat system but also the mixing ratiosare adjustable within a wide range.",
-    "thin": true,
-    "image": {
-      "src": "/products/Gel_Coat-2C.jpg",
-      "alt": "Eldo mix on portable dolly"
-    }
+    },
+    "variants": [
+      {
+        "slug": "gp-301",
+        "title": "GP-301",
+        "tagline": "Accurate, Continuous Flow and Shot Dispensing",
+        "summary": "Solvent-free gear metering and mixing system used to handle low to medium viscosity multi-component media such as epoxy resins, polyurethanes, or silicones.",
+        "image": {
+          "src": "/products/GP-301-for-bulk-feed.jpg",
+          "alt": "GP-301"
+        },
+        "sections": [
+          {
+            "heading": "Engineered for Performance",
+            "items": [
+              "A wide selection of pump types and sizes is independently driven to dial in your ratio",
+              "Flow rates from 2 cc/sec to 100 cc/sec (1.5 gal/min), depending on pump selection",
+              "Color Touch screen HMI interface displays ratios, flow rates, and other process functions",
+              "Continuous or shot dispensing for silicones, polyurethanes, or epoxies; filled and unfilled",
+              "progressive cavity and magnetic drive pumps,",
+              "Static or Dynamic mixing head",
+              "Process Automation"
+            ]
+          },
+          {
+            "heading": "Simple Interface Software is:",
+            "items": [
+              "Easy to Learn and Operate",
+              "Calibrate Mix Ratios in a few Easy Steps",
+              "Handles all your Process Control Needs",
+              "Ratio monitoring system uses independent meters to ensure ratio accuracy",
+              "Two levels of password access protect critical process settings"
+            ]
+          },
+          {
+            "heading": "GP-301 Direct Dispense",
+            "items": [
+              "Motionless mixers are used",
+              "Processing materials that do not separate",
+              "Feeding a mixed material stream to a continuous process (such as laminator, coating line or filament winder)",
+              "Shot duration is from two seconds to infinite Optional photo eye controlled.",
+              "Material ratios are from 1:1 to 5:1",
+              "Process requires only limited temperature control"
+            ]
+          },
+          {
+            "heading": "GP-302 Re-circulation System",
+            "items": [
+              "Motionless mixers are used",
+              "A light-weight mixing head is required",
+              "Closed loop ratio control is desired",
+              "Discontinuous shot or bonding applications are used",
+              "Chemistries may separate or stratify",
+              "Optional closed loop ratio control available"
+            ]
+          },
+          {
+            "heading": "GP-303 Feed/Reservoir System",
+            "items": [
+              "Stainless steel or mild steel bottom outlet tank construction",
+              "Vacuum or bulk feed options",
+              "Stands",
+              "5 gal (20 l)",
+              "10 gal (40 l)",
+              "55-gal (200 l) drum feed systems"
+            ]
+          },
+          {
+            "heading": "Technical Specifications and System Options",
+            "items": [
+              "Agitators",
+              "Printer",
+              "Pressure Tanks",
+              "Air Dryer",
+              "Mass Flowmeter for Ratio Monitoring",
+              "Vacuum Pump",
+              "Process Temperature Control",
+              "Auto-Refill",
+              "Sight Gauge",
+              "Desiccant",
+              "Audible Alarm",
+              "Gear Flowmeter for Ratio Monitoring",
+              "Third Component Injection"
+            ]
+          },
+          {
+            "heading": "Plural Component Rotary Pump Metering Mix and Dispense Unit:",
+            "paragraphs": [
+              "Engineered for Performance A wide selection of pump types and sizes are independently driven to dial in your ratio Flow rates from 2 cc/sec to 100 cc/sec (1.5 gal/min) depending on pump selection Color Touch screen HMI interface displays ratios, flow rates and other process functions Continuous or shot dispensing for silicones, polyurethanes or epoxies; filled and unfilled Additional options include: progressive cavity and magnetic drive pumps, Static or Dynamic mixing head Process Automation"
+            ]
+          },
+          {
+            "heading": "Simple Interface Software is:",
+            "paragraphs": [
+              "Easy to Learn and Operate Calibrate Mix Ratios in a few Easy Steps Handles all your Process Control Needs Ratio monitoring system uses independent meters to ensure ratio accuracy Two levels of password access protect critical process settings"
+            ]
+          },
+          {
+            "heading": "Customize the GP-301 to Your Manufacturing Process",
+            "paragraphs": [
+              "GP-301 Direct Dispense Use the process flow configuration when: Motionless mixers are used Processing materials that do not separate Feeding a mixed material stream to a continuous process (such as a laminator, coating line, or filament winder) Shot duration is from two seconds to infinite Optional photo eye controlled. Material ratios are from 1:1 to 5:1 Process requires only limited temperature control GP-302 Re-circulation System Use the Re-circulation System configuration when: Motionless mixers are used A light-weight mixing head is required Closed-loop ratio control is desired Discontinuous shot or bonding applications are used Chemistries may separate or stratify Optional closed-loop ratio control available GP-303 Feed/Reservoir System After selecting the correct metering pump and mixing head, choose your feed system. All systems are available with: Stainless steel or mild steel bottom outlet tank construction Vacuum or bulk feed options Stands Chemistry dictates the construction materials and the process aids, such as heat and agitation. The application and dispense volumes will lead to reservoir size and refilling options. A range of reservoir sizes is available: 5 gal (20 l) 10 gal (40 l) 55-gal (200 l) drum feed systems"
+            ]
+          },
+          {
+            "heading": "Technical Specifications and System Options",
+            "paragraphs": [
+              "Options to create your own meter mix dispense system. Agitators Printer Pressure Tanks Air Dryer Mass Flowmeter for Ratio Monitoring Vacuum Pump Process Temperature Control Auto-Refill Sight Gauge Desiccant Audible Alarm Gear Flowmeter for Ratio Monitoring Third Component Injection"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "gp-302",
+        "title": "GP 302",
+        "summary": "The GP- 302 series is a mid-level solvent free gear metering and mixing system used to handle low to medium high viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:2. Special configurations to process high viscosity media are also available. This system can be customized for individual customer needs and integrated without difficulty into automation cells."
+      }
+    ]
   },
   {
     "slug": "graco-8900",
@@ -1611,7 +1784,137 @@
     "image": {
       "src": "/products/800_800_image_291978_30907397_78805a221a988e79ef3f42d7c5bfd418.png",
       "alt": "High Pressure impingement mixing valve"
-    }
+    },
+    "variants": [
+      {
+        "slug": "high-pressure-impingement-mixing-valve",
+        "title": "High Pressure Impingement Mixing Valve",
+        "tagline": "Impingement Mixing Valves for Urethane Foam & Elastomer: Enhancing Productivity",
+        "summary": "Welcome to Kirkco, your trusted partner for advanced impingement mixing valves designed to elevate productivity in both filled and unfilled polyurethane applications. Our high-performance, high-pressure mixing heads stand at the forefront of foam processing units, featuring a precision tight-tolerance plunger design that sets industry standards.",
+        "image": {
+          "src": "/products/800_800_image_291978_30907397_78805a221a988e79ef3f42d7c5bfd418.png",
+          "alt": "High Pressure impingement mixing valve"
+        },
+        "sections": [
+          {
+            "heading": "How it Works:",
+            "paragraphs": [
+              "The High-Pressure Impingement Mixing Valve operates with meticulous precision, ensuring the seamless blending of materials in both filled and unfilled polyurethane applications. During the dispensing cycle, our valve utilizes a recirculation mode, where materials flow through control orifices and recirculation grooves on each side of a precision plunger. This innovative design allows for optimal mixing efficiency before the materials impinge at pressures of up to 3,500 psi, resulting in a smooth and consistent pour into open and closed molds, enhancing the overall quality of your end products."
+            ]
+          },
+          {
+            "heading": "Applications of Use:",
+            "paragraphs": [
+              "Our High-Pressure Impingement Mixing Valve finds its prowess in a diverse range of applications, making it a versatile and indispensable tool in the realm of polyurethane processing.."
+            ],
+            "items": [
+              "Closed Mold Applications: The valve excels in closed mold applications, providing reliable and cost-effective processing for automotive parts, industrial components, and more.",
+              "Open Mold Applications: Tailored for open mold applications, our mixing valve facilitates precise pouring for continuous and discontinuous panel applications, ensuring efficiency in diverse manufacturing processes.",
+              "Spray Applications: The valve's design is optimized for spray applications, making it an ideal choice for industries requiring a high degree of precision in coating and insulation processes.",
+              "Continuous Sandwich Panel Applications: Specifically engineered for continuous sandwich panel applications, our mixing valve contributes to the production of high-quality panels used in construction and other industries.",
+              "Filler/Powder Incorporation: The valve's versatility extends to filler/powder incorporation, allowing for efficient blending of raw materials to meet the specific requirements of your formulations."
+            ]
+          },
+          {
+            "heading": "Benefits of High-Pressure Impingement Mixing Valve:",
+            "items": [
+              "Enhanced Mixing Efficiency: The precision design ensures thorough impingement, leading to improved mixing efficiency and superior product quality.",
+              "Cost Savings: By eliminating the need for cleaning solvents and reducing waste, our mixing valve contributes to significant cost savings in your production processes.",
+              "Fast-Reaction Formulations: The valve's capabilities enable the use of fast-reacting formulations, reducing production cycle times and increasing overall productivity."
+            ]
+          },
+          {
+            "heading": "High-Pressure Foam Mix Heads for Reliable, Cost-Effective Polyurethane Processing:",
+            "paragraphs": [
+              "KIRKCO L-style and straight polyurethane foam mixing heads are designed for high-pressure impingement mixing, offering long life across a wide range of open mold and closed mold applications."
+            ]
+          },
+          {
+            "heading": "Straight Type Mixing Head:",
+            "paragraphs": [
+              "During a recirculation mode, materials flow through control orifices and recirculation grooves on each side of a precision plunger before returning to the machine tanks. When a dispense cycle is initiated, the plunger, actuated by a double-acting cylinder, retracts, allowing both materials to impinge at pressures up to 3,500 psi (ideal for closed mold applications)."
+            ]
+          },
+          {
+            "heading": "Straight-Style Mix Head Features:",
+            "items": [
+              "Ideal for continuous and discontinuous panel applications.",
+              "Compact",
+              "Economical"
+            ]
+          },
+          {
+            "heading": "Injector Styles:",
+            "paragraphs": [
+              "Conical Style injectors for rigid and flexible foam applications, including refrigerators, walk-in coolers, furniture, and automotive seat cushions. Choose from a wide range of orifice and needle sizes for optimal mixing and shot control.",
+              "Diesel Style injectors for hard-to-mix polyurethane foam applications like steering wheels and acoustical foams. Select from various sizes and spring-adjustment or pin-adjusted holders.",
+              "Pneumatically controlled injectors are available for setpoint control or remote adjustment of shot pressures. Let our process experts help you select the correct model and combination of injectors for your application."
+            ]
+          },
+          {
+            "heading": "L-Style Mix Head Features:",
+            "items": [
+              "Special nozzle lengths available.",
+              "Double L mix heads with two pour pistons for seating applications.",
+              "High-strength materials and seals for maximum durability.",
+              "Separate cleanout hydraulics from the chemical block to minimize oil contamination.",
+              "Laminar output flow for splash-free operation with open molds.",
+              "200,000 shots, 1-year warranty.",
+              "Low-cost repairs and seal changes available.",
+              "Optimum shot control.",
+              "Variety of injector styles and sizes to fit your application.",
+              "Adjustable cleanout piston stroke improves mixing efficiency (standard on every mix head).",
+              "Double cleanout piston seals for longer life.",
+              "Optional recirculating color groove."
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "low-pressure-impingement-mixing-valve",
+        "title": "Low Pressure Impingement Mixing Valve",
+        "tagline": "Impingement Mixing Valves for Urethane Foam & Elastomer: Enhancing Productivity",
+        "summary": "Welcome to Kirkco, your premier source for cutting-edge low-pressure impingement mixing valves designed to elevate productivity in filled and unfilled polyurethane applications. Our high-performance, low-pressure mixing heads lead the industry, featuring a precision tight-tolerance plunger design.",
+        "image": {
+          "src": "/products/image1.png",
+          "alt": "Low Pressure impingement mixing valve"
+        },
+        "sections": [
+          {
+            "heading": "Precision with Low Pressure Impingement Mixing Heads",
+            "paragraphs": [
+              "At the core of every foam processing unit, the mixing head assembly takes center stage. Engineered with precision, this crucial component ensures thorough mixing within the chamber, dispensing a precisely calibrated mixture through the nozzle outlet orifice. Kirkco manufactures four low-pressure mixing head sizes covering an output range from 1/4 to 400 lbs./min."
+            ]
+          },
+          {
+            "heading": "Standard Low Pressure Mixing Head Assembly",
+            "paragraphs": [
+              "Crafted for Excellence",
+              "Our standard head assembly boasts robust construction, with major parts made from chrome-plated steel, Teflon-coated aluminum or stainless steel mixers, and Teflon or Viton seals. Key features include a mixing head body, bearing housing with high-speed bearings, a 4-way material valve, diaphragm-type flush valve, hardened mixer shaft, air-actuated valve operator, and an AC electric motor-driven mixer with variable speed."
+            ]
+          },
+          {
+            "heading": "Tailoring to Your Needs: Low Pressure Mixing Head Upgrades",
+            "paragraphs": [
+              "Upgrade options abound for our mixing head assembly, including:"
+            ],
+            "items": [
+              "Automatic Water Flush Module: Variable speed drive for mixer operation, enabling a speed range of 0 - 10,000 rpm, with automatic speed adjustment during cold water injection.",
+              "Water Cooled Addition: Ideal for non-stop operation, providing head cooling through a dual-wall bearing housing and mixer nozzle with cold water.",
+              "Automatic Color Selector: Effortless color changes for multi-component systems, enhancing operational flexibility.",
+              "Hydraulic Mixer Drive: Hydraulic motor-driven mixer with a speed of up to 10,000 rpm, offering the advantage of lower weight.",
+              "Static Mixer: Catering to specific elastomer systems, featuring a static mixer setup."
+            ]
+          },
+          {
+            "heading": "Ensuring Seamless Operation: Double Hydraulic Solenoid Valve Control",
+            "paragraphs": [
+              "Equipped with a 7.5 kW hydraulic unit, pre-charged accumulator, pressure regulator, and integral heat exchanger, our low-pressure impingement mixing heads offer all the benefits of high-pressure metering technology. Whether in straight or L-style mix heads, expect smooth pouring, reduced costs, enhanced product quality, and the ability to use fast-reacting formulations."
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "high-pressure-pumps",
@@ -1621,7 +1924,7 @@
       "feeding-and-supply"
     ],
     "tagline": "High-Pressure Lubrication Pumps for Grease, Oil & Industrial Fluid Delivery",
-    "summary": "Kirkco high-pressure pumps are engineered to reliably deliver lubricants \u2014 including greases, oils, and other viscous fluids \u2014 at elevated pressures required for feeding metering systems, dispensing valves, or centralized lubrication networks. These pumps are ideal for industrial environments where consistent high pressure, repeatable feed rates, and robust service life are essential.",
+    "summary": "Kirkco high-pressure pumps are engineered to reliably deliver lubricants — including greases, oils, and other viscous fluids — at elevated pressures required for feeding metering systems, dispensing valves, or centralized lubrication networks. These pumps are ideal for industrial environments where consistent high pressure, repeatable feed rates, and robust service life are essential.",
     "sections": [
       {
         "heading": "Key Features:",
@@ -1697,7 +2000,7 @@
         "heading": "High-Speed Dispensing Valve Features",
         "items": [
           "Shot Application",
-          "Nozzle size \u2300 0.21 \u2013 0.81 mm",
+          "Nozzle size ⌀ 0.21 – 0.81 mm",
           "Input pressure max. 70 bar",
           "24V DC solenoid valve for maximum shot frequency of 100 Hz",
           "Integrated 230 V AC / 155 W heating with a temperature sensor PT100",
@@ -1728,25 +2031,28 @@
   },
   {
     "slug": "icf-integral-compact-filter-spray-system",
-    "title": "ICF \u2013 Integral Compact Filter Spray System",
+    "title": "ICF – Integral Compact Filter Spray System",
     "updated": "2025-12-26",
     "categories": [
       "spray-systems"
     ],
     "tagline": "Automated spray systems needing frequent filter changes.",
     "summary": "The Integral Compact Filter (ICF) stainless steel filter booth is designed for automatic powder coating and manual coating. By changing the powder and filter trolleys, color changes can be carried out. It stands out for its stable and robust construction. The stainless steel floor is accessible.",
-    "thin": true
-  },
-  {
-    "slug": "icm-integral-compact-multicyclone-spray-system",
-    "title": "ICM \u2013 Integral Compact Multicyclone Spray System",
-    "updated": "2025-12-26",
-    "categories": [
-      "spray-systems"
-    ],
-    "tagline": "Industrial automated powder lines where recovery and build quality matter.",
-    "summary": "The Integral Compact Multicyclone (ICM) stainless steel booth is designed for automatic powder coating and manual coating in multi-color operation. It stands out for its stable and robust construction. The stainless steel floor is accessible",
-    "thin": true
+    "thin": true,
+    "variants": [
+      {
+        "slug": "icf-integral-compact-filter-spray-system",
+        "title": "ICF – Integral Compact Filter Spray System",
+        "tagline": "Automated spray systems needing frequent filter changes.",
+        "summary": "The Integral Compact Filter (ICF) stainless steel filter booth is designed for automatic powder coating and manual coating. By changing the powder and filter trolleys, color changes can be carried out. It stands out for its stable and robust construction. The stainless steel floor is accessible."
+      },
+      {
+        "slug": "icm-integral-compact-multicyclone-spray-system",
+        "title": "ICM – Integral Compact Multicyclone Spray System",
+        "tagline": "Industrial automated powder lines where recovery and build quality matter.",
+        "summary": "The Integral Compact Multicyclone (ICM) stainless steel booth is designed for automatic powder coating and manual coating in multi-color operation. It stands out for its stable and robust construction. The stainless steel floor is accessible"
+      }
+    ]
   },
   {
     "slug": "id-spray-wall",
@@ -1761,7 +2067,29 @@
     "image": {
       "src": "/products/manual-booth-2.png",
       "alt": "Spray Booth Wall for spray applications"
-    }
+    },
+    "variants": [
+      {
+        "slug": "id-spray-wall",
+        "title": "ID Spray Wall",
+        "tagline": "Ideal for smaller run parts, fixtures, and custom finishing jobs.",
+        "summary": "The ID spray wall is especially suitable for coating larger parts in single color operation or with frequent color changes. It convinces by its robust and scratch-resistant stainless steel floor.",
+        "image": {
+          "src": "/products/manual-booth-2.png",
+          "alt": "Spray Booth Wall for spray applications"
+        }
+      },
+      {
+        "slug": "spray-wall-basic-8000",
+        "title": "Spray Wall Basic 8000",
+        "tagline": "Manual coating of structural parts, small runs, and job-shop tasks.",
+        "summary": "The Basic 8000 Spray Wall is a manual spray environment tailored to larger parts and cost-effective operations. It’s equipped with essential performance functions for industrial spray finishes and can be integrated with manual conveyor systems or handling fixtures.",
+        "image": {
+          "src": "/products/manual-booth-1.png",
+          "alt": "Spray Booth Wall for spray applications"
+        }
+      }
+    ]
   },
   {
     "slug": "imc-coatec-metering",
@@ -1771,7 +2099,7 @@
       "smc-imc-molding"
     ],
     "tagline": "Coating Process meter mix equipment for in-mold coating of Sheet Molding Compound (SMC) utilized in automotive, commercial, recreational vehicle and FRP manufacturing.",
-    "summary": "IM Coatec (In Mold Coating Metering System) is used to provide a paintable, defect free, surface to molded parts made of fiber-reinforced plastics (FRP), or sheet molding compounds (SMC). Paintable surface upon exit of mold. \u201cClass A\u201d performance for In Mold Coating with IMCoatec Metering System. This dedicated system designed to give you a \"Class A\" finish with a minimum of expense, maintenance and hassle. Liquid, heat activated conductive in-mold coating is designed to enhance the surface of reinforced plastics, automotive, FRP truck body panels, or any molded part. In-Mold Coatings provide a smooth, protected, sealed surface that meets or exceeds most OEM coating specifications. They can be readily painted with standard automotive finishes using conventional or electrostatic equipment.",
+    "summary": "IM Coatec (In Mold Coating Metering System) is used to provide a paintable, defect free, surface to molded parts made of fiber-reinforced plastics (FRP), or sheet molding compounds (SMC). Paintable surface upon exit of mold. “Class A” performance for In Mold Coating with IMCoatec Metering System. This dedicated system designed to give you a \"Class A\" finish with a minimum of expense, maintenance and hassle. Liquid, heat activated conductive in-mold coating is designed to enhance the surface of reinforced plastics, automotive, FRP truck body panels, or any molded part. In-Mold Coatings provide a smooth, protected, sealed surface that meets or exceeds most OEM coating specifications. They can be readily painted with standard automotive finishes using conventional or electrostatic equipment.",
     "sections": [
       {
         "heading": "Features:",
@@ -1857,8 +2185,7 @@
     "updated": "2026-05-13",
     "categories": [
       "adhesives-sealants",
-      "monitoring-analytics",
-      "process-control-computer"
+      "monitoring-analytics"
     ],
     "tagline": "Peripherals",
     "summary": "The light barrier is a process monitoring device used with the very fast-switching shot and high-speed valves. It counts the number of discharged shots, checking them against the set target quantity.",
@@ -1869,54 +2196,6 @@
     }
   },
   {
-    "slug": "low-pressure-impingement-mixing-valve",
-    "title": "Low Pressure Impingement Mixing Valve",
-    "updated": "2025-12-26",
-    "categories": [
-      "urethane-foam-mixing-guns"
-    ],
-    "tagline": "Impingement Mixing Valves for Urethane Foam & Elastomer: Enhancing Productivity",
-    "summary": "Welcome to Kirkco, your premier source for cutting-edge low-pressure impingement mixing valves designed to elevate productivity in filled and unfilled polyurethane applications. Our high-performance, low-pressure mixing heads lead the industry, featuring a precision tight-tolerance plunger design.",
-    "sections": [
-      {
-        "heading": "Precision with Low Pressure Impingement Mixing Heads",
-        "paragraphs": [
-          "At the core of every foam processing unit, the mixing head assembly takes center stage. Engineered with precision, this crucial component ensures thorough mixing within the chamber, dispensing a precisely calibrated mixture through the nozzle outlet orifice. Kirkco manufactures four low-pressure mixing head sizes covering an output range from 1/4 to 400 lbs./min."
-        ]
-      },
-      {
-        "heading": "Standard Low Pressure Mixing Head Assembly",
-        "paragraphs": [
-          "Crafted for Excellence",
-          "Our standard head assembly boasts robust construction, with major parts made from chrome-plated steel, Teflon-coated aluminum or stainless steel mixers, and Teflon or Viton seals. Key features include a mixing head body, bearing housing with high-speed bearings, a 4-way material valve, diaphragm-type flush valve, hardened mixer shaft, air-actuated valve operator, and an AC electric motor-driven mixer with variable speed."
-        ]
-      },
-      {
-        "heading": "Tailoring to Your Needs: Low Pressure Mixing Head Upgrades",
-        "paragraphs": [
-          "Upgrade options abound for our mixing head assembly, including:"
-        ],
-        "items": [
-          "Automatic Water Flush Module: Variable speed drive for mixer operation, enabling a speed range of 0 - 10,000 rpm, with automatic speed adjustment during cold water injection.",
-          "Water Cooled Addition: Ideal for non-stop operation, providing head cooling through a dual-wall bearing housing and mixer nozzle with cold water.",
-          "Automatic Color Selector: Effortless color changes for multi-component systems, enhancing operational flexibility.",
-          "Hydraulic Mixer Drive: Hydraulic motor-driven mixer with a speed of up to 10,000 rpm, offering the advantage of lower weight.",
-          "Static Mixer: Catering to specific elastomer systems, featuring a static mixer setup."
-        ]
-      },
-      {
-        "heading": "Ensuring Seamless Operation: Double Hydraulic Solenoid Valve Control",
-        "paragraphs": [
-          "Equipped with a 7.5 kW hydraulic unit, pre-charged accumulator, pressure regulator, and integral heat exchanger, our low-pressure impingement mixing heads offer all the benefits of high-pressure metering technology. Whether in straight or L-style mix heads, expect smooth pouring, reduced costs, enhanced product quality, and the ability to use fast-reacting formulations."
-        ]
-      }
-    ],
-    "image": {
-      "src": "/products/image1.png",
-      "alt": "Low Pressure impingement mixing valve"
-    }
-  },
-  {
     "slug": "lsr-conti-mix-200",
     "title": "LSR Conti Mix 200",
     "updated": "2025-12-07",
@@ -1924,7 +2203,7 @@
       "two-component"
     ],
     "tagline": "Metering & Mixing Plant for Liquid Silicone Rubber Applications",
-    "summary": "Two RAM units operate independently, in closed-loop control\u2014economic and compact meter mix Plant for LSR processing. Dosing piston pumps, servo motor driven.",
+    "summary": "Two RAM units operate independently, in closed-loop control—economic and compact meter mix Plant for LSR processing. Dosing piston pumps, servo motor driven.",
     "sections": [
       {
         "heading": "Benefits of the LSR Conti Mix 200",
@@ -1963,74 +2242,113 @@
     "image": {
       "src": "/products/Conti-Mix-200-LSR.jpg",
       "alt": "LSR Conti Mix Industrial application dispensing with two drum pumps"
-    }
-  },
-  {
-    "slug": "lsr-20-ela-lsr-200-ela",
-    "title": "LSR-20 ELA & LSR-200 ELA",
-    "updated": "2025-12-07",
-    "categories": [
-      "two-component"
-    ],
-    "tagline": "Metering & Mixing Plant for Liquid Silicone Rubber Applications",
-    "sections": [
+    },
+    "variants": [
       {
-        "heading": "Benefits of the LSR-20 LC:",
-        "items": [
-          "all relevant information at a glance (pressure, fill level)",
-          "compact design",
-          "feeding system: 20 l"
+        "slug": "lsr-conti-mix-200",
+        "title": "LSR Conti Mix 200",
+        "tagline": "Metering & Mixing Plant for Liquid Silicone Rubber Applications",
+        "summary": "Two RAM units operate independently, in closed-loop control—economic and compact meter mix Plant for LSR processing. Dosing piston pumps, servo motor driven.",
+        "image": {
+          "src": "/products/Conti-Mix-200-LSR.jpg",
+          "alt": "LSR Conti Mix Industrial application dispensing with two drum pumps"
+        },
+        "sections": [
+          {
+            "heading": "Benefits of the LSR Conti Mix 200",
+            "items": [
+              "electrical driven",
+              "high precision",
+              "simultaneous drum emptying",
+              "compact design",
+              "energy saving",
+              "feeding system 20 l or 200 l",
+              "flow rate approx. 6 l/min"
+            ]
+          },
+          {
+            "heading": "LSR Conti Mix 200 Applications / Uses",
+            "items": [
+              "textile coating",
+              "large volume e.g., insulators"
+            ]
+          },
+          {
+            "heading": "LSR Conti Mix 200 Processing Unit",
+            "items": [
+              "Mixing unit without color",
+              "Mixing unit one color dosing valve",
+              "Mixing unit two color dosing valve",
+              "Mixer with water cooled jacket",
+              "Possible static mixer sizes",
+              "1/2 or 1 with 10 elements (standard)",
+              "1/2 or 1 with 20 elements",
+              "1/2 or 1 with 30 elements",
+              "8mm mixer for small shot volumes"
+            ]
+          }
         ]
       },
       {
-        "heading": "LSR Silicone Manufactures",
-        "items": [
-          "BlueStar Silicone",
-          "Wacker",
-          "Momentive",
-          "Dow Corning",
-          "ShinEtsu Silicones"
-        ]
-      }
-    ],
-    "image": {
-      "src": "/products/csm_LSR_200_ELA_ebc231e394.png",
-      "alt": "Liquid silicone rubber dispensing device for industrial applications"
-    }
-  },
-  {
-    "slug": "lsr-20-lc",
-    "title": "LSR-20 LC",
-    "updated": "2025-12-07",
-    "categories": [
-      "two-component"
-    ],
-    "tagline": "Metering & Mixing Plant for Liquid Silicone Rubber Applications",
-    "summary": "Setup with a Pneumatic Drive Motor for reduced output 20L pail feeder. Economic and compact meter mix Plant for LSR processing. Dosing piston pumps pneumatic driven",
-    "sections": [
-      {
-        "heading": "Benefits of the LSR-20 LC",
-        "items": [
-          "economic version",
-          "compact design",
-          "feeding system: 20 l"
+        "slug": "lsr-20-ela-lsr-200-ela",
+        "title": "LSR-20 ELA & LSR-200 ELA",
+        "tagline": "Metering & Mixing Plant for Liquid Silicone Rubber Applications",
+        "image": {
+          "src": "/products/csm_LSR_200_ELA_ebc231e394.png",
+          "alt": "Liquid silicone rubber dispensing device for industrial applications"
+        },
+        "sections": [
+          {
+            "heading": "Benefits of the LSR-20 LC:",
+            "items": [
+              "all relevant information at a glance (pressure, fill level)",
+              "compact design",
+              "feeding system: 20 l"
+            ]
+          },
+          {
+            "heading": "LSR Silicone Manufactures",
+            "items": [
+              "BlueStar Silicone",
+              "Wacker",
+              "Momentive",
+              "Dow Corning",
+              "ShinEtsu Silicones"
+            ]
+          }
         ]
       },
       {
-        "heading": "LSR Silicone Manufactures",
-        "items": [
-          "BlueStar Silicone",
-          "Wacker",
-          "Momentive",
-          "Dow Corning",
-          "ShinEtsu Silicones"
+        "slug": "lsr-20-lc",
+        "title": "LSR-20 LC",
+        "tagline": "Metering & Mixing Plant for Liquid Silicone Rubber Applications",
+        "summary": "Setup with a Pneumatic Drive Motor for reduced output 20L pail feeder. Economic and compact meter mix Plant for LSR processing. Dosing piston pumps pneumatic driven",
+        "image": {
+          "src": "/products/RT-LSR-Machines.jpg",
+          "alt": "Liquid silicone rubber dispensing device for industrial applications"
+        },
+        "sections": [
+          {
+            "heading": "Benefits of the LSR-20 LC",
+            "items": [
+              "economic version",
+              "compact design",
+              "feeding system: 20 l"
+            ]
+          },
+          {
+            "heading": "LSR Silicone Manufactures",
+            "items": [
+              "BlueStar Silicone",
+              "Wacker",
+              "Momentive",
+              "Dow Corning",
+              "ShinEtsu Silicones"
+            ]
+          }
         ]
       }
-    ],
-    "image": {
-      "src": "/products/RT-LSR-Machines.jpg",
-      "alt": "Liquid silicone rubber dispensing device for industrial applications"
-    }
+    ]
   },
   {
     "slug": "m-cube",
@@ -2041,7 +2359,21 @@
     ],
     "tagline": "High-mix and multi-product automated spray environments.",
     "summary": "The M-Cube plastic booth is configured according to customer specifications. A quick color change is possible due to the PVC sandwich design. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible.",
-    "thin": true
+    "thin": true,
+    "variants": [
+      {
+        "slug": "m-cube",
+        "title": "M-Cube",
+        "tagline": "High-mix and multi-product automated spray environments.",
+        "summary": "The M-Cube plastic booth is configured according to customer specifications. A quick color change is possible due to the PVC sandwich design. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible."
+      },
+      {
+        "slug": "super-cube",
+        "title": "Super Cube",
+        "tagline": "Automated powder coating where flexibility and changeovers are needed",
+        "summary": "The Super Cube plastic booth is configured according to customer specifications. Robot and axis technology can be integrated and the use of the PVC elements allows a fast color change. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible."
+      }
+    ]
   },
   {
     "slug": "material-filter",
@@ -2052,7 +2384,7 @@
       "process-control"
     ],
     "tagline": "Material Filters for Clean, Consistent Flow in Lubrication Systems",
-    "summary": "A material filter is an inline device designed to remove particulate contaminants from grease, oil, and other lubricant fluids before they reach sensitive downstream components like flow meters, metering valves, and dispensing systems. By capturing debris and solid contaminants, material filters help protect system components, stabilize flow, and extend the service life of lubrication equipment. In lubrication and fluid delivery systems, filtration is a critical step in flow regulation \u2014 keeping materials clean ensures more reliable flow measurement, fewer blockages, and reduced maintenance.",
+    "summary": "A material filter is an inline device designed to remove particulate contaminants from grease, oil, and other lubricant fluids before they reach sensitive downstream components like flow meters, metering valves, and dispensing systems. By capturing debris and solid contaminants, material filters help protect system components, stabilize flow, and extend the service life of lubrication equipment. In lubrication and fluid delivery systems, filtration is a critical step in flow regulation — keeping materials clean ensures more reliable flow measurement, fewer blockages, and reduced maintenance.",
     "sections": [
       {
         "heading": "Inline Lubricant Filter Assembly",
@@ -2089,7 +2421,7 @@
       {
         "heading": "High-Capacity Industrial Filter Units",
         "paragraphs": [
-          "Designed for higher flow rates and heavier industrial use, high-capacity material filters provide larger surface area and longer element life \u2014 reducing replacement frequency in busy lubrication systems."
+          "Designed for higher flow rates and heavier industrial use, high-capacity material filters provide larger surface area and longer element life — reducing replacement frequency in busy lubrication systems."
         ]
       },
       {
@@ -2120,7 +2452,7 @@
       {
         "heading": "How Material Filters Integrate in Flow Regulation",
         "paragraphs": [
-          "Material filters are typically installed upstream of flow meters and flow regulating valves. A typical integration path might look like: Pump Supply \u2192 Material Filter \u2192 Flow Meter \u2192 Flow Regulating Valve \u2192 Metering/Dispensing Valve",
+          "Material filters are typically installed upstream of flow meters and flow regulating valves. A typical integration path might look like: Pump Supply → Material Filter → Flow Meter → Flow Regulating Valve → Metering/Dispensing Valve",
           "This arrangement ensures:"
         ],
         "items": [
@@ -2158,7 +2490,7 @@
       "process-control"
     ],
     "tagline": "Material Fluid Pressure Regulators for Consistent and Controlled Lubricant Delivery",
-    "summary": "Material fluid pressure regulators are engineered components used in lubrication and fluid delivery systems to reduce and stabilize the pressure of pumped material. They ensure that grease, oil, and other lubricants are delivered at a controlled, consistent pressure \u2014 even when upstream pump conditions fluctuate \u2014 which helps achieve repeatable performance from metering valves, dispensing devices, and lubrication points. Pressure regulation is essential in applications where changes in pump output could otherwise lead to inconsistent lubricant feed, excess force on downstream components, or variations in dosing accuracy.",
+    "summary": "Material fluid pressure regulators are engineered components used in lubrication and fluid delivery systems to reduce and stabilize the pressure of pumped material. They ensure that grease, oil, and other lubricants are delivered at a controlled, consistent pressure — even when upstream pump conditions fluctuate — which helps achieve repeatable performance from metering valves, dispensing devices, and lubrication points. Pressure regulation is essential in applications where changes in pump output could otherwise lead to inconsistent lubricant feed, excess force on downstream components, or variations in dosing accuracy.",
     "sections": [
       {
         "heading": "Why Pressure Regulation Matters",
@@ -2188,7 +2520,7 @@
         ]
       },
       {
-        "heading": "Piston\u2011Type Material Fluid Pressure Regulator",
+        "heading": "Piston‑Type Material Fluid Pressure Regulator",
         "paragraphs": [
           "A robust regulator using a piston mechanism to maintain a stable outlet pressure for grease, oil, and other lubricants. Designed for industrial environments where steady pressure is critical for feeding metering valves and dispensing systems."
         ]
@@ -2196,7 +2528,7 @@
       {
         "heading": "Key Features:",
         "items": [
-          "Pneumatic or spring\u2011balanced piston design",
+          "Pneumatic or spring‑balanced piston design",
           "Maintains a stable set pressure downstream",
           "Low maintenance, high durability",
           "Handles medium to high pressures",
@@ -2207,12 +2539,12 @@
         "heading": "Ideal For:",
         "items": [
           "Central lubrication systems",
-          "Metrology\u2011critical dispense applications",
+          "Metrology‑critical dispense applications",
           "Feed to metering/dispensing valves"
         ]
       },
       {
-        "heading": "Diaphragm\u2011Type Material Fluid Pressure Regulator",
+        "heading": "Diaphragm‑Type Material Fluid Pressure Regulator",
         "paragraphs": [
           "A regulator utilizing a diaphragm seal to isolate the spring and control chamber from the material path. This design is ideal for sensitive or abrasive fluids, including greases with fillers or fluids sensitive to contamination."
         ]
@@ -2232,7 +2564,7 @@
         "items": [
           "Abrasive or filled grease applications",
           "Silicones, polyurethanes, and specialty lubricants",
-          "Systems where material\u2011friendly designs are required"
+          "Systems where material‑friendly designs are required"
         ]
       },
       {
@@ -2245,14 +2577,14 @@
         "items": [
           "Automated lubrication networks in manufacturing facilities",
           "Centralized grease and oil distribution systems",
-          "High\u2011accuracy metering and dispensing stations",
+          "High‑accuracy metering and dispensing stations",
           "Maintenance and machine tool lubrication"
         ]
       },
       {
         "heading": "Why Choose Kirkco Pressure Regulators",
         "paragraphs": [
-          "Kirkco\u2019s material fluid pressure regulators are engineered for industrial reliability, robust performance, and compatibility with a wide range of lubrication materials. They integrate seamlessly with:",
+          "Kirkco’s material fluid pressure regulators are engineered for industrial reliability, robust performance, and compatibility with a wide range of lubrication materials. They integrate seamlessly with:",
           "This makes them a powerful component in comprehensive lubrication solutions."
         ],
         "items": [
@@ -2344,13 +2676,13 @@
     "categories": [
       "two-component"
     ],
-    "tagline": "DOPAG MICRO-MIX\u00ae piston type shot metering and mixing system:",
-    "summary": "MICRO-MIX\u00ae is ideal for processing low, medium, and high viscosity, filled, or abrasive materials. The range of applications for this system consists mainly of the \u201cshot-type\u201d dispensing of minute quantities of evenly mixed material. All polymers, e.g., polyurethanes, silicones, and epoxy resins, can be processed using this system. The three main units that make up this group of positive displacement shot metering and mixing systems are the Micro Mix E, Micro Mix S, and the Micro Mix K.",
+    "tagline": "DOPAG MICRO-MIX® piston type shot metering and mixing system:",
+    "summary": "MICRO-MIX® is ideal for processing low, medium, and high viscosity, filled, or abrasive materials. The range of applications for this system consists mainly of the “shot-type” dispensing of minute quantities of evenly mixed material. All polymers, e.g., polyurethanes, silicones, and epoxy resins, can be processed using this system. The three main units that make up this group of positive displacement shot metering and mixing systems are the Micro Mix E, Micro Mix S, and the Micro Mix K.",
     "sections": [
       {
         "heading": "MICRO-MIX E",
         "paragraphs": [
-          "MICRO-MIX E\u00ae has two piston type metering pumps driven by a pneumatic air cylinder and lever system assembly. We set the mixing ratio by changing the lever system and the shot size is a mechanical stop. The mixing ratio is adjustable within the given range of the selected metering pump combination. Variable ratios of 1:1 to 10:1 are the most common. Mix ratios outside of this range are possible in some situations."
+          "MICRO-MIX E® has two piston type metering pumps driven by a pneumatic air cylinder and lever system assembly. We set the mixing ratio by changing the lever system and the shot size is a mechanical stop. The mixing ratio is adjustable within the given range of the selected metering pump combination. Variable ratios of 1:1 to 10:1 are the most common. Mix ratios outside of this range are possible in some situations."
         ],
         "images": [
           {
@@ -2361,7 +2693,7 @@
       {
         "heading": "MICRO-MIX S",
         "paragraphs": [
-          "MICRO-MIX S\u00ae is equipped with two piston type metering pumps driven via a stepper motor. The material is applied either in shot form for precise and accurate dots or continuously for precise beads. This unit is also equipped with a variable adjustable mixing ratio. The main benefit of the MICRO-MIX S metering and mixing system is the integral MR-20 metering computer.",
+          "MICRO-MIX S® is equipped with two piston type metering pumps driven via a stepper motor. The material is applied either in shot form for precise and accurate dots or continuously for precise beads. This unit is also equipped with a variable adjustable mixing ratio. The main benefit of the MICRO-MIX S metering and mixing system is the integral MR-20 metering computer.",
           "The MR-20 metering computer is used in automated production applications and has multiple programmable shot capabilities and many additional features and options including:"
         ],
         "items": [
@@ -2383,11 +2715,10 @@
     "updated": "2026-05-13",
     "categories": [
       "adhesives-sealants",
-      "monitoring-analytics",
-      "process-control-computer"
+      "monitoring-analytics"
     ],
     "tagline": "Peripherals",
-    "summary": "The micro-flow sensor can be used with needle metering valves to confirm that material is being dispensed. It is designed for the detection of very small quantities (0.005 \u2013 3.00 ml). This device is meant purely for material discharge monitoring purposes, not as a means of volumetric measurement.",
+    "summary": "The micro-flow sensor can be used with needle metering valves to confirm that material is being dispensed. It is designed for the detection of very small quantities (0.005 – 3.00 ml). This device is meant purely for material discharge monitoring purposes, not as a means of volumetric measurement.",
     "thin": true,
     "image": {
       "src": "/products/Micro-Flow-Sensor_03_24_2026.jpg",
@@ -2403,7 +2734,7 @@
       "feeding-and-supply"
     ],
     "tagline": "Modular Lubrication Pump Systems for Flexible Grease & Oil Delivery",
-    "summary": "Kirkco modular pump systems provide scalable lubrication feed solutions capable of handling a wide range of grease, oil, and lubricant transfer needs. These systems combine multiple pump types, reservoirs, control elements, and accessories into configurable packages that can be tailored to your plant\u2019s specific lubrication requirements \u2014 from small automated lines to centralized systems serving many lubrication points.",
+    "summary": "Kirkco modular pump systems provide scalable lubrication feed solutions capable of handling a wide range of grease, oil, and lubricant transfer needs. These systems combine multiple pump types, reservoirs, control elements, and accessories into configurable packages that can be tailored to your plant’s specific lubrication requirements — from small automated lines to centralized systems serving many lubrication points.",
     "sections": [
       {
         "heading": "Key Features:",
@@ -2548,7 +2879,7 @@
       {
         "heading": "Pneumatic Piston Pump Operation",
         "paragraphs": [
-          "Pneumatic piston pumps are powered by an air motor that alternately drives a piston up and down to draw material from a container and deliver it under pressure. During the up stroke, material enters the fluid section; during the down stroke, it displaces material into the pressure line \u2014 generating consistent output for spray guns or dispensing systems."
+          "Pneumatic piston pumps are powered by an air motor that alternately drives a piston up and down to draw material from a container and deliver it under pressure. During the up stroke, material enters the fluid section; during the down stroke, it displaces material into the pressure line — generating consistent output for spray guns or dispensing systems."
         ]
       },
       {
@@ -2570,14 +2901,14 @@
           "Kirkco piston pumps are available in configurations that balance flow rate and working pressure for specific processes:"
         ],
         "items": [
-          "Low-Pressure Pumps: High volumetric flow at lower working pressures \u2014 ideal for material transport and supply systems.",
-          "High-Pressure Pumps: Lower flow with elevated pressures \u2014 suitable for direct application in Airless, AirCoat, and electrostatic spray operations."
+          "Low-Pressure Pumps: High volumetric flow at lower working pressures — ideal for material transport and supply systems.",
+          "High-Pressure Pumps: Lower flow with elevated pressures — suitable for direct application in Airless, AirCoat, and electrostatic spray operations."
         ]
       },
       {
         "heading": "IceBreaker Air Motor Advantage",
         "paragraphs": [
-          "The industry-proven IceBreaker air motor design significantly reduces internal icing \u2014 eliminating frequent work interruptions for thawing. This also enhances performance with:"
+          "The industry-proven IceBreaker air motor design significantly reduces internal icing — eliminating frequent work interruptions for thawing. This also enhances performance with:"
         ],
         "items": [
           "Integrated pressure regulation",
@@ -2597,7 +2928,7 @@
         "heading": "Thermo Technology",
         "paragraphs": [
           "We Offer the Best!",
-          "Piston pumps with explosion protected inline fluid heater Wagner Thermo technology combines the tried-and-tested pneumatic piston pumps Puma 28-40 and Leopard 35-70 with an explosion-protected inline fluid heater. This guarantees a constant paint temperature with a maximum outlet temperature of 65 \u00b0 C and a maximum working temperature of 80 \u00b0 C. This temperature control of the sprayed material reduces its viscosity, achieving better atomisation and quicker degassing. The drying times are reduced, the process characteristics improved, and a homogeneous, smooth surface is achieved. Not only furniture manufacturers (wear-proofing), window makers, and carpentry and joinery firms benefit from Thermotechnik, but it is also used in heavy steelwork, shipbuilding, and plastics processing (e.g., for car accessories)."
+          "Piston pumps with explosion protected inline fluid heater Wagner Thermo technology combines the tried-and-tested pneumatic piston pumps Puma 28-40 and Leopard 35-70 with an explosion-protected inline fluid heater. This guarantees a constant paint temperature with a maximum outlet temperature of 65 ° C and a maximum working temperature of 80 ° C. This temperature control of the sprayed material reduces its viscosity, achieving better atomisation and quicker degassing. The drying times are reduced, the process characteristics improved, and a homogeneous, smooth surface is achieved. Not only furniture manufacturers (wear-proofing), window makers, and carpentry and joinery firms benefit from Thermotechnik, but it is also used in heavy steelwork, shipbuilding, and plastics processing (e.g., for car accessories)."
         ],
         "items": [
           "Tiger 72-300",
@@ -2616,7 +2947,7 @@
       {
         "heading": "Pneumatic Pump Spray Packages",
         "paragraphs": [
-          "Kirkco covers the entire spectrum of pneumatic spray pump packages used in industrial and contracting protective coating and spray finishing applications. Whether Air-Assisted, AirCoat, Airless or electrostatic, mobile or stationary \u2013 Kirkco can provide a comprehensive spray package solution.",
+          "Kirkco covers the entire spectrum of pneumatic spray pump packages used in industrial and contracting protective coating and spray finishing applications. Whether Air-Assisted, AirCoat, Airless or electrostatic, mobile or stationary – Kirkco can provide a comprehensive spray package solution.",
           "Lets Find a Pneumatic Pump Spray Package For you! WAGNER AIR-OPERATED PISTON PUMPS AIRLESS & AIR-ASSISTED PACKAGES:",
           "Applicators"
         ],
@@ -2650,12 +2981,10 @@
     "updated": "2026-05-24",
     "categories": [
       "adhesives-sealants",
-      "integration-automation",
-      "monitoring-analytics",
-      "process-control-computer"
+      "monitoring-analytics"
     ],
     "tagline": "Pressure Sensors for Adhesive & Sealant Dispensing",
-    "summary": "Pressure sensors play a critical role in monitoring and verifying material conditions within adhesive and sealant dispensing systems. These devices measure real-time material pressure at key points in the dispensing process and provide feedback to process control computers, monitoring systems, and automation platforms. Within Kirkco\u2019s Process & Control architecture, pressure sensors function as part of the Monitoring & Analytics layer, supplying essential data that supports consistent dispensing performance, system diagnostics, and closed-loop control. Compatible with: Shot Valves Spray Valves Integration into a system (digital / analogue)",
+    "summary": "Pressure sensors play a critical role in monitoring and verifying material conditions within adhesive and sealant dispensing systems. These devices measure real-time material pressure at key points in the dispensing process and provide feedback to process control computers, monitoring systems, and automation platforms. Within Kirkco’s Process & Control architecture, pressure sensors function as part of the Monitoring & Analytics layer, supplying essential data that supports consistent dispensing performance, system diagnostics, and closed-loop control. Compatible with: Shot Valves Spray Valves Integration into a system (digital / analogue)",
     "thin": true,
     "image": {
       "src": "/products/Pressure-Regulators.jpg",
@@ -2764,12 +3093,32 @@
     "categories": [
       "protective-coatings"
     ],
-    "summary": "The PROTEC 2K Mixing & Dosing Unit is specifically engineered for heavy-duty corrosion protection applications involving highly filled, two-component protective coatings. It provides both precise metering of individual components and reliable, thorough mixing \u2014 ensuring uniform material delivery even under demanding conditions.",
+    "summary": "The PROTEC 2K Mixing & Dosing Unit is specifically engineered for heavy-duty corrosion protection applications involving highly filled, two-component protective coatings. It provides both precise metering of individual components and reliable, thorough mixing — ensuring uniform material delivery even under demanding conditions.",
     "thin": true,
     "image": {
       "src": "/products/Picture4.jpg",
       "alt": "Dosing and Mixing unit on a custom portable dolly"
-    }
+    },
+    "variants": [
+      {
+        "slug": "protec-2k-mixing-dosing-unit",
+        "title": "PROTEC 2K Mixing & Dosing Unit",
+        "summary": "The PROTEC 2K Mixing & Dosing Unit is specifically engineered for heavy-duty corrosion protection applications involving highly filled, two-component protective coatings. It provides both precise metering of individual components and reliable, thorough mixing — ensuring uniform material delivery even under demanding conditions.",
+        "image": {
+          "src": "/products/Picture4.jpg",
+          "alt": "Dosing and Mixing unit on a custom portable dolly"
+        }
+      },
+      {
+        "slug": "twincontrol-2k-mixing-dosing-unit",
+        "title": "TWINCONTROL 2K Mixing & Dosing Unit",
+        "summary": "The TWINCONTROL 2K is a highly portable and cost-effective mixing/dosing unit designed for a wide range of protective coating applications, especially those involving highly viscous materials at high flow rates. Its compact design makes it easy to deploy across job sites or production floors.",
+        "image": {
+          "src": "/products/Picture5.jpg",
+          "alt": "Dosing and Mixing unit on a custom portable dolly"
+        }
+      }
+    ]
   },
   {
     "slug": "pump-packages",
@@ -2809,7 +3158,7 @@
       {
         "heading": "Medium-Pressure Pump Package",
         "paragraphs": [
-          "A package engineered for controlled medium-pressure feed, balancing flow and pressure for applications that don\u2019t require a dedicated high-pressure system but need more than a simple low-pressure pump."
+          "A package engineered for controlled medium-pressure feed, balancing flow and pressure for applications that don’t require a dedicated high-pressure system but need more than a simple low-pressure pump."
         ]
       },
       {
@@ -2832,7 +3181,7 @@
       {
         "heading": "Dual-Stage Pump Package",
         "paragraphs": [
-          "Combines two pump stages (e.g., low and medium or low and high pressure) into one integrated package for flexible feed requirements \u2014 ideal when feeding both bulk supply and downstream metering simultaneously."
+          "Combines two pump stages (e.g., low and medium or low and high pressure) into one integrated package for flexible feed requirements — ideal when feeding both bulk supply and downstream metering simultaneously."
         ]
       },
       {
@@ -2884,7 +3233,7 @@
         "heading": "Shot Valves Dispensing Valve Features and Options",
         "items": [
           "Shot application",
-          "Nozzle size \u2300 0.2 \u2013 1.0 mm",
+          "Nozzle size ⌀ 0.2 – 1.0 mm",
           "Input pressure max. 100 bar",
           "24 V DC solenoid valve for maximum shot frequency",
           "200 Hz SHV-01 / 30 Hz SHV-02",
@@ -2930,13 +3279,13 @@
         "items": [
           "Pneumatic, Hydraulic or Pneumatic/ Hydraulic Hybrid driven",
           "Fixed mixing ratio of 1:1",
-          "Viscosities up to 4,000,000 cps / 30 \u2013 90 Shore",
+          "Viscosities up to 4,000,000 cps / 30 – 90 Shore",
           "Output up to 2.5 liters per minute, depending on viscosity",
           "Exact metering accuracy",
           "Material level controls",
           "Simple operation",
           "Low maintenance",
-          "Precise color injection 0.2 \u2013 5 % in dependence of the output flow rate"
+          "Precise color injection 0.2 – 5 % in dependence of the output flow rate"
         ]
       }
     ],
@@ -2958,21 +3307,6 @@
     "image": {
       "src": "/products/spray-valve.jpg",
       "alt": "Spray valve application for spraying internal items"
-    }
-  },
-  {
-    "slug": "spray-wall-basic-8000",
-    "title": "Spray Wall Basic 8000",
-    "updated": "2025-12-26",
-    "categories": [
-      "spray-systems"
-    ],
-    "tagline": "Manual coating of structural parts, small runs, and job-shop tasks.",
-    "summary": "The Basic 8000 Spray Wall is a manual spray environment tailored to larger parts and cost-effective operations. It\u2019s equipped with essential performance functions for industrial spray finishes and can be integrated with manual conveyor systems or handling fixtures.",
-    "thin": true,
-    "image": {
-      "src": "/products/manual-booth-1.png",
-      "alt": "Spray Booth Wall for spray applications"
     }
   },
   {
@@ -3011,43 +3345,18 @@
     }
   },
   {
-    "slug": "super-cube",
-    "title": "Super Cube",
-    "updated": "2025-12-26",
-    "categories": [
-      "spray-systems"
-    ],
-    "tagline": "Automated powder coating where flexibility and changeovers are needed",
-    "summary": "The Super Cube plastic booth is configured according to customer specifications. Robot and axis technology can be integrated and the use of the PVC elements allows a fast color change. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible.",
-    "thin": true
-  },
-  {
     "slug": "transfer-pump",
     "title": "Transfer Pump",
     "updated": "2025-12-22",
     "categories": [
       "feeding-and-supply"
     ],
-    "tagline": "KIRKCO\u2019s Transfer pumps for direct supply from original container",
+    "tagline": "KIRKCO’s Transfer pumps for direct supply from original container",
     "summary": "The Best solution for the control and transfer of liquids, fluids, and pastes. Facilitates precise transfer from storage tanks to blending or metering systems. Equipped with variable speed drives for sensitive handling of temperature and flow fluctuations. Depending on the application type, it may be useful to be able to supply material directly from the original containers using a transfer pump. Kirkco offers double-acting transfer pumps with fast-switching airmotors. It should be noted that the use of transfer pumps is always dependent on the material properties and the container type.",
     "thin": true,
     "image": {
       "src": "/products/TransferPump1.png",
       "alt": "Transfer pump diagram"
-    }
-  },
-  {
-    "slug": "twincontrol-2k-mixing-dosing-unit",
-    "title": "TWINCONTROL 2K Mixing & Dosing Unit",
-    "updated": "2025-12-26",
-    "categories": [
-      "protective-coatings"
-    ],
-    "summary": "The TWINCONTROL 2K is a highly portable and cost-effective mixing/dosing unit designed for a wide range of protective coating applications, especially those involving highly viscous materials at high flow rates. Its compact design makes it easy to deploy across job sites or production floors.",
-    "thin": true,
-    "image": {
-      "src": "/products/Picture5.jpg",
-      "alt": "Dosing and Mixing unit on a custom portable dolly"
     }
   },
   {
@@ -3064,67 +3373,65 @@
     "image": {
       "src": "/products/ULTRAMIX.jpg",
       "alt": "Ultra mix device for industrial applications"
-    }
-  },
-  {
-    "slug": "ultramix-10-s-micro-dosing",
-    "title": "ULTRAMIX 10-S MICRO DOSING",
-    "updated": "2025-12-10",
-    "categories": [
-      "high-pressure-metering"
-    ],
-    "tagline": "Polyurethane Processing Equipment",
-    "summary": "ULTRAMIX 10.S High pressure micro dosing In the last few years ISC has successfully dedicated itself to \u201cmicro dosing\u201d polyurethane in high pressure, pouring up to one gram through a \u201cL\u201d type self-cleaning mixing-head. ISC has manufactured several machines which satisfy the needs of different sectors such as naval industry, railway industry, automotive industry, furniture and medical industry. The machine named ULTRAMIX 10-S is sometimes connected to a Robot, manual working centers or CNC automatic centers. Precision makes the difference @ ISC.",
-    "thin": true,
-    "image": {
-      "src": "/products/MICRO-DOSING.jpg",
-      "alt": "Ultra mix micro dosing"
-    }
-  },
-  {
-    "slug": "ultramix-p",
-    "title": "ULTRAMIX P",
-    "updated": "2025-12-10",
-    "categories": [
-      "high-pressure-metering"
-    ],
-    "tagline": "Polyurethane Processing Equipment",
-    "summary": "High Pressure foaming machines for hydrocarbons-blown systems Ultramix/P Series productions with dangerous and flammable blowing agents production of refrigerators and chest freezers in the household appliances sector production of blast chillers, commercial refrigerators, cold rooms in the commercial and industrial sector sandwich panels for the building sector special productions of integral self-skinning foams standard equipment of integrated safety systems and monitoring of explosive gas leaks The \u201cUltramix/P\u201d is the high-pressure metering machine designed for the safe use of flammable blowing agents, such as Cyclopentane, Isobutane, etc. Submitted to a complete and accurate risk analysis, hydrocarbons-blown systems can be considered safe and pose no danger to the operators involved in the process or to the environment. The need to reduce the environmental impact from greenhouse emissions policy of our company has the key point development, pushing ISC S.r.l. to design a foaming machine helping those foam with hydrocarbons to sustainable development. However, choosing a machine for PU foaming with Pentane is always a very important choice, The experience of the SC S.r.l. has developed this series of foaming machines for making the only choice,",
-    "sections": [
+    },
+    "variants": [
       {
-        "heading": "Features with a very high standard as:",
-        "items": [
-          "300 liters jacketed tanks with capacitive level and agitator,",
-          "Axial piston dosing pumps with magnetic coupling, filter in suction and digital safety pressure gauges,",
-          "Flowmeters with \"close-loop\" function integrated in the PLC. Electric control panel realized according to the customer needs. Possibility to manage multiple mixing heads for high production needs and working recipes up to 99 (standard solution c/w 12 recipes),",
-          "The electric panel of the foaming machine is supplied along a monitoring panel for ventilation and gas detectors control",
-          "The monitoring panel can handle not only the foaming machine safeties but also other parts of the line (Jigs, Presses and Premix stations),",
-          "The Polyol/C-pentane part of the machine is located under forced ventilation with continuous monitoring , All the sensible parts, where required, are supplied with Atex certification and other parts follow CE markings standards,",
-          "The ULTRAMIX-P series can be easily installed on existing plants even \"stand-alone\"",
-          "Possibility of revamping of existing machines with low investment impact",
-          "Solutions with more than two components according the application to use."
+        "slug": "ultramix",
+        "title": "ULTRAMIX",
+        "tagline": "Polyurethane Processing Equipment",
+        "summary": "The High Pressure foaming machine Ultramix Series provides great flexibility for medium to high productions using multiple mixing heads with flow rates from 5 to 5000 gr / sec. It's very useful in sectors where variable shot to shot ratios are required (automotive for example). Production of integral self-skinning parts, flexible dual-hardness productions, and productions where it is necessary to produce with variable flow rates in general (self-regulation of the flow rates) full-optional equipment included in the price.",
+        "image": {
+          "src": "/products/ULTRAMIX.jpg",
+          "alt": "Ultra mix device for industrial applications"
+        }
+      },
+      {
+        "slug": "ultramix-plus",
+        "title": "ULTRAMIX PLUS",
+        "tagline": "Polyurethane Processing Equipment",
+        "summary": "Multicomponent High Pressure foaming machines for continuous sandwich panel lines Ultramix Plus Series foaming machines dedicated to the production of sandwich panels production of dedicated or combined PUR and PIR foams very high productivity and great flexibility usually combined with foaming portal use of hydrocarbons in almost all applications",
+        "image": {
+          "src": "/products/ULTRAMIX-PLUS.jpg",
+          "alt": "Ultramix plus"
+        }
+      },
+      {
+        "slug": "ultramix-p",
+        "title": "ULTRAMIX P",
+        "tagline": "Polyurethane Processing Equipment",
+        "summary": "High Pressure foaming machines for hydrocarbons-blown systems Ultramix/P Series productions with dangerous and flammable blowing agents production of refrigerators and chest freezers in the household appliances sector production of blast chillers, commercial refrigerators, cold rooms in the commercial and industrial sector sandwich panels for the building sector special productions of integral self-skinning foams standard equipment of integrated safety systems and monitoring of explosive gas leaks The “Ultramix/P” is the high-pressure metering machine designed for the safe use of flammable blowing agents, such as Cyclopentane, Isobutane, etc. Submitted to a complete and accurate risk analysis, hydrocarbons-blown systems can be considered safe and pose no danger to the operators involved in the process or to the environment. The need to reduce the environmental impact from greenhouse emissions policy of our company has the key point development, pushing ISC S.r.l. to design a foaming machine helping those foam with hydrocarbons to sustainable development. However, choosing a machine for PU foaming with Pentane is always a very important choice, The experience of the SC S.r.l. has developed this series of foaming machines for making the only choice,",
+        "image": {
+          "src": "/products/ULTRAMIX-P.jpg",
+          "alt": "Ultramix dispensing material glass container"
+        },
+        "sections": [
+          {
+            "heading": "Features with a very high standard as:",
+            "items": [
+              "300 liters jacketed tanks with capacitive level and agitator,",
+              "Axial piston dosing pumps with magnetic coupling, filter in suction and digital safety pressure gauges,",
+              "Flowmeters with \"close-loop\" function integrated in the PLC. Electric control panel realized according to the customer needs. Possibility to manage multiple mixing heads for high production needs and working recipes up to 99 (standard solution c/w 12 recipes),",
+              "The electric panel of the foaming machine is supplied along a monitoring panel for ventilation and gas detectors control",
+              "The monitoring panel can handle not only the foaming machine safeties but also other parts of the line (Jigs, Presses and Premix stations),",
+              "The Polyol/C-pentane part of the machine is located under forced ventilation with continuous monitoring , All the sensible parts, where required, are supplied with Atex certification and other parts follow CE markings standards,",
+              "The ULTRAMIX-P series can be easily installed on existing plants even \"stand-alone\"",
+              "Possibility of revamping of existing machines with low investment impact",
+              "Solutions with more than two components according the application to use."
+            ]
+          }
         ]
+      },
+      {
+        "slug": "ultramix-10-s-micro-dosing",
+        "title": "ULTRAMIX 10-S MICRO DOSING",
+        "tagline": "Polyurethane Processing Equipment",
+        "summary": "ULTRAMIX 10.S High pressure micro dosing In the last few years ISC has successfully dedicated itself to “micro dosing” polyurethane in high pressure, pouring up to one gram through a “L” type self-cleaning mixing-head. ISC has manufactured several machines which satisfy the needs of different sectors such as naval industry, railway industry, automotive industry, furniture and medical industry. The machine named ULTRAMIX 10-S is sometimes connected to a Robot, manual working centers or CNC automatic centers. Precision makes the difference @ ISC.",
+        "image": {
+          "src": "/products/MICRO-DOSING.jpg",
+          "alt": "Ultra mix micro dosing"
+        }
       }
-    ],
-    "image": {
-      "src": "/products/ULTRAMIX-P.jpg",
-      "alt": "Ultramix dispensing material glass container"
-    }
-  },
-  {
-    "slug": "ultramix-plus",
-    "title": "ULTRAMIX PLUS",
-    "updated": "2025-12-10",
-    "categories": [
-      "high-pressure-metering"
-    ],
-    "tagline": "Polyurethane Processing Equipment",
-    "summary": "Multicomponent High Pressure foaming machines for continuous sandwich panel lines Ultramix Plus Series foaming machines dedicated to the production of sandwich panels production of dedicated or combined PUR and PIR foams very high productivity and great flexibility usually combined with foaming portal use of hydrocarbons in almost all applications",
-    "thin": true,
-    "image": {
-      "src": "/products/ULTRAMIX-PLUS.jpg",
-      "alt": "Ultramix plus"
-    }
+    ]
   },
   {
     "slug": "vario-mix",
@@ -3133,8 +3440,8 @@
     "categories": [
       "two-component"
     ],
-    "tagline": "DOPAG VARIO-MIX\u00ae Piston Type Metering and Mixing",
-    "summary": "The VARIO-MIX\u00ae is suitable for use with low to medium high viscosity materials whether they are filled, abrasive, or neither. The VARIO-MIX system can process practically all multi-component polymers and adhesives.",
+    "tagline": "DOPAG VARIO-MIX® Piston Type Metering and Mixing",
+    "summary": "The VARIO-MIX® is suitable for use with low to medium high viscosity materials whether they are filled, abrasive, or neither. The VARIO-MIX system can process practically all multi-component polymers and adhesives.",
     "sections": [
       {
         "heading": "Vario-Mix A",
@@ -3164,7 +3471,7 @@
         "paragraphs": [
           "The VARIO-MIX L is an amended design for supplying lamination systems with continuously metered, mixed, and monitored material. This type of system is principally used in the intermittent production and multi-shift operations of the laminated plastics and foil industry.",
           "It operates in the same manner as the VARIO-MIX A with the added features of auto tank refilling, system and material heating and real time close looped monitoring of the material as it is being processed.",
-          "All configurations of the VARIO-MIX are standard as \u201cSOLVENT FREE\u201d which means they work as standard without a flushing agent by using disposable static mixers. A version with a low flushing agent requirement is available for special applications if required.",
+          "All configurations of the VARIO-MIX are standard as “SOLVENT FREE” which means they work as standard without a flushing agent by using disposable static mixers. A version with a low flushing agent requirement is available for special applications if required.",
           "Get a Quote For Vario-Mix L"
         ]
       }
@@ -3175,26 +3482,12 @@
     }
   },
   {
-    "slug": "vecdos-eone",
-    "title": "Vecdos eOne",
-    "updated": "2025-12-11",
-    "categories": [
-      "metering"
-    ],
-    "tagline": "Positive Displacement Metering Valves",
-    "summary": "The Vecdos eOne series of servo driven high-performance metering units is the ideal solution for any intermittent single component metering application. The volumetric shot metering units are modular and flexible in combinations for different metering requirements. The design is optimal for difficult and abrasive materials and available for smallest shot volumes. The smart metering control provides unmatched reliable and repeatable precision in your metering application. Servo controlled volumetric dosing units for precise and repeatable adhesive and sealant application in automated lines.",
-    "thin": true,
-    "image": {
-      "src": "/products/VecdosEOne_.png",
-      "alt": "Shot needle metering device"
-    }
-  },
-  {
     "slug": "vecdos-etwin",
     "title": "Vecdos eTwin",
     "updated": "2025-12-22",
     "categories": [
-      "two-component"
+      "two-component",
+      "metering"
     ],
     "tagline": "Servo Driven High Performance Metering Unit",
     "summary": "The Vecdos eTwin series of servo driven high-performance metering units is the ideal solution for any intermittent two component metering application. The volumetric shot metering units are modular and flexible in combinations for different mixing ratios. The design is optimal for difficult and abrasive materials and available for smallest shot volumes. The smart metering control provides unmatched reliable and repeatable precision in your metering application. Servo controlled volumetric dosing units for precise and repeatable adhesive and sealant application in automated lines.",
@@ -3218,7 +3511,46 @@
     "image": {
       "src": "/products/Electrical-dozer-with-feeding-units.jpg",
       "alt": "Vecdos eTwin Device for dispensing application"
-    }
+    },
+    "variants": [
+      {
+        "slug": "vecdos-etwin",
+        "title": "Vecdos eTwin",
+        "tagline": "Servo Driven High Performance Metering Unit",
+        "summary": "The Vecdos eTwin series of servo driven high-performance metering units is the ideal solution for any intermittent two component metering application. The volumetric shot metering units are modular and flexible in combinations for different mixing ratios. The design is optimal for difficult and abrasive materials and available for smallest shot volumes. The smart metering control provides unmatched reliable and repeatable precision in your metering application. Servo controlled volumetric dosing units for precise and repeatable adhesive and sealant application in automated lines.",
+        "image": {
+          "src": "/products/Electrical-dozer-with-feeding-units.jpg",
+          "alt": "Vecdos eTwin Device for dispensing application"
+        },
+        "sections": [
+          {
+            "heading": "Vecdos eOne Benefits and Options",
+            "items": [
+              "Innovative solutions help to save material, increase productivity, and enhance sustainability",
+              "Robust 1K and 2K processing equipment for reliable operation in demanding production environments",
+              "Smart metering control",
+              "Zero-backlash screw & servo drive",
+              "Compact & low weight",
+              "Robust design",
+              "Option - Dynamic Mixer",
+              "Option - Static Mixer",
+              "Option - Satellite Version: For Robot Mounting",
+              "Option - Hydraulic Drive: For Highest Pressure Requirements"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "vecdos-eone",
+        "title": "Vecdos eOne",
+        "tagline": "Positive Displacement Metering Valves",
+        "summary": "The Vecdos eOne series of servo driven high-performance metering units is the ideal solution for any intermittent single component metering application. The volumetric shot metering units are modular and flexible in combinations for different metering requirements. The design is optimal for difficult and abrasive materials and available for smallest shot volumes. The smart metering control provides unmatched reliable and repeatable precision in your metering application. Servo controlled volumetric dosing units for precise and repeatable adhesive and sealant application in automated lines.",
+        "image": {
+          "src": "/products/VecdosEOne_.png",
+          "alt": "Shot needle metering device"
+        }
+      }
+    ]
   },
   {
     "slug": "volume-counter",
@@ -3311,7 +3643,7 @@
       {
         "heading": "Why Choose Kirkco Volume Counters",
         "paragraphs": [
-          "Kirkco\u2019s volume counter solutions are engineered to deliver:",
+          "Kirkco’s volume counter solutions are engineered to deliver:",
           "When combined with flow meters, filters, and flow regulating valves, volume counters help build a comprehensive flow regulation strategy that supports performance, documentation, and process optimization."
         ],
         "items": [
