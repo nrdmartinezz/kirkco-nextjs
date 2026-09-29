@@ -49,6 +49,54 @@ function matchProduct(name: string, products: Product[]) {
   return hits[0];
 }
 
+const productListingCardClass =
+  'flex h-full flex-col overflow-hidden rounded-2xl border border-[#e4f0ff] bg-white shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
+
+function EquipmentProductCard({ product }: { product: Product }) {
+  const href = `/${product.slug}`;
+  const blurb = product.tagline ?? product.summary;
+
+  return (
+    <li className={productListingCardClass}>
+      <Link href={href} className="group relative block aspect-[4/3] shrink-0 overflow-hidden bg-brand-50 no-underline">
+        {product.image ? (
+          <Image
+            src={product.image.src}
+            alt={product.image.alt || product.title}
+            fill
+            className="object-contain p-4 transition duration-200 group-hover:scale-[1.02]"
+            sizes="(min-width: 640px) 50vw, 100vw"
+          />
+        ) : (
+          <span className="text-brand-500 flex h-full items-center justify-center px-4 text-center text-sm font-semibold">
+            {product.title}
+          </span>
+        )}
+      </Link>
+      <div className="flex flex-1 flex-col gap-3 p-4">
+        <Heading level={3} size="sm" className="text-brand-700">
+          {product.title}
+        </Heading>
+        {blurb && <p className="text-ink-muted line-clamp-2 text-sm leading-relaxed">{blurb}</p>}
+        <div className="mt-auto flex flex-wrap items-center gap-2 pt-1">
+          <Button href={href} variant="secondary" size="sm" className="rounded-full">
+            View product
+          </Button>
+          <AddToQuoteButton slug={product.slug} title={product.title} compact />
+        </div>
+      </div>
+    </li>
+  );
+}
+
+function EquipmentProductNameStub({ name }: { name: string }) {
+  return (
+    <li className="border-brand-100 bg-brand-50/60 flex min-h-[5rem] items-center rounded-2xl border p-4">
+      <span className="text-brand-700 font-semibold">{name}</span>
+    </li>
+  );
+}
+
 export function SingleComponentPage({
   page,
   categories,
@@ -156,27 +204,14 @@ export function SingleComponentPage({
                     </Heading>
                     <p className="text-ink-muted mt-3 leading-relaxed">{group.intro}</p>
                     <p className="text-ink-muted mt-3 leading-relaxed">{group.body}</p>
-                    <ul className="mt-4 flex flex-col">
-                      {group.items.map((item) => (
-                        <li
-                          key={item.name}
-                          className="border-line-base flex flex-wrap items-center justify-between gap-3 border-b py-3"
-                        >
-                          {item.product ? (
-                            <Link
-                              href={`/${item.product.slug}`}
-                              className="text-brand-700 font-semibold no-underline hover:text-brand-500"
-                            >
-                              {item.product.title}
-                            </Link>
-                          ) : (
-                            <span className="text-brand-700 font-semibold">{item.name}</span>
-                          )}
-                          {item.product && (
-                            <AddToQuoteButton slug={item.product.slug} title={item.product.title} compact />
-                          )}
-                        </li>
-                      ))}
+                    <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+                      {group.items.map((item) =>
+                        item.product ? (
+                          <EquipmentProductCard key={item.name} product={item.product} />
+                        ) : (
+                          <EquipmentProductNameStub key={item.name} name={item.name} />
+                        ),
+                      )}
                     </ul>
                   </li>
                 ))}
@@ -188,17 +223,9 @@ export function SingleComponentPage({
                 <Heading level={2} size="md">
                   More in this category
                 </Heading>
-                <ul className="mt-4 flex flex-col">
+                <ul className="mt-6 grid gap-4 sm:grid-cols-2">
                   {extras.map((product) => (
-                    <li
-                      key={product.slug}
-                      className="border-line-base flex flex-wrap items-center justify-between gap-3 border-b py-3"
-                    >
-                      <Link href={`/${product.slug}`} className="text-brand-700 font-semibold no-underline hover:text-brand-500">
-                        {product.title}
-                      </Link>
-                      <AddToQuoteButton slug={product.slug} title={product.title} compact />
-                    </li>
+                    <EquipmentProductCard key={product.slug} product={product} />
                   ))}
                 </ul>
               </div>
