@@ -371,8 +371,6 @@ def main() -> None:
 
     products = []
     for post in posts:
-        if post["slug"] == "bulk-chemical-storage":
-            continue
         sections = sections_from_html(post["body"])
         if not sections:
             sections = sections_from_lists(post["metas"])

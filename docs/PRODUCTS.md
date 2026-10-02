@@ -6,7 +6,7 @@ Each product is a standalone page at `/{slug}`, using the product name as the sl
 
 Some records are a family of models. `variants` on the record keeps each model's title, summary, image, and sections. The family page opens the model whose slug matches the product. Other models are `/{family}?variant={slug}`. The old top-level slug permanently redirects there. Supabase stores the same array on `products.variants`. A product with one model stores that model as the only entry, copied from the product's title, summary, image, and sections. The model selector appears only when a product has more than one variant.
 
-`/bulk-chemical-storage` is a category page, not a product. The WordPress post with that slug was left out of the catalog. `/fill-mix` is a product page. The nav item points at that product.
+`/bulk-chemical-storage` is the Bulk Chemical Storage product page. `/fill-mix` is a product page. Both nav items point at those products.
 
 Images are files in `public/products/`.
 

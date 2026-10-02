@@ -118,6 +118,214 @@
     }
   },
   {
+    "slug": "bulk-chemical-storage",
+    "title": "Bulk Chemical Storage",
+    "updated": "2026-10-02",
+    "categories": [
+      "polyurethane",
+      "bulk-chemical-storage"
+    ],
+    "tagline": "Complete Bulk Chemical Storage & Blending Systems for Polyurethane Processing",
+    "summary": "Bulk chemical storage and material delivery systems form the foundational infrastructure that supports modern industrial manufacturing. These systems manage the safe storage, transfer, conditioning, and distribution of high-volume industrial materials used across polyurethane processing, adhesives, coatings, composite manufacturing, lubrication systems, and resin-based production operations. While often operating behind the scenes, bulk chemical infrastructure is strategically critical because it supplies the raw materials that feed every downstream metering, mixing, and dispensing process. Without stable chemical storage and delivery architecture, advanced manufacturing systems cannot operate reliably. Our engineered infrastructure ensures consistent material availability, controlled environmental conditions, contamination protection, and safe plant-wide distribution of industrial chemicals.",
+    "sections": [
+      {
+        "heading": "We also supply custom bulk chemical handling systems that include:",
+        "items": [
+          "Material blending with either load cells or metering pumps.",
+          "Pentane storage systems with tanks; transfer pump; metering and mixing before the mix head; and safety systems with pentane sensors, leak detection and controls."
+        ]
+      },
+      {
+        "heading": "Chemical Storage Architecture",
+        "paragraphs": [
+          "Industrial chemical storage systems are designed to protect material integrity while maintaining strict safety and environmental compliance. Proper storage architecture ensures long-term stability of reactive materials and protects facilities from contamination, vapor release, or temperature fluctuations.",
+          "Typical storage systems include:"
+        ],
+        "items": [
+          "UL-142 horizontal and vertical storage tanks",
+          "ASME pressure-rated vessels where required",
+          "Double-wall tank construction",
+          "Secondary containment basins",
+          "Nitrogen inert gas blanketing systems",
+          "Insulated and heated tank systems",
+          "Tank heating via steam, electric trace, or glycol loops"
+        ]
+      },
+      {
+        "paragraphs": [
+          "These systems maintain controlled storage conditions that prevent moisture exposure, minimize vapor emissions, and ensure safe long-term containment of industrial chemistries."
+        ]
+      },
+      {
+        "heading": "Chemical Unloading & Transfer Systems",
+        "paragraphs": [
+          "Bulk chemicals are commonly delivered to industrial facilities through tanker trucks, railcars, drums, or intermediate bulk containers (IBCs). Dedicated unloading systems ensure that materials can be transferred into storage tanks safely and efficiently.",
+          "Typical unloading infrastructure includes:"
+        ],
+        "items": [
+          "Closed-loop unloading stations",
+          "Positive displacement transfer pumps",
+          "Coriolis mass-flow monitoring",
+          "Inline filtration systems",
+          "Metered unloading control valves",
+          "Automatic pressure relief and bypass protection",
+          "Hose connection stations with integrated safety interlocks"
+        ]
+      },
+      {
+        "paragraphs": [
+          "System design prioritizes contamination prevention, elimination of air entrainment, and protection against pressure spikes that could damage materials or equipment."
+        ]
+      },
+      {
+        "heading": "Storage Tank Farm for Raw Materials",
+        "paragraphs": [
+          "Bulk Chemical Storage Systems: Unload, store, and transfer intermediate to large quantities of raw materials within a closed loop. This minimizes opportunities for contamination, spills, evaporation, and exposure. Systems for larger chemical volumes include unloading stations, storage tanks, transfer pumps, controls, valves, instrumentation, safety devices, and piping."
+        ]
+      },
+      {
+        "heading": "Standard Dual Tank System Includes:",
+        "items": [
+          "Bulk chemical unloading boxes with hose connections, valves, gauges, and controls.",
+          "Pressure unload for polyol and isocyanate.",
+          "One 6,000-gallon ASME steel storage tank polyol tank (additional sizes available).",
+          "One 6,000-gallon ASME steel storage tank for isocyanate (additional sizes available).",
+          "Transfer pump for polyol.",
+          "Transfer pump for isocyanate.",
+          "Touch-screen control panel.",
+          "Plant “loop” distribution piping.",
+          "Check out and start up.",
+          "Manual and drawings."
+        ]
+      },
+      {
+        "heading": "Options and additional equipment:",
+        "items": [
+          "Pentane storage and blending systems",
+          "Polyol tank agitator.",
+          "Bulk unload pumps for polyol and isocyanate.",
+          "Pressure equalization lines.",
+          "Temperature control using heat exchangers, tempered water units, and chillers.",
+          "Installation.",
+          "Additional tanks and tank sizes.",
+          "Material blending systems using load cells or metering pumps."
+        ]
+      },
+      {
+        "heading": "Customized Design and Engineering:",
+        "paragraphs": [
+          "We will work with you to design and supply a system that satisfies your building and production requirements. Our design engineers collaborate with you to determine the optimal combination of storage and blending equipment, ensuring a solution that aligns with your unique chemical and production needs."
+        ]
+      },
+      {
+        "heading": "Transfer Pumps and Temperature Control:",
+        "paragraphs": [
+          "Sensitive to temperature and flow fluctuations, chemicals in polyurethane processing require careful handling. Our pumps, equipped with variable speed drives, ensure precise transfer from storage tanks to blending or metering systems. Temperature control devices, including heat exchangers and chillers, maintain optimal conditions."
+        ]
+      },
+      {
+        "heading": "Blending Systems for Liquids and Powders:",
+        "paragraphs": [
+          "Our blending systems precisely meter and blend additives into the main polyol stream, enhancing mixing ability and reaction behavior. Choose from static or dynamic mixers and integrated gas loading units for optimal performance."
+        ]
+      },
+      {
+        "heading": "Specialized Bulk Systems for Flammable Materials:",
+        "paragraphs": [
+          "Our experts specialize in safe processing of the eco-friendly blowing agent pentane. Our Pentane Process Technology (ppT) adheres to stringent safety measures, preventing the emergence of explosive mixes. Benefit from our global experience and receive a concept compliant with national and international directives, as well as local regulations."
+        ]
+      },
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco architects bulk chemical storage and material delivery systems as foundational manufacturing infrastructure for high-volume, high-reliability production environments. These systems govern how reactive chemistries are safely stored, conditioned, transferred, and delivered to downstream processes while maintaining material integrity, uptime, and process repeatability."
+        ]
+      },
+      {
+        "heading": "Authority Scope & Governance",
+        "paragraphs": [
+          "This quality framework governs bulk storage, conditioning, transfer, circulation, and delivery of reactive and non-reactive chemistries. It functions as a horizontal infrastructure layer feeding multiple application domains without duplication."
+        ]
+      },
+      {
+        "heading": "Core System Domains",
+        "paragraphs": [
+          "The framework covers bulk tank farms, inert gas blanketing, thermal conditioning, unloading and transfer skids, intermediate day tanks, filtration, degassing, circulation loops, and PLC/HMI control architectures."
+        ]
+      },
+      {
+        "heading": "Cross-Pillar Integration",
+        "paragraphs": [
+          "This authority framework explicitly enables Marine Composite Systems, Composite Application Systems, Polyurethane Foam Systems, high-volume resin processing, panel lines, and large-scale molding operations."
+        ]
+      },
+      {
+        "heading": "Marine Composite Enablement",
+        "paragraphs": [
+          "Marine composite manufacturing relies on stable, conditioned, high-volume resin delivery for hull molding, gelcoat and IMC supply, filament-wound marine fenders, and mooring structures. Bulk material architecture ensures consistency under harsh environments."
+        ]
+      },
+      {
+        "heading": "Polyurethane Foam & Panel Line Enablement",
+        "paragraphs": [
+          "High-pressure and continuous foam systems require uninterrupted material delivery, precise temperature control, and redundancy. This framework supports continuous and discontinuous PU panel production lines and molded foam systems."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "Architectures are designed for modular expansion, regulatory compliance, long service life, and integration of future production lines without redesign of the core infrastructure."
+        ]
+      },
+      {
+        "heading": "Application Architecture",
+        "paragraphs": [
+          "This application architecture defines high-volume bulk chemical storage and material delivery systems engineered for continuous, mission-critical manufacturing operations across marine composites, polyurethane foam systems, and large-scale molding."
+        ]
+      },
+      {
+        "heading": "Bulk Tank Farm Architecture",
+        "paragraphs": [
+          "Bulk storage utilizes double-wall steel tanks with level monitoring, overfill protection, nitrogen blanketing, thermal jackets, and safety relief systems. Tank sizing and redundancy are engineered to match production throughput."
+        ]
+      },
+      {
+        "heading": "Material Unloading & Transfer",
+        "paragraphs": [
+          "Unloading skids incorporate positive-displacement pumps, closed-loop piping, inline filtration, pressure monitoring, and automatic bypass protection to preserve material quality during transfer."
+        ]
+      },
+      {
+        "heading": "Thermal Conditioning Systems",
+        "paragraphs": [
+          "Integrated heating and cooling systems regulate material viscosity and reactivity. PID-controlled loops maintain temperature stability for high-volume resin and polyurethane processing."
+        ]
+      },
+      {
+        "heading": "Day Tanks & Degassing",
+        "paragraphs": [
+          "Intermediate pressure-rated day tanks provide continuous feed to metering systems. Features include vacuum degassing, automatic refill logic, nitrogen pressurization, agitation, and dual-tank redundancy."
+        ]
+      },
+      {
+        "heading": "Controls, HMI & Digital Architecture",
+        "paragraphs": [
+          "PLC-based control systems unify tank management, safety interlocks, alarms, recipe parameters, and interfaces to downstream metering and mixing equipment with optional remote diagnostics."
+        ]
+      },
+      {
+        "heading": "Application Interfaces",
+        "paragraphs": [
+          "This architecture directly interfaces with IMC and gelcoat supply systems, filament winding resin delivery, RTM/infusion processes, polyurethane foam metering units, and continuous panel production lines."
+        ]
+      }
+    ],
+    "image": {
+      "src": "/products/bulk-chemical-storage.png",
+      "alt": "Large Bulk chemical storage"
+    }
+  },
+  {
     "slug": "chamber-metering-valve",
     "title": "Chamber Metering Valve",
     "updated": "2025-12-11",
