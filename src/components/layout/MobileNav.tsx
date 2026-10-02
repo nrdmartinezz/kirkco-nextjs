@@ -12,10 +12,76 @@ import { QuoteCta } from '@/components/quote/QuoteCta';
 import { Container } from '@/components/ui/Container';
 
 const linkClass =
-  'flex min-h-12 items-center gap-3 rounded-md px-2 text-base no-underline text-ink-base aria-[current=page]:text-ink-brand aria-[current=page]:font-medium';
+  'flex min-h-12 w-full items-center gap-3 rounded-md px-2 text-base no-underline text-ink-base aria-[current=page]:text-ink-brand aria-[current=page]:font-medium';
 
 function sectionId(label: string) {
   return `mobile-section-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+}
+
+function DropdownRow({
+  href,
+  label,
+  pathname,
+  expanded,
+  panelId,
+  onToggle,
+  className,
+}: {
+  href?: string;
+  label: string;
+  pathname: string;
+  expanded: boolean;
+  panelId: string;
+  onToggle: () => void;
+  className?: string;
+}) {
+  const tone = expanded ? 'text-brand-500' : 'text-brand-700';
+
+  if (!href) {
+    return (
+      <button
+        type="button"
+        aria-expanded={expanded}
+        aria-controls={panelId}
+        onClick={onToggle}
+        className={cn('flex min-h-12 w-full items-center justify-between rounded-md px-2 text-left text-base font-semibold', tone, className)}
+      >
+        {label}
+        <ChevronRight aria-hidden className={cn('size-4 shrink-0 transition', expanded && 'rotate-90')} />
+      </button>
+    );
+  }
+
+  return (
+    <div className="relative flex min-h-12 items-center">
+      <button
+        type="button"
+        aria-expanded={expanded}
+        aria-controls={panelId}
+        onClick={onToggle}
+        className="absolute inset-0 rounded-md"
+      >
+        <span className="sr-only">
+          {expanded ? 'Hide' : 'Show'} {label}
+        </span>
+      </button>
+      <Link
+        href={href}
+        aria-current={isCurrentPath(pathname, href) ? 'page' : undefined}
+        className={cn(
+          'relative z-10 inline-flex min-h-12 max-w-[calc(100%-2.75rem)] items-center rounded-md px-2 text-left text-base font-semibold no-underline',
+          tone,
+          className,
+        )}
+      >
+        {label}
+      </Link>
+      <ChevronRight
+        aria-hidden
+        className={cn('pointer-events-none absolute right-3 size-4 transition', expanded && 'rotate-90 text-brand-500')}
+      />
+    </div>
+  );
 }
 
 function NestedLinks({
@@ -49,27 +115,15 @@ function NestedLinks({
 
   return (
     <li>
-      <div className="flex items-center">
-        <Link
-          href={link.href}
-          aria-current={isCurrentPath(pathname, link.href) ? 'page' : undefined}
-          className={cn(linkClass, 'flex-1 pl-6 text-sm font-semibold', expanded && 'text-brand-500')}
-        >
-          {link.label}
-        </Link>
-        <button
-          type="button"
-          aria-expanded={expanded}
-          aria-controls={panelId}
-          onClick={onToggle}
-          className="inline-flex size-11 shrink-0 items-center justify-center rounded-md"
-        >
-          <span className="sr-only">
-            {expanded ? 'Hide' : 'Show'} {link.label}
-          </span>
-          <ChevronRight aria-hidden className={cn('size-4 transition', expanded && 'rotate-90 text-brand-500')} />
-        </button>
-      </div>
+      <DropdownRow
+        href={link.href}
+        label={link.label}
+        pathname={pathname}
+        expanded={expanded}
+        panelId={panelId}
+        onToggle={onToggle}
+        className="pl-6 text-sm"
+      />
       {expanded && (
         <ul id={panelId} className="pb-2">
           {children.map((child) => (
@@ -151,63 +205,32 @@ export function MobileNav() {
             gap="none"
             aria-label="Mobile"
             className="py-4 pb-[max(2rem,env(safe-area-inset-bottom))]"
-            onClick={(event) => {
-              if ((event.target as HTMLElement).closest('a')) setOpen(false);
-            }}
           >
             <ul className="flex w-full flex-col">
               {navigation.primary.map((item) => {
                 const expanded = openSection === item.label;
                 const panelId = sectionId(item.label);
-                const sectionClass = cn(
-                  'flex min-h-12 flex-1 items-center rounded-md px-2 text-left text-base font-semibold',
-                  expanded ? 'text-brand-500' : 'text-brand-700',
-                );
 
                 return (
                   <li key={item.label} className="border-line-base border-b">
-                    <div className="flex items-center">
-                      {item.href ? (
-                        <Link
-                          href={item.href}
-                          aria-current={isCurrentPath(pathname, item.href) ? 'page' : undefined}
-                          className={cn(sectionClass, 'no-underline')}
-                        >
-                          {item.label}
-                        </Link>
-                      ) : (
-                        <button
-                          type="button"
-                          aria-expanded={expanded}
-                          aria-controls={panelId}
-                          onClick={() => toggleSection(item.label)}
-                          className={cn(sectionClass, 'justify-between')}
-                        >
-                          {item.label}
-                          <ChevronRight
-                            aria-hidden
-                            className={cn('size-4 transition', expanded && 'rotate-90 text-brand-500')}
-                          />
-                        </button>
-                      )}
-                      {item.href && (
-                        <button
-                          type="button"
-                          aria-expanded={expanded}
-                          aria-controls={panelId}
-                          onClick={() => toggleSection(item.label)}
-                          className="inline-flex size-11 shrink-0 items-center justify-center rounded-md"
-                        >
-                          <span className="sr-only">
-                            {expanded ? 'Hide' : 'Show'} {item.label}
-                          </span>
-                          <ChevronRight
-                            aria-hidden
-                            className={cn('size-4 transition', expanded && 'rotate-90 text-brand-500')}
-                          />
-                        </button>
-                      )}
-                    </div>
+                    {item.panel ? (
+                      <DropdownRow
+                        href={item.href}
+                        label={item.label}
+                        pathname={pathname}
+                        expanded={expanded}
+                        panelId={panelId}
+                        onToggle={() => toggleSection(item.label)}
+                      />
+                    ) : item.href ? (
+                      <Link
+                        href={item.href}
+                        aria-current={isCurrentPath(pathname, item.href) ? 'page' : undefined}
+                        className={cn(linkClass, 'font-semibold')}
+                      >
+                        {item.label}
+                      </Link>
+                    ) : null}
 
                     {expanded && item.panel?.kind === 'mega' && (
                       <ul id={panelId} className="pb-2">
@@ -217,39 +240,15 @@ export function MobileNav() {
                           const groupId = `mobile-${key.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
                           return (
                             <li key={key}>
-                              <div className="flex items-center">
-                                {column.href ? (
-                                  <Link
-                                    href={column.href}
-                                    aria-current={isCurrentPath(pathname, column.href) ? 'page' : undefined}
-                                    className={cn(
-                                      'flex min-h-12 flex-1 items-center rounded-md px-2 pl-6 text-sm font-semibold no-underline',
-                                      groupOpen ? 'text-brand-500' : 'text-brand-700',
-                                    )}
-                                  >
-                                    {column.heading}
-                                  </Link>
-                                ) : (
-                                  <span className={cn('flex-1 px-2 pl-6 text-sm font-semibold', groupOpen && 'text-brand-500')}>
-                                    {column.heading}
-                                  </span>
-                                )}
-                                <button
-                                  type="button"
-                                  aria-expanded={groupOpen}
-                                  aria-controls={groupId}
-                                  onClick={() => toggleGroup(key)}
-                                  className="inline-flex size-11 shrink-0 items-center justify-center rounded-md"
-                                >
-                                  <span className="sr-only">
-                                    {groupOpen ? 'Hide' : 'Show'} {column.heading}
-                                  </span>
-                                  <ChevronRight
-                                    aria-hidden
-                                    className={cn('size-4 transition', groupOpen && 'rotate-90 text-brand-500')}
-                                  />
-                                </button>
-                              </div>
+                              <DropdownRow
+                                href={column.href}
+                                label={column.heading ?? ''}
+                                pathname={pathname}
+                                expanded={groupOpen}
+                                panelId={groupId}
+                                onToggle={() => toggleGroup(key)}
+                                className="pl-6 text-sm"
+                              />
                               {groupOpen && (
                                 <ul id={groupId} className="pb-2">
                                   {column.links.map((link) => (
