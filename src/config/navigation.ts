@@ -75,6 +75,12 @@ const lubrication: NavLink[] = [
   { label: 'Feeding and Supply', href: '/equipment-options/lubrication/feeding-and-supply' },
 ];
 
+/** Partner pages live in the Lubrication mega menu, not the shared footer product list. */
+const lubricationPartners: NavLink[] = [
+  { label: 'ABNOX Partner & Supplier', href: '/abnox' },
+  { label: 'Walther Partner & Supplier', href: '/walther' },
+];
+
 const paint: NavLink[] = [
   { label: 'Protective Coatings', href: '/equipment-options/paint-coatings/protective-coatings' },
   { label: 'Specialty Finishes', href: '/equipment-options/paint-coatings/specialty-finishes' },
@@ -140,13 +146,7 @@ export const navigation: NavigationConfig = {
   primary: [
     {
       label: 'About Us',
-      panel: {
-        kind: 'links',
-        links: [
-          { label: 'ABNOX Partner & Supplier', href: '/abnox' },
-          { label: 'About Us', href: '/about-us' },
-        ],
-      },
+      href: '/about-us',
     },
     {
       label: 'Products & Systems',
@@ -156,7 +156,11 @@ export const navigation: NavigationConfig = {
         columns: [
           { heading: 'Adhesives & Sealants', href: '/equipment-options/adhesives-sealants', links: adhesives },
           { heading: 'Composites', href: '/equipment-options/composites', links: composites },
-          { heading: 'Lubrication', href: '/equipment-options/lubrication', links: lubrication },
+          {
+            heading: 'Lubrication',
+            href: '/equipment-options/lubrication',
+            links: [...lubrication, ...lubricationPartners],
+          },
           { heading: 'Paint & Coatings', href: '/equipment-options/paint-coatings', links: paint },
           { heading: 'Process Control', href: '/equipment-options/process-control', links: processControl },
           {
@@ -187,6 +191,7 @@ export const navigation: NavigationConfig = {
         kind: 'links',
         links: [
           { label: 'ABNOX Products & Parts', href: '/abnox' },
+          { label: 'Walther Products & Parts', href: '/walther' },
           { label: 'Contact Us', href: '/contact-us' },
           { label: 'Request a Quote', href: '/quote' },
         ],

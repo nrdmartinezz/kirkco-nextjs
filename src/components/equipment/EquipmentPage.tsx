@@ -142,6 +142,71 @@ export async function EquipmentPage({
               </ul>
             </div>
 
+            {page.href === '/equipment-options/lubrication' && (
+              <div className="mt-12">
+                <p className="text-brand-500 flex items-center gap-3 text-sm font-semibold tracking-wide uppercase">
+                  <span aria-hidden className="bg-brand-500 h-px w-6" />
+                  Partners
+                </p>
+                <ul className="mt-6 grid gap-4 md:grid-cols-2">
+                  <li>
+                    <Link
+                      href="/abnox"
+                      className="group border-neutral-200 flex h-full flex-col overflow-hidden rounded-2xl border bg-white no-underline shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-brand-500 hover:shadow-md"
+                    >
+                      <span className="relative block aspect-[4/3] bg-brand-50">
+                        <Image
+                          src="/images/abnox/partner.jpg"
+                          alt="ABNOX lubricant supply station with pumps and a control panel"
+                          fill
+                          className="object-cover"
+                          sizes="(min-width: 768px) 40vw, 100vw"
+                        />
+                      </span>
+                      <span className="flex flex-1 flex-col p-6">
+                        <span className="text-brand-700 text-xl font-bold">ABNOX</span>
+                        <span className="text-ink-muted mt-2 leading-relaxed">
+                          Metering, lubricant supply, lubrication, and high-pressure products with U.S. application
+                          support.
+                        </span>
+                        <ArrowRight
+                          className="text-brand-500 mt-auto size-5 translate-y-1 pt-4 opacity-0 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
+                          aria-hidden
+                        />
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/walther"
+                      className="group border-neutral-200 flex h-full flex-col overflow-hidden rounded-2xl border bg-white no-underline shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-brand-500 hover:shadow-md"
+                    >
+                      <span className="relative block aspect-[4/3] bg-brand-50">
+                        <Image
+                          src="/images/walther/grease.jpg"
+                          alt="Grease applied to the teeth of a gear during automated lubrication"
+                          fill
+                          className="object-cover"
+                          sizes="(min-width: 768px) 40vw, 100vw"
+                        />
+                      </span>
+                      <span className="flex flex-1 flex-col p-6">
+                        <span className="text-brand-700 text-xl font-bold">Walther Systemtechnik</span>
+                        <span className="text-ink-muted mt-2 leading-relaxed">
+                          Dosing systems for oils, greases, adhesives, and other industrial media, with U.S. application
+                          support.
+                        </span>
+                        <ArrowRight
+                          className="text-brand-500 mt-auto size-5 translate-y-1 pt-4 opacity-0 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
+                          aria-hidden
+                        />
+                      </span>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
+
             <div className="mt-12 rounded-[10px] bg-[#0d2244] p-6 md:p-8">
               <p className="text-brand-500 text-sm font-semibold tracking-wide uppercase">Engineering Engagement</p>
               <Heading level={2} size="lg" className="mt-2 text-white">
