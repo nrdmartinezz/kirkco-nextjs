@@ -59,11 +59,11 @@ export function CatalogSearch({
           </Heading>
           <ul className="mt-4 flex flex-col">
             {equipmentMatches.map((item) => (
-              <li key={item.href} className="border-line-base border-b py-3">
-                <Link href={item.href} className="text-brand-700 font-semibold no-underline hover:text-brand-500">
-                  {item.name}
+              <li key={item.href} className="border-line-base border-b">
+                <Link href={item.href} className="group block py-3 no-underline">
+                  <span className="text-brand-700 font-semibold group-hover:text-brand-500">{item.name}</span>
+                  {item.name !== item.group && <p className="text-ink-muted mt-1 text-sm">{item.group}</p>}
                 </Link>
-                {item.name !== item.group && <p className="text-ink-muted mt-1 text-sm">{item.group}</p>}
               </li>
             ))}
           </ul>
@@ -77,13 +77,13 @@ export function CatalogSearch({
           </Heading>
           <ul className="mt-4 flex flex-col">
             {productMatches.map((product) => (
-              <li key={product.slug} className="border-line-base border-b py-3">
-                <Link href={`/${product.slug}`} className="text-brand-700 font-semibold no-underline hover:text-brand-500">
-                  {product.title}
+              <li key={product.slug} className="border-line-base border-b">
+                <Link href={`/${product.slug}`} className="group block py-3 no-underline">
+                  <span className="text-brand-700 font-semibold group-hover:text-brand-500">{product.title}</span>
+                  {(product.tagline || product.summary) && (
+                    <p className="text-ink-muted mt-1 text-sm">{product.tagline || product.summary}</p>
+                  )}
                 </Link>
-                {(product.tagline || product.summary) && (
-                  <p className="text-ink-muted mt-1 text-sm">{product.tagline || product.summary}</p>
-                )}
               </li>
             ))}
           </ul>

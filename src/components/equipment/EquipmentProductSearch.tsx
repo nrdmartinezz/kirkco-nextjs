@@ -31,11 +31,11 @@ export function EquipmentProductSearch({ products }: { products: SearchProduct[]
       {needle && (
         <ul className="mt-3 max-h-80 overflow-y-auto">
           {matches.map((product) => (
-            <li key={product.slug} className="border-line-base border-b py-3">
-              <Link href={`/${product.slug}`} className="text-brand-700 font-semibold no-underline hover:text-brand-500">
-                {product.title}
+            <li key={product.slug} className="border-line-base border-b">
+              <Link href={`/${product.slug}`} className="group block py-3 no-underline">
+                <span className="text-brand-700 font-semibold group-hover:text-brand-500">{product.title}</span>
+                {product.tagline && <p className="text-ink-muted mt-1 text-sm">{product.tagline}</p>}
               </Link>
-              {product.tagline && <p className="text-ink-muted mt-1 text-sm">{product.tagline}</p>}
             </li>
           ))}
         </ul>
