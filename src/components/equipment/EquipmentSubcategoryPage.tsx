@@ -12,7 +12,7 @@ import { subcategoryBreadcrumb } from '@/content/equipment/types';
 import { site } from '@/config/site';
 import type { ApplicationStudy } from '@/lib/applications';
 import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
-import type { Product, ProductCategory } from '@/lib/products';
+import { variantPath, type Product, type ProductCategory, type ProductVariant } from '@/lib/products';
 import { toSearchProducts } from '@/lib/search';
 import { ChevronRight } from 'lucide-react';
 
@@ -54,40 +54,97 @@ function matchProduct(name: string, products: Product[]) {
   return hits[0];
 }
 
+function matchVariant(name: string, products: Product[]) {
+  const needle = words(name);
+  const hits = products.flatMap((product) =>
+    (product.variants ?? []).flatMap((variant) => {
+      const title = words(variant.title);
+      if (!containsInOrder(title, needle) && !containsInOrder(needle, title)) return [];
+      return [{ product, variant }];
+    }),
+  );
+  hits.sort((left, right) => words(left.variant.title).length - words(right.variant.title).length);
+  return hits[0];
+}
+
+type ListingCard = {
+  key: string;
+  name: string;
+  product?: Product;
+  variant?: ProductVariant;
+};
+
+function listingCards(names: string[], products: Product[]) {
+  const resolved = names.map((name) => ({ name, variantHit: matchVariant(name, products) }));
+  const namedVariantSlugs = new Set(
+    resolved.flatMap(({ variantHit }) =>
+      variantHit && variantHit.variant.slug !== 'gp-301' ? [variantHit.variant.slug] : [],
+    ),
+  );
+  const cards: ListingCard[] = [];
+  const seen = new Set<string>();
+
+  function add(card: ListingCard) {
+    if (seen.has(card.key)) return;
+    seen.add(card.key);
+    cards.push(card);
+  }
+
+  for (const { name, variantHit } of resolved) {
+    if (variantHit?.product.slug === 'gp-301' && variantHit.variant.slug === 'gp-301') {
+      for (const variant of variantHit.product.variants ?? []) {
+        if (namedVariantSlugs.has(variant.slug)) continue;
+        add({ key: variant.slug, name: variant.title, product: variantHit.product, variant });
+      }
+      continue;
+    }
+    if (variantHit) {
+      add({ key: variantHit.variant.slug, name, product: variantHit.product, variant: variantHit.variant });
+      continue;
+    }
+    const product = matchProduct(name, products);
+    if (product) add({ key: product.slug, name, product });
+    else add({ key: name, name });
+  }
+  return cards;
+}
+
 const productListingCardClass =
   'flex h-full flex-col overflow-hidden rounded-2xl border border-[#e4f0ff] bg-white shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
 
-function EquipmentProductCard({ product }: { product: Product }) {
-  const href = `/${product.slug}`;
-  const blurb = product.tagline ?? product.summary;
+function EquipmentProductCard({ product, variant }: { product: Product; variant?: ProductVariant }) {
+  const href = variant ? variantPath(product, variant) : `/${product.slug}`;
+  const title = variant?.title ?? product.title;
+  const image = variant?.image ?? product.image;
+  const blurb = variant?.tagline ?? variant?.summary ?? product.tagline ?? product.summary;
 
   return (
     <li className={productListingCardClass}>
       <Link href={href} className="group relative block aspect-[4/3] shrink-0 overflow-hidden bg-brand-50 no-underline">
-        {product.image ? (
+        {image ? (
           <Image
-            src={product.image.src}
-            alt={product.image.alt || product.title}
+            src={image.src}
+            alt={image.alt || title}
             fill
             className="object-contain p-4 transition duration-200 group-hover:scale-[1.02]"
             sizes="(min-width: 640px) 50vw, 100vw"
           />
         ) : (
           <span className="text-brand-500 flex h-full items-center justify-center px-4 text-center text-sm font-semibold">
-            {product.title}
+            {title}
           </span>
         )}
       </Link>
       <div className="flex flex-1 flex-col gap-3 p-4">
         <Heading level={3} size="sm" className="text-brand-700">
-          {product.title}
+          {title}
         </Heading>
         {blurb && <p className="text-ink-muted line-clamp-2 text-sm leading-relaxed">{blurb}</p>}
         <div className="mt-auto flex flex-wrap items-center gap-2 pt-1">
           <Button href={href} variant="secondary" size="sm" className="rounded-full">
             View product
           </Button>
-          <AddToQuoteButton slug={product.slug} title={product.title} compact />
+          <AddToQuoteButton slug={variant?.slug ?? product.slug} title={title} compact />
         </div>
       </div>
     </li>
@@ -119,14 +176,13 @@ export function EquipmentSubcategoryPage({
   const searchProducts = toSearchProducts(products);
   const mainCategories = categories.filter((category) => category.name === category.group);
   const matchedSlugs = new Set<string>();
-  const groups = page.groups.map((group) => ({
-    ...group,
-    items: group.names.map((name) => {
-      const product = matchProduct(name, products);
-      if (product) matchedSlugs.add(product.slug);
-      return { name, product };
-    }),
-  }));
+  const groups = page.groups.map((group) => {
+    const items = listingCards(group.names, products);
+    for (const item of items) {
+      if (item.product) matchedSlugs.add(item.product.slug);
+    }
+    return { ...group, items };
+  });
   const extras = categorySlug
     ? products.filter((product) => product.categories.includes(categorySlug) && !matchedSlugs.has(product.slug))
     : [];
@@ -205,9 +261,9 @@ export function EquipmentSubcategoryPage({
                         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
                           {group.items.map((item) =>
                             item.product ? (
-                              <EquipmentProductCard key={item.name} product={item.product} />
+                              <EquipmentProductCard key={item.key} product={item.product} variant={item.variant} />
                             ) : (
-                              <EquipmentProductNameStub key={item.name} name={item.name} />
+                              <EquipmentProductNameStub key={item.key} name={item.name} />
                             ),
                           )}
                         </ul>

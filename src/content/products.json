@@ -587,15 +587,6 @@
             ]
           }
         ]
-      },
-      {
-        "slug": "gp-401-apd-cf-versa",
-        "title": "GP 401 APD & CF Versa",
-        "summary": "Versatile & flexible for demanding workspaces High metering accuracy due to short distance from metering to dispensing Highly comfortable operation with flexible boom and balancer support. Different options & features are configurable to meet requirements",
-        "image": {
-          "src": "/products/csm_Conti-Flow-Versa_59010974af-1.png",
-          "alt": "Device for industrial dispensing"
-        }
       }
     ]
   },
@@ -1278,39 +1269,6 @@
           "src": "/products/EM401T.jpg",
           "alt": "Eldo mix and Tooling Mix on a red portable dolly"
         }
-      },
-      {
-        "slug": "gp-703",
-        "title": "GP-703",
-        "tagline": "Eldo Mix",
-        "summary": "The ELDO-MIX gel coat systems have been especiallydeveloped for processing highly thixotropic materials ontothe untreated surfaces of rotor blades. By the use of gearmetering pumps\\ which are also suitable for abrasive fillersand magnetically coupled axial piston pumps for the Bcomponent; output rates of up to 5 l/min can be achieved.The material supply of the mobile system is carried out frommaterial pressure vessels that are installed on the chassis. Not only can materials with viscosities up to the flow limit beapplied with this gel coat system but also the mixing ratiosare adjustable within a wide range.",
-        "image": {
-          "src": "/products/Gel_Coat-2C.jpg",
-          "alt": "Eldo mix on portable dolly"
-        }
-      },
-      {
-        "slug": "gp-401-tpd",
-        "title": "GP 401 TPD",
-        "summary": "The TOOL-MIX 401 GP has been specifically designed for handling pasty two component materials, including polyurethanes and epoxy resins, as well as for successfully processing micro-ball filled materials. It is especially suitable for use in such applications as model making in the automotive, aeronautical and shipbuilding industries as well as sealing and adhesive dispensing.",
-        "image": {
-          "src": "/products/tool-mix-401-gp.jpg",
-          "alt": "GP 401 TPD Device for industrial dispensing"
-        },
-        "sections": [
-          {
-            "heading": "The TOOL-MIX 401 GP is characterized by",
-            "items": [
-              "lower material degradation than similar systems due to the optimized construction of the gear pumps.",
-              "careful construction for gentle material feeding",
-              "minimum maintenance required, due to just a single pump for each component",
-              "The system is controlled by a high capacity metering computer.",
-              "Viscosity range (mPa s) 50,000 to 1,000,000",
-              "Mixing ratio (volumetric) 100:100 to 100:10",
-              "Flow rate (l/min) 0,7 to 5,0 depending on metering ratio and material properties"
-            ]
-          }
-        ]
       }
     ]
   },
@@ -1786,8 +1744,81 @@
       },
       {
         "slug": "gp-302",
-        "title": "GP 302",
-        "summary": "The GP- 302 series is a mid-level solvent free gear metering and mixing system used to handle low to medium high viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:2. Special configurations to process high viscosity media are also available. This system can be customized for individual customer needs and integrated without difficulty into automation cells."
+        "title": "GP-302",
+        "summary": "The GP- 302 series is a mid-level solvent free gear metering and mixing system used to handle low to medium high viscosity multi component media such as epoxy resins polyurethanes or silicones with a volumetric mixing ratio of between 100:100 and 100:2. Special configurations to process high viscosity media are also available. This system can be customized for individual customer needs and integrated without difficulty into automation cells.",
+        "sections": [
+          {
+            "heading": "GP-302 Re-circulation System",
+            "items": [
+              "Motionless mixers are used",
+              "A light-weight mixing head is required",
+              "Closed loop ratio control is desired",
+              "Discontinuous shot or bonding applications are used",
+              "Chemistries may separate or stratify",
+              "Optional closed loop ratio control available"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "gp-303",
+        "title": "GP-303",
+        "summary": "After selecting the correct metering pump and mixing head, choose the GP-303 feed and reservoir system.",
+        "sections": [
+          {
+            "heading": "GP-303 Feed/Reservoir System",
+            "items": [
+              "Stainless steel or mild steel bottom outlet tank construction",
+              "Vacuum or bulk feed options",
+              "Stands",
+              "5 gal (20 l)",
+              "10 gal (40 l)",
+              "55-gal (200 l) drum feed systems"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "gp-703",
+        "title": "GP-703",
+        "tagline": "Eldo Mix",
+        "summary": "The ELDO-MIX gel coat systems have been especiallydeveloped for processing highly thixotropic materials ontothe untreated surfaces of rotor blades. By the use of gearmetering pumps\\ which are also suitable for abrasive fillersand magnetically coupled axial piston pumps for the Bcomponent; output rates of up to 5 l/min can be achieved.The material supply of the mobile system is carried out frommaterial pressure vessels that are installed on the chassis. Not only can materials with viscosities up to the flow limit beapplied with this gel coat system but also the mixing ratiosare adjustable within a wide range.",
+        "image": {
+          "src": "/products/Gel_Coat-2C.jpg",
+          "alt": "Eldo mix on portable dolly"
+        }
+      },
+      {
+        "slug": "gp-401-tpd",
+        "title": "GP-401-TPD",
+        "summary": "The TOOL-MIX 401 GP has been specifically designed for handling pasty two component materials, including polyurethanes and epoxy resins, as well as for successfully processing micro-ball filled materials. It is especially suitable for use in such applications as model making in the automotive, aeronautical and shipbuilding industries as well as sealing and adhesive dispensing.",
+        "image": {
+          "src": "/products/tool-mix-401-gp.jpg",
+          "alt": "GP 401 TPD Device for industrial dispensing"
+        },
+        "sections": [
+          {
+            "heading": "The TOOL-MIX 401 GP is characterized by",
+            "items": [
+              "lower material degradation than similar systems due to the optimized construction of the gear pumps.",
+              "careful construction for gentle material feeding",
+              "minimum maintenance required, due to just a single pump for each component",
+              "The system is controlled by a high capacity metering computer.",
+              "Viscosity range (mPa s) 50,000 to 1,000,000",
+              "Mixing ratio (volumetric) 100:100 to 100:10",
+              "Flow rate (l/min) 0,7 to 5,0 depending on metering ratio and material properties"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "gp-401-apd",
+        "title": "GP-401-APD",
+        "summary": "Versatile & flexible for demanding workspaces High metering accuracy due to short distance from metering to dispensing Highly comfortable operation with flexible boom and balancer support. Different options & features are configurable to meet requirements",
+        "image": {
+          "src": "/products/csm_Conti-Flow-Versa_59010974af-1.png",
+          "alt": "Device for industrial dispensing"
+        }
       }
     ]
   },
