@@ -14,7 +14,9 @@ import {
   type EquipmentFamily,
 } from '@/content/equipment/equipment-options';
 import { site } from '@/config/site';
-import type { ProductCategory } from '@/lib/products';
+import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
+import { getProducts, type ProductCategory } from '@/lib/products';
+import { toSearchProducts } from '@/lib/search';
 import { ArrowRight, Cylinder, Droplets, Gauge, Hexagon, Layers, Paintbrush, Warehouse } from 'lucide-react';
 
 const helpLinks = [
@@ -79,7 +81,8 @@ function EquipmentOptionsJsonLd() {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
-export function EquipmentOptionsPage({ categories }: { categories: ProductCategory[] }) {
+export async function EquipmentOptionsPage({ categories }: { categories: ProductCategory[] }) {
+  const searchProducts = toSearchProducts(await getProducts());
   const mainCategories = categories.filter((category) => category.name === category.group);
 
   return (
@@ -249,6 +252,7 @@ export function EquipmentOptionsPage({ categories }: { categories: ProductCatego
             </div>
 
             <aside className="border-neutral-200 w-full shrink-0 rounded-lg border p-5 lg:sticky lg:top-28 lg:w-72">
+              <EquipmentProductSearch products={searchProducts} />
               <Heading level={2} size="sm">
                 Main Categories
               </Heading>

@@ -11,7 +11,9 @@ import type { EquipmentSubcategoryContent } from '@/content/equipment/types';
 import { subcategoryBreadcrumb } from '@/content/equipment/types';
 import { site } from '@/config/site';
 import type { ApplicationStudy } from '@/lib/applications';
+import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
 import type { Product, ProductCategory } from '@/lib/products';
+import { toSearchProducts } from '@/lib/search';
 import { ChevronRight } from 'lucide-react';
 
 const helpLinks = [
@@ -114,6 +116,7 @@ export function EquipmentSubcategoryPage({
   const hero = heroForParent(page.parentHref);
   const breadcrumb = subcategoryBreadcrumb(page);
   const categorySlug = page.categorySlug ?? '';
+  const searchProducts = toSearchProducts(products);
   const mainCategories = categories.filter((category) => category.name === category.group);
   const matchedSlugs = new Set<string>();
   const groups = page.groups.map((group) => ({
@@ -272,6 +275,7 @@ export function EquipmentSubcategoryPage({
             </div>
 
             <aside className="border-neutral-200 w-full shrink-0 rounded-lg border p-5 lg:sticky lg:top-28 lg:w-72">
+              <EquipmentProductSearch products={searchProducts} />
               <Heading level={2} size="sm">
                 Main Categories
               </Heading>

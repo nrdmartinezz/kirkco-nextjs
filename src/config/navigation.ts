@@ -128,6 +128,7 @@ const industries: NavLink[] = [
 ];
 
 const resources: NavLink[] = [
+  { label: 'Search', href: '/search' },
   { label: 'Resin Dispensing & Molding', href: '/resin-dispensing-molding' },
   { label: 'Rebuild & Repair', href: '/rebuild-repair' },
   { label: 'Training & Education', href: '/training-education' },

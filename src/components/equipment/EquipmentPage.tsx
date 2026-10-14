@@ -7,7 +7,9 @@ import { Section } from '@/components/ui/Section';
 import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealants';
 import { site } from '@/config/site';
 import type { ApplicationStudy } from '@/lib/applications';
-import type { ProductCategory } from '@/lib/products';
+import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
+import { getProducts, type ProductCategory } from '@/lib/products';
+import { toSearchProducts } from '@/lib/search';
 import { ArrowRight, Boxes, ChevronRight, Hexagon, LayoutGrid, Share2, Waves } from 'lucide-react';
 
 const helpLinks = [
@@ -25,7 +27,7 @@ const systemIcons: Record<string, typeof Hexagon> = {
   'putty-paste': Waves,
 };
 
-export function EquipmentPage({
+export async function EquipmentPage({
   page,
   categories,
   studies,
@@ -34,6 +36,7 @@ export function EquipmentPage({
   categories: ProductCategory[];
   studies: ApplicationStudy[];
 }) {
+  const searchProducts = toSearchProducts(await getProducts());
   const mainCategories = categories.filter((category) => category.name === category.group);
 
   return (
@@ -279,6 +282,7 @@ export function EquipmentPage({
           </div>
 
           <aside className="border-neutral-200 w-full shrink-0 rounded-lg border p-5 lg:sticky lg:top-28 lg:w-72">
+            <EquipmentProductSearch products={searchProducts} />
             <Heading level={2} size="sm">
               Main Categories
             </Heading>
