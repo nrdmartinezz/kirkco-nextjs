@@ -110,3 +110,25 @@ export function parseOptionalUsAddress(
 
   return { ok: true, address: { street, city, state, zip } };
 }
+
+export function parseRequiredUsAddress(value: unknown): { ok: true; address: UsAddress } | { ok: false; message: string } {
+  if (value == null || typeof value !== 'object') {
+    return { ok: false, message: 'Enter a complete US company address.' };
+  }
+
+  const record = value as Record<string, unknown>;
+  if (hasCountry(record)) {
+    return { ok: false, message: 'Quotes are limited to United States addresses.' };
+  }
+
+  const street = typeof record.street === 'string' ? record.street.trim().slice(0, 200) : '';
+  const city = typeof record.city === 'string' ? record.city.trim().slice(0, 100) : '';
+  const state = typeof record.state === 'string' ? record.state.trim().toUpperCase() : '';
+  const zip = typeof record.zip === 'string' ? record.zip.trim() : '';
+
+  if (!street || !city || !isUsStateCode(state) || !isUsZip(zip)) {
+    return { ok: false, message: 'Enter a complete US company address.' };
+  }
+
+  return { ok: true, address: { street, city, state, zip } };
+}

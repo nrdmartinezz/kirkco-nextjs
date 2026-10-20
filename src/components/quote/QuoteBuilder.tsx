@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/Button';
 import { Heading } from '@/components/ui/Heading';
 import { site } from '@/config/site';
 import { QUOTE_MAX_QTY, QUOTE_NOTES_MAX, type QuoteCatalogItem } from '@/lib/quote';
-import { addressHasAnyField, isUsZip, parseOptionalUsAddress, US_STATES } from '@/lib/us-address';
+import { isUsZip, parseRequiredUsAddress, US_STATES } from '@/lib/us-address';
 import { useQuote } from './QuoteProvider';
 
 const fieldClass =
@@ -64,14 +64,12 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
     setVisibleCount((count) => Math.min(filtered.length, count + CATALOG_CHUNK));
   }
 
-  const addressRequired = addressHasAnyField({ street, city, state, zip });
-
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!site.formEndpoint || lines.length === 0) return;
 
     const data = new FormData(event.currentTarget);
-    const address = parseOptionalUsAddress({ street, city, state, zip });
+    const address = parseRequiredUsAddress({ street, city, state, zip });
     if (address.ok === false) {
       setError(address.message);
       return;
@@ -262,7 +260,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
               <input name="name" required autoComplete="name" className={fieldClass} />
             </label>
             <label className="text-brand-700 text-sm font-semibold">
-              Email
+              Company email
               <input name="email" type="email" required autoComplete="email" className={fieldClass} />
             </label>
             <label className="text-brand-700 text-sm font-semibold">
@@ -270,16 +268,16 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
               <input name="phone" type="tel" autoComplete="tel" className={fieldClass} />
             </label>
             <label className="text-brand-700 text-sm font-semibold">
-              Company (optional)
+              Company
               <input name="company" required autoComplete="organization" className={fieldClass} />
             </label>
             <fieldset className="flex flex-col gap-4">
-              <legend className="text-brand-700 text-sm font-semibold">US company address (optional)</legend>
+              <legend className="text-brand-700 text-sm font-semibold">US company address</legend>
               <label className="text-brand-700 text-sm font-semibold">
                 Street
                 <input
                   autoComplete="street-address"
-                  required={addressRequired}
+                  required
                   value={street}
                   onChange={(event) => setStreet(event.target.value)}
                   className={fieldClass}
@@ -290,7 +288,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
                   City
                   <input
                     autoComplete="address-level2"
-                    required={addressRequired}
+                    required
                     value={city}
                     onChange={(event) => setCity(event.target.value)}
                     className={fieldClass}
@@ -300,7 +298,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
                   State
                   <select
                     autoComplete="address-level1"
-                    required={addressRequired}
+                    required
                     value={state}
                     onChange={(event) => setState(event.target.value)}
                     className={fieldClass}
@@ -318,7 +316,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
                   <input
                     autoComplete="postal-code"
                     inputMode="numeric"
-                    required={addressRequired}
+                    required
                     value={zip}
                     onChange={(event) => setZip(event.target.value)}
                     pattern="\d{5}(?:-\d{4})?"
@@ -326,7 +324,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
                   />
                 </label>
               </div>
-              {addressRequired && zip && !isUsZip(zip) && (
+              {zip && !isUsZip(zip) && (
                 <p className="text-sm text-red-700">Use a US ZIP code (12345 or 12345-6789).</p>
               )}
             </fieldset>

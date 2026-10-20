@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { DM_Sans, Inter } from 'next/font/google';
-import { Analytics } from '@/components/analytics/Analytics';
+import { Analytics } from '@vercel/analytics/next';
+import { Analytics as SiteAnalytics } from '@/components/analytics/Analytics';
 import { ContactDrawer } from '@/components/layout/ContactDrawer';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </main>
           <Footer />
           <JsonLd />
+          <SiteAnalytics />
           <Analytics />
           <ContactDrawer />
         </QuoteProvider>

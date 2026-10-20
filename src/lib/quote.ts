@@ -1,4 +1,4 @@
-import { parseOptionalUsAddress, type UsAddress } from '@/lib/us-address';
+import { parseRequiredUsAddress, type UsAddress } from '@/lib/us-address';
 
 export const QUOTE_STORAGE_KEY = 'kirkco:quote';
 export const QUOTE_MAX_LINES = 25;
@@ -21,7 +21,7 @@ export type QuoteCatalogItem = {
 
 export type QuoteCompany = {
   name: string;
-  address: UsAddress | null;
+  address: UsAddress;
 };
 
 export type QuoteDraft = {
@@ -138,15 +138,15 @@ export function writeQuoteDraft(lines: QuoteLine[]) {
 
 export function parseQuoteCompany(value: unknown): { ok: true; company: QuoteCompany } | { ok: false; message: string } {
   const record = asRecord(value);
-  if (!record) return { ok: false, message: 'Check the name, email, and company.' };
+  if (!record) return { ok: false, message: 'Check the name, company email, and company.' };
   if ('country' in record && record.country != null && String(record.country).trim() !== '') {
     return { ok: false, message: 'Quotes are limited to United States addresses.' };
   }
 
   const name = typeof record.name === 'string' ? record.name.trim().slice(0, 200) : '';
-  if (!name) return { ok: false, message: 'Check the name, email, and company.' };
+  if (!name) return { ok: false, message: 'Check the name, company email, and company.' };
 
-  const address = parseOptionalUsAddress(record.address);
+  const address = parseRequiredUsAddress(record.address);
   if (address.ok === false) return address;
   return { ok: true, company: { name, address: address.address } };
 }

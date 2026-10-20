@@ -10,7 +10,7 @@ import { useQuote } from '@/components/quote/QuoteProvider';
 import { site } from '@/config/site';
 import { cn } from '@/lib/cn';
 import { QUOTE_MAX_QTY, QUOTE_NOTES_MAX } from '@/lib/quote';
-import { addressHasAnyField, isUsZip, parseOptionalUsAddress, US_STATES } from '@/lib/us-address';
+import { isUsZip, parseRequiredUsAddress, US_STATES } from '@/lib/us-address';
 
 const fieldClass =
   'border-line-base bg-surface-base text-ink-base mt-1 w-full rounded-md border px-3 py-2 font-normal';
@@ -181,14 +181,12 @@ function QuotePanel() {
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
   const [zip, setZip] = useState('');
-  const addressRequired = addressHasAnyField({ street, city, state, zip });
-
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!site.formEndpoint || lines.length === 0) return;
 
     const data = new FormData(event.currentTarget);
-    const address = parseOptionalUsAddress({ street, city, state, zip });
+    const address = parseRequiredUsAddress({ street, city, state, zip });
     if (address.ok === false) {
       setError(address.message);
       return;
@@ -321,21 +319,21 @@ function QuotePanel() {
         <Field label="Name">
           <input name="name" required autoComplete="name" className={fieldClass} />
         </Field>
-        <Field label="Email">
+        <Field label="Company email">
           <input name="email" type="email" required autoComplete="email" className={fieldClass} />
         </Field>
         <Field label="Phone">
           <input name="phone" type="tel" autoComplete="tel" className={fieldClass} />
         </Field>
-        <Field label="Company (required)">
+        <Field label="Company">
           <input name="company" required autoComplete="organization" className={fieldClass} />
         </Field>
         <fieldset className="flex flex-col gap-4">
-          <legend className="text-brand-700 text-sm font-semibold">US company address (optional)</legend>
+          <legend className="text-brand-700 text-sm font-semibold">US company address</legend>
           <Field label="Street">
             <input
               autoComplete="street-address"
-              required={addressRequired}
+              required
               value={street}
               onChange={(event) => setStreet(event.target.value)}
               className={fieldClass}
@@ -344,7 +342,7 @@ function QuotePanel() {
           <Field label="City">
             <input
               autoComplete="address-level2"
-              required={addressRequired}
+              required
               value={city}
               onChange={(event) => setCity(event.target.value)}
               className={fieldClass}
@@ -354,7 +352,7 @@ function QuotePanel() {
             <Field label="State">
               <select
                 autoComplete="address-level1"
-                required={addressRequired}
+                required
                 value={state}
                 onChange={(event) => setState(event.target.value)}
                 className={fieldClass}
@@ -371,7 +369,7 @@ function QuotePanel() {
               <input
                 autoComplete="postal-code"
                 inputMode="numeric"
-                required={addressRequired}
+                required
                 value={zip}
                 onChange={(event) => setZip(event.target.value)}
                 pattern="\d{5}(?:-\d{4})?"
@@ -379,7 +377,7 @@ function QuotePanel() {
               />
             </Field>
           </div>
-          {addressRequired && zip && !isUsZip(zip) && (
+          {zip && !isUsZip(zip) && (
             <p className="text-sm text-red-700">Use a US ZIP code (12345 or 12345-6789).</p>
           )}
         </fieldset>
