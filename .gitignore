@@ -40,3 +40,7 @@ next-env.d.ts
 
 # Generated from tokens/*.json on predev / prebuild / tokens.
 src/styles/theme.css
+Kirkco_Pillar_First_Solution.zip
+Kirkco_Remaining_Products_Completion_Package.zip
+/Kirkco_Pillar_First_Solution/*
+/Kirkco_Remaining_Products_Completion_Package/*

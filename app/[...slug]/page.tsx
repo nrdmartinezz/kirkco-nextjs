@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { EquipmentOptionsPage } from '@/components/equipment/EquipmentOptionsPage';
+import { SupportEditorialPage } from '@/components/equipment/SupportEditorialPage';
 import { EquipmentPage } from '@/components/equipment/EquipmentPage';
 import { EquipmentSubcategoryPage } from '@/components/equipment/EquipmentSubcategoryPage';
 import { equipmentOptionsDescription } from '@/content/equipment/equipment-options';
@@ -10,6 +11,7 @@ import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { IndustryPage } from '@/components/industries/IndustryPage';
 import { getIndustryPage } from '@/content/industries';
+import { getPublicSections } from '@/content/pillar/sections';
 import { getApplications } from '@/lib/applications';
 import { getEquipmentPage } from '@/lib/equipment';
 import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
@@ -146,13 +148,14 @@ export default async function CatchAllPage({ params, searchParams }: CatchAllPro
   const title = stubTitles()[href];
   if (!title) notFound();
 
+  const editorial = getPublicSections(href);
   const categories = await getCategories();
   const category = categoryByHref(href, categories);
 
   return (
     <>
       {category && <RememberEquipmentPage href={category.href} />}
-      <SimplePage title={title} />
+      {editorial ? <SupportEditorialPage title={title} page={editorial} /> : <SimplePage title={title} />}
     </>
   );
 }
