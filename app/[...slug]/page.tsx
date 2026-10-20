@@ -12,6 +12,8 @@ import { SimplePage } from '@/components/ui/SimplePage';
 import { IndustryPage } from '@/components/industries/IndustryPage';
 import { getIndustryPage } from '@/content/industries';
 import { getPublicSections } from '@/content/pillar/sections';
+import { getResourcePage } from '@/content/resources/pages';
+import { ResourcePage } from '@/components/resources/ResourcePage';
 import { getApplications } from '@/lib/applications';
 import { getEquipmentPage } from '@/lib/equipment';
 import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
@@ -97,6 +99,18 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
     });
   }
 
+  const resource = getResourcePage(href);
+  if (resource) {
+    return buildMetadata({
+      title: resource.metaTitle,
+      description: resource.description,
+      titleExact: true,
+      path: resource.href,
+      image: resource.heroImage,
+      imageAlt: resource.heroAlt,
+    });
+  }
+
   const title = stubTitles()[href];
   return { title: title ?? 'Page' };
 }
@@ -144,6 +158,9 @@ export default async function CatchAllPage({ params, searchParams }: CatchAllPro
       </>
     );
   }
+
+  const resource = getResourcePage(href);
+  if (resource) return <ResourcePage page={resource} />;
 
   const title = stubTitles()[href];
   if (!title) notFound();

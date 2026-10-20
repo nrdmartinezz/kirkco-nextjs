@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ApplicationStudyArticles } from '@/components/equipment/ApplicationStudyArticles';
-import { EditorialSections } from '@/components/equipment/EditorialSections';
-import { AddToQuoteButton } from '@/components/quote/AddToQuoteButton';
+import { EditorialSections, visibleEditorialSections } from '@/components/equipment/EditorialSections';
+import {
+  EquipmentProductCard,
+  EquipmentProductNameStub,
+  listingCards,
+} from '@/components/equipment/EquipmentProductCard';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
@@ -14,7 +18,7 @@ import { subcategoryBreadcrumb } from '@/content/equipment/types';
 import { site } from '@/config/site';
 import type { ApplicationStudy } from '@/lib/applications';
 import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
-import { variantPath, type Product, type ProductCategory, type ProductVariant } from '@/lib/products';
+import { type Product, type ProductCategory } from '@/lib/products';
 import { toSearchProducts } from '@/lib/search';
 import { ChevronRight } from 'lucide-react';
 
@@ -26,140 +30,6 @@ const helpLinks = [
 ];
 
 const cardClass = 'rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
-
-function words(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim()
-    .split(' ')
-    .filter(Boolean)
-    .map((word) => (word.endsWith('s') ? word.slice(0, -1) : word));
-}
-
-function containsInOrder(haystack: string[], needle: string[]) {
-  let index = 0;
-  for (const word of haystack) {
-    if (word === needle[index]) index += 1;
-    if (index === needle.length) return true;
-  }
-  return false;
-}
-
-function matchProduct(name: string, products: Product[]) {
-  const needle = words(name);
-  const hits = products.filter((product) => {
-    const title = words(product.title);
-    return containsInOrder(title, needle) || containsInOrder(needle, title);
-  });
-  hits.sort((left, right) => words(left.title).length - words(right.title).length);
-  return hits[0];
-}
-
-function matchVariant(name: string, products: Product[]) {
-  const needle = words(name);
-  const hits = products.flatMap((product) =>
-    (product.variants ?? []).flatMap((variant) => {
-      const title = words(variant.title);
-      if (!containsInOrder(title, needle) && !containsInOrder(needle, title)) return [];
-      return [{ product, variant }];
-    }),
-  );
-  hits.sort((left, right) => words(left.variant.title).length - words(right.variant.title).length);
-  return hits[0];
-}
-
-type ListingCard = {
-  key: string;
-  name: string;
-  product?: Product;
-  variant?: ProductVariant;
-};
-
-function listingCards(names: string[], products: Product[]) {
-  const resolved = names.map((name) => ({ name, variantHit: matchVariant(name, products) }));
-  const namedVariantSlugs = new Set(
-    resolved.flatMap(({ variantHit }) =>
-      variantHit && variantHit.variant.slug !== 'gp-301' ? [variantHit.variant.slug] : [],
-    ),
-  );
-  const cards: ListingCard[] = [];
-  const seen = new Set<string>();
-
-  function add(card: ListingCard) {
-    if (seen.has(card.key)) return;
-    seen.add(card.key);
-    cards.push(card);
-  }
-
-  for (const { name, variantHit } of resolved) {
-    if (variantHit?.product.slug === 'gp-301' && variantHit.variant.slug === 'gp-301') {
-      for (const variant of variantHit.product.variants ?? []) {
-        if (namedVariantSlugs.has(variant.slug)) continue;
-        add({ key: variant.slug, name: variant.title, product: variantHit.product, variant });
-      }
-      continue;
-    }
-    if (variantHit) {
-      add({ key: variantHit.variant.slug, name, product: variantHit.product, variant: variantHit.variant });
-      continue;
-    }
-    const product = matchProduct(name, products);
-    if (product) add({ key: product.slug, name, product });
-    else add({ key: name, name });
-  }
-  return cards;
-}
-
-const productListingCardClass =
-  'flex h-full flex-col overflow-hidden rounded-2xl border border-[#e4f0ff] bg-white shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
-
-function EquipmentProductCard({ product, variant }: { product: Product; variant?: ProductVariant }) {
-  const href = variant ? variantPath(product, variant) : `/${product.slug}`;
-  const title = variant?.title ?? product.title;
-  const image = variant?.image ?? product.image;
-  const blurb = variant?.tagline ?? variant?.summary ?? product.tagline ?? product.summary;
-
-  return (
-    <li className={productListingCardClass}>
-      <Link href={href} className="group relative block aspect-[4/3] shrink-0 overflow-hidden bg-brand-50 no-underline">
-        {image ? (
-          <Image
-            src={image.src}
-            alt={image.alt || title}
-            fill
-            className="object-contain p-4 transition duration-200 group-hover:scale-[1.02]"
-            sizes="(min-width: 640px) 50vw, 100vw"
-          />
-        ) : (
-          <span className="text-brand-500 flex h-full items-center justify-center px-4 text-center text-sm font-semibold">
-            {title}
-          </span>
-        )}
-      </Link>
-      <div className="flex flex-1 flex-col gap-3 p-4">
-        <Heading level={3} size="sm" className="text-brand-700">
-          {title}
-        </Heading>
-        {blurb && <p className="text-ink-muted line-clamp-2 text-sm leading-relaxed">{blurb}</p>}
-        <div className="mt-auto flex flex-wrap items-center gap-2 pt-1">
-          <Button href={href} variant="secondary" size="sm" className="rounded-full">
-            View product
-          </Button>
-          <AddToQuoteButton slug={variant?.slug ?? product.slug} title={title} compact />
-        </div>
-      </div>
-    </li>
-  );
-}
-
-function EquipmentProductNameStub({ name }: { name: string }) {
-  return (
-    <li className="border-brand-100 bg-brand-50/60 flex min-h-[5rem] items-center rounded-2xl border p-4">
-      <span className="text-brand-700 font-semibold">{name}</span>
-    </li>
-  );
-}
 
 export function EquipmentSubcategoryPage({
   page,
@@ -174,6 +44,7 @@ export function EquipmentSubcategoryPage({
 }) {
   const hero = heroForParent(page.parentHref);
   const editorial = getPublicSections(page.href);
+  const firstSection = editorial ? visibleEditorialSections(editorial, products, page.groups)[0] : undefined;
   const breadcrumb = subcategoryBreadcrumb(page);
   const categorySlug = page.categorySlug ?? '';
   const searchProducts = toSearchProducts(products);
@@ -186,17 +57,6 @@ export function EquipmentSubcategoryPage({
     }
     return { ...group, items };
   });
-  const related = new Map<string, { key: string; title: string; href: string }>();
-  if (editorial) {
-    for (const group of groups) {
-      for (const item of group.items) {
-        if (!item.product) continue;
-        const href = item.variant ? variantPath(item.product, item.variant) : `/${item.product.slug}`;
-        if (related.has(href)) continue;
-        related.set(href, { key: item.key, title: item.variant?.title ?? item.product.title, href });
-      }
-    }
-  }
   const extras = categorySlug
     ? products.filter((product) => product.categories.includes(categorySlug) && !matchedSlugs.has(product.slug))
     : [];
@@ -237,7 +97,7 @@ export function EquipmentSubcategoryPage({
                 Talk to an Engineer
               </Button>
               <Link
-                href={editorial?.sections[0] ? `#${editorial.sections[0].sectionKey}` : '#system-options'}
+                href={firstSection ? `#${firstSection.sectionKey}` : '#system-options'}
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-white px-6 font-medium text-white no-underline hover:bg-white/10"
               >
                 Explore Systems
@@ -258,25 +118,7 @@ export function EquipmentSubcategoryPage({
                 <p className="text-ink-muted mt-4 leading-7">{page.overview}</p>
               </div>
 
-              {editorial && <EditorialSections page={editorial} />}
-
-              {editorial && related.size > 0 && (
-                <div className="mt-12">
-                  <p className="text-brand-500 flex items-center gap-3 text-sm font-semibold tracking-wide uppercase">
-                    <span aria-hidden className="bg-brand-500 h-px w-6" />
-                    Related equipment
-                  </p>
-                  <ul className="mt-4 flex flex-col gap-2">
-                    {[...related.values()].map((item) => (
-                      <li key={item.href}>
-                        <Link href={item.href} className="text-brand-700 font-semibold no-underline hover:text-brand-500">
-                          {item.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              {editorial && <EditorialSections page={editorial} products={products} groups={page.groups} />}
 
               {!editorial && groups.length > 0 && (
                 <div id="system-options" className="mt-12 scroll-mt-28">
