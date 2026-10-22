@@ -46,3 +46,7 @@ npm run db:seed
 ```
 
 The seed needs `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` in `.env.local`. The anon key is the public key and is not the service role secret. See `docs/HOSTING.md`. Seeding updates an existing study so the hosted site does not keep a shorter copy.
+
+## Revision stacks
+
+A later file that only summarizes what changed is an enrichment. Merge it into the earlier full document and publish one study. When two revisions describe the same project, publish the newer full document. Do not publish website architecture reviews, expansion analyses, or other internal planning memos.

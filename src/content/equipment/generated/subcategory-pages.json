@@ -343,7 +343,11 @@
         ]
       }
     ],
-    "sections": []
+    "sections": [],
+    "applicationIds": [
+      "linear-actuator-automated-lubrication",
+      "robotics-linear-rail-lubrication"
+    ]
   },
   "/equipment-options/lubrication/metering": {
     "href": "/equipment-options/lubrication/metering",
@@ -367,7 +371,12 @@
         ]
       }
     ],
-    "sections": []
+    "sections": [],
+    "applicationIds": [
+      "precision-bearing-grease-metering",
+      "automation-bearings-rotational",
+      "precision-oiling-servo-axes"
+    ]
   },
   "/equipment-options/composites/pultrusion": {
     "href": "/equipment-options/composites/pultrusion",

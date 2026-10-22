@@ -79,7 +79,7 @@ const lubrication: NavLink[] = [
 /** Partner pages live in the Lubrication mega menu, not the shared footer product list. */
 const lubricationPartners: NavLink[] = [
   { label: 'ABNOX Partner & Supplier', href: '/abnox' },
-  { label: 'Walther Partner & Supplier', href: '/walther' },
+  { label: 'Walther Systemtechnik', href: '/walther' },
 ];
 
 const paint: NavLink[] = [
@@ -192,7 +192,7 @@ export const navigation: NavigationConfig = {
         kind: 'links',
         links: [
           { label: 'ABNOX Products & Parts', href: '/abnox' },
-          { label: 'Walther Products & Parts', href: '/walther' },
+          { label: 'Walther Systemtechnik Products & Parts', href: '/walther' },
           { label: 'Contact Us', href: '/contact-us' },
           { label: 'Request a Quote', href: '/quote' },
         ],

@@ -9,53 +9,53 @@ import { site } from '@/config/site';
 import { ArrowRight } from 'lucide-react';
 
 const quoteHref = '#walther-quote';
-const manufacturerHref = 'https://www.walther-systemtechnik.com';
+const manufacturerHref = 'https://www.walther-systemtechnik.com/en/';
 
 const facts = [
-  { value: 'Official', label: 'U.S. Partner' },
-  { value: 'Germany', label: 'Based in Germersheim' },
-  { value: 'Technology', label: 'Metering, Lubrication, Supply & Application' },
-  { value: 'NDA Supported', label: 'Application Engineering & System Integration' },
+  { value: '50+ years', label: 'Serving customers since 1973' },
+  { value: 'Made in Germany', label: 'Development & manufacturing' },
+  { value: 'Individual solutions', label: 'Systems & machines' },
+  { value: 'Competent service', label: 'From planning to maintenance' },
 ];
 
 const technologies = [
   {
-    title: 'Volumetric Metering',
-    href: '/equipment-options/lubrication/metering',
-    body: 'Walther volumetric metering valves apply oils, greases, adhesives, and other viscous media in a defined quantity. The portfolio includes chamber metering valves for repeatable dosing, including greases in the NLGI 0 to 3 range.',
-  },
-  {
-    title: 'Component Lubrication',
-    href: '/equipment-options/lubrication/dispensing',
-    body: 'ReadyLube devices apply grease or oil to a specific component feature, either by contact or by spray. They support production and assembly stations that need a repeatable dose without depending on the operator.',
-  },
-  {
-    title: 'Fluid Supply and Pump Systems',
+    title: 'Convey & Provide',
     href: '/equipment-options/lubrication/feeding-and-supply',
-    body: 'Supply systems move oils, greases, adhesives, and thermal paste from the source container to the metering or application point. Selection depends on viscosity, container size, pressure, flow, and how the material is conditioned.',
+    body: 'Pump systems, pressure vessels, small-quantity feeders, and single pumps move oils, greases, and pastes from the original container. WPS Professional adds homogenization and media storage. WDBS pressure vessels deliver liquid media without pulsation.',
   },
   {
-    title: 'Spray, Coating, and Potting',
-    href: '/equipment-options/adhesives-sealants',
-    body: 'Spray valves, film coating, and potting equipment apply liquid and pasty media across a surface or into a cavity. Kirkco can review the medium, pattern, and cycle rate before recommending a valve, a device, or a configured system.',
+    title: 'Forward & Condition',
+    href: '/equipment-options/lubrication/pressure-control',
+    body: 'Material pressure regulators, filters, media storage, pressure intensifiers, distributors, flow limiters, fittings, and hoses complete the fluid path. WFSD watches inlet and outlet pressure. WADS removes gas inclusions before the medium reaches the valve.',
+  },
+  {
+    title: 'Process & Apply',
+    href: '/equipment-options/lubrication/dispensing',
+    body: 'Spray, chamber, outlet, and pulse valves apply greases, oils, adhesives, and coatings. ReadyLube lubricates a specific feature by contact or spray. RotoStream doses and sprays on the progressive-cavity principle, with flow that follows the axis motion.',
+  },
+  {
+    title: 'Measure, Control & Regulate',
+    href: '/equipment-options/lubrication/metering',
+    body: 'WVC Professional and the related sensors control valve timing, pressure, and volume flow. Kirkco can connect that layer to the machine signal, cycle monitoring, and the rest of the production equipment.',
   },
 ];
 
 const assistance = [
   {
     title: 'Get Application Assistance',
-    body: 'Describe the medium, container, required dose or pattern, cycle rate, application method, automation level, and monitoring requirements. Kirkco can evaluate whether the application calls for a component, a configured package, or a complete integrated system.',
+    body: 'Describe the medium, container, required dose or pattern, cycle rate, application method, automation level, and monitoring requirements. Kirkco can evaluate whether the Walther Systemtechnik application calls for a component, a configured package, or a complete integrated system.',
   },
   {
-    title: 'Find a Genuine Walther Part',
-    body: 'Send the Walther model, article or part number, equipment identification, requested quantity, and photographs. Kirkco will use the available information to help identify the appropriate replacement component and confirm current availability.',
+    title: 'Find a Genuine Walther Systemtechnik Part',
+    body: 'Send the Walther Systemtechnik model, article or part number, equipment identification, requested quantity, and photographs. Kirkco will use that information to identify the replacement component and confirm current availability.',
   },
 ];
 
 const applications = [
   {
     title: 'Precision Grease and Oil Metering',
-    body: 'Volumetric valves and dosing controls support lubricant application at a defined location and quantity. A system may combine container supply, pressure regulation, metering, an application nozzle, and cycle monitoring.',
+    body: 'Volumetric valves and dosing controls place lubricant at a defined location and quantity. A system may combine container supply, pressure regulation, metering, an application nozzle, and cycle monitoring.',
   },
   {
     title: 'Automated Component Lubrication',
@@ -63,7 +63,7 @@ const applications = [
   },
   {
     title: 'Adhesive and Viscous-Media Dosing',
-    body: 'The same dosing architecture applies adhesives, silicones, and other viscous media where bead, dot, or cavity fill must stay repeatable. Kirkco can connect the dosing unit to material supply, controls, and the surrounding production equipment.',
+    body: 'The same dosing architecture applies adhesives, silicones, and other viscous media where a bead, dot, or cavity fill must stay repeatable. Kirkco can connect the dosing unit to material supply, controls, and the surrounding production equipment.',
   },
   {
     title: 'Spray, Coating, and Potting',
@@ -71,7 +71,7 @@ const applications = [
   },
   {
     title: 'OEM Machinery and Integrated Production Systems',
-    body: 'Machine builders can combine Walther supply, metering, and application components in equipment that coordinates pumping, dosing, and monitoring. Kirkco can support component selection and broader system integration when the process needs more than a standalone product.',
+    body: 'Machine builders can combine Walther Systemtechnik supply, metering, and application components in equipment that coordinates pumping, dosing, and monitoring. Kirkco can support component selection and broader system integration when the process needs more than a standalone product.',
   },
 ];
 
@@ -95,7 +95,7 @@ export function WaltherPage() {
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Walther Products, Parts & U.S. Support',
+        name: 'Walther Systemtechnik',
         item: `${site.url}/walther`,
       },
     ],
@@ -107,7 +107,7 @@ export function WaltherPage() {
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image
           src="/images/walther/hero.jpg"
-          alt="Walther lubrication line with a linear axis, dosing valves, and safety guarding"
+          alt="Walther Systemtechnik dosing cell with a linear axis, valves, and safety guarding"
           fill
           priority
           className="object-cover"
@@ -116,6 +116,13 @@ export function WaltherPage() {
         <div className="absolute inset-0 bg-brand-700/35" />
         <Container className="relative flex min-h-[400px] justify-center py-8">
           <div className="w-full max-w-3xl rounded-2xl bg-[rgba(19,89,187,0.28)] p-6 backdrop-blur-md md:p-9">
+            <img
+              src="/images/walther/ws-mark-white.svg"
+              alt=""
+              width={56}
+              height={56}
+              className="mb-4 size-14"
+            />
             <nav aria-label="Breadcrumb" className="text-sm text-white">
               <ol className="flex flex-wrap items-center gap-x-1 gap-y-1">
                 <li>
@@ -126,14 +133,16 @@ export function WaltherPage() {
                 <li className="flex items-center gap-1">
                   <span aria-hidden>-</span>
                   <span className="font-semibold" aria-current="page">
-                    Walther Products, Parts & U.S. Support
+                    Walther Systemtechnik
                   </span>
                 </li>
               </ol>
             </nav>
             <Heading level={1} size="xl" className="mt-4 text-white">
-              Walther Products, Parts & U.S. Support
+              Walther Systemtechnik
             </Heading>
+            <p className="mt-2 text-lg text-white/90">Products, parts, and U.S. support</p>
+            <p className="mt-3 text-base font-semibold text-white">Convey. Dispense. Apply.</p>
             <div className="mt-6">
               <Button href="/contact-us" className="rounded-full">
                 Talk to an Engineer
@@ -159,7 +168,7 @@ export function WaltherPage() {
       <Section spacing="none" className="pt-8 pb-section">
         <Container gap="lg">
           <div>
-            <Eyebrow>Start With What You Need</Eyebrow>
+            <Eyebrow>Walther Systemtechnik GmbH</Eyebrow>
             <div className={`${cardClass} mt-6 flex flex-col gap-6 md:flex-row md:items-center`}>
               <Image
                 src="/images/walther/grease.jpg"
@@ -169,29 +178,30 @@ export function WaltherPage() {
                 className="h-auto w-full max-w-[280px] shrink-0 rounded-[10px] object-cover"
               />
               <div>
-                <Eyebrow>Systems-Level Engineering</Eyebrow>
+                <Eyebrow>Germersheim dosing technology</Eyebrow>
                 <Heading level={2} size="md" className="mt-4">
-                  Request a Walther Product Quote
+                  U.S. support for Walther Systemtechnik
                 </Heading>
                 {/* Client confirmation required before this partnership claim is treated as final. */}
                 <p className="text-ink-muted mt-4 leading-7">
-                  Kirkco Corporation is an official U.S. partner and distributor for Walther Systemtechnik products,
-                  giving manufacturers a domestic path to product selection, application review, replacement parts,
-                  system integration, and support for existing equipment.
+                  Kirkco Corporation is an official U.S. partner and distributor for{' '}
+                  <a href={manufacturerHref} className="text-brand-700 font-semibold underline">
+                    Walther Systemtechnik GmbH
+                  </a>
+                  . This page covers that company only: industrial dosing technology designed and built in
+                  Germersheim, Germany, and identified by the WS mark. It is not a catalog for other manufacturers
+                  that use the Walther name.
                 </p>
                 <p className="text-ink-muted mt-4 leading-7">
-                  Walther Systemtechnik, at{' '}
-                  <a href={manufacturerHref} className="text-brand-700 font-semibold underline">
-                    walther-systemtechnik.com
-                  </a>
-                  , builds dosing and application systems for oils, greases, adhesives, silicones, and other liquid or
-                  pasty media. Whether you need an individual component or a complete dosing system, Kirkco can help
-                  define the application, identify the appropriate technology, and connect the product to the full
-                  material-handling and control architecture.
+                  Walther Systemtechnik supplies components, dosing systems, and special machines for bonding,
+                  sealing, and lubricating. The media include oils, greases, adhesives, silicones, waxes, and other
+                  liquid or pasty materials. Kirkco gives U.S. manufacturers a domestic path to product selection,
+                  application review, genuine parts, system integration, and support for equipment already in
+                  production.
                 </p>
                 <div className="mt-6">
                   <Button href={quoteHref} className="rounded-full">
-                    Request a Walther Quote
+                    Request a Walther Systemtechnik Quote
                   </Button>
                 </div>
               </div>
@@ -199,10 +209,13 @@ export function WaltherPage() {
           </div>
 
           <div>
-            <Eyebrow>Explore Walther Technology Through Kirkco</Eyebrow>
+            <Eyebrow>The dosing process chain</Eyebrow>
+            <Heading level={2} size="lg" className="mt-4">
+              Convey, condition, apply, and control
+            </Heading>
             <p className="text-ink-muted mt-4 max-w-3xl leading-7">
-              Walther organizes dosing equipment around metering, component lubrication, material supply, and spray or
-              potting application. Accessories and spare parts support these product families.
+              Walther Systemtechnik organizes the range the way a dosing line is built: convey and provide the
+              medium, forward and condition it, process and apply it, then measure, control, and regulate the result.
             </p>
             <ul className="mt-6 grid gap-4 md:grid-cols-2">
               {technologies.map((item) => (
@@ -234,7 +247,7 @@ export function WaltherPage() {
                   </Heading>
                   <p className="text-ink-muted mt-3 leading-relaxed">{item.body}</p>
                   <span className="text-brand-500 mt-4 inline-flex items-center gap-2 font-semibold">
-                    Request a Walther Quote
+                    Request a Walther Systemtechnik Quote
                     <ArrowRight aria-hidden className="size-4" />
                   </span>
                 </Link>
@@ -245,33 +258,33 @@ export function WaltherPage() {
           <div className={`${cardClass} flex flex-col gap-6 md:flex-row md:items-center`}>
             <Image
               src="/images/walther/thermal-paste.jpg"
-              alt="Walther pump systems feeding material from drums, marked with the WS logo"
+              alt="Walther Systemtechnik pump systems feeding material from drums, marked with the WS logo"
               width={500}
               height={625}
               className="h-auto w-full max-w-[280px] shrink-0 rounded-[10px] object-cover"
             />
             <div>
               <Heading level={2} size="md">
-                German Dosing Technology With a U.S.-Based Engineering Path
+                German dosing technology with a U.S. engineering path
               </Heading>
               <p className="text-ink-muted mt-4 leading-7">
-                Walther Systemtechnik develops dosing and application systems in Germersheim, Germany. Its portfolio
-                covers components and coordinated systems for conveying, metering, and applying oils, greases,
-                adhesives, silicones, thermal paste, and related media.
+                Walther Systemtechnik develops and manufactures dosing and application systems in Germersheim. The
+                portfolio runs from a single valve or pump to a coordinated system for conveying, metering, and
+                applying the medium, including special machines when the process needs its own cell.
               </p>
               <p className="text-ink-muted mt-4 leading-7">
-                Kirkco adds a U.S.-based technical and commercial interface. Our team can help evaluate the material,
-                container source, operating pressure, required quantity, application geometry, production rate,
+                Kirkco is the U.S. technical and commercial interface for this manufacturer. The team can review the
+                material, container, operating pressure, required quantity, application geometry, production rate,
                 controls, and service requirements before selecting equipment.
               </p>
               <p className="text-ink-muted mt-4 leading-7">
-                For customers who need more than a single product, Kirkco can integrate Walther technology into a
-                broader process that includes material supply, pressure control, metering, dispensing, sensors,
-                automation, installation, and lifecycle support.
+                When the job is larger than one product, Kirkco can integrate Walther Systemtechnik technology into
+                material supply, pressure control, metering, dispensing, sensors, automation, installation, and
+                lifecycle support.
               </p>
               <div className="mt-6">
                 <Button href={quoteHref} className="rounded-full">
-                  Request a Walther Quote
+                  Request a Walther Systemtechnik Quote
                 </Button>
               </div>
             </div>
@@ -279,12 +292,12 @@ export function WaltherPage() {
 
           <div>
             <Heading level={2} size="lg">
-              Walther Applications Supported by Kirkco
+              Walther Systemtechnik applications supported by Kirkco
             </Heading>
             <p className="text-ink-muted mt-4 max-w-3xl leading-7">
-              Kirkco provides a U.S. inquiry path for customers seeking genuine Walther replacement parts, accessories,
-              and service components. This includes support for an active production system, a maintenance requirement,
-              or an older installation that must be identified before parts or replacement options can be evaluated.
+              Kirkco provides a U.S. inquiry path for genuine Walther Systemtechnik replacement parts, accessories,
+              and service components. That includes an active production system, a maintenance requirement, or an
+              older installation that has to be identified before parts can be quoted.
             </p>
             <ul className="mt-6 grid gap-4 md:grid-cols-2">
               {applications.map((item) => (
@@ -300,11 +313,12 @@ export function WaltherPage() {
 
           <div id="walther-quote" className={`${cardClass} scroll-mt-28`}>
             <Heading level={2} size="lg">
-              Request Walther Quote
+              Request a Walther Systemtechnik quote
             </Heading>
             <p className="text-ink-muted mt-4 max-w-3xl leading-7">
-              Include the Walther model or part number, quantity, and a short description of the medium, container, and
-              application. Kirkco will follow up from {site.business.email}.
+              Include the Walther Systemtechnik model or part number, quantity, and a short description of the
+              medium, container, and application. If the equipment is from a different Walther-named manufacturer,
+              say so in the message. Kirkco will follow up from {site.business.email}.
             </p>
             <LeadForm formType="request-a-quote" />
           </div>

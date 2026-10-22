@@ -226,7 +226,7 @@
   "/equipment-options/lubrication": {
     "href": "/equipment-options/lubrication",
     "title": "Precision Lubrication & Grease Metering Systems",
-    "description": "Lubrication and grease metering systems manage the handling, dosing, and automated delivery of high-viscosity lubricants used in modern industrial machinery. These systems ensure that equipment receives consistent lubrication at the correct",
+    "description": "Kirkco lubrication and grease metering systems are engineered as process-critical architectures. They deliver repeatable, verified lubrication for automated and semi-automated industrial environments.",
     "breadcrumb": [
       {
         "label": "Home",
@@ -315,7 +315,13 @@
     ],
     "architectures": [],
     "applicationIds": [
-      "equipment-options-lubrication"
+      "lubrication-quality-framework",
+      "lubrication-grease-metering-authority",
+      "robotics-linear-rail-lubrication",
+      "automation-bearings-rotational",
+      "precision-oiling-servo-axes",
+      "precision-bearing-grease-metering",
+      "linear-actuator-automated-lubrication"
     ],
     "closing": "Precision Metering System for Accuracy in your Process"
   },

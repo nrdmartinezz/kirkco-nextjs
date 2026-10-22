@@ -965,5 +965,502 @@
         ]
       }
     ]
+  },
+  {
+    "id": "lubrication-quality-framework",
+    "title": "Lubrication Quality Framework for Precision Mechanical Systems",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a lubrication quality framework to ensure repeatable, contamination-controlled, and volume-accurate lubrication across precision mechanical systems. This architecture elevates lubrication from a maintenance task to a controlled manufacturing and lifecycle process aligned with reliability, uptime, and asset protection objectives."
+        ]
+      },
+      {
+        "heading": "Business & Reliability Drivers",
+        "paragraphs": [
+          "Manufacturers of precision mechanical systems face significant lifecycle risk from inconsistent lubrication practices. Under- or over-lubrication, contamination, and missed lubrication events contribute to premature wear, unplanned downtime, and warranty exposure. A standardized lubrication architecture was required to stabilize performance across production and service environments."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The lubrication process required precise volumetric delivery of grease or oil at defined intervals and locations. Requirements included repeatable shot accuracy, clean material handling, contamination prevention, and compatibility with a range of viscosities and lubrication points."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The lubrication platform is based on centralized or distributed metering systems utilizing precision pumps and metering valves. Bulk material supply, short delivery paths, and controlled dispense logic ensure consistent lubrication volumes while minimizing waste and environmental exposure."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage lubrication timing, volume, and sequence. Validation procedures confirm delivered lubricant volume, cycle completion, and system readiness, ensuring repeatable lubrication performance across assemblies and operating conditions."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation of the lubrication quality framework reduced bearing and actuator failures, stabilized equipment performance, and improved overall system uptime. Lubrication variability was eliminated as a root cause of premature wear."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports expansion from single-point lubrication to multi-zone systems, integration with automated assembly lines, and adaptation to new lubricant formulations as equipment designs evolve."
+        ]
+      },
+      {
+        "heading": "Lubrication Application Alignment",
+        "paragraphs": [
+          "This lubrication quality framework governs multiple Kirkco lubrication implementations, including precision bearing grease metering and automated lubrication of linear motion systems. These applications differ in geometry and duty cycle but are unified by the same lubrication quality principles outlined above."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lubrication-grease-metering-authority",
+    "title": "Lubrication & Grease Metering Systems",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco lubrication and grease metering systems are engineered as process-critical architectures, not maintenance accessories. They deliver repeatable, verified lubrication for automated and semi-automated industrial environments."
+        ]
+      },
+      {
+        "heading": "System Architecture Overview",
+        "paragraphs": [
+          "The canonical model is supply, metering, distribution, and control. This architecture governs Kirkco lubrication systems."
+        ]
+      },
+      {
+        "heading": "Grease vs Oil Metering Framework",
+        "paragraphs": [
+          "Grease systems prioritize volumetric repeatability under high viscosity. Oil systems prioritize flow consistency and clean delivery."
+        ]
+      },
+      {
+        "heading": "Metering Technology Taxonomy",
+        "paragraphs": [
+          "Metering approaches include chamber-based metering valves, precision needle valves, shot metering valves, and rotary lubrication applicators."
+        ]
+      },
+      {
+        "heading": "Control, Monitoring & Verification",
+        "paragraphs": [
+          "Closed-loop lubrication uses PLC and HMI integration, pressure and cycle confirmation, and fault detection."
+        ]
+      },
+      {
+        "heading": "Manual to Automated Lubrication Continuum",
+        "paragraphs": [
+          "The architecture covers manual, semi-automated, and fully integrated lubrication systems."
+        ]
+      },
+      {
+        "heading": "Impulse Dosing Valve Architecture",
+        "paragraphs": [
+          "Kirkco impulse dosing valves are designed for highly repeatable, volumetric lubrication delivery in automated environments. Impulse dosing enables precise shot-based dosing of grease or oil independent of line length, pressure fluctuation, or cycle variation.",
+          "A defined volumetric shot is delivered per actuation, with high repeatability across extended service life. The valves suit grease and oil and work in centralized or decentralized lubrication architectures."
+        ]
+      },
+      {
+        "heading": "Dosing Inspection & Verification Systems",
+        "paragraphs": [
+          "Dosing inspection systems confirm that lubrication events occur as commanded. They form the verification layer of the lubrication architecture and support quality assurance, process traceability, and predictive maintenance.",
+          "Verification can include shot confirmation, pressure and flow validation, fault detection for blocked lines or missed doses, and integration with the PLC or HMI for alarms and logging."
+        ]
+      },
+      {
+        "heading": "Closed-Loop Lubrication Control",
+        "paragraphs": [
+          "Combining impulse dosing valves with dosing inspection moves lubrication architectures from open-loop dispensing to closed-loop, verified lubrication control. This reduces risk, improves consistency, and enables data-driven maintenance strategies."
+        ]
+      },
+      {
+        "heading": "Metering Valve Architecture & Selection Logic",
+        "paragraphs": [
+          "Metering valves are the primary accuracy-determining element in Kirkco lubrication systems. They define delivered lubricant volume, repeatability, and consistency at the point of use.",
+          "Valve selection follows required volumetric accuracy and repeatability, lubricant type, tolerance to variation, and whether lubrication is cycle-based or condition-based. Volumetric impulse dosing valves are applied where deterministic shot size and verification are required. Time-pressure metering is reserved for applications with lower volumetric sensitivity."
+        ]
+      },
+      {
+        "heading": "Pump Function Within Lubrication Systems",
+        "paragraphs": [
+          "Pumps are responsible for material supply and pressure generation, not dosing accuracy. Pump selection is driven by lubricant rheology, supply distance, and system pressure requirements."
+        ]
+      },
+      {
+        "heading": "Pressure Regulation & System Stability",
+        "paragraphs": [
+          "Pressure regulators stabilize system operation, protect components, and support consistent metering behavior. They isolate sensitive metering components from upstream pressure variation and support system longevity."
+        ]
+      },
+      {
+        "heading": "Governed Applications",
+        "paragraphs": [
+          "This authority governs robotics and linear rail lubrication, automation bearings and rotational elements, and precision oiling for servo axes. Impulse dosing and dosing inspection apply across those architectures: balanced grease delivery to linear rails, confirmed bearing lubrication under variable load, and verified micro-oil dosing for servo axes. Metering valve, pump, and pressure regulation roles defined here are the category standard for those applications."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "robotics-linear-rail-lubrication",
+    "title": "Robotics and Linear Rail Lubrication",
+    "nda": true,
+    "pillarHref": "/equipment-options/lubrication",
+    "subcategoryHref": "/equipment-options/lubrication/dispensing",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This application architecture defines Kirkco-engineered lubrication and grease metering systems for robotic cells and automated equipment utilizing linear rails and guideways."
+        ]
+      },
+      {
+        "heading": "Lubrication Objectives",
+        "paragraphs": [
+          "Deliver repeatable grease volumes to linear rail contact surfaces.",
+          "Prevent over-lubrication and lubricant migration.",
+          "Synchronize lubrication events with robotic motion cycles.",
+          "Extend rail, carriage, and bearing service life."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Kirkco linear rail lubrication systems follow a centralized architecture consisting of a grease reservoir and pump assembly, precision volumetric metering valves, multi-point distribution manifolds, and controlled delivery lines to each rail lubrication point."
+        ]
+      },
+      {
+        "heading": "Metering & Distribution Strategy",
+        "paragraphs": [
+          "Grease metering is executed using volumetric, shot-based control to ensure consistent delivery to each lubrication point regardless of line length or pressure variation. Distribution manifolds balance flow across multiple rails and carriages."
+        ]
+      },
+      {
+        "heading": "Control & Verification",
+        "paragraphs": [
+          "Lubrication cycles are controlled through PLC or robot controller integration. Verification methods may include pressure monitoring, cycle confirmation, and fault detection to ensure grease delivery integrity."
+        ]
+      },
+      {
+        "heading": "Automation Integration",
+        "paragraphs": [
+          "Lubrication events are synchronized with robot motion states such as homing, dwell, or cycle count thresholds. This prevents lubrication during critical motion and eliminates process interference."
+        ]
+      },
+      {
+        "heading": "Maintenance & Lifecycle Considerations",
+        "paragraphs": [
+          "The architecture supports predictive maintenance strategies by logging lubrication cycles and fault conditions. This enables condition-based servicing and reduces unplanned downtime."
+        ]
+      },
+      {
+        "heading": "Impulse Dosing Valve Integration",
+        "paragraphs": [
+          "Impulse dosing valves deliver repeatable grease shots to each rail lubrication point, ensuring balanced distribution across multiple axes."
+        ]
+      },
+      {
+        "heading": "Verification & Inspection",
+        "paragraphs": [
+          "Dosing inspection confirms each lubrication event through pressure and shot validation, preventing missed lubrication on critical motion rails."
+        ]
+      },
+      {
+        "heading": "Closed-Loop Control",
+        "paragraphs": [
+          "Closed-loop verification enables predictive maintenance by correlating lubrication confirmation with rail wear patterns."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "The architecture supports predictive maintenance strategies by logging lubrication cycles and fault conditions. This enables condition-based servicing and reduces unplanned downtime."
+        ]
+      },
+      {
+        "heading": "Framework Alignment",
+        "paragraphs": [
+          "This application is governed by the Lubrication & Grease Metering authority and the Lubrication Quality Framework for Precision Mechanical Systems."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "automation-bearings-rotational",
+    "title": "Automation Bearings and Rotational Elements",
+    "nda": true,
+    "pillarHref": "/equipment-options/lubrication",
+    "subcategoryHref": "/equipment-options/lubrication/metering",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This application architecture defines Kirkco lubrication and grease metering systems for automation equipment utilizing bearings, pivots, rotary joints, and rotational assemblies."
+        ]
+      },
+      {
+        "heading": "Lubrication Objectives",
+        "paragraphs": [
+          "Deliver controlled grease volumes to rotational wear points.",
+          "Prevent over-lubrication that can damage seals or attract contaminants.",
+          "Maintain consistent lubrication under variable load conditions.",
+          "Extend bearing and joint service life."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Kirkco bearing lubrication systems utilize centralized grease supply with precision metering. A single supply source feeds multiple metering points via controlled distribution to ensure uniform lubrication."
+        ]
+      },
+      {
+        "heading": "Metering Strategy",
+        "paragraphs": [
+          "Grease delivery is executed using volumetric, shot-based metering to ensure repeatable dosing. Metering volume is selected based on bearing size, load, and duty cycle."
+        ]
+      },
+      {
+        "heading": "Control & Verification",
+        "paragraphs": [
+          "Lubrication cycles are managed through PLC or machine controller integration. Pressure monitoring and cycle confirmation ensure grease is delivered as commanded."
+        ]
+      },
+      {
+        "heading": "Load & Duty Cycle Considerations",
+        "paragraphs": [
+          "Lubrication frequency and volume are adjusted to reflect operational load, speed, and environmental conditions. This approach minimizes wear while avoiding excess grease accumulation."
+        ]
+      },
+      {
+        "heading": "Maintenance & Reliability",
+        "paragraphs": [
+          "Lubrication events are logged to support condition-based maintenance strategies. Fault detection enables early intervention before component damage occurs."
+        ]
+      },
+      {
+        "heading": "Impulse Dosing Valve Integration",
+        "paragraphs": [
+          "Impulse dosing enables precise grease delivery to bearings and rotary joints independent of pressure variation or line length."
+        ]
+      },
+      {
+        "heading": "Verification & Inspection",
+        "paragraphs": [
+          "Inspection systems confirm grease delivery to each bearing point, reducing risk of seal damage or dry-running conditions."
+        ]
+      },
+      {
+        "heading": "Closed-Loop Control",
+        "paragraphs": [
+          "Closed-loop lubrication control supports load- and duty-cycle-based optimization of bearing lubrication intervals."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Fault detection enables early intervention before component damage occurs."
+        ]
+      },
+      {
+        "heading": "Framework Alignment",
+        "paragraphs": [
+          "This application is governed by the Lubrication & Grease Metering authority and the Lubrication Quality Framework for Precision Mechanical Systems."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "precision-oiling-servo-axes",
+    "title": "Precision Oiling for Servo Axes",
+    "nda": true,
+    "pillarHref": "/equipment-options/lubrication",
+    "subcategoryHref": "/equipment-options/lubrication/metering",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This application architecture defines Kirkco-engineered precision oiling systems for servo axes, high-speed motion systems, and contamination-sensitive automation environments. The architecture is limited to oil lubrication."
+        ]
+      },
+      {
+        "heading": "Lubrication Objectives",
+        "paragraphs": [
+          "Deliver precise, low-volume oil doses to moving interfaces.",
+          "Maintain clean operating environments.",
+          "Prevent oil migration or overspray.",
+          "Support high-speed and high-cycle motion systems."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Kirkco precision oiling systems consist of an oil reservoir and supply module, a precision metering valve assembly, dedicated delivery lines to lubrication points, and a control interface for timed or cycle-based dosing."
+        ]
+      },
+      {
+        "heading": "Metering Strategy",
+        "paragraphs": [
+          "Oil delivery is controlled using time-pressure or volumetric metering depending on accuracy requirements. Micro-dosing ensures sufficient lubrication without excess accumulation."
+        ]
+      },
+      {
+        "heading": "Control & Integration",
+        "paragraphs": [
+          "Oiling events are triggered by machine cycle count, elapsed time, or servo state feedback. Integration with PLC or motion controllers ensures lubrication occurs during non-critical motion windows."
+        ]
+      },
+      {
+        "heading": "Cleanliness & Contamination Control",
+        "paragraphs": [
+          "Delivery systems are designed to prevent oil misting, dripping, or migration into sensitive components. This is critical in electronics, precision assembly, and high-speed automation environments."
+        ]
+      },
+      {
+        "heading": "Maintenance & Lifecycle",
+        "paragraphs": [
+          "Controlled oiling reduces wear and supports extended service intervals. System diagnostics support proactive maintenance planning."
+        ]
+      },
+      {
+        "heading": "Impulse Dosing Valve Integration",
+        "paragraphs": [
+          "Impulse dosing is applied for micro-oil delivery where volumetric accuracy is required for high-speed servo motion systems."
+        ]
+      },
+      {
+        "heading": "Verification & Inspection",
+        "paragraphs": [
+          "Oil dosing inspection verifies successful micro-dosing events, which is critical for contamination-sensitive environments."
+        ]
+      },
+      {
+        "heading": "Closed-Loop Control",
+        "paragraphs": [
+          "Closed-loop oiling ensures lubrication occurs only when confirmed, supporting clean operation and long-term servo reliability."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Controlled oiling reduces wear and supports extended service intervals."
+        ]
+      },
+      {
+        "heading": "Framework Alignment",
+        "paragraphs": [
+          "This application is governed by the Lubrication & Grease Metering authority and the Lubrication Quality Framework for Precision Mechanical Systems."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "precision-bearing-grease-metering",
+    "title": "Precision Grease Metering for Bearing Assembly",
+    "nda": true,
+    "pillarHref": "/equipment-options/lubrication",
+    "subcategoryHref": "/equipment-options/lubrication/metering",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco delivered a precision lubrication architecture for bearing assembly operations requiring accurate grease volumes and clean application."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Manufacturers sought to eliminate inconsistent manual greasing, waste, and contamination."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Metered grease shots synchronized to assembly operations."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Bulk-fed lubrication pumps with precision metering valves."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Timed dispensing and volume verification ensure repeatable lubrication."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Increased productivity by 30% with Kirkco supplied grease metering system."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "Expandable valve banks and automation interfaces support future growth."
+        ]
+      },
+      {
+        "heading": "Framework Alignment",
+        "paragraphs": [
+          "This application is governed by the Lubrication Quality Framework for Precision Mechanical Systems."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "linear-actuator-automated-lubrication",
+    "title": "Automated Grease Dispensing for Linear Actuators",
+    "nda": true,
+    "pillarHref": "/equipment-options/lubrication",
+    "subcategoryHref": "/equipment-options/lubrication/dispensing",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco delivered an automated lubrication architecture applying precise grease shots to linear actuators within a high-volume production cell."
+        ]
+      },
+      {
+        "heading": "Quality Drivers",
+        "paragraphs": [
+          "Consistent lubrication to protect critical moving components."
+        ]
+      },
+      {
+        "heading": "System Design",
+        "paragraphs": [
+          "Bulk-fed ram pumps with regulated pressure and multi-valve dispensing banks."
+        ]
+      },
+      {
+        "heading": "Automation Integration",
+        "paragraphs": [
+          "Timed grease shots synchronized with actuator presentation."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Improved consistency, reduced waste, hands-off lubrication."
+        ]
+      },
+      {
+        "heading": "Framework Alignment",
+        "paragraphs": [
+          "This application is governed by the Lubrication Quality Framework for Precision Mechanical Systems."
+        ]
+      }
+    ]
   }
 ]
