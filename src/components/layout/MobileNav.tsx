@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronRight, Menu, X } from 'lucide-react';
@@ -195,10 +196,11 @@ export function MobileNav() {
         {open ? <X className="size-6" aria-hidden="true" /> : <Menu className="size-6" aria-hidden="true" />}
       </button>
 
-      {open && (
+      {open &&
+        createPortal(
         <div
           id="mobile-nav"
-          className="bg-surface-base fixed inset-x-0 top-20 bottom-0 z-40 overflow-y-auto overscroll-contain lg:hidden"
+          className="bg-surface-base fixed inset-x-0 top-20 bottom-0 z-[80] overflow-y-auto overscroll-contain lg:hidden"
         >
           <Container
             as="nav"
@@ -300,8 +302,9 @@ export function MobileNav() {
               {navigation.cta && <QuoteCta className="w-full" />}
             </div>
           </Container>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
     </>
   );
 }
