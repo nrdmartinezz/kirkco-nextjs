@@ -118,8 +118,8 @@ export function DegassingPage({
 
       <Section spacing="none" className="pt-8 pb-section">
         <Container gap="lg">
-          <div className="flex flex-col gap-10 lg:flex-row lg:items-start">
-            <div className="min-w-0 flex-1">
+          <div className="flex w-full min-w-0 flex-col gap-10 lg:flex-row lg:items-start">
+            <div className="min-w-0 w-full flex-1">
               <div className={cardClass}>
                 <Eyebrow>Why degas</Eyebrow>
                 <Heading level={2} size="lg" className="mt-3">
@@ -170,7 +170,7 @@ export function DegassingPage({
                   passes through six stages inside one wall-mountable cabinet.
                 </p>
                 <div
-                  className="mt-6 overflow-x-auto rounded-2xl border border-[#e4f0ff] bg-white p-4 shadow-[0_1px_3px_rgba(21,101,192,0.1)]"
+                  className="mt-6 max-w-full min-w-0 overflow-x-auto rounded-2xl border border-[#e4f0ff] bg-white p-4 shadow-[0_1px_3px_rgba(21,101,192,0.1)]"
                   role="img"
                   aria-label="Flow diagram: supply pump to pressure reduction, flow restriction, bubble detection, buffer container, booster pump and outlet to the application. Material with bubbles is diverted from the detection stage through a discharge valve to a collection bottle."
                 >
@@ -283,7 +283,7 @@ export function DegassingPage({
                 <Heading level={2} size="lg" className="mt-3">
                   Specifications
                 </Heading>
-                <div className="mt-6 overflow-x-auto rounded-2xl border border-[#e4f0ff] bg-white shadow-[0_1px_3px_rgba(21,101,192,0.1)]">
+                <div className="mt-6 max-w-full min-w-0 overflow-x-auto rounded-2xl border border-[#e4f0ff] bg-white shadow-[0_1px_3px_rgba(21,101,192,0.1)]">
                   <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
                     <thead>
                       <tr className="border-b border-[#e4f0ff]">
