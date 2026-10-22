@@ -424,7 +424,11 @@
     ],
     "architectures": [],
     "applicationIds": [
-      "equipment-options-composites"
+      "composites-quality-framework",
+      "imc-quality-framework",
+      "rtm-resin-infusion-systems",
+      "structural-composite-panel-bonding",
+      "imc-coatec-system"
     ],
     "closing": "Precision Metering System for Accuracy in your Process"
   },

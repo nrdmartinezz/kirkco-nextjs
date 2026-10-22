@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { DegassingPage } from '@/components/equipment/DegassingPage';
 import { EquipmentOptionsPage } from '@/components/equipment/EquipmentOptionsPage';
 import { SupportEditorialPage } from '@/components/equipment/SupportEditorialPage';
+import { ApplicationSpokePage } from '@/components/equipment/ApplicationSpokePage';
 import { EquipmentPage } from '@/components/equipment/EquipmentPage';
 import { EquipmentSubcategoryPage } from '@/components/equipment/EquipmentSubcategoryPage';
 import { degassingHref, degassingMeta } from '@/content/equipment/degassing';
@@ -16,7 +17,7 @@ import { getIndustryPage } from '@/content/industries';
 import { getPublicSections } from '@/content/pillar/sections';
 import { getResourcePage } from '@/content/resources/pages';
 import { ResourcePage } from '@/components/resources/ResourcePage';
-import { getApplications } from '@/lib/applications';
+import { getApplication, getApplications, spokeIdFromHref, spokePaths, studyDescription } from '@/lib/applications';
 import { equipmentOriginTrail, getEquipmentPage } from '@/lib/equipment';
 import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
 import { site } from '@/config/site';
@@ -37,6 +38,9 @@ function firstParam(value: string | string[] | undefined) {
 export async function generateStaticParams() {
   const params = new Map<string, { slug: string[] }>();
   for (const href of Object.keys(stubTitles())) {
+    params.set(href, { slug: href.slice(1).split('/') });
+  }
+  for (const href of spokePaths()) {
     params.set(href, { slug: href.slice(1).split('/') });
   }
   for (const product of await getProducts()) {
@@ -91,6 +95,20 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
       image: degassingMeta.image,
       imageAlt: degassingMeta.imageAlt,
     });
+  }
+
+  const spokeId = spokeIdFromHref(href);
+  if (spokeId) {
+    const study = await getApplication(spokeId);
+    if (study) {
+      return buildMetadata({
+        title: study.title,
+        description: studyDescription(study),
+        titleExact: true,
+        path: href,
+        type: 'article',
+      });
+    }
   }
 
   const subcategory = getEquipmentSubcategoryPage(href);
@@ -165,6 +183,12 @@ export default async function CatchAllPage({ params, searchParams }: CatchAllPro
         <DegassingPage categories={categories} products={products} />
       </>
     );
+  }
+
+  const spokeId = spokeIdFromHref(href);
+  if (spokeId) {
+    const study = await getApplication(spokeId);
+    if (study?.pillarHref) return <ApplicationSpokePage study={study} />;
   }
 
   const subcategory = getEquipmentSubcategoryPage(href);

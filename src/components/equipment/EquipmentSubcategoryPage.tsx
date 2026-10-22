@@ -178,7 +178,7 @@ export function EquipmentSubcategoryPage({
               </div>
 
               {studies.length > 0 ? (
-                <ApplicationStudyArticles studies={studies} />
+                <ApplicationStudyArticles studies={studies} pillarLabel={page.parentLabel} />
               ) : (
                 page.sections &&
                 page.sections.length > 0 && (

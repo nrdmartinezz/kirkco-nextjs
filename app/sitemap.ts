@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { navigation } from '@/config/navigation';
 import { site } from '@/config/site';
+import { spokePaths } from '@/lib/applications';
 import { getProducts, variantPath } from '@/lib/products';
 
 export const revalidate = 60;
@@ -24,6 +25,8 @@ async function collectHrefs() {
 
   for (const link of navigation.legal) hrefs.add(link.href);
   hrefs.add(navigation.cta.href);
+  for (const href of spokePaths()) hrefs.add(href);
+
   for (const product of await getProducts()) {
     hrefs.add(`/${product.slug}`);
     for (const variant of product.variants ?? []) {

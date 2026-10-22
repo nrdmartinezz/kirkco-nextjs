@@ -7,6 +7,7 @@ import { Section } from '@/components/ui/Section';
 import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealants';
 import { getPublicSections } from '@/content/pillar/sections';
 import { site } from '@/config/site';
+import { ApplicationStudyArticles } from '@/components/equipment/ApplicationStudyArticles';
 import type { ApplicationStudy } from '@/lib/applications';
 import { EditorialSections } from '@/components/equipment/EditorialSections';
 import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
@@ -91,28 +92,26 @@ export async function EquipmentPage({
         <Container gap="lg">
           <div className="flex flex-col gap-10 lg:flex-row lg:items-start">
             <div className="min-w-0 flex-1">
-              <div className="flex flex-col gap-4 rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)] md:flex-row md:items-center">
+              <div className="flow-root rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]">
                 <Image
                   src={page.overviewImage}
                   alt={page.overviewImageAlt}
                   width={300}
                   height={375}
-                  className="h-auto w-full max-w-[300px] shrink-0 rounded-[10px] object-cover"
+                  className="mb-4 h-auto w-full max-w-[300px] rounded-[10px] object-cover md:float-left md:mt-1 md:mr-6 md:mb-3"
                 />
-                <div className="flex flex-col gap-4 md:p-2.5">
-                  <p className="text-brand-700 flex items-center gap-2 text-[11px] font-semibold tracking-wide uppercase">
-                    <span aria-hidden className="bg-brand-700 h-px w-5" />
-                    Overview
+                <p className="text-brand-700 flex items-center gap-2 text-[11px] font-semibold tracking-wide uppercase">
+                  <span aria-hidden className="bg-brand-700 h-px w-5" />
+                  Overview
+                </p>
+                <Heading level={2} size="md" className="mt-3">
+                  {page.overviewHeading}
+                </Heading>
+                {page.overview.map((paragraph) => (
+                  <p key={paragraph.slice(0, 40)} className="text-ink-muted mt-4 leading-7">
+                    {paragraph}
                   </p>
-                  <Heading level={2} size="md">
-                    {page.overviewHeading}
-                  </Heading>
-                  {page.overview.map((paragraph) => (
-                    <p key={paragraph.slice(0, 40)} className="text-ink-muted leading-7">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
+                ))}
               </div>
 
             <div id="system-options" className="mt-12 scroll-mt-28">
@@ -293,44 +292,7 @@ export async function EquipmentPage({
 
             {editorial && <EditorialSections page={editorial} />}
 
-            <div className="mt-12 flex flex-col gap-6">
-              {studies.map((study) => {
-                const midpoint = Math.ceil(study.sections.length / 2);
-                const columns = [study.sections.slice(0, midpoint), study.sections.slice(midpoint)];
-                return (
-                  <article
-                    key={study.id}
-                    className="rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]"
-                  >
-                    <p className="text-brand-700 flex items-center gap-2 text-[11px] font-semibold tracking-wide uppercase">
-                      <span aria-hidden className="bg-brand-700 h-px w-4" />
-                      {study.nda ? 'NDA Protected Application' : 'Application Architecture'}
-                    </p>
-                    <Heading level={2} size="lg" className="mt-3">
-                      {study.title}
-                    </Heading>
-                    <div className="mt-6 grid gap-5 md:grid-cols-2">
-                      {columns.map((column, columnIndex) => (
-                        <div key={columnIndex} className="flex flex-col gap-5">
-                          {column.map((section) => (
-                            <div key={section.heading}>
-                              <Heading level={3} size="sm">
-                                {section.heading}
-                              </Heading>
-                              {section.paragraphs.map((paragraph) => (
-                                <p key={paragraph.slice(0, 48)} className="text-ink-muted mt-2 leading-relaxed">
-                                  {paragraph}
-                                </p>
-                              ))}
-                            </div>
-                          ))}
-                        </div>
-                      ))}
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
+            <ApplicationStudyArticles studies={studies} pillarLabel={page.title} showPillarLink={false} />
 
             <div className="border-brand-500 mt-12 border-t pt-8">
               <Heading level={2} size="lg">

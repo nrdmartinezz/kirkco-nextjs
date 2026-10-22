@@ -437,7 +437,7 @@
       }
     ],
     "applicationIds": [
-      "equipment-options-composites-open-mold-technology-architecture"
+      "structural-composite-panel-bonding"
     ]
   },
   "/equipment-options/composites/pull-winding": {
@@ -503,7 +503,10 @@
         ]
       }
     ],
-    "sections": []
+    "sections": [],
+    "applicationIds": [
+      "rtm-resin-infusion-systems"
+    ]
   },
   "/equipment-options/composites/closed-mold-technology/resin-transfer-molding": {
     "href": "/equipment-options/composites/closed-mold-technology/resin-transfer-molding",
@@ -525,7 +528,10 @@
         ]
       }
     ],
-    "sections": []
+    "sections": [],
+    "applicationIds": [
+      "rtm-resin-infusion-systems"
+    ]
   },
   "/equipment-options/composites/closed-mold-technology/resin-injection-molding": {
     "href": "/equipment-options/composites/closed-mold-technology/resin-injection-molding",
@@ -571,7 +577,7 @@
       }
     ],
     "applicationIds": [
-      "equipment-options-composites-closed-mold-technology-architecture"
+      "rtm-resin-infusion-systems"
     ]
   },
   "/equipment-options/adhesives-sealants/two-component/gear-metering/conti-flow": {
@@ -613,7 +619,10 @@
         ]
       }
     ],
-    "sections": []
+    "sections": [],
+    "applicationIds": [
+      "gear-pump-high-viscosity-metering"
+    ]
   },
   "/equipment-options/adhesives-sealants/single-component/pumps-and-packages": {
     "href": "/equipment-options/adhesives-sealants/single-component/pumps-and-packages",
@@ -687,7 +696,7 @@
       }
     ],
     "applicationIds": [
-      "equipment-options-adhesives-sealants-single-component-dispensing-valves-architecture"
+      "industrial-adhesive-dispensing"
     ]
   },
   "/equipment-options/adhesives-sealants/two-component/shot-metering": {
@@ -885,7 +894,10 @@
       }
     ],
     "applicationIds": [
-      "equipment-options-adhesives-sealants-two-component-architecture"
+      "pu-adhesive-bonding-cell",
+      "water-tank-epoxy-bonding",
+      "gear-pump-high-viscosity-metering",
+      "elevator-panel-pu-bonding"
     ]
   },
   "/equipment-options/adhesives-sealants/putty-paste": {
@@ -909,7 +921,7 @@
       }
     ],
     "applicationIds": [
-      "equipment-options-adhesives-sealants-putty-paste-architecture"
+      "gear-pump-high-viscosity-metering"
     ]
   }
 }

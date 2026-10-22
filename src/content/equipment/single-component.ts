@@ -67,43 +67,49 @@ export const singleComponent: SingleComponentPageContent = {
     {
       heading: 'Executive Overview',
       paragraphs: [
-        'Kirkco engineers industrial adhesive dispensing architectures designed to deliver repeatable bonding and sealing performance across high-mix, high-volume manufacturing environments. Our systems support consistent material application, controlled bead geometry, and stable production output across diverse industrial assemblies—from automotive and electronics to aerospace and construction panel bonding.',
+        'Kirkco engineered an industrial adhesive dispensing architecture designed to deliver repeatable bonding and sealing performance across high-mix, high-volume manufacturing environments. The architecture supports consistent material application, controlled bead geometry, and stable production output across diverse industrial assemblies.',
       ],
     },
     {
       heading: 'Market & Performance Drivers',
       paragraphs: [
-        'Industrial manufacturers require adhesive dispensing systems that maintain stringent quality standards across multiple product variants, shifts, and operators. Manual application introduces variability that impacts bond strength, cosmetic appearance, and warranty exposure. A controlled, automated dispensing architecture is essential to stabilize quality, reduce scrap, and maximize throughput. Kirkco’s single-component systems address this challenge by removing application variability as a failure mode.',
+        'Industrial manufacturers require adhesive dispensing systems that can maintain quality across multiple product variants, shifts, and operators. Manual application introduces variability that impacts bond strength, cosmetic appearance, and rework rates. A controlled dispensing architecture is required to stabilize quality and throughput.',
       ],
     },
     {
       heading: 'Process Requirements',
       paragraphs: [
-        'Critical applications require accurate volumetric dispensing of single-component adhesives with repeatable bead width, precise placement, and predictable cure behavior. Processes may include component bonding, gasket forming, seam sealing, and surface coating in automated or semi-automated cells. Our systems accommodate a wide range of substrates—including metal skins, composite panels, and internal stiffeners—without squeeze-out or void formation.',
+        'Applications require accurate volumetric dispensing of single- and multi-component adhesives with repeatable bead width, placement, and cure behavior. Processes may include component bonding, gasket forming, seam sealing, and surface coating in automated or semi-automated cells.',
       ],
     },
     {
       heading: 'System Architecture',
       paragraphs: [
-        'The Kirkco dispensing platform utilizes positive-displacement metering technologies—piston, gear, or progressive cavity pumps—selected based on specific material viscosity and flow requirements. For high-viscosity structural adhesives and sealants, our gear pump architectures provide pulsation-free delivery, stable flow, and pressure consistency up to 160 bar with viscosities up to 1,000,000 mPa·s. Application-specific dispensing valves ensure clean cutoff and repeatable start-stop behavior, eliminating stringing and material waste.',
+        'The dispensing platform utilizes positive-displacement metering technologies, including piston, gear, or progressive cavity pumps, selected based on material viscosity and flow requirements. Static or dynamic mixing solutions are applied where multi-component materials are used, with application-specific valves ensuring clean cutoff and repeatable starts and stops.',
       ],
     },
     {
       heading: 'Controls & Validation',
       paragraphs: [
-        'Our PLC-based controls manage dispense volume, dispense speed, bead placement, and process interlocks. Closed-loop control monitors pump speed and pressure to ensure consistent output. Rigorous validation confirms repeatable adhesive output, consistent bead geometry, and reliable adhesion performance across continuous and intermittent production cycles—meeting the requirements of quality-critical manufacturing environments.',
+        'PLC-based controls manage dispense volume, ratio control, dispense speed, and process interlocks. Validation confirms repeatable adhesive output, consistent bead geometry, and reliable adhesion performance across production cycles.',
       ],
     },
     {
       heading: 'Adhesives & Sealants Quality Framework Alignment',
       paragraphs: [
-        'This application architecture is governed by Kirkco’s Adhesives & Sealants Quality Framework, which standardizes material handling, dispense accuracy, bead geometry control, and validation practices across all industrial bonding and sealing systems. Every execution-level application inherits these core quality principles, ensuring consistent outcomes from engineering through production.',
+        'This application is governed by Kirkco’s Adhesives & Sealants Quality Framework, which standardizes material handling, dispense accuracy, bead geometry control, and validation practices across industrial bonding and sealing systems. Reference: Adhesives & Sealants Quality Framework (Rev C).',
       ],
     },
     {
-      heading: 'Operational Performance & Lifecycle Scalability',
+      heading: 'Operational Performance',
       paragraphs: [
-        'Implementation of a Kirkco single-component dispensing system reduces material waste, improves cosmetic consistency, and stabilizes production throughput. The architecture supports future automation expansion, additional product variants, and evolving adhesive chemistries without requiring a redesign of the core dispensing platform—protecting your capital investment and enabling long-term production agility.',
+        'Implementation reduces scrap, improves cosmetic consistency, and stabilizes production throughput by removing application variability as a failure mode.',
+      ],
+    },
+    {
+      heading: 'Lifecycle & Scalability',
+      paragraphs: [
+        'The architecture supports future automation, additional product variants, and evolving adhesive chemistries without redesign of the core dispensing platform.',
       ],
     },
   ],
