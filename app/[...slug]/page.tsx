@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { EquipmentOptionsPage } from '@/components/equipment/EquipmentOptionsPage';
+import { SupportEditorialPage } from '@/components/equipment/SupportEditorialPage';
 import { EquipmentPage } from '@/components/equipment/EquipmentPage';
 import { EquipmentSubcategoryPage } from '@/components/equipment/EquipmentSubcategoryPage';
 import { equipmentOptionsDescription } from '@/content/equipment/equipment-options';
@@ -10,6 +11,9 @@ import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { IndustryPage } from '@/components/industries/IndustryPage';
 import { getIndustryPage } from '@/content/industries';
+import { getPublicSections } from '@/content/pillar/sections';
+import { getResourcePage } from '@/content/resources/pages';
+import { ResourcePage } from '@/components/resources/ResourcePage';
 import { getApplications } from '@/lib/applications';
 import { equipmentOriginTrail, getEquipmentPage } from '@/lib/equipment';
 import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
@@ -95,6 +99,18 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
     });
   }
 
+  const resource = getResourcePage(href);
+  if (resource) {
+    return buildMetadata({
+      title: resource.metaTitle,
+      description: resource.description,
+      titleExact: true,
+      path: resource.href,
+      image: resource.heroImage,
+      imageAlt: resource.heroAlt,
+    });
+  }
+
   const title = stubTitles()[href];
   return { title: title ?? 'Page' };
 }
@@ -154,16 +170,20 @@ export default async function CatchAllPage({ params, searchParams }: CatchAllPro
     );
   }
 
+  const resource = getResourcePage(href);
+  if (resource) return <ResourcePage page={resource} />;
+
   const title = stubTitles()[href];
   if (!title) notFound();
 
+  const editorial = getPublicSections(href);
   const categories = await getCategories();
   const category = categoryByHref(href, categories);
 
   return (
     <>
       {category && <RememberEquipmentPage href={category.href} />}
-      <SimplePage title={title} />
+      {editorial ? <SupportEditorialPage title={title} page={editorial} /> : <SimplePage title={title} />}
     </>
   );
 }

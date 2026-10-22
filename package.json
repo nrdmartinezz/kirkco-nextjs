@@ -17,7 +17,8 @@
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "db:seed": "node --env-file-if-exists=.env.local scripts/seed-supabase.ts"
+    "db:seed": "node --env-file-if-exists=.env.local scripts/seed-supabase.ts",
+    "content:pillar": "node scripts/build-pillar-public.mjs"
   },
   "devDependencies": {
     "@types/node": "26.4.1",
@@ -28,6 +29,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
     "@tailwindcss/postcss": "^4.3.3",
+    "@vercel/analytics": "^2.0.1",
     "lucide-react": "^1.41.0",
     "next": "^16.3.4",
     "postcss": "^8.5.28",

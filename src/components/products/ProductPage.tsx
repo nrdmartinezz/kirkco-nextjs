@@ -4,6 +4,7 @@ import { AddToQuoteButton } from '@/components/quote/AddToQuoteButton';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
+import { EditorialSections } from '@/components/equipment/EditorialSections';
 import { ProductBreadcrumb } from '@/components/products/ProductBreadcrumb';
 import { site } from '@/config/site';
 import {
@@ -17,6 +18,7 @@ import {
   type ProductVariant,
 } from '@/lib/products';
 import { withOrigin } from '@/lib/search';
+import { getPublicSections } from '@/content/pillar/sections';
 
 function BreadcrumbList({ crumbs, productHref }: { crumbs: BreadcrumbCrumb[]; productHref: string }) {
   const jsonLd = {
@@ -53,6 +55,7 @@ export function ProductPage({
   );
   const hero = variant.image ?? product.image;
   const sections = variant.sections;
+  const editorial = getPublicSections(`/${product.slug}`);
   const choices = productCategories.map((category) => {
     const group = trails.find((trail) => trail.some((crumb) => crumb.href === category.href));
     const groupHref = group?.find((crumb) => crumb.href && crumb.href !== category.href && crumb.href !== '/')?.href ?? category.href;
@@ -166,6 +169,7 @@ export function ProductPage({
             ))}
           </div>
         )}
+        {editorial && <EditorialSections page={editorial} />}
       </Container>
     </Section>
   );

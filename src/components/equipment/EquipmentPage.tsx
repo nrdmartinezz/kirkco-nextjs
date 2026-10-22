@@ -5,8 +5,10 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealants';
+import { getPublicSections } from '@/content/pillar/sections';
 import { site } from '@/config/site';
 import type { ApplicationStudy } from '@/lib/applications';
+import { EditorialSections } from '@/components/equipment/EditorialSections';
 import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
 import { getProducts, type ProductCategory } from '@/lib/products';
 import { toSearchProducts } from '@/lib/search';
@@ -37,6 +39,7 @@ export async function EquipmentPage({
   studies: ApplicationStudy[];
 }) {
   const searchProducts = toSearchProducts(await getProducts());
+  const editorial = getPublicSections(page.href);
   const mainCategories = categories.filter((category) => category.name === category.group);
 
   return (
@@ -287,6 +290,8 @@ export async function EquipmentPage({
                 </ul>
               </div>
             ))}
+
+            {editorial && <EditorialSections page={editorial} />}
 
             <div className="mt-12 flex flex-col gap-6">
               {studies.map((study) => {

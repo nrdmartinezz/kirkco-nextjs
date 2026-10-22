@@ -1,0 +1,2123 @@
+{
+  "pages": [
+    {
+      "href": "/bulk-chemical-storage",
+      "sections": [
+        {
+          "sectionKey": "bulk-storage-material-management",
+          "heading": "Bulk Storage & Material Management Systems",
+          "families": [
+            {
+              "contentKey": "bulk-chemical-storage-systems",
+              "title": "Bulk Storage Tank Systems",
+              "models": [
+                {
+                  "name": "Unloading & Transfer Stations"
+                },
+                {
+                  "name": "Material Blending Systems"
+                },
+                {
+                  "name": "Day Tanks, Plant Loop & Temperature Control"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sectionKey": "pentane-storage-and-blending",
+          "heading": "Pentane Storage & Blending",
+          "families": [
+            {
+              "contentKey": "pentane-storage-and-blending",
+              "title": "Pentane Storage & Blending (ppT)",
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/single-component",
+      "sections": [
+        {
+          "sectionKey": "dispensing-valves",
+          "heading": "Single-Component Dispensing Valves",
+          "families": [
+            {
+              "contentKey": "diaphragm-dispensing-valve",
+              "title": "Diaphragm Dispensing Valve",
+              "models": [],
+              "detailHref": "/diaphragm-dispensing-valve"
+            },
+            {
+              "contentKey": "handheld-dispensing-valves",
+              "title": "Handheld Dispensing Valves",
+              "models": [
+                {
+                  "name": "Handheld Dispensing Valve"
+                },
+                {
+                  "name": "Hand Spray Valve VSP-01"
+                },
+                {
+                  "name": "WDVHP Volumetric Dosing Valve with Handle"
+                },
+                {
+                  "name": "Hand System for Spray Valve WSV"
+                }
+              ],
+              "detailHref": "/handheld-dispensing-valves"
+            },
+            {
+              "contentKey": "high-speed-dispensing-valves",
+              "title": "High Speed Dispensing Valves",
+              "models": [
+                {
+                  "name": "High Speed Dispensing Valve"
+                },
+                {
+                  "name": "High-Speed Valves"
+                },
+                {
+                  "name": "MPP-SPEED Pulse Valve"
+                },
+                {
+                  "name": "MPP-01 Micro-Point Pulse Valve"
+                },
+                {
+                  "name": "MPP-03 Micro-Point Pulse Valve"
+                },
+                {
+                  "name": "WPV Walther Pulse Valve"
+                }
+              ],
+              "detailHref": "/high-speed-valves"
+            },
+            {
+              "contentKey": "needle-dispensing-valve",
+              "title": "Needle Dispensing Valve",
+              "models": [
+                {
+                  "name": "Dispensing Valve (needle type)"
+                }
+              ],
+              "detailHref": "/needle-dispensing-valve"
+            },
+            {
+              "contentKey": "shot-dispensing-valves",
+              "title": "Shot Dispensing Valves",
+              "models": [
+                {
+                  "name": "Shot Dispensing Valve"
+                },
+                {
+                  "name": "Shot Valves SHV-01 / SHV-02"
+                }
+              ],
+              "detailHref": "/shot-valves"
+            }
+          ]
+        },
+        {
+          "sectionKey": "material-supply-pressure-control",
+          "heading": "Material Supply, Pressure Control & Conditioning",
+          "families": [
+            {
+              "contentKey": "material-fluid-pressure-regulator",
+              "title": "Material Fluid Pressure Regulator",
+              "models": [
+                {
+                  "name": "Material Pressure Regulator (diaphragm)"
+                }
+              ],
+              "detailHref": "/material-fluid-pressure-regulator"
+            }
+          ]
+        },
+        {
+          "sectionKey": "metering-valves",
+          "heading": "Single-Component Metering Valves",
+          "families": [
+            {
+              "contentKey": "cartridge-metering-valve",
+              "title": "Cartridge Metering Valve",
+              "models": [],
+              "detailHref": "/cartridge-metering-valve"
+            },
+            {
+              "contentKey": "chamber-metering-valve",
+              "title": "Chamber Metering Valve",
+              "models": [],
+              "detailHref": "/chamber-metering-valve"
+            },
+            {
+              "contentKey": "needle-metering-valve",
+              "title": "Needle Metering Valve",
+              "models": [],
+              "detailHref": "/needle-metering-valve"
+            },
+            {
+              "contentKey": "vecdos-metering-systems",
+              "title": "Vecdos Metering Systems",
+              "models": [
+                {
+                  "name": "Vecdos eOne (Positive Displacement)"
+                },
+                {
+                  "name": "Vecdos eTwin"
+                }
+              ],
+              "detailHref": "/vecdos-eone"
+            },
+            {
+              "contentKey": "single-component-progressive-cavity-valves",
+              "title": "Single-Component Progressive Cavity Valves",
+              "models": [
+                {
+                  "name": "Progressive Cavity Valve"
+                },
+                {
+                  "name": "Eccentric Screw (Progressive Cavity) Pump"
+                }
+              ],
+              "detailHref": "/progressive-cavity-valves"
+            }
+          ]
+        },
+        {
+          "sectionKey": "pumps-and-supply-packages",
+          "heading": "Pumps, Supply & Pressure-Vessel Packages",
+          "families": [
+            {
+              "contentKey": "air-operated-diaphragm-pumps",
+              "title": "Air Operated Diaphragm Pumps",
+              "models": [],
+              "detailHref": "/air-operated-diaphragm-pumps"
+            },
+            {
+              "contentKey": "double-ram-pump-systems",
+              "title": "Double Ram Pump Systems",
+              "models": [
+                {
+                  "name": "Double Ram Pump"
+                },
+                {
+                  "name": "Drum & Barrel Piston Pumps"
+                },
+                {
+                  "name": "Double (Tandem) Drum Pumps"
+                }
+              ],
+              "detailHref": "/double-ram-pump"
+            },
+            {
+              "contentKey": "piston-pumps",
+              "title": "Piston Pumps",
+              "models": [],
+              "detailHref": "/piston-pumps"
+            },
+            {
+              "contentKey": "material-pressure-vessels",
+              "title": "Material Pressure Vessels",
+              "models": [
+                {
+                  "name": "Pressure Vessels (MDG)"
+                },
+                {
+                  "name": "Material Pressure Tanks"
+                },
+                {
+                  "name": "Material Pressure Tank AXMB"
+                },
+                {
+                  "name": "WDBS Pressure Vessel System"
+                }
+              ],
+              "detailHref": "/pressure-vessels"
+            },
+            {
+              "contentKey": "pressure-vessel-refill-units",
+              "title": "Pressure Vessel Refill Units",
+              "models": [
+                {
+                  "name": "Refill Units"
+                }
+              ],
+              "detailHref": "/pressure-vessels"
+            },
+            {
+              "contentKey": "transfer-pumps",
+              "title": "Transfer Pumps",
+              "models": [
+                {
+                  "name": "Transfer Pump"
+                }
+              ],
+              "detailHref": "/transfer-pump"
+            }
+          ]
+        },
+        {
+          "sectionKey": "single-component-metering-systems",
+          "heading": "Single-Component Metering Systems",
+          "families": [
+            {
+              "contentKey": "single-component-gear-metering-system",
+              "title": "Single-Component Gear Metering System",
+              "models": [
+                {
+                  "name": "eldodis 1K Gear Metering System"
+                }
+              ]
+            },
+            {
+              "contentKey": "single-component-piston-metering-system",
+              "title": "Single-Component Piston Metering System",
+              "models": [
+                {
+                  "name": "vectodis 1K Piston Metering System"
+                }
+              ]
+            },
+            {
+              "contentKey": "single-component-progressive-cavity-metering-system",
+              "title": "Single-Component Progressive Cavity Metering System",
+              "models": [
+                {
+                  "name": "rotordis 1K Eccentric Screw Metering System"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/smc-imc-molding",
+      "sections": [
+        {
+          "sectionKey": "smc-imc-metering-systems",
+          "heading": "SMC & IMC Metering Systems",
+          "families": [
+            {
+              "contentKey": "imc-coatec-metering-system",
+              "title": "IMC Coatec Metering System",
+              "models": [],
+              "detailHref": "/imc-coatec-metering"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste",
+      "sections": [
+        {
+          "sectionKey": "tooling-paste-systems",
+          "heading": "Tooling Paste & Modeling Paste Systems",
+          "families": [
+            {
+              "contentKey": "tool-mix-401-gp",
+              "title": "Tool-Mix 401 GP",
+              "models": [
+                {
+                  "name": "GP 401 TPD"
+                }
+              ],
+              "detailHref": "/gp-401-tpd"
+            },
+            {
+              "contentKey": "eldo-mix-401t-tooling-mix",
+              "title": "Eldo-Mix 401T & Tooling Mix",
+              "models": [],
+              "detailHref": "/eldo-mix-401t-tooling-mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/two-component",
+      "sections": [
+        {
+          "sectionKey": "two-component-mixing-valves",
+          "heading": "Two-Component Mixing Valves",
+          "families": [
+            {
+              "contentKey": "dyna-static-mixing",
+              "title": "Dyna Static Mixing",
+              "models": [
+                {
+                  "name": "Dyna Static"
+                }
+              ],
+              "detailHref": "/dyna-static"
+            },
+            {
+              "contentKey": "dynamic-static-mixing",
+              "title": "Dynamic & Static Mixing",
+              "models": [
+                {
+                  "name": "Dynamic / Static Mixers"
+                }
+              ],
+              "detailHref": "/dynamic-static-mixers"
+            },
+            {
+              "contentKey": "impingement-mixing-valves",
+              "title": "Impingement Mixing Valves",
+              "models": [
+                {
+                  "name": "High Pressure Impingement Mixing Valve"
+                },
+                {
+                  "name": "Low Pressure Impingement Mixing Valve"
+                }
+              ],
+              "detailHref": "/high-pressure-impingement-mixing-valve"
+            },
+            {
+              "contentKey": "static-mixer-systems",
+              "title": "Static Mixer Systems",
+              "models": [
+                {
+                  "name": "Static Mixer System"
+                }
+              ],
+              "detailHref": "/static-mixer-system"
+            }
+          ]
+        },
+        {
+          "sectionKey": "two-component-progressive-cavity-metering",
+          "heading": "Two-Component Progressive Cavity Metering",
+          "families": [
+            {
+              "contentKey": "conti-pro-progressive-cavity-metering",
+              "title": "Conti-Pro Progressive Cavity Metering",
+              "models": [
+                {
+                  "name": "Conti-Pro"
+                }
+              ],
+              "detailHref": "/conti-pro"
+            }
+          ]
+        },
+        {
+          "sectionKey": "two-component-shot-metering",
+          "heading": "Two-Component Shot Metering",
+          "families": [
+            {
+              "contentKey": "micro-mix-systems",
+              "title": "Micro-Mix Systems",
+              "models": [
+                {
+                  "name": "Micro-Mix"
+                }
+              ],
+              "detailHref": "/micro-mix"
+            },
+            {
+              "contentKey": "vecdos-metering-systems",
+              "title": "Vecdos Metering Systems",
+              "models": [
+                {
+                  "name": "Vecdos eOne (Positive Displacement)"
+                },
+                {
+                  "name": "Vecdos eTwin"
+                }
+              ],
+              "detailHref": "/vecdos-eone"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/two-component/gear-metering",
+      "sections": [
+        {
+          "sectionKey": "gear-metering-systems",
+          "heading": "Gear Metering Systems",
+          "families": [
+            {
+              "contentKey": "eldo-mix-gear-metering-systems",
+              "title": "Eldo-Mix Gear Metering Systems",
+              "models": [
+                {
+                  "name": "Eldo-Mix"
+                },
+                {
+                  "name": "GP 302"
+                },
+                {
+                  "name": "GP-301"
+                },
+                {
+                  "name": "GP-703"
+                }
+              ],
+              "detailHref": "/eldo-mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/two-component/gear-metering/conti-flow",
+      "sections": [
+        {
+          "sectionKey": "conti-flow-system-accessories",
+          "heading": "Conti-Flow System Accessories",
+          "families": [
+            {
+              "contentKey": "conti-flow-systems",
+              "title": "Conti-Flow Systems",
+              "models": [
+                {
+                  "name": "Conti-Flow Compact"
+                },
+                {
+                  "name": "Conti-Flow Lab"
+                },
+                {
+                  "name": "Conti-Flow Vario"
+                },
+                {
+                  "name": "Conti-Flow Versa"
+                }
+              ],
+              "detailHref": "/conti-flow-compact"
+            }
+          ]
+        },
+        {
+          "sectionKey": "conti-flow-systems",
+          "heading": "Conti-Flow Systems",
+          "families": [
+            {
+              "contentKey": "conti-flow-systems",
+              "title": "Conti-Flow Systems",
+              "models": [
+                {
+                  "name": "Conti-Flow Compact"
+                },
+                {
+                  "name": "Conti-Flow Lab"
+                },
+                {
+                  "name": "Conti-Flow Vario"
+                },
+                {
+                  "name": "Conti-Flow Versa"
+                }
+              ],
+              "detailHref": "/conti-flow-compact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/two-component/lsr-processing-equipment",
+      "sections": [
+        {
+          "sectionKey": "lsr-processing-systems",
+          "heading": "LSR Processing Systems",
+          "families": [
+            {
+              "contentKey": "lsr-conti-mix-200",
+              "title": "LSR Conti-Mix 200",
+              "models": [],
+              "detailHref": "/lsr-conti-mix-200"
+            },
+            {
+              "contentKey": "lsr-ela-systems",
+              "title": "LSR ELA Systems",
+              "models": [
+                {
+                  "name": "LSR-20 ELA & LSR-200 ELA"
+                }
+              ],
+              "detailHref": "/lsr-20-ela-lsr-200-ela"
+            },
+            {
+              "contentKey": "lsr-20-lc",
+              "title": "LSR-20 LC",
+              "models": [],
+              "detailHref": "/lsr-20-lc"
+            },
+            {
+              "contentKey": "silco-mix",
+              "title": "Silco-Mix",
+              "models": [],
+              "detailHref": "/silco-mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/adhesives-sealants/two-component/piston-metering",
+      "sections": [
+        {
+          "sectionKey": "piston-metering-systems",
+          "heading": "Piston Metering Systems",
+          "families": [
+            {
+              "contentKey": "econo-mix-systems",
+              "title": "Econo-Mix Systems",
+              "models": [
+                {
+                  "name": "Econo-Mix"
+                }
+              ],
+              "detailHref": "/econo-mix"
+            },
+            {
+              "contentKey": "ecostar-evo-systems",
+              "title": "Ecostar EVO Systems",
+              "models": [
+                {
+                  "name": "Ecostar EVO"
+                }
+              ],
+              "detailHref": "/ecostar-evo"
+            },
+            {
+              "contentKey": "graco-piston-proportioners",
+              "title": "Graco Piston Proportioners",
+              "models": [
+                {
+                  "name": "Graco 8900 Proportioner"
+                },
+                {
+                  "name": "Graco Hydra-Cat"
+                }
+              ],
+              "detailHref": "/graco-8900"
+            },
+            {
+              "contentKey": "vario-mix-systems",
+              "title": "Vario-Mix Systems",
+              "models": [
+                {
+                  "name": "Vario-Mix"
+                }
+              ],
+              "detailHref": "/vario-mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/composites/closed-mold-technology",
+      "sections": [
+        {
+          "sectionKey": "resin-injection-molding",
+          "heading": "Resin Injection Molding",
+          "families": [
+            {
+              "contentKey": "conti-flow-metering-system-family",
+              "title": "Conti-Flow Versa",
+              "models": [
+                {
+                  "name": "Conti-Flow Compact"
+                },
+                {
+                  "name": "Conti-Flow Vario"
+                }
+              ],
+              "detailHref": "/conti-flow-versa"
+            },
+            {
+              "contentKey": "eldo-mix-metering-system-family",
+              "title": "Eldo-Mix 303",
+              "models": [
+                {
+                  "name": "2C / 3C Infusion Resin Systems"
+                },
+                {
+                  "name": "2C Infusion Resin System"
+                },
+                {
+                  "name": "3C Glue Resin System"
+                },
+                {
+                  "name": "2C Gel Coat System"
+                }
+              ],
+              "detailHref": "/eldo-mix"
+            },
+            {
+              "contentKey": "gp-metering-system-family",
+              "title": "GP-302",
+              "models": [
+                {
+                  "name": "GP 302"
+                },
+                {
+                  "name": "GP-301"
+                },
+                {
+                  "name": "GP-703"
+                }
+              ],
+              "detailHref": "/gp-301"
+            }
+          ]
+        },
+        {
+          "sectionKey": "resin-transfer-molding",
+          "heading": "Resin Transfer Molding",
+          "families": [
+            {
+              "contentKey": "conti-flow-metering-system-family",
+              "title": "Conti-Flow Versa",
+              "models": [
+                {
+                  "name": "Conti-Flow Compact"
+                },
+                {
+                  "name": "Conti-Flow Vario"
+                }
+              ],
+              "detailHref": "/conti-flow-versa"
+            },
+            {
+              "contentKey": "gp-metering-system-family",
+              "title": "GP-302",
+              "models": [
+                {
+                  "name": "GP 302"
+                },
+                {
+                  "name": "GP-301"
+                },
+                {
+                  "name": "GP-703"
+                }
+              ],
+              "detailHref": "/gp-301"
+            }
+          ]
+        },
+        {
+          "sectionKey": "vacuum-infusion-molding",
+          "heading": "Vacuum Infusion Molding",
+          "families": [
+            {
+              "contentKey": "eldo-mix-metering-system-family",
+              "title": "Eldo-Mix 303",
+              "models": [
+                {
+                  "name": "2C / 3C Infusion Resin Systems"
+                },
+                {
+                  "name": "2C Infusion Resin System"
+                },
+                {
+                  "name": "3C Glue Resin System"
+                },
+                {
+                  "name": "2C Gel Coat System"
+                }
+              ],
+              "detailHref": "/eldo-mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/composites/filament-winding",
+      "sections": [
+        {
+          "sectionKey": "filament-winding-system-families",
+          "heading": "Filament Winding System Families",
+          "families": [
+            {
+              "contentKey": "conti-flow-metering-system-family",
+              "title": "Conti-Flow Versa",
+              "models": [
+                {
+                  "name": "Conti-Flow Compact"
+                },
+                {
+                  "name": "Conti-Flow Vario"
+                }
+              ],
+              "detailHref": "/conti-flow-versa"
+            },
+            {
+              "contentKey": "gp-metering-system-family",
+              "title": "GP-302",
+              "models": [
+                {
+                  "name": "GP 302"
+                },
+                {
+                  "name": "GP-301"
+                },
+                {
+                  "name": "GP-703"
+                }
+              ],
+              "detailHref": "/gp-301"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/composites/open-mold-technology",
+      "sections": [
+        {
+          "sectionKey": "gel-coat-systems",
+          "heading": "Gel Coat Systems",
+          "families": [
+            {
+              "contentKey": "eldo-mix-metering-system-family",
+              "title": "Eldo-Mix 303",
+              "models": [
+                {
+                  "name": "2C / 3C Infusion Resin Systems"
+                },
+                {
+                  "name": "2C Infusion Resin System"
+                },
+                {
+                  "name": "3C Glue Resin System"
+                },
+                {
+                  "name": "2C Gel Coat System"
+                }
+              ],
+              "detailHref": "/eldo-mix"
+            },
+            {
+              "contentKey": "frp-gel-coat-systems",
+              "title": "FRP Gel Coat Systems",
+              "models": [],
+              "detailHref": "/frp-gel-coat-systems"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/composites/open-mold-technology/chopping-lamination",
+      "sections": [
+        {
+          "sectionKey": "chopping-and-lamination-process",
+          "heading": "Chopping & Lamination Process",
+          "families": [
+            {
+              "contentKey": "chopping-and-lamination-process-technology",
+              "title": "Chopping & Lamination Process Technology",
+              "models": [
+                {
+                  "name": "Chopping & Lamination Systems"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/composites/pultrusion",
+      "sections": [
+        {
+          "sectionKey": "pultrusion-process",
+          "heading": "Pultrusion Process",
+          "families": [
+            {
+              "contentKey": "pultrusion-process-technology",
+              "title": "Pultrusion Process Technology",
+              "models": [
+                {
+                  "name": "Pultrusion Equipment"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/lubrication",
+      "sections": [
+        {
+          "sectionKey": "lubrication-system-architectures",
+          "heading": "Lubrication System Architectures",
+          "families": [
+            {
+              "contentKey": "lubrication-system-architectures",
+              "title": "Lubrication Technology",
+              "models": [
+                {
+                  "name": "ABNOX Lubrication Technology"
+                }
+              ],
+              "detailHref": "/abnox"
+            }
+          ]
+        },
+        {
+          "sectionKey": "parts-application-and-lifecycle-support",
+          "heading": "Parts, Application & Lifecycle Support",
+          "families": [
+            {
+              "contentKey": "parts-application-and-lifecycle-support",
+              "title": "Parts & Application Support",
+              "models": [
+                {
+                  "name": "ABNOX Spare Parts & Accessories"
+                }
+              ],
+              "detailHref": "/abnox"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/lubrication/dispensing",
+      "sections": [
+        {
+          "sectionKey": "application-and-accessory-guidance",
+          "heading": "Application & Accessory Guidance",
+          "families": [
+            {
+              "contentKey": "application-adapters",
+              "title": "Custom Lubrication Adapter",
+              "models": [
+                {
+                  "name": "Nozzles & Application Adapters"
+                }
+              ],
+              "detailHref": "/abnox"
+            }
+          ]
+        },
+        {
+          "sectionKey": "dispensing-valve-packages",
+          "heading": "Dispensing Valve Packages",
+          "families": [
+            {
+              "contentKey": "dispensing-valve-packages",
+              "title": "Robot Dispensing Package - ISO-50 Cartridge",
+              "models": [
+                {
+                  "name": "Walther Dosing Bundle ISO-50"
+                },
+                {
+                  "name": "ReadyLube Dose! (RLD)"
+                }
+              ]
+            },
+            {
+              "contentKey": "lubrication-spray-stations",
+              "title": "Lubrication Spray Station - Standard",
+              "models": [
+                {
+                  "name": "ReadyLube Spray! (RLS)"
+                }
+              ],
+              "detailHref": "/spray-valves"
+            }
+          ]
+        },
+        {
+          "sectionKey": "valve-technology-families",
+          "heading": "Dispensing Valve Technology Families",
+          "families": [
+            {
+              "contentKey": "diaphragm-dispensing-valves",
+              "title": "Diaphragm Dispensing Valve",
+              "models": [
+                {
+                  "name": "WMAV Membrane Outlet Valve"
+                }
+              ],
+              "detailHref": "/diaphragm-dispensing-valve"
+            },
+            {
+              "contentKey": "handheld-dispensing-valves",
+              "title": "Handheld Dispensing Valves",
+              "models": [
+                {
+                  "name": "Handheld Dispensing Valve"
+                },
+                {
+                  "name": "Hand Spray Valve VSP-01"
+                },
+                {
+                  "name": "WDVHP Volumetric Dosing Valve with Handle"
+                },
+                {
+                  "name": "Hand System for Spray Valve WSV"
+                }
+              ],
+              "detailHref": "/handheld-dispensing-valves"
+            },
+            {
+              "contentKey": "high-speed-dispensing-valves",
+              "title": "High Speed Dispensing Valves",
+              "models": [
+                {
+                  "name": "High Speed Dispensing Valve"
+                },
+                {
+                  "name": "High-Speed Valves"
+                },
+                {
+                  "name": "MPP-SPEED Pulse Valve"
+                },
+                {
+                  "name": "MPP-01 Micro-Point Pulse Valve"
+                },
+                {
+                  "name": "MPP-03 Micro-Point Pulse Valve"
+                },
+                {
+                  "name": "WPV Walther Pulse Valve"
+                }
+              ],
+              "detailHref": "/high-speed-valves"
+            },
+            {
+              "contentKey": "needle-dispensing-valves",
+              "title": "Needle Dispensing Valve",
+              "models": [
+                {
+                  "name": "Dispensing Valves"
+                },
+                {
+                  "name": "VMS-02 Full-Jet Valve"
+                }
+              ],
+              "detailHref": "/needle-dispensing-valve"
+            },
+            {
+              "contentKey": "shot-dispensing-valves",
+              "title": "Shot Dispensing Valves",
+              "models": [
+                {
+                  "name": "Shot Dispensing Valve"
+                },
+                {
+                  "name": "Shot Valves SHV-01 / SHV-02"
+                }
+              ],
+              "detailHref": "/shot-valves"
+            },
+            {
+              "contentKey": "spray-valves",
+              "title": "Spray Valves",
+              "models": [
+                {
+                  "name": "Spray Valves SPV-01 / 02 / 03 / 04"
+                },
+                {
+                  "name": "Spray Gun SPP-01"
+                },
+                {
+                  "name": "SMS-02 Spray Valve"
+                },
+                {
+                  "name": "SMS-04 Spray Valve"
+                },
+                {
+                  "name": "SMS-11 Spray Valve"
+                },
+                {
+                  "name": "SMS-20 Spray Valve"
+                },
+                {
+                  "name": "SMS-22 Spray Valve"
+                },
+                {
+                  "name": "WSV Universal Spray Valve"
+                }
+              ],
+              "detailHref": "/spray-valves"
+            },
+            {
+              "contentKey": "volumetric-spray-application",
+              "title": "Spray Valve - Volumetric",
+              "models": [
+                {
+                  "name": "WSDV Volume Spray Valve"
+                }
+              ],
+              "detailHref": "/spray-valves"
+            },
+            {
+              "contentKey": "progressive-cavity-spray-application",
+              "title": "Spray Valve - Progressive Cavity",
+              "models": [
+                {
+                  "name": "RotoStream Spray Eccentric Screw Spray Valve"
+                }
+              ],
+              "detailHref": "/spray-valves"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/lubrication/feeding-and-supply",
+      "sections": [
+        {
+          "sectionKey": "drum-and-follower-plate-pump-systems",
+          "heading": "Drum & Follower-Plate Pump Systems",
+          "families": [
+            {
+              "contentKey": "drum-pumps-for-lubricants",
+              "title": "Drum Pumps for Lubricants",
+              "models": [
+                {
+                  "name": "lubriLine Drum Pumps for Lubricants"
+                },
+                {
+                  "name": "AXFP-S-Slight"
+                },
+                {
+                  "name": "AXFP1-S10"
+                },
+                {
+                  "name": "AXFP1-S25"
+                },
+                {
+                  "name": "AXFP1-S60"
+                },
+                {
+                  "name": "AXFP3-S25"
+                },
+                {
+                  "name": "AXFP3-S60"
+                },
+                {
+                  "name": "AXFP4-S25"
+                },
+                {
+                  "name": "AXFP4-S60"
+                },
+                {
+                  "name": "AXFP3-S10"
+                },
+                {
+                  "name": "AXFP4-S10"
+                },
+                {
+                  "name": "AXFP3-M20"
+                },
+                {
+                  "name": "AXFP3-M40"
+                },
+                {
+                  "name": "AXFP4-M20"
+                },
+                {
+                  "name": "AXFP4-M40"
+                },
+                {
+                  "name": "AXFP4-M60"
+                }
+              ],
+              "detailHref": "/drum-pumps-for-lubricants"
+            },
+            {
+              "contentKey": "tandem-drum-pump-systems",
+              "title": "Tandem Drum Pump for Lubricants - Standard",
+              "models": [
+                {
+                  "name": "2xAXFP-S Twin-Drum Pump"
+                },
+                {
+                  "name": "2xAXFP-M Twin-Drum Pump"
+                }
+              ],
+              "detailHref": "/drum-pumps-for-lubricants"
+            },
+            {
+              "contentKey": "follower-plate-drum-pump-systems",
+              "title": "Follower Plate Drum Pump - Manual, 20-60 L",
+              "models": [
+                {
+                  "name": "WPS BASIC Pump System"
+                },
+                {
+                  "name": "WPS ADVANCED Pump System"
+                },
+                {
+                  "name": "WPS ADVANCED Tandem Pump System"
+                },
+                {
+                  "name": "WPS PROFESSIONAL Pump System"
+                },
+                {
+                  "name": "WPS PROFESSIONAL with Homogenization (WPS-P)"
+                }
+              ],
+              "detailHref": "/drum-pumps-for-lubricants"
+            }
+          ]
+        },
+        {
+          "sectionKey": "modular-and-configured-pump-systems",
+          "heading": "Modular & Configured Pump Systems",
+          "families": [
+            {
+              "contentKey": "modular-pump-systems",
+              "title": "Modular Pump Systems",
+              "models": [
+                {
+                  "name": "WGC Media Storage"
+                },
+                {
+                  "name": "WBP Booster Pump"
+                },
+                {
+                  "name": "WVM Distribution Module"
+                },
+                {
+                  "name": "Walther MODULAR Component Kit"
+                }
+              ],
+              "detailHref": "/modular-pump-systems"
+            },
+            {
+              "contentKey": "pump-packages",
+              "title": "Pump Packages",
+              "models": [
+                {
+                  "name": "Pneumatic Supply Lubricating Pumps & Units"
+                },
+                {
+                  "name": "Easy Lub Pump AXEP"
+                }
+              ],
+              "detailHref": "/pump-packages"
+            },
+            {
+              "contentKey": "manual-and-electric-lubrication-equipment",
+              "title": "Manual / Electric Lubricating & Decanting Equipment",
+              "models": [
+                {
+                  "name": "Lubrication & Decanting Equipment"
+                }
+              ],
+              "detailHref": "/abnox"
+            }
+          ]
+        },
+        {
+          "sectionKey": "pressure-class-pump-systems",
+          "heading": "High- & Medium-Pressure Pump Systems",
+          "families": [
+            {
+              "contentKey": "high-pressure-pump-systems",
+              "title": "High Pressure Pumps",
+              "models": [
+                {
+                  "name": "High-Performance Piston Pumps"
+                },
+                {
+                  "name": "AXFP-H"
+                },
+                {
+                  "name": "Heavy WPSH BASIC Pump System"
+                },
+                {
+                  "name": "Heavy WPSH ADVANCED Pump System"
+                }
+              ],
+              "detailHref": "/high-pressure-pumps"
+            },
+            {
+              "contentKey": "clamping-and-high-pressure-technology",
+              "title": "Clamping & High-Pressure Technology",
+              "models": [
+                {
+                  "name": "ABNOX Clamping & High-Pressure Technology"
+                }
+              ],
+              "detailHref": "/abnox"
+            },
+            {
+              "contentKey": "medium-pressure-pump-systems",
+              "title": "Medium Pressure Pumps",
+              "models": [
+                {
+                  "name": "KP Pump (single pump)"
+                }
+              ],
+              "detailHref": "/medium-pressure-pumps"
+            }
+          ]
+        },
+        {
+          "sectionKey": "source-container-and-transfer-architecture",
+          "heading": "Source Container & Transfer Architecture",
+          "families": [
+            {
+              "contentKey": "lubricant-feeding-and-supply-systems",
+              "title": "Lubricant Supply Technology",
+              "models": [
+                {
+                  "name": "ABNOX Lubricant Supply Technology"
+                },
+                {
+                  "name": "Cartridge Pumps / Follower Plate / Low-Pressure Transfer"
+                }
+              ],
+              "detailHref": "/abnox"
+            },
+            {
+              "contentKey": "cartridge-pumps",
+              "title": "Cartridge Pump - Pneumatic",
+              "models": [
+                {
+                  "name": "Cartridge Pump AXCP"
+                },
+                {
+                  "name": "WKSK Cartridge Emptying System"
+                }
+              ],
+              "detailHref": "/abnox"
+            },
+            {
+              "contentKey": "pneumatic-pail-and-small-container-pumps",
+              "title": "Pail / Can Pump -",
+              "models": [
+                {
+                  "name": "Can Pump AXKP"
+                },
+                {
+                  "name": "WKF Small Quantity Conveying System"
+                }
+              ],
+              "detailHref": "/abnox"
+            },
+            {
+              "contentKey": "transfer-pumps",
+              "title": "Transfer Pumps",
+              "models": [
+                {
+                  "name": "Transfer Pump"
+                }
+              ],
+              "detailHref": "/transfer-pump"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/lubrication/flow-regulation",
+      "sections": [
+        {
+          "sectionKey": "degassing-and-air-removal",
+          "heading": "Degassing & Air Removal",
+          "families": [
+            {
+              "contentKey": "degassing-and-air-removal",
+              "title": "Degassing Station",
+              "models": [
+                {
+                  "name": "WADS Advanced Degassing Station"
+                }
+              ]
+            },
+            {
+              "contentKey": "air-bubble-removal-modules",
+              "title": "Air Bubble Removal Module",
+              "models": [
+                {
+                  "name": "ABPS Air Bubble Removal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sectionKey": "filtration-and-material-conditioning",
+          "heading": "Filtration & Material Conditioning",
+          "families": [
+            {
+              "contentKey": "material-filtration-systems",
+              "title": "Material Filter",
+              "models": [
+                {
+                  "name": "WIF Inline Filter"
+                },
+                {
+                  "name": "WFS Filter System"
+                },
+                {
+                  "name": "WFSD Diagnostic Filter System"
+                }
+              ],
+              "detailHref": "/material-filter"
+            }
+          ]
+        },
+        {
+          "sectionKey": "flow-regulation-and-measurement",
+          "heading": "Flow Regulation & Measurement",
+          "families": [
+            {
+              "contentKey": "flow-meters",
+              "title": "Flow Meters",
+              "models": [],
+              "detailHref": "/flow-meters"
+            },
+            {
+              "contentKey": "gear-flow-meters",
+              "title": "Gear Flow Meter",
+              "models": [
+                {
+                  "name": "Gear Flow Meter (GFM)"
+                }
+              ],
+              "detailHref": "/gear-flow-meter"
+            },
+            {
+              "contentKey": "flow-regulating-valves",
+              "title": "Flow Regulating Valve",
+              "models": [
+                {
+                  "name": "WSB Plug-In Orifice (volume flow limiter)"
+                }
+              ],
+              "detailHref": "/flow-regulating-valve"
+            },
+            {
+              "contentKey": "volume-counters",
+              "title": "Volume Counter",
+              "models": [],
+              "detailHref": "/volume-counter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/lubrication/metering",
+      "sections": [
+        {
+          "sectionKey": "dosing-units-and-stations",
+          "heading": "Dosing Units, Stations & Positive Displacement",
+          "families": [
+            {
+              "contentKey": "impulse-dosing-valves",
+              "title": "Impulse Dosing Valve (IDV)",
+              "models": [],
+              "detailHref": "/impulse-dosing-valve-idv"
+            },
+            {
+              "contentKey": "metering-valve-stations",
+              "title": "Metering Station - Manual, 30-500 cm³",
+              "models": [
+                {
+                  "name": "Metering Station - Manual-Operated 4190000"
+                },
+                {
+                  "name": "Metering Station - Air-Operated 4190500"
+                },
+                {
+                  "name": "Metering Valve Station 4196500"
+                },
+                {
+                  "name": "Metering Valve Station 4197000"
+                }
+              ],
+              "detailHref": "/abnox"
+            },
+            {
+              "contentKey": "positive-displacement-metering",
+              "title": "Vecdos eOne (Positive Displacement)",
+              "models": [],
+              "detailHref": "/vecdos-eone"
+            }
+          ]
+        },
+        {
+          "sectionKey": "metering-valve-technologies",
+          "heading": "Metering Valve Technologies",
+          "families": [
+            {
+              "contentKey": "lubrication-metering-technology",
+              "title": "Metering Technology",
+              "models": [
+                {
+                  "name": "ABNOX Metering Technology"
+                }
+              ],
+              "detailHref": "/abnox"
+            },
+            {
+              "contentKey": "cartridge-metering-valves",
+              "title": "Cartridge Metering Valve",
+              "models": [],
+              "detailHref": "/cartridge-metering-valve"
+            },
+            {
+              "contentKey": "chamber-metering-valves",
+              "title": "Chamber Metering Valve",
+              "models": [
+                {
+                  "name": "Chamber Metering Valves"
+                },
+                {
+                  "name": "AXDV-C1"
+                },
+                {
+                  "name": "AXDV-C2"
+                },
+                {
+                  "name": "AXDV-C3"
+                },
+                {
+                  "name": "AXDV-C4"
+                },
+                {
+                  "name": "Metering Valve w/ Support Bracket 41922.00"
+                },
+                {
+                  "name": "Metering Valve w/ Support Bracket 41927.00"
+                },
+                {
+                  "name": "Metering Valve w/ Support Bracket 41957.00"
+                },
+                {
+                  "name": "Metering Valve w/ Support Bracket 41962.00"
+                },
+                {
+                  "name": "Volumetric Metering Valve Range & Stations"
+                },
+                {
+                  "name": "WDV Volume Metering Valve"
+                }
+              ],
+              "detailHref": "/chamber-metering-valve"
+            },
+            {
+              "contentKey": "needle-metering-valves",
+              "title": "Needle Metering Valve",
+              "models": [
+                {
+                  "name": "Micro Needle Metering Valve"
+                },
+                {
+                  "name": "Needle Metering Valve - 450 Series"
+                }
+              ],
+              "detailHref": "/needle-metering-valve"
+            },
+            {
+              "contentKey": "progressive-cavity-valves",
+              "title": "Progressive Cavity Valve",
+              "models": [
+                {
+                  "name": "Progressive Cavity Pumps"
+                },
+                {
+                  "name": "RotoStream Eccentric Screw Metering Valve"
+                }
+              ],
+              "detailHref": "/progressive-cavity-valves"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/lubrication/pressure-control",
+      "sections": [
+        {
+          "sectionKey": "metering-control-integration",
+          "heading": "Metering Control Integration",
+          "families": [
+            {
+              "contentKey": "metering-control-units",
+              "title": "MR40 Metering Control Unit",
+              "models": [],
+              "detailHref": "/mr40-metering-control-unit"
+            }
+          ]
+        },
+        {
+          "sectionKey": "pressure-regulation-technologies",
+          "heading": "Pressure Regulation Technologies",
+          "families": [
+            {
+              "contentKey": "clamping-and-high-pressure-technology",
+              "title": "Clamping & High-Pressure Technology",
+              "models": [
+                {
+                  "name": "ABNOX Clamping & High-Pressure Technology"
+                }
+              ],
+              "detailHref": "/abnox"
+            },
+            {
+              "contentKey": "material-fluid-pressure-regulators",
+              "title": "Material Fluid Pressure Regulator",
+              "models": [
+                {
+                  "name": "Material Pressure Regulator (piston)"
+                },
+                {
+                  "name": "Material Pressure Regulator (diaphragm)"
+                },
+                {
+                  "name": "WMDR Material Pressure Regulator"
+                }
+              ],
+              "detailHref": "/material-fluid-pressure-regulator"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/paint-coatings/protective-coatings",
+      "sections": [
+        {
+          "sectionKey": "two-component-mixing-dosing-units",
+          "heading": "Two-Component Mixing & Dosing Units",
+          "families": [
+            {
+              "contentKey": "protec-two-component-mixing-dosing-unit",
+              "title": "PROTEC 2K Mixing & Dosing Unit",
+              "models": [],
+              "detailHref": "/protec-2k-mixing-dosing-unit"
+            },
+            {
+              "contentKey": "twincontrol-two-component-mixing-dosing-unit",
+              "title": "TWINCONTROL 2K Mixing & Dosing Unit",
+              "models": [],
+              "detailHref": "/protec-2k-mixing-dosing-unit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/paint-coatings/spray-systems",
+      "sections": [
+        {
+          "sectionKey": "automated-spray-system-families",
+          "heading": "Automated Spray System Families",
+          "families": [
+            {
+              "contentKey": "icf-icm-integral-compact-spray-systems",
+              "title": "ICF / ICM Integral Compact Spray Systems",
+              "models": [
+                {
+                  "name": "ICF Integral Compact Filter Spray System"
+                },
+                {
+                  "name": "ICM Integral Compact Multicyclone Spray System"
+                }
+              ],
+              "detailHref": "/icf-integral-compact-filter-spray-system"
+            },
+            {
+              "contentKey": "m-cube-automated-spray-system",
+              "title": "M-Cube Automated Spray System",
+              "models": [
+                {
+                  "name": "M-Cube"
+                },
+                {
+                  "name": "Super Cube"
+                }
+              ],
+              "detailHref": "/m-cube"
+            }
+          ]
+        },
+        {
+          "sectionKey": "manual-spray-system-families",
+          "heading": "Manual Spray System Families",
+          "families": [
+            {
+              "contentKey": "id-spray-wall",
+              "title": "ID Spray Wall",
+              "models": [
+                {
+                  "name": "Spray Wall Basic 8000"
+                }
+              ],
+              "detailHref": "/id-spray-wall"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/polyurethane-processing-equipment",
+      "sections": [
+        {
+          "sectionKey": "foam-recycling-and-reprocessing",
+          "heading": "Foam Recycling & Reprocessing",
+          "families": [
+            {
+              "contentKey": "foam-recycling-and-reprocessing",
+              "title": "PU Foam Recycling & Reprocessing System",
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/polyurethane-processing-equipment/high-pressure-metering",
+      "sections": [
+        {
+          "sectionKey": "high-pressure-metering-families",
+          "heading": "High-Pressure Metering System Families",
+          "families": [
+            {
+              "contentKey": "alfamix-high-pressure-metering",
+              "title": "ALFAMIX Series",
+              "models": [
+                {
+                  "name": "ALFAMIX"
+                }
+              ],
+              "detailHref": "/alfamix"
+            },
+            {
+              "contentKey": "rim-mix-high-pressure-metering",
+              "title": "RIM MIX Series",
+              "models": [
+                {
+                  "name": "RIM MIX"
+                }
+              ],
+              "detailHref": "/rim-mix"
+            },
+            {
+              "contentKey": "ultramix-high-pressure-metering",
+              "title": "ULTRAMIX Series",
+              "models": [
+                {
+                  "name": "ULTRAMIX"
+                },
+                {
+                  "name": "ULTRAMIX 10-S Micro Dosing"
+                },
+                {
+                  "name": "ULTRAMIX P"
+                },
+                {
+                  "name": "ULTRAMIX PLUS"
+                },
+                {
+                  "name": "ULTRAMIX (pentane configuration)"
+                }
+              ],
+              "detailHref": "/ultramix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/polyurethane-processing-equipment/low-pressure-metering",
+      "sections": [
+        {
+          "sectionKey": "low-pressure-metering-families",
+          "heading": "Low-Pressure Metering System Families",
+          "families": [
+            {
+              "contentKey": "i-mix-low-pressure-metering",
+              "title": "I MIX Series",
+              "models": [
+                {
+                  "name": "I MIX"
+                }
+              ],
+              "detailHref": "/i-mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/polyurethane-processing-equipment/pentane-capable-metering-machines",
+      "sections": [
+        {
+          "sectionKey": "pentane-capable-metering-families",
+          "heading": "Pentane-Capable Metering System Families",
+          "families": [
+            {
+              "contentKey": "eco-mix-pentane-capable-metering",
+              "title": "ECO MIX Blending Unit",
+              "models": [],
+              "detailHref": "/eco-mix"
+            },
+            {
+              "contentKey": "ultramix-high-pressure-metering",
+              "title": "ULTRAMIX Series",
+              "models": [
+                {
+                  "name": "ULTRAMIX"
+                },
+                {
+                  "name": "ULTRAMIX 10-S Micro Dosing"
+                },
+                {
+                  "name": "ULTRAMIX P"
+                },
+                {
+                  "name": "ULTRAMIX PLUS"
+                },
+                {
+                  "name": "ULTRAMIX (pentane configuration)"
+                }
+              ],
+              "detailHref": "/ultramix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/polyurethane-processing-equipment/urethane-foam-mixing-guns",
+      "sections": [
+        {
+          "sectionKey": "impingement-mixing-valve-family",
+          "heading": "Impingement Mixing Valve Family",
+          "families": [
+            {
+              "contentKey": "impingement-mixing-valve-family",
+              "title": "High Pressure Impingement Mixing Valve",
+              "models": [
+                {
+                  "name": "Low Pressure Impingement Mixing Valve"
+                }
+              ],
+              "detailHref": "/high-pressure-impingement-mixing-valve"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/process-control/integration-automation",
+      "sections": [
+        {
+          "sectionKey": "automation-cells-and-custom-systems",
+          "heading": "Automation Cells & Custom Systems",
+          "families": [
+            {
+              "contentKey": "one-component-metering-robot-cells",
+              "title": "1K Metering Robot Cells",
+              "models": [
+                {
+                  "name": "1K Metering Production Cells"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sectionKey": "integration-capabilities",
+          "heading": "Integration Capabilities",
+          "families": [
+            {
+              "contentKey": "control-interface-systems",
+              "title": "Control & Interface Systems",
+              "models": []
+            },
+            {
+              "contentKey": "automated-metering-and-dispensing-control",
+              "title": "Automated Metering & Dispensing Control",
+              "models": []
+            },
+            {
+              "contentKey": "sensor-integration-and-feedback-loops",
+              "title": "Sensor Integration & Feedback Loops",
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/process-control/monitoring-analytics",
+      "sections": [
+        {
+          "sectionKey": "flow-and-presence-monitoring",
+          "heading": "Flow & Presence Monitoring",
+          "families": [
+            {
+              "contentKey": "flow-meters",
+              "title": "Flow Meters",
+              "models": [],
+              "detailHref": "/flow-meters"
+            },
+            {
+              "contentKey": "micro-flow-sensors",
+              "title": "Micro-Flow Sensors",
+              "models": [
+                {
+                  "name": "Micro-Flow Sensor"
+                }
+              ],
+              "detailHref": "/micro-flow-sensor"
+            }
+          ]
+        },
+        {
+          "sectionKey": "inspection-and-diagnostic-systems",
+          "heading": "Inspection & Diagnostic Systems",
+          "families": [
+            {
+              "contentKey": "dosing-inspection-systems",
+              "title": "Dosing Inspection Systems",
+              "models": [
+                {
+                  "name": "DIS Dosing Inspection System"
+                }
+              ],
+              "detailHref": "/dosing-inspection-system"
+            }
+          ]
+        },
+        {
+          "sectionKey": "pressure-monitoring-components",
+          "heading": "Pressure Monitoring Components",
+          "families": [
+            {
+              "contentKey": "pressure-sensors",
+              "title": "Pressure Sensors",
+              "models": [
+                {
+                  "name": "PS1 Pressure Sensor"
+                },
+                {
+                  "name": "PS2 Pressure Sensor"
+                },
+                {
+                  "name": "PS4 Pressure Sensor with Display"
+                }
+              ],
+              "detailHref": "/pressure-sensors"
+            }
+          ]
+        },
+        {
+          "sectionKey": "shot-and-discharge-verification",
+          "heading": "Shot & Discharge Verification",
+          "families": [
+            {
+              "contentKey": "light-barriers",
+              "title": "Light Barriers",
+              "models": [
+                {
+                  "name": "Light Barrier"
+                },
+                {
+                  "name": "WLS Light Barrier"
+                }
+              ],
+              "detailHref": "/light-barrier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/equipment-options/process-control/process-control-computer",
+      "sections": [
+        {
+          "sectionKey": "electronic-metering-and-flow-measurement",
+          "heading": "Electronic Metering & Flow Measurement",
+          "families": [
+            {
+              "contentKey": "electronic-metering-control-systems",
+              "title": "Electronic Metering & Control Systems",
+              "models": [
+                {
+                  "name": "Electronic Metering"
+                }
+              ],
+              "detailHref": "/electronic-metering"
+            },
+            {
+              "contentKey": "gear-flow-meters",
+              "title": "Gear Flow Meter",
+              "models": [
+                {
+                  "name": "Gear Flow Meter (GFM)"
+                }
+              ],
+              "detailHref": "/gear-flow-meter"
+            }
+          ]
+        },
+        {
+          "sectionKey": "metering-control-units",
+          "heading": "Metering Control Units",
+          "families": [
+            {
+              "contentKey": "mr40-metering-control-units",
+              "title": "MR40 Metering Control Units",
+              "models": [
+                {
+                  "name": "MR40 Metering Control Unit"
+                }
+              ],
+              "detailHref": "/mr40-metering-control-unit"
+            }
+          ]
+        },
+        {
+          "sectionKey": "stroke-detection-systems",
+          "heading": "Stroke Detection Systems",
+          "families": [
+            {
+              "contentKey": "stroke-detection-systems",
+              "title": "Stroke Detection Systems",
+              "models": [
+                {
+                  "name": "Stroke Detection"
+                },
+                {
+                  "name": "Grease Piston Position Sensor"
+                }
+              ],
+              "detailHref": "/stroke-detection"
+            }
+          ]
+        },
+        {
+          "sectionKey": "valve-and-temperature-control-systems",
+          "heading": "Valve & Temperature Control Systems",
+          "families": [
+            {
+              "contentKey": "valve-controller-systems",
+              "title": "Valve Controller Systems",
+              "models": [
+                {
+                  "name": "WVC Walther Valve Controller"
+                }
+              ]
+            },
+            {
+              "contentKey": "valve-control-units",
+              "title": "Valve Control Units",
+              "models": [
+                {
+                  "name": "WVSE Valve Control Unit"
+                }
+              ]
+            },
+            {
+              "contentKey": "temperature-controller-bundles",
+              "title": "Temperature Controller Bundles",
+              "models": [
+                {
+                  "name": "WTRB Temperature Controller Bundle"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/fill-mix",
+      "sections": [
+        {
+          "sectionKey": "fill-mix-system",
+          "heading": "Fill Mix",
+          "families": [
+            {
+              "contentKey": "fill-mix-system",
+              "title": "FILL MIX",
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/in-field-installation",
+      "sections": [
+        {
+          "sectionKey": "installation-scope",
+          "heading": "Installation Scope",
+          "families": [
+            {
+              "contentKey": "in-field-installation-service",
+              "title": "In-Field Installation",
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/rebuild-repair",
+      "sections": [
+        {
+          "sectionKey": "rebuild-repair-scope",
+          "heading": "Rebuild & Repair Scope",
+          "families": [
+            {
+              "contentKey": "rebuild-repair-service",
+              "title": "Rebuild & Repair",
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/resin-dispensing-molding",
+      "sections": [
+        {
+          "sectionKey": "resin-dispensing-molding-scope",
+          "heading": "Resin Dispensing & Molding Scope",
+          "families": [
+            {
+              "contentKey": "resin-dispensing-molding-service",
+              "title": "Resin Dispensing & Molding",
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "href": "/training-education",
+      "sections": [
+        {
+          "sectionKey": "training-education-scope",
+          "heading": "Training & Education Scope",
+          "families": [
+            {
+              "contentKey": "training-education-service",
+              "title": "Training & Education",
+              "models": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

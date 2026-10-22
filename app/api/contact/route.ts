@@ -94,7 +94,7 @@ export async function POST(request: Request) {
   }
 
   if (formType === 'quote' && !name) {
-    return invalid('Check the name, email, and company.');
+    return invalid('Check the name, company email, and company.');
   }
 
   let payload: Record<string, unknown> = {};
