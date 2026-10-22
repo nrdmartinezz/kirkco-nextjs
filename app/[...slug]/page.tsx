@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { DegassingPage } from '@/components/equipment/DegassingPage';
 import { EquipmentOptionsPage } from '@/components/equipment/EquipmentOptionsPage';
 import { SupportEditorialPage } from '@/components/equipment/SupportEditorialPage';
 import { EquipmentPage } from '@/components/equipment/EquipmentPage';
 import { EquipmentSubcategoryPage } from '@/components/equipment/EquipmentSubcategoryPage';
+import { degassingHref, degassingMeta } from '@/content/equipment/degassing';
 import { equipmentOptionsDescription } from '@/content/equipment/equipment-options';
 import { getEquipmentSubcategoryPage } from '@/lib/equipment-content';
 import { ProductPage } from '@/components/products/ProductPage';
@@ -80,6 +82,17 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
     });
   }
 
+  if (href === degassingHref) {
+    return buildMetadata({
+      title: degassingMeta.title,
+      description: degassingMeta.description,
+      titleExact: true,
+      path: degassingHref,
+      image: degassingMeta.image,
+      imageAlt: degassingMeta.imageAlt,
+    });
+  }
+
   const subcategory = getEquipmentSubcategoryPage(href);
   if (subcategory) {
     return buildMetadata({
@@ -142,6 +155,16 @@ export default async function CatchAllPage({ params, searchParams }: CatchAllPro
   if (href === '/equipment-options') {
     const categories = await getCategories();
     return <EquipmentOptionsPage categories={categories} />;
+  }
+
+  if (href === degassingHref) {
+    const [categories, products] = await Promise.all([getCategories(), getProducts()]);
+    return (
+      <>
+        <RememberEquipmentPage href={degassingHref} />
+        <DegassingPage categories={categories} products={products} />
+      </>
+    );
   }
 
   const subcategory = getEquipmentSubcategoryPage(href);

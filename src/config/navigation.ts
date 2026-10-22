@@ -73,6 +73,7 @@ const lubrication: NavLink[] = [
   { label: 'Flow Regulation', href: '/equipment-options/lubrication/flow-regulation' },
   { label: 'Dispensing', href: '/equipment-options/lubrication/dispensing' },
   { label: 'Feeding and Supply', href: '/equipment-options/lubrication/feeding-and-supply' },
+  { label: 'Degassing', href: '/equipment-options/lubrication/degassing' },
 ];
 
 /** Partner pages live in the Lubrication mega menu, not the shared footer product list. */

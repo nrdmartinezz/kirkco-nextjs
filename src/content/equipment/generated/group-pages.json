@@ -279,6 +279,12 @@
         "description": "Pumps, vessels, and supply packages",
         "href": "/equipment-options/lubrication/feeding-and-supply",
         "categorySlug": "feeding-and-supply"
+      },
+      {
+        "title": "Degassing",
+        "description": "Removes air from grease before it reaches the metering valve",
+        "href": "/equipment-options/lubrication/degassing",
+        "categorySlug": "degassing"
       }
     ],
     "engagementHeading": "Talk to an Engineer",

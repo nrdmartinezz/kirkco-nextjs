@@ -24,6 +24,7 @@ export const productCategories: ProductCategory[] = [
   { slug: 'flow-regulation', name: 'Flow Regulation', href: '/equipment-options/lubrication/flow-regulation', group: 'Lubrication' },
   { slug: 'dispensing', name: 'Dispensing', href: '/equipment-options/lubrication/dispensing', group: 'Lubrication' },
   { slug: 'feeding-and-supply', name: 'Feeding and Supply', href: '/equipment-options/lubrication/feeding-and-supply', group: 'Lubrication' },
+  { slug: 'degassing', name: 'Degassing', href: '/equipment-options/lubrication/degassing', group: 'Lubrication' },
   { slug: 'paint-coatings', name: 'Paint & Coatings', href: '/equipment-options/paint-coatings', group: 'Paint & Coatings' },
   { slug: 'protective-coatings', name: 'Protective Coatings', href: '/equipment-options/paint-coatings/protective-coatings', group: 'Paint & Coatings' },
   { slug: 'spray-systems', name: 'Spray Systems', href: '/equipment-options/paint-coatings/spray-systems', group: 'Paint & Coatings' },

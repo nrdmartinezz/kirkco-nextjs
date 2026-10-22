@@ -23,7 +23,7 @@ export const equipmentFamilies: EquipmentFamily[] = [
     href: '/equipment-options/lubrication',
     lines: [
       'Control: Metering · Pressure Control · Flow Regulation',
-      'Delivery: Dispensing · Feeding & Supply',
+      'Delivery: Dispensing · Feeding & Supply · Degassing',
     ],
   },
   {
@@ -101,6 +101,7 @@ export const materialPlatforms: EquipmentPlatform[] = [
         links: [
           { label: 'Dispensing', href: '/equipment-options/lubrication/dispensing' },
           { label: 'Feeding / Supply', href: '/equipment-options/lubrication/feeding-and-supply' },
+          { label: 'Degassing', href: '/equipment-options/lubrication/degassing' },
         ],
       },
     ],

@@ -149,6 +149,7 @@ export const productBands = [
     cards: [
       { title: 'Flow Dispensing', href: '/equipment-options/lubrication/dispensing' },
       { title: 'Feeding and Supply', href: '/equipment-options/lubrication/feeding-and-supply' },
+      { title: 'Degassing', href: '/equipment-options/lubrication/degassing' },
       { title: 'Flow Regulation', href: '/equipment-options/lubrication/flow-regulation' },
       { title: 'Flow Metering', href: '/equipment-options/lubrication/metering' },
       { title: 'Pressure Control', href: '/equipment-options/lubrication/pressure-control' },
