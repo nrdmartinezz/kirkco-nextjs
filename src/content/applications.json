@@ -1462,5 +1462,66 @@
         ]
       }
     ]
+  },
+  {
+    "id": "equipment-options-process-control",
+    "title": "In-Line Metering Verification",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines a production-ready, NDA-safe framework for engineered dispensing, metering, and encapsulation processes used in advanced manufacturing environments."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Applications addressed by this architecture are driven by repeatability, quality assurance, and risk mitigation."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The process requires controlled material delivery, stable process conditions, and predictable execution."
+        ]
+      },
+      {
+        "heading": "Material & Chemistry Considerations",
+        "paragraphs": [
+          "Material behavior, viscosity stability, and temperature control are critical to process integrity."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The system architecture integrates metering, dispensing, automation, and verification subsystems."
+        ]
+      },
+      {
+        "heading": "Automation & Controls",
+        "paragraphs": [
+          "Automation and controls coordinate motion, dispensing, and validation with traceability support."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "The architecture delivers improved quality consistency, reduced scrap, and scalable production throughput."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Engineering Support",
+        "paragraphs": [
+          "Lifecycle support includes validation, commissioning, and long-term optimization."
+        ]
+      },
+      {
+        "heading": "Confidential Engineering",
+        "paragraphs": [
+          "Manufacturers may engage Kirkco under NDA for confidential process review and system architecture development."
+        ]
+      }
+    ]
   }
 ]

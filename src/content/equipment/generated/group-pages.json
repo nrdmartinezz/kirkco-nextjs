@@ -2,7 +2,7 @@
   "/equipment-options/process-control": {
     "href": "/equipment-options/process-control",
     "title": "Process Control",
-    "description": "Automation & Controls governs the intelligent orchestration of metering, mixing, dispensing, bulk storage, composite processing, coating systems, and material handling platforms. These systems coordinate the core technologies that power mod",
+    "description": "In-line metering verification is Kirkco’s process-control framework for engineered dispensing, metering, and encapsulation: controlled delivery, stable process conditions, and verification with traceability.",
     "breadcrumb": [
       {
         "label": "Home",
@@ -20,11 +20,11 @@
     "heroAlt": "Process Control equipment on a production line",
     "overviewImage": "/images/electronics.jpg",
     "overviewImageAlt": "Process monitoring and control equipment",
-    "overviewHeading": "Process Control Systems for Material Dispensing",
+    "overviewHeading": "In-Line Metering Verification",
     "overview": [
-      "Automation & Controls governs the intelligent orchestration of metering, mixing, dispensing, bulk storage, composite processing, coating systems, and material handling platforms. These systems coordinate the core technologies that power modern industrial production.",
-      "Automation architecture establishes process control over PLC systems, servo motion platforms, human-machine interfaces, industrial data acquisition, safety interlocks, and full production line synchronization.",
-      "As the operational backbone for advanced manufacturing systems, automation ensures stable process execution, repeatability, traceability, and scalable system expansion across complex industrial environments."
+      "This application architecture defines a production-ready framework for engineered dispensing, metering, and encapsulation processes used in advanced manufacturing environments.",
+      "The process requires controlled material delivery, stable process conditions, and predictable execution. Material behavior, viscosity stability, and temperature control are critical to process integrity.",
+      "The system architecture integrates metering, dispensing, automation, and verification subsystems. Automation and controls coordinate motion, dispensing, and validation with traceability support."
     ],
     "systems": [
       {

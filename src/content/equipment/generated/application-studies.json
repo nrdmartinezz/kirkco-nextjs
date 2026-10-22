@@ -1,59 +1,61 @@
 [
   {
     "id": "equipment-options-process-control",
-    "title": "Process Control Application Architecture",
+    "title": "In-Line Metering Verification",
     "nda": false,
     "sections": [
       {
-        "heading": "Engineering Industrial Automation Systems",
-        "paragraphs": [
-          "Industrial automation enables manufacturers to scale production while maintaining strict process control and quality assurance.",
-          "Advanced automation and control systems combine PLC architecture, motion control, data monitoring, and safety governance to create intelligent manufacturing environments capable of supporting complex industrial processes.",
-          "Contact Us To Discuss Process Control! Process Control Computer Monitoring & Analytics Integration & Automation Control & Interface Systems Automated Metering & Dispensing Control Sensor Integration & Feedback Loops Control Architecture Modern industrial automation systems rely on robust control architectures capable of coordinating multiple processing platforms simultaneously.",
-          "Core control frameworks typically include:",
-          "Control architecture must be designed for modular expansion, remote diagnostics, and long-term lifecycle maintainability."
-        ]
-      },
-      {
         "heading": "Executive Overview",
         "paragraphs": [
-          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
+          "This Application Architecture defines a production-ready, NDA-safe framework for engineered dispensing, metering, and encapsulation processes used in advanced manufacturing environments."
         ]
       },
       {
         "heading": "Business & Quality Drivers",
         "paragraphs": [
-          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
+          "Applications addressed by this architecture are driven by repeatability, quality assurance, and risk mitigation."
         ]
       },
       {
         "heading": "Process Requirements",
         "paragraphs": [
-          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
+          "The process requires controlled material delivery, stable process conditions, and predictable execution."
         ]
       },
       {
         "heading": "Material & Chemistry Considerations",
         "paragraphs": [
-          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
+          "Material behavior, viscosity stability, and temperature control are critical to process integrity."
         ]
       },
       {
         "heading": "System Architecture",
         "paragraphs": [
-          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
+          "The system architecture integrates metering, dispensing, automation, and verification subsystems."
         ]
       },
       {
         "heading": "Automation & Controls",
         "paragraphs": [
-          "Automation synchronizes motion control, metering, and validation checkpoints, providing traceability."
+          "Automation and controls coordinate motion, dispensing, and validation with traceability support."
         ]
       },
       {
         "heading": "Performance Outcomes",
         "paragraphs": [
-          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
+          "The architecture delivers improved quality consistency, reduced scrap, and scalable production throughput."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Engineering Support",
+        "paragraphs": [
+          "Lifecycle support includes validation, commissioning, and long-term optimization."
+        ]
+      },
+      {
+        "heading": "Confidential Engineering",
+        "paragraphs": [
+          "Manufacturers may engage Kirkco under NDA for confidential process review and system architecture development."
         ]
       }
     ]
