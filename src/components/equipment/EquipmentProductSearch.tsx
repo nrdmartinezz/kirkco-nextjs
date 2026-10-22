@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { Search } from 'lucide-react';
 import { useState } from 'react';
-import { matchingProducts, type SearchProduct } from '@/lib/search';
+import { matchingProducts, withOrigin, type SearchProduct } from '@/lib/search';
 
 const fieldClass =
   'border-line-base bg-surface-base text-ink-base mt-1 w-full rounded-md border px-3 py-2 pl-9 font-normal';
 
-export function EquipmentProductSearch({ products }: { products: SearchProduct[] }) {
+export function EquipmentProductSearch({ products, from }: { products: SearchProduct[]; from?: string }) {
   const [query, setQuery] = useState('');
   const needle = query.trim();
   const matches = matchingProducts(products, query, ['title', 'tagline']);
@@ -32,7 +32,7 @@ export function EquipmentProductSearch({ products }: { products: SearchProduct[]
         <ul className="mt-3 max-h-80 overflow-y-auto">
           {matches.map((product) => (
             <li key={product.slug} className="border-line-base border-b">
-              <Link href={`/${product.slug}`} className="group block py-3 no-underline">
+              <Link href={withOrigin(`/${product.slug}`, from)} className="group block py-3 no-underline">
                 <span className="text-brand-700 font-semibold group-hover:text-brand-500">{product.title}</span>
                 {product.tagline && <p className="text-ink-muted mt-1 text-sm">{product.tagline}</p>}
               </Link>

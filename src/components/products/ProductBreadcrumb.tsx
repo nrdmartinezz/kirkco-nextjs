@@ -29,11 +29,20 @@ function pathFromReferrer(choices: Choice[]) {
   }
 }
 
-export function ProductBreadcrumb({ trails, choices }: { trails: BreadcrumbCrumb[][]; choices: Choice[] }) {
+export function ProductBreadcrumb({
+  trails,
+  choices,
+  locked = false,
+}: {
+  trails: BreadcrumbCrumb[][];
+  choices: Choice[];
+  locked?: boolean;
+}) {
   const [index, setIndex] = useState(0);
   const trail = trails[index] ?? trails[0] ?? [];
 
   useLayoutEffect(() => {
+    if (locked) return;
     const fromReferrer = pathFromReferrer(choices);
     const saved = sessionStorage.getItem(EQUIPMENT_PATH_KEY);
     const fromSaved = saved ? matchingChoice(saved, choices) : -1;
@@ -41,7 +50,7 @@ export function ProductBreadcrumb({ trails, choices }: { trails: BreadcrumbCrumb
     setIndex(next);
     const href = choices[next]?.href;
     if (href) sessionStorage.setItem(EQUIPMENT_PATH_KEY, href);
-  }, [choices]);
+  }, [choices, locked]);
 
   if (trail.length === 0) return null;
 

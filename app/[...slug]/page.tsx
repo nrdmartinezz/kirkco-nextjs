@@ -11,7 +11,7 @@ import { SimplePage } from '@/components/ui/SimplePage';
 import { IndustryPage } from '@/components/industries/IndustryPage';
 import { getIndustryPage } from '@/content/industries';
 import { getApplications } from '@/lib/applications';
-import { getEquipmentPage } from '@/lib/equipment';
+import { equipmentOriginTrail, getEquipmentPage } from '@/lib/equipment';
 import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
 import { site } from '@/config/site';
 import { buildMetadata } from '@/lib/seo';
@@ -21,7 +21,7 @@ export const revalidate = 60;
 
 type CatchAllProps = {
   params: Promise<{ slug: string[] }>;
-  searchParams: Promise<{ variant?: string | string[] }>;
+  searchParams: Promise<{ variant?: string | string[]; from?: string | string[] }>;
 };
 
 function firstParam(value: string | string[] | undefined) {
@@ -103,9 +103,20 @@ export default async function CatchAllPage({ params, searchParams }: CatchAllPro
   const { slug } = await params;
   const product = slug.length === 1 ? await getProduct(slug[0]) : undefined;
   if (product) {
+    const query = await searchParams;
     const categories = await getCategories();
-    const variant = selectedVariant(product, firstParam((await searchParams).variant));
-    return <ProductPage product={product} categories={categories} variant={variant} />;
+    const variant = selectedVariant(product, firstParam(query.variant));
+    const from = firstParam(query.from);
+    const originCrumbs = from ? await equipmentOriginTrail(from) : undefined;
+    return (
+      <ProductPage
+        product={product}
+        categories={categories}
+        variant={variant}
+        originHref={originCrumbs ? from : undefined}
+        originCrumbs={originCrumbs}
+      />
+    );
   }
 
   const href = `/${slug.join('/')}`;

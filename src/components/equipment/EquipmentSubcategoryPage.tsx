@@ -13,7 +13,7 @@ import { site } from '@/config/site';
 import type { ApplicationStudy } from '@/lib/applications';
 import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
 import { variantPath, type Product, type ProductCategory, type ProductVariant } from '@/lib/products';
-import { toSearchProducts } from '@/lib/search';
+import { toSearchProducts, withOrigin } from '@/lib/search';
 import { ChevronRight } from 'lucide-react';
 
 const helpLinks = [
@@ -112,8 +112,16 @@ function listingCards(names: string[], products: Product[]) {
 const productListingCardClass =
   'flex h-full flex-col overflow-hidden rounded-2xl border border-[#e4f0ff] bg-white shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
 
-function EquipmentProductCard({ product, variant }: { product: Product; variant?: ProductVariant }) {
-  const href = variant ? variantPath(product, variant) : `/${product.slug}`;
+function EquipmentProductCard({
+  product,
+  variant,
+  from,
+}: {
+  product: Product;
+  variant?: ProductVariant;
+  from: string;
+}) {
+  const href = withOrigin(variant ? variantPath(product, variant) : `/${product.slug}`, from);
   const title = variant?.title ?? product.title;
   const image = variant?.image ?? product.image;
   const blurb = variant?.tagline ?? variant?.summary ?? product.tagline ?? product.summary;
@@ -261,7 +269,12 @@ export function EquipmentSubcategoryPage({
                         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
                           {group.items.map((item) =>
                             item.product ? (
-                              <EquipmentProductCard key={item.key} product={item.product} variant={item.variant} />
+                              <EquipmentProductCard
+                                key={item.key}
+                                product={item.product}
+                                variant={item.variant}
+                                from={page.href}
+                              />
                             ) : (
                               <EquipmentProductNameStub key={item.key} name={item.name} />
                             ),
@@ -280,7 +293,7 @@ export function EquipmentSubcategoryPage({
                   </Heading>
                   <ul className="mt-6 grid gap-4 sm:grid-cols-2">
                     {extras.map((product) => (
-                      <EquipmentProductCard key={product.slug} product={product} />
+                      <EquipmentProductCard key={product.slug} product={product} from={page.href} />
                     ))}
                   </ul>
                 </div>
@@ -331,7 +344,7 @@ export function EquipmentSubcategoryPage({
             </div>
 
             <aside className="border-neutral-200 w-full shrink-0 rounded-lg border p-5 lg:sticky lg:top-28 lg:w-72">
-              <EquipmentProductSearch products={searchProducts} />
+              <EquipmentProductSearch products={searchProducts} from={page.href} />
               <Heading level={2} size="sm">
                 Main Categories
               </Heading>

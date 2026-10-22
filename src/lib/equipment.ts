@@ -1,6 +1,8 @@
 import { cache } from 'react';
 import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealants';
-import { getLocalEquipmentPage } from '@/lib/equipment-content';
+import { subcategoryBreadcrumb } from '@/content/equipment/types';
+import { getEquipmentSubcategoryPage, getLocalEquipmentPage } from '@/lib/equipment-content';
+import type { BreadcrumbCrumb } from '@/lib/products';
 import { supabaseAnon } from '@/lib/supabase';
 
 type EquipmentRow = {
@@ -45,6 +47,23 @@ function toPage(row: EquipmentRow): EquipmentPageContent {
     applicationIds: row.application_ids,
     closing: row.closing,
   };
+}
+
+function toCrumbs(links: { label: string; href?: string }[], pageHref: string): BreadcrumbCrumb[] {
+  return links.map((link, index) => ({
+    name: link.label,
+    href: link.href ?? (index === links.length - 1 ? pageHref : undefined),
+  }));
+}
+
+/** Crumbs for a known equipment or subcategory page. Unknown hrefs are ignored. */
+export async function equipmentOriginTrail(href: string): Promise<BreadcrumbCrumb[] | undefined> {
+  const subcategory = getEquipmentSubcategoryPage(href);
+  if (subcategory) return toCrumbs(subcategoryBreadcrumb(subcategory), subcategory.href);
+
+  const equipment = await getEquipmentPage(href);
+  if (!equipment) return undefined;
+  return toCrumbs(equipment.breadcrumb, equipment.href);
 }
 
 export const getEquipmentPage = cache(async (href: string) => {

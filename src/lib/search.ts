@@ -13,6 +13,16 @@ export type SearchEquipment = {
   group: string;
 };
 
+/** Keep a product link on the equipment page the visitor came from. */
+export function withOrigin(path: string, from?: string) {
+  if (!from?.startsWith('/') || from.startsWith('//')) return path;
+  const [pathname, search = ''] = path.split('?');
+  const params = new URLSearchParams(search);
+  params.set('from', from);
+  const query = params.toString();
+  return query ? `${pathname}?${query}` : pathname;
+}
+
 export function toSearchProducts(products: Product[]): SearchProduct[] {
   return products.map((product) => ({
     slug: product.slug,

@@ -16,6 +16,7 @@ import {
   type ProductCategory,
   type ProductVariant,
 } from '@/lib/products';
+import { withOrigin } from '@/lib/search';
 
 function BreadcrumbList({ crumbs, productHref }: { crumbs: BreadcrumbCrumb[]; productHref: string }) {
   const jsonLd = {
@@ -36,10 +37,14 @@ export function ProductPage({
   product,
   categories,
   variant,
+  originHref,
+  originCrumbs,
 }: {
   product: Product;
   categories: ProductCategory[];
   variant: ProductVariant;
+  originHref?: string;
+  originCrumbs?: BreadcrumbCrumb[];
 }) {
   const productCategories = categoriesFor(product, categories);
   const variants = productVariants(product);
@@ -53,12 +58,15 @@ export function ProductPage({
     const groupHref = group?.find((crumb) => crumb.href && crumb.href !== category.href && crumb.href !== '/')?.href ?? category.href;
     return { href: category.href, groupHref };
   });
+  const followedTrail = originCrumbs?.length ? [...originCrumbs, { name: variant.title }] : undefined;
+  const variantHref = (option: ProductVariant) =>
+    originHref ? withOrigin(variantPath(product, option), originHref) : variantPath(product, option);
 
   return (
     <Section spacing="none" className="pt-6 pb-section md:pt-8">
       <BreadcrumbList crumbs={trails[0] ?? []} productHref={variantPath(product, variant)} />
       <Container gap="lg">
-        <ProductBreadcrumb trails={trails} choices={choices} />
+        <ProductBreadcrumb trails={followedTrail ? [followedTrail] : trails} choices={choices} locked={Boolean(followedTrail)} />
         <div className="flex w-full flex-col items-start gap-8 md:flex-row md:gap-12">
           {hero && (
             <div className="bg-neutral-50 relative aspect-square w-full shrink-0 overflow-hidden rounded-lg md:w-[46%]">
@@ -87,7 +95,7 @@ export function ProductPage({
                     return (
                       <li key={option.slug}>
                         <Link
-                          href={variantPath(product, option)}
+                          href={variantHref(option)}
                           aria-current={selected ? 'page' : undefined}
                           className={
                             selected

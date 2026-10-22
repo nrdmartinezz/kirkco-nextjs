@@ -347,7 +347,7 @@ export async function EquipmentPage({
           </div>
 
           <aside className="border-neutral-200 w-full shrink-0 rounded-lg border p-5 lg:sticky lg:top-28 lg:w-72">
-            <EquipmentProductSearch products={searchProducts} />
+            <EquipmentProductSearch products={searchProducts} from={page.href} />
             <Heading level={2} size="sm">
               Main Categories
             </Heading>
