@@ -66,7 +66,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!site.formEndpoint || lines.length === 0) return;
+    if (!site.formEndpoint) return;
 
     const data = new FormData(event.currentTarget);
     const address = parseRequiredUsAddress({ street, city, state, zip });
@@ -337,12 +337,9 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
                 {error}
               </p>
             )}
-            <Button type="submit" disabled={pending || lines.length === 0} className="w-fit rounded-full">
+            <Button type="submit" disabled={pending} className="w-fit rounded-full">
               {pending ? 'Sending…' : 'Send'}
             </Button>
-            {lines.length === 0 && (
-              <p className="text-ink-muted text-sm">Add at least one product before sending.</p>
-            )}
           </form>
         ) : (
           <p className="text-ink-muted mt-4">The quote form is not available right now.</p>

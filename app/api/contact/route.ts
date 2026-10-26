@@ -44,7 +44,7 @@ async function quotePayload(record: Record<string, unknown>) {
       ? (record.payload as { lines?: unknown }).lines
       : undefined,
   );
-  if (!submitted) return { ok: false as const, message: 'Add at least one product to your quote.' };
+  if (!submitted) return { ok: false as const, message: 'Check the products on your quote.' };
 
   const company = parseQuoteCompany(
     record.payload && typeof record.payload === 'object' && 'company' in record.payload

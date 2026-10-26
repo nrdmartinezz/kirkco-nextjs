@@ -183,7 +183,7 @@ function QuotePanel() {
   const [zip, setZip] = useState('');
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!site.formEndpoint || lines.length === 0) return;
+    if (!site.formEndpoint) return;
 
     const data = new FormData(event.currentTarget);
     const address = parseRequiredUsAddress({ street, city, state, zip });
@@ -241,8 +241,8 @@ function QuotePanel() {
     <div className="flex flex-col gap-4">
       {lines.length === 0 ? (
         <p className="text-ink-muted rounded-2xl border border-dashed border-brand-200 bg-brand-50 p-4 text-sm leading-relaxed">
-          Add at least one product from an <TextLink href="/equipment-options">equipment page</TextLink>, or{' '}
-          <TextLink href="/quote">search the quote list</TextLink>, before sending.
+          No products yet. Add one from an <TextLink href="/equipment-options">equipment page</TextLink>, or{' '}
+          <TextLink href="/quote">search the quote list</TextLink>.
         </p>
       ) : (
         <ul className="flex flex-col gap-3">
@@ -389,10 +389,9 @@ function QuotePanel() {
             {error}
           </p>
         )}
-        <Button type="submit" disabled={pending || lines.length === 0} className="w-fit rounded-full">
+        <Button type="submit" disabled={pending} className="w-fit rounded-full">
           {pending ? 'Sending…' : 'Send'}
         </Button>
-        {lines.length === 0 && <p className="text-ink-muted text-sm">Add at least one product before sending.</p>}
       </form>
     </div>
   );

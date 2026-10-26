@@ -64,7 +64,8 @@ export function parseQuoteLines(value: unknown): QuoteLine[] {
 export function parseSubmittedQuoteLines(
   value: unknown,
 ): Array<{ slug: string; qty: number; notes?: string }> | null {
-  if (!Array.isArray(value) || value.length === 0 || value.length > QUOTE_MAX_LINES) return null;
+  if (!Array.isArray(value) || value.length > QUOTE_MAX_LINES) return null;
+  if (value.length === 0) return [];
 
   const lines: Array<{ slug: string; qty: number; notes?: string }> = [];
   const seen = new Set<string>();
