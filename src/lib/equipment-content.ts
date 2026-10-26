@@ -2,6 +2,9 @@ import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealant
 import { adhesivesSealants } from '@/content/equipment/adhesives-sealants';
 import groupPagesJson from '@/content/equipment/generated/group-pages.json';
 import subcategoryPagesJson from '@/content/equipment/generated/subcategory-pages.json';
+import { integrationAutomation } from '@/content/equipment/integration-automation';
+import { pultrusion } from '@/content/equipment/pultrusion';
+import { specialtyFinishes } from '@/content/equipment/specialty-finishes';
 import { singleComponent } from '@/content/equipment/single-component';
 import type { EquipmentSubcategoryContent } from '@/content/equipment/types';
 
@@ -17,6 +20,9 @@ const subcategoryPages: Record<string, EquipmentSubcategoryContent> = {
     breadcrumbLeaf: 'Single Component',
     categorySlug: 'single-component',
   },
+  [pultrusion.href]: pultrusion,
+  [specialtyFinishes.href]: specialtyFinishes,
+  [integrationAutomation.href]: integrationAutomation,
 };
 
 export function getLocalEquipmentPage(href: string): EquipmentPageContent | undefined {

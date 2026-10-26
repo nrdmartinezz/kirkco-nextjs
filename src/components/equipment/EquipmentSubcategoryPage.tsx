@@ -31,6 +31,13 @@ const helpLinks = [
 
 const cardClass = 'rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
 
+function blockId(heading: string) {
+  return heading
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 export function EquipmentSubcategoryPage({
   page,
   categories,
@@ -45,6 +52,12 @@ export function EquipmentSubcategoryPage({
   const hero = heroForParent(page.parentHref);
   const editorial = getPublicSections(page.href);
   const firstSection = editorial ? visibleEditorialSections(editorial, products, page.groups)[0] : undefined;
+  const firstBlock = page.contentBlocks?.[0];
+  const exploreHref = firstSection
+    ? `#${firstSection.sectionKey}`
+    : firstBlock
+      ? `#${blockId(firstBlock.heading)}`
+      : '#system-options';
   const breadcrumb = subcategoryBreadcrumb(page);
   const categorySlug = page.categorySlug ?? '';
   const searchProducts = toSearchProducts(products);
@@ -97,10 +110,10 @@ export function EquipmentSubcategoryPage({
                 Talk to an Engineer
               </Button>
               <Link
-                href={firstSection ? `#${firstSection.sectionKey}` : '#system-options'}
+                href={exploreHref}
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-white px-6 font-medium text-white no-underline hover:bg-white/10"
               >
-                Explore Systems
+                {firstBlock && !firstSection ? 'Learn the Process' : 'Explore Systems'}
               </Link>
             </div>
           </div>
@@ -115,8 +128,82 @@ export function EquipmentSubcategoryPage({
                   <span aria-hidden className="bg-brand-700 h-px w-5" />
                   Overview
                 </p>
-                <p className="text-ink-muted mt-4 leading-7">{page.overview}</p>
+                {page.overviewHeading && (
+                  <Heading level={2} size="md" className="mt-3">
+                    {page.overviewHeading}
+                  </Heading>
+                )}
+                <div className="mt-4 flex flex-col gap-6 lg:flex-row lg:items-start">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-col gap-4">
+                      {(page.overviewParagraphs?.length ? page.overviewParagraphs : [page.overview]).map((paragraph) => (
+                        <p key={paragraph.slice(0, 48)} className="text-ink-muted leading-7">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                    {page.cta && (
+                      <Button href={page.cta.href} className="mt-6 h-auto min-h-12 rounded-full py-3 text-center whitespace-normal">
+                        {page.cta.label}
+                      </Button>
+                    )}
+                  </div>
+                  {page.overviewImage && (
+                    <Image
+                      src={page.overviewImage}
+                      alt={page.overviewImageAlt ?? ''}
+                      width={page.overviewImageWidth ?? 1024}
+                      height={page.overviewImageHeight ?? 683}
+                      className="h-auto w-full rounded-[10px] object-cover lg:w-[min(46%,360px)] lg:shrink-0"
+                    />
+                  )}
+                </div>
               </div>
+
+              {page.contentBlocks && page.contentBlocks.length > 0 && (
+                <div className="mt-6 flex flex-col gap-4">
+                  {page.contentBlocks.map((block) => (
+                    <section key={block.heading} id={blockId(block.heading)} className={`${cardClass} scroll-mt-28`}>
+                      <Heading level={2} size="md">
+                        {block.heading}
+                      </Heading>
+                      {block.subheading && (
+                        <Heading level={3} size="sm" className="mt-2">
+                          {block.subheading}
+                        </Heading>
+                      )}
+                      {block.intro && <p className="text-ink-muted mt-3 leading-relaxed">{block.intro}</p>}
+                      {block.items && block.items.length > 0 && (
+                        <ul className="mt-4 flex flex-col gap-3">
+                          {block.items.map((item) => (
+                            <li key={item.title} className="text-ink-muted flex items-start gap-2 leading-relaxed">
+                              <span aria-hidden className="bg-brand-500 mt-2 size-2 shrink-0 rounded-full" />
+                              <span>
+                                <strong className="text-brand-700">{item.title}:</strong> {item.body}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {block.closing && <p className="text-ink-muted mt-4 leading-relaxed">{block.closing}</p>}
+                      {block.image && (
+                        <Image
+                          src={block.image}
+                          alt={block.imageAlt ?? ''}
+                          width={500}
+                          height={400}
+                          className="mt-6 h-auto w-full rounded-[10px] object-cover"
+                        />
+                      )}
+                      {block.cta && (
+                        <Button href={block.cta.href} className="mt-6 h-auto min-h-12 rounded-full py-3 text-center whitespace-normal">
+                          {block.cta.label}
+                        </Button>
+                      )}
+                    </section>
+                  ))}
+                </div>
+              )}
 
               {editorial && <EditorialSections page={editorial} products={products} groups={page.groups} from={page.href} />}
 
@@ -163,17 +250,31 @@ export function EquipmentSubcategoryPage({
               )}
 
               <div className="mt-12 rounded-[10px] bg-[#0d2244] p-6 md:p-8">
-                <p className="text-brand-500 text-sm font-semibold tracking-wide uppercase">Engineering Engagement</p>
-                <Heading level={2} size="lg" className="mt-2 text-white">
-                  Talk to an Engineer
-                </Heading>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <Button href="/quote" className="rounded-full">
-                    Request a quote
-                  </Button>
-                  <Button href={`tel:${site.business.phoneHref}`} variant="inverse" className="rounded-full">
-                    Call us Today!
-                  </Button>
+                <div className={page.engagementImage ? 'flex flex-col gap-6 lg:flex-row lg:items-center' : undefined}>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-brand-500 text-sm font-semibold tracking-wide uppercase">Engineering Engagement</p>
+                    <Heading level={2} size="lg" className="mt-2 text-white">
+                      {page.engagementHeading ?? 'Talk to an Engineer'}
+                    </Heading>
+                    {page.engagementBody && <p className="mt-4 leading-relaxed text-[#96a9c1]">{page.engagementBody}</p>}
+                    <div className="mt-6 flex flex-wrap gap-3">
+                      <Button href="/quote" className="rounded-full">
+                        Request a quote
+                      </Button>
+                      <Button href={`tel:${site.business.phoneHref}`} variant="inverse" className="rounded-full">
+                        Call us Today!
+                      </Button>
+                    </div>
+                  </div>
+                  {page.engagementImage && (
+                    <Image
+                      src={page.engagementImage}
+                      alt={page.engagementImageAlt ?? ''}
+                      width={500}
+                      height={400}
+                      className="h-auto w-full rounded-[10px] object-cover lg:w-[min(46%,280px)] lg:shrink-0"
+                    />
+                  )}
                 </div>
               </div>
 
