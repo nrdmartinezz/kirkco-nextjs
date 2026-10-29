@@ -5,6 +5,7 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealants';
+import { heroForEquipmentPage } from '@/content/equipment/heroes';
 import { getPublicSections } from '@/content/pillar/sections';
 import { site } from '@/config/site';
 import { ApplicationStudyArticles } from '@/components/equipment/ApplicationStudyArticles';
@@ -39,6 +40,7 @@ export async function EquipmentPage({
   categories: ProductCategory[];
   studies: ApplicationStudy[];
 }) {
+  const hero = heroForEquipmentPage(page.href, { heroImage: page.heroImage, heroAlt: page.heroAlt });
   const searchProducts = toSearchProducts(await getProducts());
   const editorial = getPublicSections(page.href);
   const mainCategories = categories.filter((category) => category.name === category.group);
@@ -46,7 +48,7 @@ export async function EquipmentPage({
   return (
     <>
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
-        <Image src={page.heroImage} alt={page.heroAlt} fill priority className="object-cover" sizes="100vw" />
+        <Image src={hero.heroImage} alt={hero.heroAlt} fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-brand-700/35" />
         <Container className="relative flex min-h-[400px] justify-center py-8">
           <div className="w-full max-w-3xl rounded-2xl bg-[rgba(19,89,187,0.28)] p-6 backdrop-blur-md md:p-9">

@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
-import { heroForParent } from '@/content/equipment/parent-groups';
+import { heroForEquipmentPage } from '@/content/equipment/heroes';
 import { getPublicSections } from '@/content/pillar/sections';
 import type { EquipmentSubcategoryContent } from '@/content/equipment/types';
 import { subcategoryBreadcrumb } from '@/content/equipment/types';
@@ -49,7 +49,7 @@ export function EquipmentSubcategoryPage({
   products: Product[];
   studies: ApplicationStudy[];
 }) {
-  const hero = heroForParent(page.parentHref);
+  const hero = heroForEquipmentPage(page.href);
   const editorial = getPublicSections(page.href);
   const firstSection = editorial ? visibleEditorialSections(editorial, products, page.groups)[0] : undefined;
   const firstBlock = page.contentBlocks?.[0];

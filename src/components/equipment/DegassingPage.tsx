@@ -24,7 +24,7 @@ import {
   degassingStages,
   degassingStats,
 } from '@/content/equipment/degassing';
-import { heroForParent } from '@/content/equipment/parent-groups';
+import { heroForEquipmentPage } from '@/content/equipment/heroes';
 import type { Product, ProductCategory } from '@/lib/products';
 import { toSearchProducts } from '@/lib/search';
 import { ChevronRight } from 'lucide-react';
@@ -61,7 +61,7 @@ export function DegassingPage({
   categories: ProductCategory[];
   products: Product[];
 }) {
-  const hero = heroForParent('/equipment-options/lubrication');
+  const hero = heroForEquipmentPage(degassingHref);
   const searchProducts = toSearchProducts(products);
   const mainCategories = categories.filter((category) => category.name === category.group);
 
