@@ -6,6 +6,7 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import type { EquipmentPageContent } from '@/content/equipment/adhesives-sealants';
 import { heroForEquipmentPage } from '@/content/equipment/heroes';
+import { overviewImageForEquipmentPage } from '@/content/equipment/overview-images';
 import { getPublicSections } from '@/content/pillar/sections';
 import { site } from '@/config/site';
 import { ApplicationStudyArticles } from '@/components/equipment/ApplicationStudyArticles';
@@ -41,6 +42,7 @@ export async function EquipmentPage({
   studies: ApplicationStudy[];
 }) {
   const hero = heroForEquipmentPage(page.href, { heroImage: page.heroImage, heroAlt: page.heroAlt });
+  const overviewImage = overviewImageForEquipmentPage(page.href);
   const searchProducts = toSearchProducts(await getProducts());
   const editorial = getPublicSections(page.href);
   const mainCategories = categories.filter((category) => category.name === category.group);
@@ -95,13 +97,15 @@ export async function EquipmentPage({
           <div className="flex flex-col gap-10 lg:flex-row lg:items-start">
             <div className="min-w-0 flex-1">
               <div className="flow-root rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]">
-                <Image
-                  src={page.overviewImage}
-                  alt={page.overviewImageAlt}
-                  width={300}
-                  height={375}
-                  className="mb-4 h-auto w-full max-w-[300px] rounded-[10px] object-cover md:float-left md:mt-1 md:mr-6 md:mb-3"
-                />
+                {overviewImage && (
+                  <Image
+                    src={overviewImage.src}
+                    alt={overviewImage.alt}
+                    width={overviewImage.width ?? 300}
+                    height={overviewImage.height ?? 375}
+                    className="mb-4 h-auto w-full max-w-[300px] rounded-[10px] object-cover md:float-left md:mt-1 md:mr-6 md:mb-3"
+                  />
+                )}
                 <p className="text-brand-700 flex items-center gap-2 text-[11px] font-semibold tracking-wide uppercase">
                   <span aria-hidden className="bg-brand-700 h-px w-5" />
                   Overview

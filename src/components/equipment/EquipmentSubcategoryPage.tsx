@@ -12,6 +12,7 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import { heroForEquipmentPage } from '@/content/equipment/heroes';
+import { overviewImageForEquipmentPage } from '@/content/equipment/overview-images';
 import { getPublicSections } from '@/content/pillar/sections';
 import type { EquipmentSubcategoryContent } from '@/content/equipment/types';
 import { subcategoryBreadcrumb } from '@/content/equipment/types';
@@ -50,6 +51,7 @@ export function EquipmentSubcategoryPage({
   studies: ApplicationStudy[];
 }) {
   const hero = heroForEquipmentPage(page.href);
+  const overviewImage = overviewImageForEquipmentPage(page.href);
   const editorial = getPublicSections(page.href);
   const firstSection = editorial ? visibleEditorialSections(editorial, products, page.groups)[0] : undefined;
   const firstBlock = page.contentBlocks?.[0];
@@ -148,12 +150,12 @@ export function EquipmentSubcategoryPage({
                       </Button>
                     )}
                   </div>
-                  {page.overviewImage && (
+                  {overviewImage && (
                     <Image
-                      src={page.overviewImage}
-                      alt={page.overviewImageAlt ?? ''}
-                      width={page.overviewImageWidth ?? 1024}
-                      height={page.overviewImageHeight ?? 683}
+                      src={overviewImage.src}
+                      alt={overviewImage.alt}
+                      width={overviewImage.width ?? 1024}
+                      height={overviewImage.height ?? 683}
                       className="h-auto w-full rounded-[10px] object-cover lg:w-[min(46%,360px)] lg:shrink-0"
                     />
                   )}
