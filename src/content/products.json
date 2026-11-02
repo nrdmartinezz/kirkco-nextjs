@@ -318,6 +318,18 @@
         "paragraphs": [
           "This architecture directly interfaces with IMC and gelcoat supply systems, filament winding resin delivery, RTM/infusion processes, polyurethane foam metering units, and continuous panel production lines."
         ]
+      },
+      {
+        "heading": "Quality & Validation",
+        "paragraphs": [
+          "Validation confirms temperature stability, flow consistency, contamination control, alarm response, and system uptime under full production conditions."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Expansion",
+        "paragraphs": [
+          "The system supports future expansion through additional tanks, pumps, and production interfaces without disruption to active operations."
+        ]
       }
     ],
     "image": {

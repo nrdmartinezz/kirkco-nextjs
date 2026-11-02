@@ -197,9 +197,7 @@
         ]
       }
     ],
-    "applicationIds": [
-      "equipment-options-polyurethane-processing-equipment-urethane-foam-mixing-guns-architecture"
-    ]
+    "applicationIds": []
   },
   "/equipment-options/polyurethane-processing-equipment/low-pressure-metering": {
     "href": "/equipment-options/polyurethane-processing-equipment/low-pressure-metering",
@@ -245,7 +243,7 @@
       }
     ],
     "applicationIds": [
-      "equipment-options-polyurethane-processing-equipment-high-pressure-metering-architecture"
+      "high-pressure-pu-metering"
     ]
   },
   "/equipment-options/lubrication/flow-regulation": {
@@ -655,9 +653,7 @@
         ]
       }
     ],
-    "applicationIds": [
-      "equipment-options-adhesives-sealants-single-component-pumps-and-packages-architecture"
-    ]
+    "applicationIds": []
   },
   "/equipment-options/adhesives-sealants/single-component/metering-valves": {
     "href": "/equipment-options/adhesives-sealants/single-component/metering-valves",
@@ -705,7 +701,8 @@
       }
     ],
     "applicationIds": [
-      "industrial-adhesive-dispensing"
+      "industrial-adhesive-dispensing",
+      "led-silicone-sealing"
     ]
   },
   "/equipment-options/adhesives-sealants/two-component/shot-metering": {
@@ -817,7 +814,7 @@
       }
     ],
     "applicationIds": [
-      "equipment-options-adhesives-sealants-smc-imc-molding-architecture"
+      "imc-coatec-system"
     ]
   },
   "/equipment-options/adhesives-sealants/tooling-paste-seamless-modeling-paste": {
@@ -906,7 +903,17 @@
       "pu-adhesive-bonding-cell",
       "water-tank-epoxy-bonding",
       "gear-pump-high-viscosity-metering",
-      "elevator-panel-pu-bonding"
+      "elevator-panel-pu-bonding",
+      "automated-direct-glazing",
+      "automated-bonding-fipg",
+      "automated-2k-filter-encapsulation",
+      "industrial-electronics-epoxy-encapsulation",
+      "led-driver-epoxy-potting",
+      "industrial-sensor-epoxy-encapsulation",
+      "automotive-electronics-pu-encapsulation",
+      "precision-epoxy-electromechanical-encapsulation",
+      "connector-epoxy-encapsulation",
+      "transformer-potting-under-vacuum"
     ]
   },
   "/equipment-options/adhesives-sealants/putty-paste": {
