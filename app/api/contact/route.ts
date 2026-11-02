@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { site } from '@/config/site';
-import { clientIp, notifyLead } from '@/lib/lead-mail';
+import { clientIp, notifyLead, requestOrigin, requestPageUrl } from '@/lib/lead-mail';
 import { findQuotedProduct, getProducts } from '@/lib/products';
 import { parseQuoteCompany, parseSubmittedQuoteLines } from '@/lib/quote';
 import { supabaseAdmin } from '@/lib/supabase';
@@ -147,6 +147,8 @@ export async function POST(request: Request) {
     message,
     payload,
     ip: clientIp(request),
+    origin: requestOrigin(request),
+    pageUrl: requestPageUrl(request),
   });
 
   return NextResponse.json({ ok: true });

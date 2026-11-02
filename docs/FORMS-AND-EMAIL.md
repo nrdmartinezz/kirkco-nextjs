@@ -104,15 +104,16 @@ not, with a short message safe to show in the form.
 
 ## Per-form settings
 
-Each form sends `form_type`. Start with `contact` only. A second form (quote,
-careers) is another branch in the handler: its own subject line, its own
-notification template, and `sendAutoreply` defaulting to **false** until someone
-asks for it.
+Each form sends `form_type`. Contact and quote share the Kirkco card. A new
+form is another subject line in the handler.
 
-Notification mail includes name, email, phone, message, form label, timestamp,
-and submitter IP. Quote mail also includes company, address, and line items.
-Reply-To is the submitter. Autoreply stays off. Use inline CSS — email clients
-strip `<style>` blocks inconsistently. Do not log message bodies.
+Staff mail uses one card for every form: hero, logo, client fields, and the
+navy footer. Quote mail also includes company, address, and line items.
+Reply-To on the staff message is the submitter. The same submit also sends a
+confirmation to the submitter, with their name, what they sent, `site.name`,
+and the public phone. Reply-To on that confirmation is the public sales
+address. A mail failure does not drop the lead. Use inline CSS. Do not log
+message bodies.
 
 ## Form surfaces
 
