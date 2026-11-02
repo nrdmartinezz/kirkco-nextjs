@@ -113,8 +113,11 @@ function quoteFromPayload(payload: Record<string, unknown>) {
 function formatWhen(date: Date) {
   return new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/New_York',
-    dateStyle: 'medium',
-    timeStyle: 'short',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
     timeZoneName: 'short',
   }).format(date);
 }
@@ -195,13 +198,13 @@ function subjectFor(lead: LeadNotice) {
 }
 
 export async function notifyLead(lead: LeadNotice) {
-  const config = configuredMail();
-  if (!config) return;
-
-  const when = formatWhen(new Date());
-  const replyName = lead.name.trim();
-
   try {
+    const config = configuredMail();
+    if (!config) return;
+
+    const when = formatWhen(new Date());
+    const replyName = lead.name.trim();
+
     sgMail.setApiKey(config.apiKey);
     await sgMail.send({
       to: config.to,
