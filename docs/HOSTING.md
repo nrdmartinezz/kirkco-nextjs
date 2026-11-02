@@ -121,7 +121,7 @@ what people did on the page. No scroll depth, no in-page events, no cross-device
 attribution.
 
 When a client runs paid ads and needs conversion attribution, set the matching
-ID in `site.analytics` (`ga4`, `gtm`, `metaPixel`, `bingUet`, `clarity`).
+ID in `site.analytics` (`ga4`, `gtm`, `metaPixel`, `bingUet`, `clarity`, `hubspot`).
 `src/components/analytics/Analytics.tsx` mounts a vendor only when its string is
 non-empty. If every ID is blank, the component renders nothing.
 

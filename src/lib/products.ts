@@ -15,11 +15,17 @@ export type ProductImage = {
   alt?: string;
 };
 
+export type ProductDownload = {
+  label: string;
+  href: string;
+};
+
 export type ProductSection = {
   heading?: string;
   paragraphs?: string[];
   items?: string[];
   images?: ProductImage[];
+  downloads?: ProductDownload[];
 };
 
 export type ProductVariant = {

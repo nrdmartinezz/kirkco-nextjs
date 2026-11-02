@@ -4,7 +4,7 @@ import { hasAnalytics, site } from '@/config/site';
 export function Analytics() {
   if (!hasAnalytics) return null;
 
-  const { ga4, gtm, metaPixel, bingUet, clarity } = site.analytics;
+  const { ga4, gtm, metaPixel, bingUet, clarity, hubspot } = site.analytics;
 
   return (
     <>
@@ -35,6 +35,13 @@ export function Analytics() {
         <Script id="clarity" strategy="lazyOnload">
           {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${clarity}");`}
         </Script>
+      )}
+      {hubspot && (
+        <Script
+          id="hs-script-loader"
+          src={`https://js-na2.hs-scripts.com/${hubspot}.js`}
+          strategy="afterInteractive"
+        />
       )}
     </>
   );

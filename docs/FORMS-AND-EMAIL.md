@@ -15,11 +15,13 @@ Browser form
   → POST to the Route Handler (JSON)
   → honeypot + reCAPTCHA verified (server)
   → row inserted in Supabase `submissions`
+  → staff notification via the SendGrid API, when mail env is complete
   → redirect to /thank-you
 ```
 
-The stored row is the record. Notification mail is a later step on the same
-handler. A missing SMTP setup must not drop the lead.
+The stored row is the record. Notification mail runs on the same handler after
+the insert. A missing SendGrid setup, or a SendGrid error, must not drop the
+lead or change the thank-you response.
 
 **Config** (`src/config/site.ts`):
 
@@ -34,19 +36,19 @@ handler. A missing SMTP setup must not drop the lead.
 | `SUPABASE_URL`       | Supabase project URL. See `docs/HOSTING.md`  |
 | `SUPABASE_SERVICE_ROLE_KEY` | Inserts the submission row. Server only |
 | `RECAPTCHA_SECRET`   | Google reCAPTCHA v3 secret. Later, with the site key |
-| `NOTIFY_TO`          | Later. Where lead notifications go           |
-| `FROM_EMAIL`         | Later. From address on outbound mail         |
-| `FROM_NAME`          | Later. From display name                     |
-| `SMTP_HOST`          | Later. With user + pass, send via SMTP       |
-| `SMTP_USER`          | Later                                        |
-| `SMTP_PASS`          | Later                                        |
+| `SENDGRID_API_KEY`   | SendGrid Web API key. Server only            |
+| `NOTIFY_TO`          | Inbox that receives lead notifications       |
+| `NOTIFY_BCC`         | Optional. Comma-separated blind copies. Hidden from `NOTIFY_TO` |
+| `FROM_EMAIL`         | Verified SendGrid sender address             |
+| `FROM_NAME`          | Optional From display name. Falls back to the site name |
 
 `.env*` is gitignored. Document the keys in the host's env UI, not in a committed
 file. Copy names into `.env.local` for local submits.
 
-If any SMTP variable is missing, do not half-configure a transport. Either all
-three are set or the handler uses the host's default mail path and fails loudly
-when that path is absent.
+Send mail only when `SENDGRID_API_KEY`, `NOTIFY_TO`, and `FROM_EMAIL` are all
+set. If any of those three is missing, skip the send. `FROM_EMAIL` must already
+be a verified single sender or an address on an authenticated domain in that
+SendGrid account, or the API rejects the message. There is no SMTP path.
 
 ## Route Handler
 
@@ -108,8 +110,9 @@ notification template, and `sendAutoreply` defaulting to **false** until someone
 asks for it.
 
 Notification mail includes name, email, phone, message, form label, timestamp,
-and submitter IP. Autoreply includes the submitter's name, `site.name`, and the
-public phone. Use inline CSS — email clients strip `<style>` blocks inconsistently.
+and submitter IP. Quote mail also includes company, address, and line items.
+Reply-To is the submitter. Autoreply stays off. Use inline CSS — email clients
+strip `<style>` blocks inconsistently. Do not log message bodies.
 
 ## Form surfaces
 
@@ -152,7 +155,8 @@ Fill `.env.local` with the Supabase vars from `docs/HOSTING.md`. `formEndpoint` 
 least one product on the quote builder), and confirm the redirect to `/thank-you`
 plus a row in `submissions`. `/request-a-quote` should land on `/quote`.
 
-Mail is not sent yet. Do not log message bodies in production.
+With `SENDGRID_API_KEY`, `NOTIFY_TO`, and `FROM_EMAIL` in `.env.local`, the same
+submit also sends the staff notification. Do not log message bodies.
 
 ## Production checklist
 
@@ -162,8 +166,9 @@ Mail is not sent yet. Do not log message bodies in production.
    `RECAPTCHA_SECRET` is set.
 3. Submit each form on the live origin. Confirm a row appears in `submissions`
    and that `/thank-you` is what the visitor sees.
-4. Mail (`NOTIFY_TO`, `FROM_EMAIL`, optional SMTP) is not wired yet. Add it on
-   this handler when the inbox is ready.
+4. Set `SENDGRID_API_KEY`, `NOTIFY_TO`, and `FROM_EMAIL` on the host. Verify
+   `FROM_EMAIL` in SendGrid before the first live submit. `FROM_NAME` is optional.
+   `NOTIFY_BCC` is an optional comma-separated list of extra inboxes.
 
 ## Security
 
@@ -181,4 +186,5 @@ Mail is not sent yet. Do not log message bodies in production.
 | "Form is temporarily unavailable" | `SUPABASE_SERVICE_ROLE_KEY` missing, or site key set without `RECAPTCHA_SECRET` |
 | "Verification failed"           | Secret mismatch, or the domain is not on the reCAPTCHA key |
 | No row in `submissions`         | Migration not applied, or the honeypot field was filled  |
+| Row saved, no inbox mail        | One of `SENDGRID_API_KEY`, `NOTIFY_TO`, or `FROM_EMAIL` is unset, or `FROM_EMAIL` is not a verified SendGrid sender. Host logs say `SendGrid notification failed` |
 | 500 on submit                   | Uncaught throw in the Route Handler — read the host logs  |

@@ -16,7 +16,6 @@ These pages shipped with a title and, when the export had them, a tagline and su
 
 - ALFAMIX — `/alfamix`
 - Dosing Inspection System — `/dosing-inspection-system`
-- Flow Meters — `/flow-meters`
 - FRP Gel Coat Systems — `/frp-gel-coat-systems`
 - I MIX — `/i-mix`
 - ICF – Integral Compact Filter Spray System — `/icf-integral-compact-filter-spray-system`
@@ -25,7 +24,6 @@ These pages shipped with a title and, when the export had them, a tagline and su
 - M-Cube — `/m-cube`
 - Micro-flow Sensor — `/micro-flow-sensor`
 - MR40 Metering Control Unit — `/mr40-metering-control-unit`
-- Pressure Sensors — `/pressure-sensors`
 - PROTEC 2K Mixing & Dosing Unit — `/protec-2k-mixing-dosing-unit`
 - RIM MIX — `/rim-mix`
 - Spray Valves — `/spray-valves`
