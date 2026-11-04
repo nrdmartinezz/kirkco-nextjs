@@ -148,7 +148,7 @@ export const site: SiteConfig = {
   },
 
   verification: {
-    google: '',
+    google: 'xI6bj4Ds738pzLLEgeXUnoovKza1mbwquYI7IANE_ZY',
     bing: '',
     meta: '',
   },
