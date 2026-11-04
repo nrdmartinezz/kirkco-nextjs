@@ -23,17 +23,6 @@
               ]
             }
           ]
-        },
-        {
-          "sectionKey": "pentane-storage-and-blending",
-          "heading": "Pentane Storage & Blending",
-          "families": [
-            {
-              "contentKey": "pentane-storage-and-blending",
-              "title": "Pentane Storage & Blending (ppT)",
-              "models": []
-            }
-          ]
         }
       ]
     },
@@ -2034,22 +2023,6 @@
                   "name": "WTRB Temperature Controller Bundle"
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "href": "/fill-mix",
-      "sections": [
-        {
-          "sectionKey": "fill-mix-system",
-          "heading": "Fill Mix",
-          "families": [
-            {
-              "contentKey": "fill-mix-system",
-              "title": "FILL MIX",
-              "models": []
             }
           ]
         }

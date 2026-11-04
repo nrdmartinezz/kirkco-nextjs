@@ -156,7 +156,7 @@ export function EquipmentSubcategoryPage({
                       alt={overviewImage.alt}
                       width={overviewImage.width ?? 1024}
                       height={overviewImage.height ?? 683}
-                      className="h-auto w-full rounded-[10px] object-cover lg:w-[min(46%,360px)] lg:shrink-0"
+                      className="h-auto w-full max-w-[280px] shrink-0 rounded-[10px] object-cover sm:max-w-[320px]"
                     />
                   )}
                 </div>
@@ -274,7 +274,7 @@ export function EquipmentSubcategoryPage({
                       alt={page.engagementImageAlt ?? ''}
                       width={500}
                       height={400}
-                      className="h-auto w-full rounded-[10px] object-cover lg:w-[min(46%,280px)] lg:shrink-0"
+                      className="h-auto w-full max-w-[240px] shrink-0 rounded-[10px] object-cover sm:max-w-[280px]"
                     />
                   )}
                 </div>
