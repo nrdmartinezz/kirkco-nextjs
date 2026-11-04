@@ -28,8 +28,7 @@ export function HomePage() {
         <Container className="relative py-section-lg" gap="lg">
           <div className="max-w-3xl">
             <Heading level={1} className="text-white motion-safe:animate-[rise-in_700ms_ease-out_both]">
-              Kirkco Corporation is a systems-level authority in engineered dispensing, metering, and material
-              processing solutions for advanced manufacturing.
+              Engineered dispensing and metering systems.
             </Heading>
             <p className="mt-4 text-base leading-relaxed text-white/90 motion-safe:animate-[rise-in_700ms_ease-out_both] motion-safe:[animation-delay:80ms]">
               We design and integrate complete material handling ecosystems for polyurethane, epoxy, silicone, and
