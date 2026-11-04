@@ -48,3 +48,14 @@ const byHref = new Map(industryPages.map((page) => [page.href, page]));
 export function getIndustryPage(href: string) {
   return byHref.get(href);
 }
+
+/** Prefer the on-page summary when the stored meta description is only a heading. */
+export function industryDescriptionText(page: IndustryPageContent) {
+  const summary = page.summary
+    .flatMap((block) => (block.type === 'paragraph' ? block.parts.map((part) => part.text) : []))
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (summary.length > page.description.length) return summary;
+  return page.description;
+}

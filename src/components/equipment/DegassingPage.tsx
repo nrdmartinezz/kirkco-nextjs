@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { labeledCrumbs } from '@/lib/schema';
 import { site } from '@/config/site';
 import {
   cabinetLegend,
@@ -67,6 +69,11 @@ export function DegassingPage({
 
   return (
     <>
+      <JsonLd
+        identity={false}
+        breadcrumbs={labeledCrumbs(breadcrumb, degassingHref)}
+        faqs={degassingFaq}
+      />
       <section className="relative isolate overflow-hidden bg-brand-500">
         <Image src={hero.heroImage} alt={hero.heroAlt} fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-brand-700/35" />

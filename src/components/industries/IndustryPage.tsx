@@ -7,7 +7,9 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import type { ContentBlock, IndustryPageContent, TextPart } from '@/content/industries';
 import { industryPages } from '@/content/industries';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { site } from '@/config/site';
+import { descriptiveAlt } from '@/lib/image-alt';
 
 const cardClass = 'rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
 
@@ -65,7 +67,7 @@ function RichText({ blocks, inverse = false }: { blocks: ContentBlock[]; inverse
         if (block.type === 'image') {
           return (
             <div key={index} className="relative aspect-[16/10] overflow-hidden rounded-[10px]">
-              <Image src={block.src} alt={block.alt} fill className="object-cover" sizes="(min-width: 1024px) 720px, 100vw" />
+              <Image src={block.src} alt={descriptiveAlt(block.alt, 'Industry photo')} fill className="object-cover" sizes="(min-width: 1024px) 720px, 100vw" />
             </div>
           );
         }
@@ -99,8 +101,17 @@ export function IndustryPage({ page }: { page: IndustryPageContent }) {
 
   return (
     <>
+      <JsonLd
+        identity={false}
+        breadcrumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'Industries' },
+          ...(page.parentHref && page.parentTitle ? [{ name: page.parentTitle, href: page.parentHref }] : []),
+          { name: page.title, href: page.href },
+        ]}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
-        <Image src={page.heroImage} alt={page.heroImageAlt} fill priority className="object-cover" sizes="100vw" />
+        <Image src={page.heroImage} alt={descriptiveAlt(page.heroImageAlt, page.title)} fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-brand-700/45" />
         <Container className="relative flex min-h-[400px] justify-center py-8">
           <div className="w-full max-w-3xl rounded-2xl bg-[rgba(19,89,187,0.28)] p-6 text-white backdrop-blur-md md:p-9">
@@ -147,7 +158,7 @@ export function IndustryPage({ page }: { page: IndustryPageContent }) {
                     <div className="relative aspect-[4/5] w-full max-w-[300px] shrink-0 overflow-hidden rounded-[10px]">
                       <Image
                         src={page.contentImage}
-                        alt={page.contentImageAlt ?? ''}
+                        alt={descriptiveAlt(page.contentImageAlt, page.title)}
                         fill
                         className="object-cover"
                         sizes="300px"
@@ -168,7 +179,7 @@ export function IndustryPage({ page }: { page: IndustryPageContent }) {
                   <div className={section.image ? 'flex flex-col gap-6 md:flex-row md:items-center' : undefined}>
                     {section.image && (
                       <div className={`relative aspect-[4/3] w-full shrink-0 overflow-hidden rounded-[10px] md:w-72 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                        <Image src={section.image} alt={section.imageAlt ?? ''} fill className="object-cover" sizes="320px" />
+                        <Image src={section.image} alt={descriptiveAlt(section.imageAlt, section.heading)} fill className="object-cover" sizes="320px" />
                       </div>
                     )}
                     <div className="min-w-0 flex-1">

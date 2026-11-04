@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { site } from '@/config/site';
 import { ArrowRight } from 'lucide-react';
 
@@ -87,23 +88,15 @@ function Eyebrow({ children }: { children: string }) {
 }
 
 export function WaltherPage() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Walther Systemtechnik',
-        item: `${site.url}/walther`,
-      },
-    ],
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd
+        identity={false}
+        breadcrumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'Walther Systemtechnik', href: '/walther' },
+        ]}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image
           src="/images/walther/hero.jpg"
@@ -118,7 +111,7 @@ export function WaltherPage() {
           <div className="w-full max-w-3xl rounded-2xl bg-[rgba(19,89,187,0.28)] p-6 backdrop-blur-md md:p-9">
             <img
               src="/images/walther/ws-mark-white.svg"
-              alt=""
+              alt="Walther Systemtechnik"
               width={56}
               height={56}
               className="mb-4 size-14"

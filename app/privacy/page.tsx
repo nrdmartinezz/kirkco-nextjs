@@ -1,8 +1,13 @@
 import type { Metadata } from 'next';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { site } from '@/config/site';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'Privacy Policy' };
+export const metadata: Metadata = buildMetadata({
+  title: 'Privacy Policy',
+  description: `Privacy policy for ${site.legalName ?? site.name}, covering information submitted through kirkcocorp.com.`,
+  path: '/privacy',
+});
 
 export default function PrivacyPage() {
   return (

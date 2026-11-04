@@ -1,8 +1,14 @@
 import type { Metadata } from 'next';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { site } from '@/config/site';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'Service Area' };
+export const metadata: Metadata = buildMetadata({
+  title: 'Service Area',
+  description: `${site.name} is based in ${site.business.address.locality}, ${site.business.address.region}.`,
+  path: '/about/service-area',
+  noindex: true,
+});
 
 export default function ServiceAreaPage() {
   return (

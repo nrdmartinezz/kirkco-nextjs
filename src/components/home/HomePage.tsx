@@ -16,13 +16,28 @@ export function HomePage() {
   return (
     <>
       <section className="relative isolate overflow-hidden text-white">
-        <Image src="/images/hero.jpg" alt="" fill priority className="object-cover" sizes="100vw" />
+        <Image
+          src="/images/hero.jpg"
+          alt="ABNOX metering valves mounted on a dispensing fixture"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
         <div className="absolute inset-0 bg-brand-900/70" />
         <Container className="relative py-section-lg" gap="lg">
           <div className="max-w-3xl">
             <Heading level={1} className="text-white motion-safe:animate-[rise-in_700ms_ease-out_both]">
-              Precision Metering System for Accuracy in your Process
+              Kirkco Corporation is a systems-level authority in engineered dispensing, metering, and material
+              processing solutions for advanced manufacturing.
             </Heading>
+            <p className="mt-4 text-base leading-relaxed text-white/90 motion-safe:animate-[rise-in_700ms_ease-out_both] motion-safe:[animation-delay:80ms]">
+              We design and integrate complete material handling ecosystems for polyurethane, epoxy, silicone, and
+              lubrication chemistries—engineering each system for performance, reliability, and throughput. Our work
+              brings together automation, controls, and data visibility to deliver NDA-safe, application-specific
+              architectures. From concept and factory acceptance testing to commissioning and long-term service, we
+              own the entire process with zero guesswork.
+            </p>
             <Button
               href="/quote"
               className="mt-8 rounded-full motion-safe:animate-[rise-in_700ms_ease-out_both] motion-safe:[animation-delay:120ms]"
@@ -60,15 +75,7 @@ export function HomePage() {
             <Heading level={2}>
               Precision Metering, Mixing, Controlling & Dispensing for <em>All Applications</em>
             </Heading>
-            <p className="text-ink-muted mt-4 text-base leading-relaxed">
-              Kirkco Corporation is a systems-level authority in engineered dispensing, metering, and material
-              processing solutions for advanced manufacturing. We design and integrate complete material handling
-              ecosystems for polyurethane, epoxy, silicone, and lubrication chemistries—engineering each system for
-              performance, reliability, and throughput. Our work brings together automation, controls, and data
-              visibility to deliver NDA-safe, application-specific architectures. From concept and factory acceptance
-              testing to commissioning and long-term service, we own the entire process with zero guesswork.
-            </p>
-            <Button href="/contact-us" variant="secondary" className="mt-6 rounded-full">
+            <Button href="/contact" variant="secondary" className="mt-6 rounded-full">
               Start an Inquiry
             </Button>
           </div>

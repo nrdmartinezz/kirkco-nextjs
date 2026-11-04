@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
-import { site } from '@/config/site';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 const stats = [
   { value: '1985', label: 'Established' },
@@ -150,23 +150,19 @@ function Eyebrow({ children }: { children: string }) {
 }
 
 export function AboutUsPage() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
-      { '@type': 'ListItem', position: 2, name: 'About Us', item: `${site.url}/about-us` },
-    ],
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
+      <JsonLd
+        identity={false}
+        breadcrumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'About Us', href: '/about-us' },
+        ]}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-900 text-white">
         <Image
           src="/images/equipment-hero.webp"
-          alt=""
+          alt="Factory floor with metering equipment, piping, and a production line"
           fill
           priority
           className="object-cover"

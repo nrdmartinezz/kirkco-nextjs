@@ -8,19 +8,19 @@ import { EquipmentPage } from '@/components/equipment/EquipmentPage';
 import { EquipmentSubcategoryPage } from '@/components/equipment/EquipmentSubcategoryPage';
 import { degassingHref, degassingMeta } from '@/content/equipment/degassing';
 import { equipmentOptionsDescription } from '@/content/equipment/equipment-options';
+import { heroForEquipmentPage } from '@/content/equipment/heroes';
 import { getEquipmentSubcategoryPage } from '@/lib/equipment-content';
 import { ProductPage } from '@/components/products/ProductPage';
 import { RememberEquipmentPage } from '@/components/products/ProductBreadcrumb';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { IndustryPage } from '@/components/industries/IndustryPage';
-import { getIndustryPage } from '@/content/industries';
+import { getIndustryPage, industryDescriptionText } from '@/content/industries';
 import { getPublicSections } from '@/content/pillar/sections';
 import { getResourcePage } from '@/content/resources/pages';
 import { ResourcePage } from '@/components/resources/ResourcePage';
 import { getApplication, getApplications, spokeIdFromHref, spokePaths, studyDescription } from '@/lib/applications';
 import { equipmentOriginTrail, getEquipmentPage } from '@/lib/equipment';
 import { categoryByHref, getCategories, getProduct, getProducts, selectedVariant, variantPath } from '@/lib/products';
-import { site } from '@/config/site';
 import { buildMetadata } from '@/lib/seo';
 import { stubTitles } from '@/lib/stubs';
 
@@ -68,9 +68,8 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
   const industry = getIndustryPage(href);
   if (industry) {
     return buildMetadata({
-      title: `${industry.title} | ${site.name}`,
-      description: industry.description || industry.title,
-      titleExact: true,
+      title: industry.title,
+      description: industryDescriptionText(industry),
       path: industry.href,
       image: industry.heroImage,
       imageAlt: industry.heroImageAlt,
@@ -83,6 +82,8 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
       description: equipmentOptionsDescription,
       titleExact: true,
       path: href,
+      image: '/images/equipment-hero.webp',
+      imageAlt: 'Factory floor with metering equipment, piping, and a production line',
     });
   }
 
@@ -90,7 +91,6 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
     return buildMetadata({
       title: degassingMeta.title,
       description: degassingMeta.description,
-      titleExact: true,
       path: degassingHref,
       image: degassingMeta.image,
       imageAlt: degassingMeta.imageAlt,
@@ -104,7 +104,6 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
       return buildMetadata({
         title: study.title,
         description: studyDescription(study),
-        titleExact: true,
         path: href,
         type: 'article',
       });
@@ -113,20 +112,28 @@ export async function generateMetadata({ params, searchParams }: CatchAllProps):
 
   const subcategory = getEquipmentSubcategoryPage(href);
   if (subcategory) {
+    const hero = heroForEquipmentPage(subcategory.href);
     return buildMetadata({
       title: subcategory.title,
       description: subcategory.description,
-      titleExact: true,
       path: subcategory.href,
+      image: hero.heroImage,
+      imageAlt: hero.heroAlt,
     });
   }
 
   const equipment = await getEquipmentPage(href);
   if (equipment) {
+    const hero = heroForEquipmentPage(equipment.href, {
+      heroImage: equipment.heroImage,
+      heroAlt: equipment.heroAlt,
+    });
     return buildMetadata({
       title: equipment.title,
       description: equipment.description,
       path: equipment.href,
+      image: hero.heroImage,
+      imageAlt: hero.heroAlt,
     });
   }
 

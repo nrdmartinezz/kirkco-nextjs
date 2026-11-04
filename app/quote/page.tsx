@@ -6,11 +6,14 @@ import { Section } from '@/components/ui/Section';
 import { site } from '@/config/site';
 import { getProducts } from '@/lib/products';
 import type { QuoteCatalogItem } from '@/lib/quote';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: 'Get a Quote',
-  description: `Request a quote from ${site.name}.`,
-};
+  description: `Request a quote from ${site.name} for metering, mixing, and dispensing equipment.`,
+  path: '/quote',
+  noindex: true,
+});
 
 export const revalidate = 60;
 

@@ -22,7 +22,7 @@ export async function ApplicationSpokePage({ study }: { study: ApplicationStudy 
 
   return (
     <>
-      <JsonLd breadcrumbs={crumbs} />
+      <JsonLd identity={false} breadcrumbs={crumbs} />
       <Container className="py-10">
         <nav aria-label="Breadcrumb" className="text-ink-muted text-sm">
           <ol className="flex flex-wrap items-center gap-x-1 gap-y-1">

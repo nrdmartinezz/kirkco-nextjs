@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { site } from '@/config/site';
 import { ArrowRight } from 'lucide-react';
 
@@ -86,18 +87,15 @@ function Eyebrow({ children }: { children: string }) {
 }
 
 export function AbnoxPage() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
-      { '@type': 'ListItem', position: 2, name: 'ABNOX Products, Parts & U.S. Support', item: `${site.url}/abnox` },
-    ],
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd
+        identity={false}
+        breadcrumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'ABNOX Products, Parts & U.S. Support', href: '/abnox' },
+        ]}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image
           src="/images/abnox/hero.jpg"

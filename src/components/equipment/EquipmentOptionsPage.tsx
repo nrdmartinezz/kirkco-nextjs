@@ -13,6 +13,7 @@ import {
   processSteps,
   type EquipmentFamily,
 } from '@/content/equipment/equipment-options';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { site } from '@/config/site';
 import { EquipmentProductSearch } from '@/components/equipment/EquipmentProductSearch';
 import { getProducts, type ProductCategory } from '@/lib/products';
@@ -56,38 +57,20 @@ function FamilyCard({ family, index }: { family: EquipmentFamily; index: number 
   );
 }
 
-function EquipmentOptionsJsonLd() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
-          { '@type': 'ListItem', position: 2, name: 'Equipment Options', item: `${site.url}/equipment-options` },
-        ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: equipmentQuestions.map((item) => ({
-          '@type': 'Question',
-          name: item.question,
-          acceptedAnswer: { '@type': 'Answer', text: item.answer },
-        })),
-      },
-    ],
-  };
-
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
-}
-
 export async function EquipmentOptionsPage({ categories }: { categories: ProductCategory[] }) {
   const searchProducts = toSearchProducts(await getProducts());
   const mainCategories = categories.filter((category) => category.name === category.group);
 
   return (
     <>
-      <EquipmentOptionsJsonLd />
+      <JsonLd
+        identity={false}
+        breadcrumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'Equipment Options', href: '/equipment-options' },
+        ]}
+        faqs={equipmentQuestions}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image
           src={adhesivesSealants.heroImage}

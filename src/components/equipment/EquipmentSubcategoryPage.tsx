@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ApplicationStudyArticles } from '@/components/equipment/ApplicationStudyArticles';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { descriptiveAlt } from '@/lib/image-alt';
+import { labeledCrumbs } from '@/lib/schema';
 import { EditorialSections, visibleEditorialSections } from '@/components/equipment/EditorialSections';
 import {
   EquipmentProductCard,
@@ -78,6 +81,7 @@ export function EquipmentSubcategoryPage({
 
   return (
     <>
+      <JsonLd identity={false} breadcrumbs={labeledCrumbs(breadcrumb, page.href)} />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image src={hero.heroImage} alt={hero.heroAlt} fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-brand-700/35" />
@@ -191,7 +195,7 @@ export function EquipmentSubcategoryPage({
                       {block.image && (
                         <Image
                           src={block.image}
-                          alt={block.imageAlt ?? ''}
+                          alt={descriptiveAlt(block.imageAlt, page.title)}
                           width={500}
                           height={400}
                           className="mt-6 h-auto w-full rounded-[10px] object-cover"
@@ -271,7 +275,7 @@ export function EquipmentSubcategoryPage({
                   {page.engagementImage && (
                     <Image
                       src={page.engagementImage}
-                      alt={page.engagementImageAlt ?? ''}
+                      alt={descriptiveAlt(page.engagementImageAlt, page.title)}
                       width={500}
                       height={400}
                       className="h-auto w-full max-w-[240px] shrink-0 rounded-[10px] object-cover sm:max-w-[280px]"

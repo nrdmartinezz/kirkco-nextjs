@@ -2,8 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SimplePage } from '@/components/ui/SimplePage';
 import { navigation } from '@/config/navigation';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'Services' };
+export const metadata: Metadata = buildMetadata({
+  title: 'Services',
+  description: 'Service pages for Kirkco Corporation.',
+  path: '/services',
+  noindex: true,
+});
 
 export default function ServicesPage() {
   const panel = navigation.primary.find((item) => item.label === 'Services')?.panel;

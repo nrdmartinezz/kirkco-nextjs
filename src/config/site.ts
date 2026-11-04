@@ -17,7 +17,8 @@ export type SchemaBusinessType =
   | 'Attorney'
   | 'AccountingService'
   | 'InsuranceAgency'
-  | 'RealEstateAgent';
+  | 'RealEstateAgent'
+  | 'Organization';
 
 export interface SiteConfig {
   /** Absolute origin, no trailing slash. Used as Next.js metadataBase. */
@@ -33,6 +34,11 @@ export interface SiteConfig {
     phone: string;
     /** Digits only, E.164 — used for tel: links. */
     phoneHref: string;
+    /** Local office line, when it differs from the sales number. */
+    officePhone?: string;
+    officePhoneHref?: string;
+    fax?: string;
+    faxHref?: string;
     email: string;
     address: {
       street: string;
@@ -59,6 +65,12 @@ export interface SiteConfig {
 
   /** Absolute or site-relative path to the fallback Open Graph image. */
   defaultOgImage: string;
+
+  /** Site-relative logo used in Organization structured data. */
+  logo: string;
+
+  /** ISO year or date the business was established. */
+  foundingDate?: string;
 
   /** Site-relative path to the contact form action. Blank disables forms. */
   formEndpoint: string;
@@ -99,9 +111,13 @@ export const site: SiteConfig = {
   locale: 'en-US',
 
   business: {
-    schemaType: 'LocalBusiness',
+    schemaType: 'Organization',
     phone: '800.828.7234',
     phoneHref: '+18008287234',
+    officePhone: '704.289.7090',
+    officePhoneHref: '+17042897090',
+    fax: '704.289.7091',
+    faxHref: '+17042897091',
     email: 'sales@kirkcocorp.com',
     address: {
       street: 'P.O. Box 509',
@@ -116,6 +132,8 @@ export const site: SiteConfig = {
   social: {},
 
   defaultOgImage: '/og-default.png',
+  logo: '/images/logo.jpg',
+  foundingDate: '1985',
 
   formEndpoint: '/api/contact',
   recaptchaSiteKey: '',

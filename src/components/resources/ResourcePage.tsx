@@ -7,7 +7,9 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import type { ResourceBlock, ResourceListItem, ResourcePageContent, ResourcePart } from '@/content/resources/pages';
 import { resourcePages } from '@/content/resources/pages';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { site } from '@/config/site';
+import { descriptiveAlt } from '@/lib/image-alt';
 
 const cardClass = 'rounded-2xl border border-[#e4f0ff] bg-white p-6 shadow-[0_1px_3px_rgba(21,101,192,0.1)]';
 
@@ -115,6 +117,15 @@ function Blocks({ blocks }: { blocks: ResourceBlock[] }) {
 export function ResourcePage({ page }: { page: ResourcePageContent }) {
   return (
     <>
+      <JsonLd
+        identity={false}
+        breadcrumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'Resources' },
+          { name: page.title, href: page.href },
+        ]}
+        service={{ name: page.title, description: page.description, url: page.href }}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image src={page.heroImage} alt={page.heroAlt} fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-brand-700/45" />
@@ -167,7 +178,7 @@ export function ResourcePage({ page }: { page: ResourcePageContent }) {
                       >
                         <Image
                           src={section.image}
-                          alt={section.imageAlt ?? ''}
+                          alt={descriptiveAlt(section.imageAlt, section.heading || page.title)}
                           fill
                           className="object-cover"
                           sizes="280px"

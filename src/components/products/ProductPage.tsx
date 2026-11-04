@@ -6,7 +6,8 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import { EditorialSections } from '@/components/equipment/EditorialSections';
 import { ProductBreadcrumb } from '@/components/products/ProductBreadcrumb';
-import { site } from '@/config/site';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { descriptiveAlt } from '@/lib/image-alt';
 import {
   breadcrumbTrails,
   categoriesFor,
@@ -19,21 +20,6 @@ import {
 } from '@/lib/products';
 import { withOrigin } from '@/lib/search';
 import { getPublicSections } from '@/content/pillar/sections';
-
-function BreadcrumbList({ crumbs, productHref }: { crumbs: BreadcrumbCrumb[]; productHref: string }) {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: crumbs.map((crumb, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: crumb.name,
-      item: new URL(crumb.href ?? productHref, site.url).href,
-    })),
-  };
-
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
-}
 
 export function ProductPage({
   product,
@@ -65,9 +51,23 @@ export function ProductPage({
   const variantHref = (option: ProductVariant) =>
     originHref ? withOrigin(variantPath(product, option), originHref) : variantPath(product, option);
 
+  const productHref = variantPath(product, variant);
+
   return (
     <Section spacing="none" className="pt-6 pb-section md:pt-8">
-      <BreadcrumbList crumbs={trails[0] ?? []} productHref={variantPath(product, variant)} />
+      <JsonLd
+        identity={false}
+        breadcrumbs={(trails[0] ?? []).map((crumb) => ({
+          name: crumb.name,
+          href: crumb.href ?? productHref,
+        }))}
+        product={{
+          name: variant.title,
+          description: variant.summary || product.summary || variant.tagline || variant.title,
+          image: hero?.src,
+          url: productHref,
+        }}
+      />
       <Container gap="lg">
         <ProductBreadcrumb trails={followedTrail ? [followedTrail] : trails} choices={choices} locked={Boolean(followedTrail)} />
         <div className="flex w-full flex-col items-start gap-8 md:flex-row md:gap-12">
@@ -75,7 +75,7 @@ export function ProductPage({
             <div className="bg-neutral-50 relative aspect-square w-full shrink-0 overflow-hidden rounded-lg md:w-[46%]">
               <Image
                 src={hero.src}
-                alt={hero.alt || variant.title}
+                alt={descriptiveAlt(hero.alt, variant.title)}
                 fill
                 priority
                 className="object-contain p-4"
@@ -167,7 +167,7 @@ export function ProductPage({
                       <div key={image.src} className="bg-neutral-50 relative aspect-[4/3] overflow-hidden rounded-lg">
                         <Image
                           src={image.src}
-                          alt={image.alt ?? ''}
+                          alt={descriptiveAlt(image.alt, section.heading || variant.title)}
                           fill
                           className="object-contain p-4"
                           sizes="(min-width: 768px) 40vw, 100vw"

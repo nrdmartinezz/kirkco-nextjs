@@ -14,7 +14,10 @@ const products = JSON.parse(
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
-    const rules = [];
+    const rules = [
+      { source: '/contact-us', destination: '/contact', permanent: true },
+      { source: '/request-a-quote', destination: '/quote', permanent: true },
+    ];
     for (const product of products) {
       for (const variant of product.variants ?? []) {
         if (variant.slug === product.slug) continue;

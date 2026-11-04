@@ -126,7 +126,7 @@ export function IndustriesCarousel() {
             <article key={`${slide.title}-${slideIndex}`} className="relative flex min-h-[28rem] w-full shrink-0">
               <Image
                 src={slide.image}
-                alt=""
+                alt={slide.title}
                 fill
                 draggable={false}
                 className="pointer-events-none object-cover"
@@ -170,7 +170,7 @@ export function IndustriesCarousel() {
         {moreIndustries.map((industry) => (
           <li key={industry.title}>
             <Link href={industry.href} className="group relative block h-40 overflow-hidden rounded-xl no-underline">
-              <Image src={industry.image} alt="" fill className="object-cover transition duration-700 ease-out group-hover:scale-105" sizes="280px" />
+              <Image src={industry.image} alt={industry.title} fill className="object-cover transition duration-700 ease-out group-hover:scale-105" sizes="280px" />
               <span className="absolute inset-0 bg-brand-700/55 transition group-hover:bg-brand-700/70" />
               <span className="relative flex h-full flex-col justify-end p-4 text-white">
                 <span className="font-heading text-lg font-semibold">{industry.title}</span>

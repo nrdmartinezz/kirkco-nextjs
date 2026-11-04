@@ -37,3 +37,7 @@ export function getEquipmentSubcategoryPage(href: string): EquipmentSubcategoryC
 export function allEquipmentSubcategoryHrefs() {
   return Object.keys(subcategoryPages);
 }
+
+export function allEquipmentGroupHrefs() {
+  return [...new Set([adhesivesSealants.href, ...Object.keys(groupPages)])];
+}

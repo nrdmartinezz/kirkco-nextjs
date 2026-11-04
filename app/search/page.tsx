@@ -8,10 +8,10 @@ import { buildMetadata } from '@/lib/seo';
 import { toSearchEquipment, toSearchProducts } from '@/lib/search';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Search | Kirkco',
+  title: 'Search',
   description: 'Search Kirkco products and equipment.',
-  titleExact: true,
   path: '/search',
+  noindex: true,
 });
 
 export const revalidate = 60;

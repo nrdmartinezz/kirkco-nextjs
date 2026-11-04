@@ -1,12 +1,5 @@
-import type { Metadata } from 'next';
-import { redirect } from 'next/navigation';
-import { site } from '@/config/site';
-
-export const metadata: Metadata = {
-  title: 'Get a Quote',
-  description: `Request a quote from ${site.name}.`,
-};
+import { permanentRedirect } from 'next/navigation';
 
 export default function RequestQuotePage() {
-  redirect('/quote');
+  permanentRedirect('/quote');
 }
