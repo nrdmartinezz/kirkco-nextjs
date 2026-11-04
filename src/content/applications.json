@@ -328,391 +328,6 @@
     ]
   },
   {
-    "id": "abrasive-filled-resin-dispensing",
-    "title": "Abrasive Filled Resin Dispensing",
-    "nda": true,
-    "sections": [
-      {
-        "heading": "Executive Overview",
-        "paragraphs": [
-          "This Application Architecture defines a production-ready, NDA-safe framework for engineered dispensing, metering, and encapsulation processes used in advanced manufacturing environments."
-        ]
-      },
-      {
-        "heading": "Business & Quality Drivers",
-        "paragraphs": [
-          "Applications addressed by this architecture are driven by repeatability, quality assurance, and risk mitigation."
-        ]
-      },
-      {
-        "heading": "Process Requirements",
-        "paragraphs": [
-          "The process requires controlled material delivery, stable process conditions, and predictable execution."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Material behavior, viscosity stability, and temperature control are critical to process integrity."
-        ]
-      },
-      {
-        "heading": "System Architecture",
-        "paragraphs": [
-          "The system architecture integrates metering, dispensing, automation, and verification subsystems."
-        ]
-      },
-      {
-        "heading": "Automation & Controls",
-        "paragraphs": [
-          "Automation and controls coordinate motion, dispensing, and validation with traceability support."
-        ]
-      },
-      {
-        "heading": "Performance Outcomes",
-        "paragraphs": [
-          "The architecture delivers improved quality consistency, reduced scrap, and scalable production throughput."
-        ]
-      },
-      {
-        "heading": "Lifecycle & Engineering Support",
-        "paragraphs": [
-          "Lifecycle support includes validation, commissioning, and long-term optimization."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "contract-manufacturing-quick-change",
-    "title": "Quick-Change Material Delivery Systems",
-    "nda": true,
-    "sections": [
-      {
-        "heading": "Executive Overview",
-        "paragraphs": [
-          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
-        ]
-      },
-      {
-        "heading": "Business & Quality Drivers",
-        "paragraphs": [
-          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
-        ]
-      },
-      {
-        "heading": "Process Requirements",
-        "paragraphs": [
-          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
-        ]
-      },
-      {
-        "heading": "System Architecture",
-        "paragraphs": [
-          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
-        ]
-      },
-      {
-        "heading": "Automation & Controls",
-        "paragraphs": [
-          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
-        ]
-      },
-      {
-        "heading": "Performance Outcomes",
-        "paragraphs": [
-          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
-        ]
-      },
-      {
-        "heading": "Lifecycle & Engineering Support",
-        "paragraphs": [
-          "Support includes validation, commissioning, optimization, and future scalability planning."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "electronics-multi-component-epoxy-metering",
-    "title": "Multi-Component Epoxy Metering",
-    "nda": true,
-    "sections": [
-      {
-        "heading": "Executive Overview",
-        "paragraphs": [
-          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
-        ]
-      },
-      {
-        "heading": "Business & Quality Drivers",
-        "paragraphs": [
-          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
-        ]
-      },
-      {
-        "heading": "Process Requirements",
-        "paragraphs": [
-          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
-        ]
-      },
-      {
-        "heading": "System Architecture",
-        "paragraphs": [
-          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
-        ]
-      },
-      {
-        "heading": "Automation & Controls",
-        "paragraphs": [
-          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
-        ]
-      },
-      {
-        "heading": "Performance Outcomes",
-        "paragraphs": [
-          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
-        ]
-      },
-      {
-        "heading": "Lifecycle & Engineering Support",
-        "paragraphs": [
-          "Support includes validation, commissioning, optimization, and future scalability planning."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "electronics-potting-modular-cell",
-    "title": "Modular Potting Cell Architecture",
-    "nda": true,
-    "sections": [
-      {
-        "heading": "Executive Overview",
-        "paragraphs": [
-          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
-        ]
-      },
-      {
-        "heading": "Business & Quality Drivers",
-        "paragraphs": [
-          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
-        ]
-      },
-      {
-        "heading": "Process Requirements",
-        "paragraphs": [
-          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
-        ]
-      },
-      {
-        "heading": "System Architecture",
-        "paragraphs": [
-          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
-        ]
-      },
-      {
-        "heading": "Automation & Controls",
-        "paragraphs": [
-          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
-        ]
-      },
-      {
-        "heading": "Performance Outcomes",
-        "paragraphs": [
-          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
-        ]
-      },
-      {
-        "heading": "Lifecycle & Engineering Support",
-        "paragraphs": [
-          "Support includes validation, commissioning, optimization, and future scalability planning."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "precision-electronics-low-volume-dispensing",
-    "title": "Low-Volume High-Accuracy Dispensing",
-    "nda": true,
-    "sections": [
-      {
-        "heading": "Executive Overview",
-        "paragraphs": [
-          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
-        ]
-      },
-      {
-        "heading": "Business & Quality Drivers",
-        "paragraphs": [
-          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
-        ]
-      },
-      {
-        "heading": "Process Requirements",
-        "paragraphs": [
-          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
-        ]
-      },
-      {
-        "heading": "System Architecture",
-        "paragraphs": [
-          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
-        ]
-      },
-      {
-        "heading": "Automation & Controls",
-        "paragraphs": [
-          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
-        ]
-      },
-      {
-        "heading": "Performance Outcomes",
-        "paragraphs": [
-          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
-        ]
-      },
-      {
-        "heading": "Lifecycle & Engineering Support",
-        "paragraphs": [
-          "Support includes validation, commissioning, optimization, and future scalability planning."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "safety-critical-electronics-potting",
-    "title": "Critical Ratio Control for Potting",
-    "nda": true,
-    "sections": [
-      {
-        "heading": "Executive Overview",
-        "paragraphs": [
-          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
-        ]
-      },
-      {
-        "heading": "Business & Quality Drivers",
-        "paragraphs": [
-          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
-        ]
-      },
-      {
-        "heading": "Process Requirements",
-        "paragraphs": [
-          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
-        ]
-      },
-      {
-        "heading": "System Architecture",
-        "paragraphs": [
-          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
-        ]
-      },
-      {
-        "heading": "Automation & Controls",
-        "paragraphs": [
-          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
-        ]
-      },
-      {
-        "heading": "Performance Outcomes",
-        "paragraphs": [
-          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
-        ]
-      },
-      {
-        "heading": "Lifecycle & Engineering Support",
-        "paragraphs": [
-          "Support includes validation, commissioning, optimization, and future scalability planning."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "sensors-encapsulation-precision-vacuum",
-    "title": "Precision Vacuum Encapsulation for Sensors",
-    "nda": true,
-    "sections": [
-      {
-        "heading": "Executive Overview",
-        "paragraphs": [
-          "This Application Architecture defines a standardized, NDA-safe framework for engineered dispensing, metering, and encapsulation systems aligned to production-critical manufacturing environments. The architecture establishes process intent, quality drivers, and system boundaries without exposing IP."
-        ]
-      },
-      {
-        "heading": "Business & Quality Drivers",
-        "paragraphs": [
-          "Applications governed by this architecture demand repeatability, reliability, and risk reduction. Quality outcomes depend on controlled material delivery and stable automation."
-        ]
-      },
-      {
-        "heading": "Process Requirements",
-        "paragraphs": [
-          "The process requires precise metered dispensing, repeatable positioning, and integration with surrounding operations."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Materials may include multi-component epoxies or filled systems requiring viscosity and temperature control."
-        ]
-      },
-      {
-        "heading": "System Architecture",
-        "paragraphs": [
-          "The architecture is built around precision metering, application-specific dispensing hardware, and scalable automation."
-        ]
-      },
-      {
-        "heading": "Automation & Controls",
-        "paragraphs": [
-          "Automation synchronizes motion control, metering, and validation checkpoints with traceability support."
-        ]
-      },
-      {
-        "heading": "Performance Outcomes",
-        "paragraphs": [
-          "Outcomes include improved shot accuracy, reduced scrap, and predictable throughput."
-        ]
-      },
-      {
-        "heading": "Lifecycle & Engineering Support",
-        "paragraphs": [
-          "Support includes validation, commissioning, optimization, and future scalability planning."
-        ]
-      }
-    ]
-  },
-  {
     "id": "composites-quality-framework",
     "title": "Composite Application Systems Quality Framework",
     "nda": false,
@@ -1464,62 +1079,1988 @@
     ]
   },
   {
-    "id": "equipment-options-process-control",
-    "title": "In-Line Metering Verification",
+    "id": "encapsulating-quality-framework",
+    "title": "Encapsulating Quality for High-Reliability Components",
     "nda": false,
     "sections": [
       {
         "heading": "Executive Overview",
         "paragraphs": [
-          "This Application Architecture defines a production-ready, NDA-safe framework for engineered dispensing, metering, and encapsulation processes used in advanced manufacturing environments."
+          "Kirkco engineered a precision encapsulation architecture to elevate quality, reliability, and repeatability in applications where electronic and electromechanical components must be protected against environmental and operational stressors. The architecture transformed encapsulation from a manual, variable process into a controlled, production-grade operation aligned with long-term performance objectives."
         ]
       },
       {
         "heading": "Business & Quality Drivers",
         "paragraphs": [
-          "Applications addressed by this architecture are driven by repeatability, quality assurance, and risk mitigation."
+          "Manufacturers of high-value components face increasing pressure to reduce scrap, minimize warranty exposure, and ensure consistent field performance. Variability in manual encapsulation introduced quality risk through inconsistent fill levels, trapped air, and cure variation. A robust encapsulation architecture was required to stabilize quality across operators, shifts, and product variants."
         ]
       },
       {
         "heading": "Process Requirements",
         "paragraphs": [
-          "The process requires controlled material delivery, stable process conditions, and predictable execution."
-        ]
-      },
-      {
-        "heading": "Material & Chemistry Considerations",
-        "paragraphs": [
-          "Material behavior, viscosity stability, and temperature control are critical to process integrity."
+          "The application required controlled dispensing of two-component encapsulation materials with precise ratio management, stable material temperature, defined shot volumes, and void-free delivery. Flexibility to support multiple part geometries and encapsulation programs was essential without increasing changeover time or operator complexity."
         ]
       },
       {
         "heading": "System Architecture",
         "paragraphs": [
-          "The system architecture integrates metering, dispensing, automation, and verification subsystems."
+          "The encapsulation platform is based on precision metering and mixing equipment configured for epoxy chemistry. The complete material path is temperature-conditioned to maintain viscosity stability and dosing accuracy. Point-of-application mixing minimizes residence time and reduces material waste while ensuring consistent encapsulation quality."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "A PLC-based control architecture manages ratio control, recipe storage, automated flushing, and process interlocks to prevent off-ratio or off-temperature dispensing. Defined process windows were validated to ensure repeatable encapsulation performance across production runs and component configurations."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Following implementation, encapsulation quality became uniform and predictable. Scrap and rework were reduced, operator dependency was minimized, and production throughput stabilized. Encapsulation shifted from a quality risk to a controlled and repeatable manufacturing process."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture was designed for long service life with backward-compatible control logic, enabling future material changes, additional recipes, or throughput increases without requiring system replacement. This ensures long-term alignment with evolving product designs."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "automated-direct-glazing",
+    "title": "Automated Direct Glazing Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an automated direct glazing architecture for high-repeatability bonding and sealing of glass and transparent components in transportation and industrial manufacturing environments. The architecture delivers consistent bead geometry, precise placement, and predictable cure behavior while supporting automated and robotic production workflows."
+        ]
+      },
+      {
+        "heading": "Market & Performance Drivers",
+        "paragraphs": [
+          "Direct glazing applications demand high cosmetic quality, structural integrity, and long-term environmental resistance. Manual or semi-manual glazing introduces variability in bead placement and thickness, leading to rework, leaks, or cosmetic defects. An automated architecture is required to ensure repeatable quality at production scale."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Applications require controlled dispensing of single- or two-component glazing adhesives and sealants with accurate volumetric delivery, stable bead profile, and clean cutoff. Processes may include windshield installation, panel glazing, and transparent enclosure sealing."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The automated glazing platform integrates positive-displacement metering with robotic or gantry-based motion systems. Static or dynamic mixing solutions are selected based on material chemistry, while application-specific dispense valves ensure consistent bead formation during continuous motion."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC- and robot-integrated controls manage dispense synchronization, bead start/stop logic, ratio control where applicable, and process interlocks. Validation procedures confirm bead consistency, adhesion performance, and repeatability across production cycles."
+        ]
+      },
+      {
+        "heading": "Adhesives & Sealants Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Adhesives & Sealants Quality Framework, which standardizes dispense accuracy, bead geometry control, and validation practices across automated bonding and sealing systems. Reference: Adhesives & Sealants Quality Framework (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation improves cosmetic consistency, reduces scrap, and increases production throughput by eliminating manual variability and stabilizing glazing operations."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports expansion to additional glazing programs, higher automation levels, and evolving adhesive chemistries without redesign of the core system."
+        ]
+      },
+      {
+        "heading": "Vehicle Window Bead Geometry",
+        "paragraphs": [
+          "Automated vehicle window systems place a precision triangular adhesive bead on the glass before robotic installation into the body. Electric dosing, seventh-axis nozzle rotation, and optional inline bead inspection keep the bead aligned through the install path.",
+          "Electrically driven dosing holds volumetric accuracy without pneumatic variation. Heated material conditioning, automated purge, bead inspection cameras, and redundant pumping are added when the adhesive and the line rate require them."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "automated-bonding-fipg",
+    "title": "Automated Bonding and FIPG Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture (AA) defines Kirkco’s structured engineering approach to closed-loop automated bonding and Form-In-Place Gasketing (FIPG) systems. The objective is to provide repeatable, ratio-controlled dispensing solutions for industrial environments requiring environmental sealing, bonding, and protective encapsulation."
+        ]
+      },
+      {
+        "heading": "Core Focus Areas",
+        "paragraphs": [
+          "Closed-loop ratio monitoring and validation",
+          "Real-time pressure and flow control",
+          "3-axis and 6-axis motion automation platforms",
+          "High-mix production capability with programmable changeover",
+          "Integration-ready architecture for energy, infrastructure, and electronics markets"
+        ]
+      },
+      {
+        "heading": "Market Drivers",
+        "paragraphs": [
+          "Industrial manufacturers are transitioning from manual gasket placement and hand-applied adhesives to automated dispensing architectures due to throughput constraints, quality variability, and traceability requirements. Environmental sealing standards and enclosure protection ratings demand repeatable, ratio-controlled material application."
+        ]
+      },
+      {
+        "heading": "Failure Modes of Manual Gasketing",
+        "paragraphs": [
+          "Inconsistent bead diameter and bond-line thickness",
+          "Material waste and scrap",
+          "Lack of ratio verification",
+          "Extended cycle times",
+          "Limited traceability and process documentation",
+          "Kirkco automated bonding and FIPG systems utilize closed-loop metering technologies with real-time pressure, flow, and ratio monitoring. Continuous feedback ensures repeatable material delivery under dynamic production conditions.",
+          "Key Capabilities:",
+          "Real-time ratio monitoring",
+          "Pressure and flow validation",
+          "Tandem supply automatic switchover",
+          "Automatic tank level monitoring and refill capability"
+        ]
+      },
+      {
+        "heading": "Automation Platforms",
+        "paragraphs": [
+          "3-axis (XYZ) gantry systems for flat-plane applications",
+          "6-axis robotic platforms for complex 3D geometries",
+          "Adjustable width conveyors for high-mix production",
+          "Programmable recipe control for fast changeover",
+          "Typical cycle targets: 5–10 seconds (application dependent)"
+        ]
+      },
+      {
+        "heading": "Supported Chemistries",
+        "paragraphs": [
+          "Polyurethane foams and elastomers (FIPG)",
+          "Silicone elastomers and foam systems",
+          "Epoxy resins",
+          "Plastisols and polyamides",
+          "Hot melt and PURUV adhesives",
+          "Grease and lubricant materials"
+        ]
+      },
+      {
+        "heading": "Optional Process Modules",
+        "paragraphs": [
+          "Plasma surface treatment",
+          "UV curing systems",
+          "Ovens and thermal cure modules",
+          "Interchangeable mix heads",
+          "Vacuum dispensing chambers",
+          "Laminating and roll coating integrations"
+        ]
+      },
+      {
+        "heading": "Engineering & Validation",
+        "paragraphs": [
+          "System validation and final performance tolerances are confirmed during detailed engineering review. ROM-level proposals define architectural feasibility, while final tolerance bands, throughput confirmation, and material compatibility are validated through engineering trials and production simulation."
+        ]
+      },
+      {
+        "heading": "Integration Pathway",
+        "paragraphs": [
+          "This Application Architecture is designed for integration within broader manufacturing environments, including energy infrastructure components, electrical enclosures, filter assemblies, and industrial equipment subassemblies.",
+          "Systems are engineered for scalability, monitoring integration, and long-term serviceability."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "automated-2k-filter-encapsulation",
+    "title": "Automated 2K Filter Encapsulation",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a fully automated two-component adhesive encapsulation architecture to support high-volume production of precision filter assemblies. The system replaced manual encapsulation with a robot-integrated dosing cell, enabling consistent quality, reduced unit costs, and scalable production capacity."
+        ]
+      },
+      {
+        "heading": "Business & Production Drivers",
+        "paragraphs": [
+          "A newly introduced filter design experienced rapid market adoption, driving a sharp increase in production volume. Manual encapsulation methods were no longer sufficient to maintain delivery readiness, process consistency, or cost control. Automation was required to stabilize quality while reducing labor dependency."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application demanded precise volumetric dosing of a specialty adhesive used to bond filter media to housings. Narrow tolerances, short cycle times, and repeatable shot accuracy were critical to ensure long-term filter durability and performance."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The solution consists of a robot-integrated automation cell paired with a modular, servo-driven two-component dosing system. The metering units are configured for shot-based operation and mounted close to the application point to minimize hose length and improve response time."
+        ]
+      },
+      {
+        "heading": "Controls & Precision",
+        "paragraphs": [
+          "A closed-loop control architecture governs the dosing process, delivering highly repeatable shot volumes across all cycles. The modular design allows flexible configuration of mixing ratios and supports processing of abrasive or demanding adhesive chemistries."
+        ]
+      },
+      {
+        "heading": "Validation & Commissioning",
+        "paragraphs": [
+          "Extensive pilot trials were conducted to validate material behavior, dosing parameters, and cycle performance prior to production release. Following successful testing, the system was delivered as a turnkey solution, including commissioning and operator training."
+        ]
+      },
+      {
+        "heading": "Operational Outcomes",
+        "paragraphs": [
+          "After commissioning, the automated encapsulation process enabled high-output production with maximum process reliability. Material consumption was reduced through precise dosing, manual handling was minimized, and overall unit costs decreased measurably."
+        ]
+      },
+      {
+        "heading": "Scalability & Future Expansion",
+        "paragraphs": [
+          "The modular architecture was intentionally designed to support future throughput increases and system expansion, ensuring long-term alignment with evolving production demands."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "industrial-electronics-epoxy-encapsulation",
+    "title": "Epoxy Encapsulation for Industrial Electronics and Controls",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an epoxy encapsulation architecture for industrial electronic and control assemblies requiring stable electrical performance, environmental protection, and long-term reliability in demanding operating conditions. The architecture applies proven encapsulation quality principles to ensure consistent results across production programs."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Industrial control manufacturers face reliability expectations driven by uptime requirements and warranty exposure. Variability in manual potting processes introduced risks related to voiding, inconsistent cure, and thermal stress. A controlled encapsulation architecture was required to stabilize quality and reduce lifecycle risk."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required two-component epoxy encapsulation with controlled ratio management, stable material temperature, defined shot volumes, and repeatable fill behavior across multiple enclosure geometries."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The encapsulation platform utilizes precision metering and mixing equipment with temperature-conditioned material handling. Point-of-application mixing minimizes residence time and supports void-free encapsulation across varying part sizes."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage recipe storage, ratio monitoring, automated flushing, and process interlocks. Defined process windows were validated to ensure consistent encapsulation quality across production runs."
+        ]
+      },
+      {
+        "heading": "Encapsulation Quality Framework Alignment",
+        "paragraphs": [
+          "This application is executed within Kirkco’s encapsulation quality framework, which standardizes ratio stability, thermal control, void mitigation, and process validation across encapsulation systems. For a system-level view of how encapsulation quality is engineered across applications, reference: Encapsulating Quality – Application Architecture (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "The architecture reduced rework, stabilized encapsulation quality, and minimized operator dependency while supporting predictable production throughput."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "Designed for long-term service, the system supports future material changes, additional recipes, and throughput increases without architectural redesign."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "led-driver-epoxy-potting",
+    "title": "Epoxy Potting for LED Drivers and Power Electronics",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an epoxy potting architecture for LED drivers and power electronics where thermal management, moisture resistance, and electrical insulation are critical to long-term field performance. The architecture applies a controlled encapsulation approach to stabilize quality across high-volume production."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "LED system manufacturers face warranty exposure driven by heat, humidity, and electrical stress. Manual potting methods resulted in inconsistent fill levels and trapped air, increasing early-life failures. A production-grade encapsulation architecture was required to improve reliability while maintaining throughput."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required two-component epoxy potting with precise ratio control, temperature-conditioned material delivery, and defined shot volumes to ensure void-free fills across varying housing geometries."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The potting platform utilizes precision metering and mixing with point-of-application dispensing to minimize residence time. Temperature control across the material path maintains viscosity stability and repeatable flow behavior."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage recipes, ratio monitoring, automated flushing, and interlocks. Process windows were validated to ensure consistent potting quality across production lots."
+        ]
+      },
+      {
+        "heading": "Encapsulation Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s encapsulation quality framework, which standardizes ratio stability, thermal control, void mitigation, and validation practices across encapsulation systems. Reference: Encapsulating Quality – Application Architecture (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation reduced scrap, improved thermal consistency, and stabilized electrical performance while supporting predictable cycle times."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports future material changes, additional power ratings, and throughput increases without structural redesign."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "industrial-sensor-epoxy-encapsulation",
+    "title": "Epoxy Encapsulation for Industrial Sensor Modules",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an epoxy encapsulation architecture for industrial sensor modules operating in harsh environments where moisture ingress, vibration, and thermal cycling can compromise signal integrity. The architecture delivers repeatable, void-free encapsulation while supporting multi-variant sensor production."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Sensor manufacturers require stable output and long service life to meet uptime guarantees and reduce warranty exposure. Manual potting introduced variability in fill quality and cure behavior, leading to drift and early failures. A controlled encapsulation approach was required to standardize quality."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required two-component epoxy encapsulation with precise ratio control, temperature-conditioned delivery, and defined shot volumes to ensure consistent coverage of sensitive elements and interconnects."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The encapsulation platform utilizes precision metering and mixing with point-of-application dispense. Temperature control across supply, metering, and mixing maintains viscosity stability and predictable flow into compact housings."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage recipes, ratio monitoring, and automated flushing. Validated process windows ensure repeatable encapsulation performance across sensor variants and production shifts."
+        ]
+      },
+      {
+        "heading": "Encapsulation Quality Framework Alignment",
+        "paragraphs": [
+          "This application aligns with Kirkco’s encapsulation quality framework, standardizing ratio stability, thermal control, void mitigation, and validation practices across encapsulation programs. Reference: Encapsulating Quality – Application Architecture (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation improved encapsulation uniformity, reduced scrap, and stabilized sensor performance under environmental stress."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports future sensor designs, material changes, and throughput increases without redesign of the core platform."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "automotive-electronics-pu-encapsulation",
+    "title": "Polyurethane Encapsulation for Automotive Electronic Modules",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a polyurethane encapsulation architecture for automotive electronic modules used in security and fleet management systems. The architecture was designed to deliver high accuracy, repeatability, and long-term environmental protection while supporting production-grade reliability and rapid product changeover."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Automotive electronics manufacturers face stringent quality expectations driven by safety, reliability, and warranty exposure. Electronic modules deployed in harsh operating environments require encapsulation solutions that eliminate moisture ingress, protect intellectual property, and ensure consistent performance over the vehicle lifecycle."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required controlled dispensing of a two-component polyurethane encapsulation material into electronic housings. Key requirements included tight shot-weight tolerance, stable mixing ratios, and repeatable delivery across high production volumes. Flexibility to accommodate multiple product variants without extended setup time was also required."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The encapsulation platform utilizes a gear pump-driven metering and mixing system configured for low- to medium-viscosity polyurethane materials. Independently driven metering pumps provide precise volumetric control, while integrated pressure feed containers ensure stable material supply and consistent flow behavior. The system is optimized for shot-based dispensing into enclosed electronic assemblies."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "A PLC-based control architecture manages mixing ratio, output rate, and dispense timing. Process capability studies validated the system’s ability to maintain tight tolerance control, demonstrating exceptional process stability and repeatability under production conditions."
+        ]
+      },
+      {
+        "heading": "Encapsulation Quality Framework Alignment",
+        "paragraphs": [
+          "This application is executed within Kirkco’s encapsulation quality framework, which standardizes ratio stability, shot accuracy, void mitigation, and process validation across encapsulation systems. For a system-level view of encapsulation quality engineering, reference: Encapsulating Quality – Application Architecture (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Following commissioning, the encapsulation system achieved sustained zero-defect performance across tens of thousands of electronic modules. Shot accuracy, repeatability, and system uptime exceeded production requirements, enabling consistent quality output without rework."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports long-term service through modular system design and PLC-based flexibility. Optional features such as selective shot switching enable rapid product changeover, while the core platform supports future throughput increases and material adjustments."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "precision-epoxy-electromechanical-encapsulation",
+    "title": "Precision Epoxy Encapsulation for Electromechanical Components",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a precision epoxy encapsulation architecture for electromechanical components where long-term reliability, thermal stability, and repeatable material control are mission-critical. The system was architected to protect sensitive coils and electronics while supporting multi-program production, tight process tolerances, and future product evolution without platform replacement."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Electromechanical assemblies operating in demanding environments require encapsulation processes that eliminate moisture ingress, vibration damage, and thermal stress while maintaining consistent electrical performance. The manufacturer required a solution that could deliver high process repeatability, low scrap risk, and program flexibility across multiple product variants without increasing operator dependency or downtime.",
+          "OEMs required long-term protection of coils and electronics against moisture ingress, vibration, and thermal cycling while maintaining consistent output across multiple product variants."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required controlled dispensing of a two-component epoxy with precisely maintained mixing ratios, defined shot volumes per component geometry, stable material temperature across metering, mixing, and dispensing, and repeatable cycle performance across multiple encapsulation programs.",
+          "Two-component epoxy dispensed at controlled ratios, defined shot volumes, and stabilized temperature to prevent viscosity drift and cure variation."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The encapsulation platform is based on a precision metering and mixing system configured specifically for epoxy chemistries. The complete material path is temperature-controlled to maintain viscosity stability and dosing accuracy. Point-of-application mixing minimizes residence time, reduces material waste, and ensures consistent encapsulation quality across all production cycles.",
+          "Temperature-conditioned metering, point-of-application mixing, and minimized residence time ensure consistent encapsulation quality."
+        ]
+      },
+      {
+        "heading": "Controls & Program Management",
+        "paragraphs": [
+          "A PLC-based control architecture manages ratio control and output regulation, recipe storage for multiple encapsulation programs, automated flushing and maintenance sequences, and process interlocks to prevent off-ratio or off-temperature dispensing. This architecture enables fast changeovers between product variants without mechanical reconfiguration or extended downtime."
+        ]
+      },
+      {
+        "heading": "Validation & Operational Performance",
+        "paragraphs": [
+          "The system was commissioned with defined process windows and validated to deliver repeatable encapsulation quality across production runs. The architecture supports continuous operation with minimal operator intervention while maintaining consistent material performance over time."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The encapsulation system was designed for long service life with backward-compatible control logic, enabling future material changes, additional recipes, or throughput increases without requiring full system replacement. This ensures alignment with evolving product designs and production demands.",
+          "Backward-compatible logic supports future materials, recipes, and throughput increases."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-controlled recipes, interlocks, and automated flushing validated through defined process windows."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "connector-epoxy-encapsulation",
+    "title": "Epoxy Encapsulation for High-Reliability Connectors",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered an automated epoxy encapsulation architecture for a European manufacturer of high‑reliability connectors used in mission‑critical medical, military, instrumentation, and broadcast applications. The solution replaced a legacy polyurethane process with a higher‑viscosity, environmentally improved epoxy system while increasing consistency, quality, and automation throughput."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "The customer required vacuum‑sealed and IP68‑rated connectors where performance integrity is non‑negotiable. Failure risk directly impacts safety‑critical systems, driving the need for precise volumetric control, repeatable shot accuracy, and controlled material conditioning."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required six discrete metered shot sizes ranging from approximately 0.07 ml to 0.8 ml. Multiple precision fixtures were integrated to hold connector variants while a three‑axis robotic system positioned the dispensing valve and static mixer for fully automated filling."
+        ]
+      },
+      {
+        "heading": "Material & Chemistry Considerations",
+        "paragraphs": [
+          "The encapsulant was transitioned from a lower‑viscosity polyurethane to a two‑component epoxy resin with a mix ratio of approximately 100:90. Although more environmentally favorable, the epoxy introduced significantly higher viscosity and tighter thermal stability requirements."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The dispensing platform is based on a precision micro‑metering and mixing system configured for epoxy processing. To maintain process stability, the complete material path is temperature‑controlled, maintaining resin temperature between 50°C and 60°C throughout metering, mixing, and dispensing."
         ]
       },
       {
         "heading": "Automation & Controls",
         "paragraphs": [
-          "Automation and controls coordinate motion, dispensing, and validation with traceability support."
+          "The system integrates robotic motion control with synchronized metering, valve actuation, and shot selection logic. This architecture enables rapid program changes across connector variants without mechanical reconfiguration."
         ]
       },
       {
         "heading": "Performance Outcomes",
         "paragraphs": [
-          "The architecture delivers improved quality consistency, reduced scrap, and scalable production throughput."
+          "The upgraded encapsulation architecture delivered measurable improvements in product quality, shot‑to‑shot consistency, and process repeatability while simultaneously supporting environmental objectives through material selection and waste reduction."
         ]
       },
       {
         "heading": "Lifecycle & Engineering Support",
         "paragraphs": [
-          "Lifecycle support includes validation, commissioning, and long-term optimization."
+          "Kirkco supported system validation through factory trials, application tuning, and commissioning. Ongoing support includes process optimization, material change evaluation, and automation scalability."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "led-silicone-sealing",
+    "title": "Robotic Silicone Sealing for LED Assemblies",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/single-component/dispensing-valves",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco developed a robotic silicone sealing architecture to deliver uniform, weather-resistant sealing for LED lighting assemblies in outdoor environments."
         ]
       },
       {
-        "heading": "Confidential Engineering",
+        "heading": "Business & Quality Drivers",
         "paragraphs": [
-          "Manufacturers may engage Kirkco under NDA for confidential process review and system architecture development."
+          "Manufacturers required consistent bead geometry, reduced rework, and improved environmental sealing versus manual cartridge application."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Continuous bead application synchronized to part geometry with stable flow and pressure control."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Bulk-fed silicone delivery paired with six-axis robotic motion and precision dispensing valves."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Closed-loop flow control and robot path validation ensure repeatable sealing performance."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "Architecture supports additional part sizes, recipes, and automation expansion."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "transformer-potting-under-vacuum",
+    "title": "Transformer Potting Under Vacuum",
+    "nda": true,
+    "pillarHref": "/equipment-options/adhesives-sealants",
+    "subcategoryHref": "/equipment-options/adhesives-sealants/two-component",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines a production-grade, NDA-safe framework for transformer and coil potting under vacuum conditions. It is specifically engineered for applications where atmospheric or gravity-fill methods fail to achieve complete impregnation due to complex winding geometries, trapped air volumes, and elevated dielectric performance requirements. The architecture prioritizes insulation integrity, long-term reliability, and scalable production execution."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Transformer potting applications are driven by the need to eliminate partial discharge, thermal hotspots, and premature insulation failure. Incomplete impregnation directly increases field failure risk, rework, scrap, and warranty exposure. Vacuum potting is therefore a risk-mitigation requirement rather than a process preference."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The process requires staged evacuation to remove entrapped air from winding packs, followed by stabilized vacuum conditions prior to resin introduction. Metered resin delivery occurs under sustained vacuum, with a controlled pressure return sequence used to promote deep resin penetration and void elimination.",
+          "Both components are evacuated before they are mixed, so the fill does not reintroduce air. Vacuum casting reaches narrow gaps, small openings, and angular winding shapes that an atmospheric fill leaves voided, including when the insulation resin is abrasive and needs a wear-resistant meter."
+        ]
+      },
+      {
+        "heading": "Material & Chemistry Considerations",
+        "paragraphs": [
+          "Materials typically include epoxy or polyurethane systems formulated for electrical insulation and, in some cases, enhanced thermal conductivity. Material selection must balance low initial viscosity for impregnation with cured-state dielectric strength and thermal performance. Temperature conditioning is required to maintain stable viscosity and predictable cure behavior throughout the vacuum cycle."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The system architecture integrates precision metering and mixing equipment with a vacuum chamber sized to accommodate transformer geometries and throughput requirements. Batch vacuum impregnation is typically utilized for large or complex assemblies, while semi-continuous operation may be employed for smaller, high-mix product families. The architecture supports modular expansion without requalification of core process elements."
+        ]
+      },
+      {
+        "heading": "Automation & Controls",
+        "paragraphs": [
+          "Automation synchronizes vacuum sequencing, metering enable logic, and fill completion verification. Dispense enable is interlocked to verified vacuum conditions, ensuring resin introduction only occurs once evacuation criteria are met. Recipe-driven vacuum profiles and traceability functions support quality audits and process repeatability."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "When properly implemented, this architecture delivers consistent impregnation depth across transformer variants, reduced void content, improved dielectric performance, and predictable production outcomes while reducing operator dependency and process variability."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Engineering Support",
+        "paragraphs": [
+          "Lifecycle support includes application validation, factory acceptance testing, commissioning, and ongoing process optimization. The architecture accommodates future insulation upgrades, material changes, or power density increases without requiring full system redesign."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "glass-facade-dynamic-mixing-retrofit",
+    "title": "Dynamic Mixing Upgrade for Glass Facade Sealing and Bonding",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a dynamic mixing retrofit architecture to modernize glass façade sealing and bonding operations, reducing operating costs and material waste."
+        ]
+      },
+      {
+        "heading": "Retrofit Objective",
+        "paragraphs": [
+          "Replace legacy mixing systems with high waste and cleaning overhead."
+        ]
+      },
+      {
+        "heading": "Process Innovation",
+        "paragraphs": [
+          "Dynamic inline mixing eliminates flushing, reduces pressure, and stabilizes output."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Add-on dynamic mixer integrated into existing sealing and bonding lines."
+        ]
+      },
+      {
+        "heading": "Measured Impact",
+        "paragraphs": [
+          "Reduced cleaning labor, lower material loss, and annual operating cost savings."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elastomer-microdosing",
+    "title": "Micro-Dosing Elastomers for Automotive Seals",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a micro-dosing elastomer dispensing architecture for high-speed automotive seal production requiring extreme accuracy."
+        ]
+      },
+      {
+        "heading": "Production Context",
+        "paragraphs": [
+          "Millions of parts annually with sub-second cycle times."
+        ]
+      },
+      {
+        "heading": "Material Control",
+        "paragraphs": [
+          "Two-component FKM elastomer metered at 0.06g ±0.01g."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Gear-pump metering with snuff-back valve and static mixing."
+        ]
+      },
+      {
+        "heading": "Quality Assurance",
+        "paragraphs": [
+          "Drip-free dispensing and precise volumetric control."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "utility-enclosure-adhesive-automation",
+    "title": "Automated Adhesive Application for Utility Enclosures",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco delivered an automated adhesive application architecture for enclosure assemblies used in global utility metering, prioritizing process safety, material efficiency, and consistent quality."
+        ]
+      },
+      {
+        "heading": "Application Context",
+        "paragraphs": [
+          "Bonding and sealing of enclosure housings in regulated, safety-critical utility products."
+        ]
+      },
+      {
+        "heading": "Automation Strategy",
+        "paragraphs": [
+          "CNC-controlled axis system with interlocks and presence detection to ensure correct application."
+        ]
+      },
+      {
+        "heading": "Process Reliability",
+        "paragraphs": [
+          "Closed-loop logic confirms workpiece position, adhesive application, and release status."
+        ]
+      },
+      {
+        "heading": "Value Delivered",
+        "paragraphs": [
+          "High production safety, reduced material usage, and repeatable adhesive placement."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "solar-bulk-silicone-dispensing",
+    "title": "Bulk Silicone Dispensing for Solar Module Frames",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco delivered a bulk silicone dispensing architecture replacing manual cartridge application in solar module manufacturing."
+        ]
+      },
+      {
+        "heading": "Process Challenge",
+        "paragraphs": [
+          "Manual cartridge guns limited flow control and consistency."
+        ]
+      },
+      {
+        "heading": "System Design",
+        "paragraphs": [
+          "Drum‑fed gear‑pump metering synchronized to robotic motion."
+        ]
+      },
+      {
+        "heading": "Quality Assurance",
+        "paragraphs": [
+          "Closed‑loop flow monitoring ensures bead accuracy."
+        ]
+      },
+      {
+        "heading": "Cost Benefit",
+        "paragraphs": [
+          "Lower material cost and elimination of secondary cleaning."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "solar-robotic-silicone-sealing",
+    "title": "Robotic Silicone Sealing for Solar Panels",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a robotic silicone sealing architecture to protect photovoltaic panels against environmental ingress during automated assembly."
+        ]
+      },
+      {
+        "heading": "Sealing Requirement",
+        "paragraphs": [
+          "Continuous, uniform bead geometry for weatherproofing."
+        ]
+      },
+      {
+        "heading": "Material Control",
+        "paragraphs": [
+          "Two‑component silicone proportioned at controlled ratios."
+        ]
+      },
+      {
+        "heading": "Automation Architecture",
+        "paragraphs": [
+          "Six‑axis robot with bulk‑fed metering and static mixing."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "Reduced waste and repeatable seal quality."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "automotive-lighting-warm-melt-bonding",
+    "title": "Warm-Melt Adhesive Bonding for Automotive Lighting Assemblies",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a warm-melt adhesive bonding architecture for high-volume automotive lighting assemblies, enabling reliable bonding of diffusing panels to housings with minimal material waste and uninterrupted production."
+        ]
+      },
+      {
+        "heading": "Production Drivers",
+        "paragraphs": [
+          "High-volume lighting production required consistent bonding quality, minimal downtime, and ergonomic material handling."
+        ]
+      },
+      {
+        "heading": "Process Architecture",
+        "paragraphs": [
+          "Heated warm-melt adhesive processed from foil packaging using hydraulic dosing and controlled outlet valves."
+        ]
+      },
+      {
+        "heading": "System Design",
+        "paragraphs": [
+          "Tandem dosing architecture enables standstill-free operation and near-complete material evacuation."
+        ]
+      },
+      {
+        "heading": "Operational Benefits",
+        "paragraphs": [
+          "Reduced waste, space-efficient installation, improved operator ergonomics, and stable bond quality."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "filter-element-resin-encapsulation",
+    "title": "Resin Encapsulation for Industrial Filter Elements",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a resin encapsulation architecture to stabilize pleated filter media and ensure consistent sealing under high-flow conditions."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Filter OEMs required repeatable encapsulation quality, reduced scrap, and scalable automation readiness."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Controlled dispensing of PU or epoxy resins to fully wet and seal pleated media."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Gear-pump metering with static mixing and precise flow regulation."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Recipe-based control with validation of bead volume and placement."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "Designed to scale from semi-automated stations to fully automated lines."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marine-composite-quality-framework",
+    "title": "Marine Composite Systems Quality Framework",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a Marine Composite Systems Quality Framework to govern the design, manufacture, and surface engineering of composite structures deployed in harsh marine environments. This authority framework consolidates structural composites, filament winding, in-mold coating (IMC), and gelcoat processes into a unified system architecture optimized for corrosion resistance, fatigue durability, and long-term environmental exposure."
+        ]
+      },
+      {
+        "heading": "Marine Market & Performance Drivers",
+        "paragraphs": [
+          "Marine composite components are subjected to continuous cyclic loading, saltwater exposure, UV radiation, and mechanical impact. Manufacturers require composite systems that deliver predictable structural performance, controlled surface finishes, and extended service life while minimizing maintenance and lifecycle cost."
+        ]
+      },
+      {
+        "heading": "Marine Composite Process Scope",
+        "paragraphs": [
+          "Marine composite systems include filament-wound structures, molded composite panels, structural laminates, and surface-engineered components. Processes may incorporate resin infusion, compression molding, filament winding, and surface coating technologies such as gelcoat and in-mold coating."
+        ]
+      },
+      {
+        "heading": "Structural Composite Architectures",
+        "paragraphs": [
+          "Structural marine composites rely on controlled fiber placement, resin impregnation, and curing processes to achieve strength, stiffness, and fatigue resistance. Filament winding is commonly utilized for cylindrical and tubular marine components including fenders, mooring elements, and energy-absorbing structures."
+        ]
+      },
+      {
+        "heading": "Surface Engineering: IMC & Gelcoat Integration",
+        "paragraphs": [
+          "Marine composite systems frequently integrate surface engineering processes to provide UV stability, abrasion resistance, and aesthetic consistency. Gelcoat is traditionally applied to mold surfaces prior to laminate layup, while IMC introduces a precision-dispensed coating into a closed mold after composite consolidation. IMC enables controlled surface thickness, reduced manual labor, and improved repeatability compared to conventional gelcoat application."
+        ]
+      },
+      {
+        "heading": "System Architecture & Integration",
+        "paragraphs": [
+          "The marine composite system architecture integrates resin storage and conditioning, precision metering, composite forming processes, surface coating delivery, and controlled curing. All subsystems are engineered as a coordinated platform to maintain structural and surface quality under marine service conditions."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based control architectures synchronize resin metering, coating application, and process timing with mold and press states. Validation procedures confirm structural integrity, surface adhesion, coating thickness, and repeatability aligned with marine performance standards."
+        ]
+      },
+      {
+        "heading": "Framework Alignment & Governance",
+        "paragraphs": [
+          "This authority framework operates under Kirkco’s Composite Application Systems Quality Framework and interfaces with Construction and Infrastructure architectures where marine structures overlap with civil applications. IMC Coatec system architectures are referenced as execution-level implementations within this governance model."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The framework supports scalability from pilot marine components to full production systems, accommodating evolving resin systems, coating technologies, and automation levels without redesign of the core architecture."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "composite-panel-systems",
+    "title": "Composite Panel Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/composites",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines Kirkco Composite Panel Systems engineered for structural, transportation, marine, cold-chain, and industrial enclosure applications. These systems integrate core materials, facers, adhesive or reactive chemistries, and automation into unified production architectures designed around performance, durability, and scalable manufacturing."
+        ]
+      },
+      {
+        "heading": "Market & Manufacturing Drivers",
+        "paragraphs": [
+          "Lightweight structural performance requirements",
+          "Thermal insulation and fire compliance standards",
+          "Transportation weight reduction initiatives",
+          "Cold-chain thermal efficiency and hygiene compliance",
+          "Modular construction and prefabrication growth"
+        ]
+      },
+      {
+        "heading": "Composite Panel Configurations",
+        "paragraphs": [
+          "Systems support a wide range of composite panel constructions, including:",
+          "FRP-faced composite sandwich panels",
+          "Steel- or aluminum-skinned structural panels",
+          "Honeycomb core composite laminates",
+          "Thermoplastic composite panel systems",
+          "Refrigerated trailer and cold-storage body panels",
+          "Marine and offshore structural composite panels",
+          "Energy infrastructure enclosure panels"
+        ]
+      },
+      {
+        "heading": "Material & Process Requirements",
+        "paragraphs": [
+          "Composite panel production requires precise control of reactive polyurethane systems, structural adhesives, thermoset or thermoplastic resins, and core materials. Systems must accommodate variable viscosity ranges, filled formulations, and structural insert integration while maintaining bond integrity and dimensional stability.",
+          "Critical process variables include:",
+          "Ratio accuracy and flow consistency",
+          "Surface preparation and adhesion control",
+          "Core compression and lamination pressure",
+          "Thermal cure or consolidation profiles",
+          "Dimensional tolerance and thickness regulation"
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Typical composite panel system modules include:",
+          "Bulk chemical storage and conditioning infrastructure",
+          "High- or mid-pressure metering and mixing systems",
+          "Adhesive or reactive resin distribution manifolds",
+          "Core placement and alignment systems",
+          "Lamination presses (platen, belt, or vacuum-assisted)",
+          "Thermal cure ovens or heated press zones",
+          "Servo-driven pressure and thickness regulation",
+          "Downstream trimming, machining, and stacking integration"
+        ]
+      },
+      {
+        "heading": "Controls & Automation Architecture",
+        "paragraphs": [
+          "PLC-based control systems synchronize material dispensing, lamination pressure, thermal profiles, and downstream handling. Recipe management enables multi-product flexibility while preserving bond performance and structural repeatability.",
+          "Capabilities include:",
+          "Closed-loop flow and temperature monitoring",
+          "Press position and force feedback control",
+          "Production data logging and traceability",
+          "Quality validation and reporting integration"
+        ]
+      },
+      {
+        "heading": "Quality & Validation Framework Alignment",
+        "paragraphs": [
+          "Composite panel systems align with Kirkco’s Polyurethane Foam & Composites Quality Framework, standardizing validation methodology, structural bond verification, and lifecycle scalability across composite manufacturing deployments."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Improved structural consistency and bond reliability",
+          "Reduced material waste and rework",
+          "Stable lamination pressure and cure control",
+          "Scalable production architecture for growth"
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability Strategy",
+        "paragraphs": [
+          "The architecture supports phased expansion, additional lamination stations, multi-core configurations, and automation upgrades without redesigning the core metering and controls infrastructure.",
+          "Lifecycle support includes:",
+          "Remote diagnostics and controls optimization",
+          "Preventive maintenance strategies",
+          "Retrofit and modernization pathways",
+          "Backward-compatible control upgrades"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "structural-composite-foam-systems",
+    "title": "Structural Composite Foam Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/composites",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines Kirkco Structural Composite Foam Systems engineered for load-bearing, high-performance composite panel and enclosure applications. These systems control density, cell structure, adhesion, and structural reinforcement integration to produce panels and cores designed for mechanical strength, thermal stability, and long-term durability."
+        ]
+      },
+      {
+        "heading": "Primary Market Applications",
+        "paragraphs": [
+          "Structural insulated building systems",
+          "Transportation and trailer composite bodies",
+          "Marine and offshore composite structures",
+          "Energy infrastructure enclosures",
+          "Industrial equipment housings and load-bearing panels"
+        ]
+      },
+      {
+        "heading": "Engineering & Performance Drivers",
+        "paragraphs": [
+          "Load-bearing performance and flexural strength",
+          "Controlled density gradients",
+          "Insert encapsulation and reinforcement bonding",
+          "Fire and thermal compliance",
+          "Dimensional stability under mechanical stress"
+        ]
+      },
+      {
+        "heading": "Material & Process Requirements",
+        "paragraphs": [
+          "Structural composite foam processing requires precise metering of multi-component polyurethane systems, often filled or modified for mechanical performance. The process must maintain ratio accuracy, temperature stability, and controlled expansion to ensure uniform cell structure and structural integrity.",
+          "Critical control variables:",
+          "Ratio tolerance and flow stability",
+          "Material conditioning and temperature control",
+          "Controlled expansion and rise profile",
+          "Mold or cavity pressure management",
+          "Cure dwell time and structural stabilization"
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Structural composite foam systems may include:",
+          "Bulk chemical storage with inert gas blanketing where required",
+          "High-pressure metering and dynamic mixing systems",
+          "Precision dispense heads for cavity or mold injection",
+          "Insert placement and reinforcement alignment fixtures",
+          "Heated mold or press systems with zoned temperature control",
+          "Vacuum assist options for void reduction",
+          "Servo-controlled clamp or press force regulation",
+          "Post-cure thermal conditioning zones"
+        ]
+      },
+      {
+        "heading": "Controls & Automation Architecture",
+        "paragraphs": [
+          "PLC-based controls synchronize shot timing, mold or cavity sequencing, thermal management, and safety interlocks. Closed-loop monitoring maintains ratio integrity and structural repeatability across varying geometries and density targets.",
+          "Capabilities include:",
+          "Closed-loop flow and ratio monitoring",
+          "Mold pressure and clamp force feedback",
+          "Temperature trending and alarm logic",
+          "Production data logging for structural validation",
+          "FAT and SAT protocol support"
+        ]
+      },
+      {
+        "heading": "Structural Performance & Validation",
+        "paragraphs": [
+          "Validation protocols confirm density uniformity, adhesion strength, insert bonding integrity, and dimensional tolerance. Systems are engineered to support mechanical testing requirements aligned with structural, transportation, and energy standards."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Predictable structural strength and repeatability",
+          "Reduced voids and density variation",
+          "Stable insert encapsulation performance",
+          "Scalable architecture for higher output or larger molds"
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability Strategy",
+        "paragraphs": [
+          "The architecture supports expansion through larger mold platforms, additional metering capacity, automation upgrades, and integration with downstream machining or finishing operations without replacing the core metering and control infrastructure.",
+          "Lifecycle support includes:",
+          "Remote diagnostics and optimization",
+          "Preventive maintenance programs",
+          "Retrofit and modernization pathways",
+          "Backward-compatible control upgrades"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "anti-vibration-dampening-composites",
+    "title": "Anti-Vibration and Dampening Composite Assemblies",
+    "nda": true,
+    "pillarHref": "/equipment-options/composites",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered anti-vibration and dampening composite system architectures for applications requiring controlled energy absorption, vibration isolation, and long-term mechanical stability. These architectures combine structural composites and elastomeric systems to mitigate dynamic loads, noise, and fatigue across industrial, transportation, and marine environments."
+        ]
+      },
+      {
+        "heading": "Application Scope",
+        "paragraphs": [
+          "This architecture governs composite-based anti-vibration systems including isolation mounts, dampening panels, shock-absorbing interfaces, and hybrid elastomer–composite assemblies. Applications prioritize dynamic load management rather than static structural bonding."
+        ]
+      },
+      {
+        "heading": "High-Pressure PU Manufacturing Pathway (Cross-Reference)",
+        "paragraphs": [
+          "When dampening components are produced using polyurethane elastomers, microcellular foams, or foam-in-mold processes, high-pressure polyurethane metering systems provide the required ratio control, temperature stability, and shot repeatability. This manufacturing pathway ensures consistent dynamic response, reduced variation in stiffness, and improved fatigue life. Reference: High-Pressure PU Metering Systems (Rev C)."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Validation procedures confirm vibration attenuation, frequency response consistency, fatigue resistance, and repeatable performance under cyclic loading."
+        ]
+      },
+      {
+        "heading": "Composite Application Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Composite Application Systems Quality Framework, with manufacturing cross-alignment to the Polyurethane Foam Systems Quality Framework when PU-based dampening elements are employed."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marine-structural-composite-systems",
+    "title": "Marine Structural Composite Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/composites",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered marine structural composite system architectures for harsh maritime environments where impact resistance, fatigue durability, corrosion resistance, and long-term structural stability are mission-critical. These systems are designed to support fendering, mooring, buoyancy, and structural marine components without reliance on proprietary or brand-specific solutions."
+        ]
+      },
+      {
+        "heading": "Marine Operating Environment",
+        "paragraphs": [
+          "Marine composite systems are deployed across highly variable environments including sheltered harbors, exposed coastal installations, offshore facilities, and extreme climate regions. Systems must withstand cyclic loading, saltwater exposure, UV radiation, temperature variation, and mechanical impact while maintaining structural integrity over extended service life."
+        ]
+      },
+      {
+        "heading": "Application Scope",
+        "paragraphs": [
+          "This architecture governs structural marine composite applications including energy-absorbing fender systems, mooring interface components, buoyancy structures, and reinforced marine structural parts. Applications emphasize controlled composite construction rather than electronic encapsulation or lubrication-dependent processes."
+        ]
+      },
+      {
+        "heading": "Material & Composite Architecture",
+        "paragraphs": [
+          "Marine structural composites utilize engineered combinations of polyurethane elastomers, epoxy or vinyl ester resins, reinforced fibers, and hybrid composite structures. Material selection is driven by impact absorption, load distribution, fatigue resistance, and environmental durability rather than cosmetic considerations."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The composite system architecture integrates precision resin metering, controlled molding or infusion processes, structural bonding interfaces, and application-specific tooling. Systems are engineered to ensure consistent resin distribution, fiber wet-out, and controlled cure behavior across large-format or high-mass composite components."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "Process control architectures manage resin delivery rates, cure timing, and environmental conditioning. Validation procedures confirm mechanical performance, dimensional stability, impact response, and repeatability across production batches."
+        ]
+      },
+      {
+        "heading": "Composite Application Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Composite Application Systems Quality Framework, which standardizes structural composite processing, validation methodology, and lifecycle scalability across marine composite systems. Reference: Composite Application Systems Quality Framework (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Framework-driven implementations deliver predictable structural performance, reduced rework, and extended service life in demanding marine deployments."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports scalable production, field repair strategies, and material evolution to accommodate changing marine standards, installation requirements, and environmental conditions."
+        ]
+      },
+      {
+        "heading": "NDA-Safe Deployment Context",
+        "paragraphs": [
+          "This architecture reflects multiple marine composite deployments executed under NDA. All system descriptions remain manufacturer- and customer-agnostic while maintaining industry-recognizable technical vocabulary."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marine-structural-encapsulation",
+    "title": "Marine Structural Sealing and Encapsulation",
+    "nda": true,
+    "pillarHref": "/equipment-options/composites",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a marine-grade sealing and encapsulation architecture for composite assemblies exposed to continuous moisture, salt spray, and cyclic mechanical loading. The architecture delivers durable environmental protection and bond integrity while supporting repeatable production and service-life reliability."
+        ]
+      },
+      {
+        "heading": "Business & Quality Drivers",
+        "paragraphs": [
+          "Marine manufacturers operate in environments that rapidly expose weaknesses in sealing and encapsulation processes. Water ingress, UV exposure, and vibration contribute to premature failures and warranty claims. A controlled, production-grade encapsulation approach was required to stabilize quality and extend service life."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "The application required controlled dispensing of elastomeric or resin-based materials to seal and encapsulate composite joints and interfaces. Requirements included consistent bead geometry, void-free coverage, and predictable cure behavior under variable ambient conditions."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The encapsulation platform utilizes bulk-fed dispensing with precision metering and valve technology suited for marine-grade materials. Material conditioning and controlled flow paths ensure consistent delivery across complex geometries common to composite marine structures."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage dispense parameters, material conditioning, and interlocks. Process validation confirmed repeatable sealing and encapsulation performance across production runs and environmental conditions."
+        ]
+      },
+      {
+        "heading": "Encapsulation Quality Framework Alignment",
+        "paragraphs": [
+          "This application aligns with Kirkco’s encapsulation quality framework, applying standardized practices for material control, void mitigation, and validation. Reference: Encapsulating Quality – Application Architecture (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation improved sealing consistency, reduced rework, and enhanced long-term environmental resistance of composite assemblies."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports future material changes, larger assemblies, and automation expansion as production volumes increase."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marine-structural-bonding-deck-systems",
+    "title": "Structural Bonding and Deck Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/composites",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "In high-performance yacht manufacturing, structural integrity is achieved by balancing advanced materials technology with skilled craftsmanship. While modern CAD, simulation, and controlled production environments improve consistency, long-term durability at sea is ultimately governed by how structural elements are bonded, cured, and integrated into the hull and deck assemblies.",
+          "This application architecture outlines a confidential marine bonding process used by a leading global yacht builder to improve hull stiffness, reduce cure time, and maintain artisan-level quality control."
+        ]
+      },
+      {
+        "heading": "Structural Bonding Architecture: Hull Reinforcement Grid",
+        "paragraphs": [
+          "Each hull is produced as a composite shell and reinforced internally with a laminated structural grid bonded directly to the inner laminate. This grid is a primary load-bearing structure, distributing sailing loads, wave impact forces, and torsional stresses throughout the vessel."
+        ]
+      },
+      {
+        "heading": "Process Architecture",
+        "paragraphs": [
+          "Base adhesive and accelerator are stored and handled independently to maintain material stability.",
+          "Materials are conveyed separately to a handheld dispensing valve.",
+          "Mixing occurs immediately prior to dispense to ensure consistent activation.",
+          "Continuous adhesive beads are applied manually by a trained technician along the structural grid interface.",
+          "This architecture preserves craft-level placement precision while ensuring process repeatability and bond integrity."
+        ]
+      },
+      {
+        "heading": "Controlled Cure Acceleration Strategy",
+        "paragraphs": [
+          "Marine environments demand reliable bonding regardless of ambient conditions. Introducing a precisely metered accelerator (typically adjustable within a narrow percentage range) at the point of dispense enables:",
+          "Accelerated polymerization independent of humidity",
+          "Significantly reduced cure times",
+          "Faster progression to downstream assembly operations",
+          "Consistent mechanical performance across hulls",
+          "The acceleration strategy is embedded into the dispensing process, eliminating variability associated with pre-mixing or batch handling."
+        ]
+      },
+      {
+        "heading": "Secondary Application: Off-Boat Deck Manufacturing",
+        "paragraphs": [
+          "A parallel bonding strategy is used in off-boat deck construction, where complete timber decks are manufactured under controlled workshop conditions prior to installation."
+        ]
+      },
+      {
+        "heading": "Deck Manufacturing Workflow",
+        "paragraphs": [
+          "Precision-machined timber strips assembled face-down in engineered jigs",
+          "Controlled spacing maintained for later caulking",
+          "Temporary sealing applied to prevent compound migration",
+          "Structural backing laminated with glass reinforcement and resin",
+          "Deck inverted for caulking application and final finishing",
+          "Historically, caulking cure times introduced scheduling delays and storage constraints. By integrating a dispense-time accelerator, curing duration was reduced from multiple days to less than 24 hours—without sacrificing elasticity or long-term performance."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "This anonymous marine application architecture delivers measurable production and performance benefits:",
+          "Increased hull and deck structural rigidity",
+          "Reduced work-in-process dwell time",
+          "Improved production scheduling predictability",
+          "Preservation of skilled manual application where required",
+          "Enhanced durability under cyclic marine loads"
+        ]
+      },
+      {
+        "heading": "Why This Architecture Matters",
+        "paragraphs": [
+          "Marine structures must withstand continuous mechanical stress, moisture exposure, thermal cycling, and long service life expectations. Dispensing architectures that combine process control, material science, and human skill provide a competitive advantage in both performance and manufacturability."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marine-fendering-mooring-monitoring-buoys",
+    "title": "Marine Fendering, Mooring, Monitoring, and Buoy Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/composites",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This sub-page defines product-specific marine application architectures focused on fendering systems, mooring solutions, and offshore monitoring buoys. The terminology and functional context align with globally accepted marine engineering vocabularies, while remaining manufacturer- and customer-agnostic.Each application emphasizes durability, load management, environmental resistance, and long-term lifecycle performance in harsh marine environments."
+        ]
+      },
+      {
+        "heading": "Fendering Systems – Energy Absorption & Hull Protection",
+        "paragraphs": [
+          "Marine fendering systems are engineered to absorb berthing energy and protect both vessel hulls and quay structures. These systems operate under repeated high-load compression cycles and must maintain predictable force-deflection characteristics over time.Application Architecture:",
+          "Elastomeric or composite fender bodies designed for controlled energy absorption",
+          "Structural mounting interfaces bonded or mechanically secured to quay or pile structures",
+          "Adhesive and sealant systems used for backing plates, load-spreading elements, and corrosion isolationDispensing and bonding processes focus on repeatable material ratios, high-viscosity handling, and environmental resistance to saltwater, UV, and temperature extremes."
+        ]
+      },
+      {
+        "heading": "Mooring Systems – Load Transfer & Fatigue Management",
+        "paragraphs": [
+          "Modern mooring systems manage dynamic vessel loads generated by tides, wind, waves, and operational movement. Components such as elastomeric elements, hawser interfaces, and anchor connections must dissipate energy while minimizing fatigue.Application Architecture:",
+          "Bonded elastomeric components with controlled stiffness profiles",
+          "Encapsulation of metallic interfaces to mitigate corrosion and fretting",
+          "Precision dispensing of structural adhesives and potting compounds for load-critical jointsProcess control ensures consistent mechanical performance and long service life under cyclic loading conditions."
+        ]
+      },
+      {
+        "heading": "Monitoring & Instrumented Marine Components",
+        "paragraphs": [
+          "Marine monitoring systems integrate sensors, cabling, and protective housings to collect environmental and structural data. These assemblies must remain sealed and operational for extended deployment periods.Application Architecture:",
+          "Potting and encapsulation of electronics for water ingress protection",
+          "Controlled dispensing of low- and medium-viscosity resins",
+          "Repeatable fill volumes to ensure sensor calibration integrityDispensing architectures prioritize air-free material delivery, precise shot control, and validation-ready process documentation."
+        ]
+      },
+      {
+        "heading": "Buoy Systems – Long-Duration Offshore Deployment",
+        "paragraphs": [
+          "Offshore buoy systems are deployed for navigation, data acquisition, and environmental monitoring. They combine structural flotation elements with embedded instrumentation and mooring interfaces.Application Architecture:",
+          "Structural foam or composite flotation bodies",
+          "Encapsulation of electronics and cable transitions",
+          "Bonding of structural inserts and load-transfer componentsManufacturing processes emphasize material compatibility, long-term water resistance, and controlled cure profiles to ensure multi-year offshore reliability."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "Predictable energy absorption and load transfer",
+          "Improved fatigue resistance and lifecycle durability",
+          "Reduced field maintenance and replacement intervals",
+          "Consistent quality across production and deployment programs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polyurethane-foam-quality-framework",
+    "title": "Polyurethane Foam Systems Quality Framework",
+    "nda": false,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a Polyurethane Foam Systems Quality Framework to govern high-performance foam processing systems across industrial manufacturing environments. This architecture establishes repeatable process control, material integrity, throughput stability, and lifecycle scalability for polyurethane foam production and dispensing systems."
+        ]
+      },
+      {
+        "heading": "Market & Production Drivers",
+        "paragraphs": [
+          "Polyurethane foam manufacturers face increasing pressure to improve yield, reduce scrap, stabilize throughput, and support a wider range of product variants. Variability in mixing quality, temperature control, and material handling introduces significant production and quality risk. A standardized foam systems architecture is required to ensure consistent outcomes at scale."
+        ]
+      },
+      {
+        "heading": "Process Architecture",
+        "paragraphs": [
+          "Polyurethane foam processing encompasses high-pressure and low-pressure metering, continuous and discontinuous production, and molded or panel-based part geometries. The framework governs raw material conditioning, ratio control, mixing quality, reaction management, and dispense or laydown consistency."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The foam systems platform utilizes precision metering technologies, including high-pressure piston systems and low-pressure gear or pump-based systems. Mixing heads, laydown devices, molds, and conveyor-based processes are selected based on chemistry, output rate, and production configuration."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based control architectures manage material temperatures, metering ratios, output rates, and safety interlocks. Validation procedures confirm foam density consistency, cell structure quality, adhesion performance, and repeatable production behavior across shifts and product variants."
+        ]
+      },
+      {
+        "heading": "Governed Applications",
+        "paragraphs": [
+          "This framework governs multiple polyurethane foam implementations, including high-pressure metering systems, continuous panel production lines, discontinuous molded foam systems, and foam recycling or regrind integration processes."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Framework-driven implementations improve yield, reduce scrap, stabilize production throughput, and enhance foam quality consistency across manufacturing environments."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports scalability from pilot lines to full-scale production, material formulation changes, automation expansion, and future throughput increases without redesign of the core system."
+        ]
+      },
+      {
+        "heading": "Relationship to Other Quality Frameworks",
+        "paragraphs": [
+          "The Polyurethane Foam Systems Quality Framework operates in parallel with Kirkco’s Adhesives & Sealants, Encapsulation, Lubrication, Composite, and Construction & Infrastructure frameworks. Governance is determined by primary functional objectives related to foam production and processing."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "high-pressure-pu-metering",
+    "title": "High-Pressure Polyurethane Metering Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/polyurethane-processing-equipment",
+    "subcategoryHref": "/equipment-options/polyurethane-processing-equipment/high-pressure-metering",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered high-pressure polyurethane metering architectures for demanding foam production environments requiring precise ratio control, consistent mixing quality, and stable output at industrial throughputs. These systems are designed for continuous, repeatable foam production with tight control over material reaction and part quality."
+        ]
+      },
+      {
+        "heading": "Market & Production Drivers",
+        "paragraphs": [
+          "Manufacturers utilizing polyurethane foam face increasing pressure to improve part consistency, reduce scrap, and maintain throughput as formulations and product geometries evolve. Variability in ratio control, temperature stability, or mixing quality can result in density variation, surface defects, and compromised mechanical performance."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "High-pressure foam processing requires accurate metering of polyol and isocyanate components, stable temperature conditioning, and homogeneous mixing at elevated pressures. Shot size or continuous output must remain repeatable across production cycles and operating conditions."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The metering platform utilizes high-pressure piston pumps with closed-loop ratio control and temperature-managed material supply. High-performance mixing heads provide intensive component mixing immediately prior to dispense, minimizing residence time and ensuring consistent foam reaction."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based control architectures manage pump synchronization, ratio monitoring, material temperatures, and safety interlocks. Validation procedures confirm foam density, cell structure, and adhesion consistency across production runs."
+        ]
+      },
+      {
+        "heading": "Polyurethane Foam Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Polyurethane Foam Systems Quality Framework, which standardizes process control, mixing quality, validation methodology, and lifecycle scalability across foam production systems. Reference: Polyurethane Foam Systems Quality Framework (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation improves foam quality consistency, stabilizes production throughput, and reduces scrap by eliminating ratio and mixing variability as failure modes."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports expansion to higher outputs, additional mixing heads, automation integration, and future formulation changes without redesign of the core system."
+        ]
+      },
+      {
+        "heading": "Downstream Applications: NVH & Dampening Components",
+        "paragraphs": [
+          "High-pressure polyurethane systems are frequently utilized to manufacture anti-vibration and dampening components, including elastomeric isolators, microcellular foam dampers, and energy-absorbing structural elements. These downstream applications depend on stable material properties to ensure predictable vibration attenuation and long-term fatigue performance. Reference: Anti-Vibration & Dampening Composite Assemblies (Rev C)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "discontinuous-molded-pu-foam",
+    "title": "Discontinuous Molded Polyurethane Foam Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/polyurethane-processing-equipment",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered discontinuous molded polyurethane foam system architectures for batch-based production environments requiring precise shot control, repeatable part quality, and flexible tooling configurations. These systems support high-mix manufacturing while maintaining consistent foam density, surface quality, and dimensional accuracy."
+        ]
+      },
+      {
+        "heading": "Market & Production Drivers",
+        "paragraphs": [
+          "Manufacturers producing molded foam components must balance flexibility with quality. Variability in shot size, mixing quality, or mold conditions can lead to voids, density variation, and cosmetic defects. A controlled discontinuous foam architecture is required to stabilize production outcomes across changing molds and part designs."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Discontinuous molded foam processing requires accurate metering of polyurethane components, homogeneous mixing, and controlled shot delivery into closed or open molds. The process must support variable shot sizes, cycle times, and mold geometries while maintaining consistent reaction behavior."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The system architecture utilizes high- or low-pressure metering platforms depending on material reactivity and output requirements. Mixing heads and dispense nozzles are selected to ensure uniform foam distribution within the mold, with auxiliary systems managing mold temperature and venting as required."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based control architectures manage shot size, ratio control, timing sequences, and safety interlocks. Validation procedures confirm foam density consistency, void-free fill, surface finish, and dimensional repeatability across production cycles."
+        ]
+      },
+      {
+        "heading": "Polyurethane Foam Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Polyurethane Foam Systems Quality Framework, which standardizes process control, mixing quality, validation methodology, and lifecycle scalability across foam production systems. Reference: Polyurethane Foam Systems Quality Framework (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation improves molded part consistency, reduces scrap, and supports reliable production across multiple molds and product variants."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports expansion to additional molds, automation integration, and formulation changes without redesign of the core metering and mixing platform."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pu-foam-recycling",
+    "title": "Polyurethane Foam Recycling and Reprocessing Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/polyurethane-processing-equipment",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered polyurethane foam recycling and reprocessing system architectures to convert production scrap and post-process foam waste into reusable material streams. These systems are designed to reduce waste, improve material utilization, and support sustainability objectives while maintaining production-grade process control."
+        ]
+      },
+      {
+        "heading": "Market & Sustainability Drivers",
+        "paragraphs": [
+          "Foam manufacturers face increasing pressure to reduce waste, manage disposal costs, and improve material efficiency. Uncontrolled scrap handling introduces variability into recycled material quality and limits reuse opportunities. A controlled recycling architecture is required to safely and consistently reintroduce reclaimed material into the production process."
+        ]
+      },
+      {
+        "heading": "Process Requirements",
+        "paragraphs": [
+          "Foam recycling requires controlled size reduction, material handling, and reintroduction of reclaimed foam into compatible formulations. The process must maintain predictable flow behavior, consistent blend ratios, and stable output without compromising foam quality."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "The recycling platform integrates grinding or size-reduction equipment with controlled feeding, blending, and metering systems. Reclaimed foam is processed into a consistent regrind or blend stream that can be reintroduced into polyurethane formulations under controlled conditions."
+        ]
+      },
+      {
+        "heading": "Controls & Validation",
+        "paragraphs": [
+          "PLC-based controls manage feed rates, blend ratios, and safety interlocks. Validation procedures confirm consistent material distribution, stable processing behavior, and repeatable impact on final foam properties."
+        ]
+      },
+      {
+        "heading": "Polyurethane Foam Systems Quality Framework Alignment",
+        "paragraphs": [
+          "This application is governed by Kirkco’s Polyurethane Foam Systems Quality Framework, which standardizes process integration, validation methodology, and lifecycle scalability across foam production and recycling systems. Reference: Polyurethane Foam Systems Quality Framework (Rev C)."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Implementation reduces raw material consumption, lowers disposal costs, and improves overall process sustainability while maintaining consistent foam quality."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability",
+        "paragraphs": [
+          "The architecture supports scaling from pilot recycling systems to full production integration, accommodating changes in scrap volume, formulation requirements, and production throughput."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "continuous-panel-line-systems",
+    "title": "Continuous Panel Line Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/polyurethane-processing-equipment",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines Kirkco Continuous Panel Line Systems engineered for high-throughput production of polyurethane (PU), polyisocyanurate (PIR), and composite sandwich panels. These systems are architected as fully integrated manufacturing platforms—not discrete machines—aligning chemistry, mechanical integration, automation, and downstream handling into a unified production environment."
+        ]
+      },
+      {
+        "heading": "Market & Manufacturing Drivers",
+        "paragraphs": [
+          "Increased line speed and throughput targets",
+          "Reduced material scrap and start-up loss",
+          "Consistent density and bond integrity across long runs",
+          "Energy efficiency and fire-rating compliance",
+          "Scalable automation and workforce optimization"
+        ]
+      },
+      {
+        "heading": "Material & Process Requirements",
+        "paragraphs": [
+          "Continuous panel manufacturing requires tightly controlled high-pressure metering, synchronized conveyor systems, and thermal profile management. The system must maintain ratio accuracy, temperature stability, and uniform foam laydown while ensuring adhesion to upper and lower facers.",
+          "Core variables controlled:",
+          "Ratio tolerance and flow stability",
+          "Material temperature conditioning",
+          "Cream time and reaction kinetics",
+          "Belt gap and pressure control",
+          "Cure dwell time management"
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Typical continuous panel line modules include:",
+          "Bulk chemical storage & conditioning systems",
+          "High-pressure PU/PIR metering and dynamic mixing heads",
+          "Oscillating or fixed multi-zone laydown system",
+          "Double-belt press with controlled gap and temperature zones",
+          "Servo-regulated thickness and pressure control",
+          "Curing zone thermal management",
+          "Flying saw / synchronized cross-cut system",
+          "Downstream cooling, stacking, and packaging integration"
+        ]
+      },
+      {
+        "heading": "Controls & Automation Architecture",
+        "paragraphs": [
+          "PLC-based control architecture synchronizes metering output, conveyor speed, laydown geometry, and thermal zones. Recipe management enables rapid product changeover while preserving ratio integrity and dimensional consistency.",
+          "Capabilities include:",
+          "Closed-loop flow and ratio monitoring",
+          "Temperature trending and alarm logic",
+          "Encoder-based synchronization",
+          "Production data logging and traceability",
+          "FAT and SAT validation protocol support"
+        ]
+      },
+      {
+        "heading": "Quality & Validation Framework Alignment",
+        "paragraphs": [
+          "This architecture operates under Kirkco’s Polyurethane Foam Systems Quality Framework, standardizing validation methodology, repeatability testing, and lifecycle scalability across continuous production deployments."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "Improved yield and stabilized startup performance",
+          "Uniform density and bond consistency",
+          "Reduced scrap and material waste",
+          "Scalable throughput increases without core redesign"
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability Strategy",
+        "paragraphs": [
+          "The architecture supports staged expansion, additional metering heads, wider panel formats, and automation upgrades without replacement of the foundational line infrastructure.",
+          "Lifecycle support includes:",
+          "Remote diagnostics and controls support",
+          "Preventive maintenance planning",
+          "Retrofit and modernization pathways",
+          "Backward-compatible control logic upgrades"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "discontinuous-panel-line-systems",
+    "title": "Discontinuous Panel Line Systems",
+    "nda": true,
+    "pillarHref": "/equipment-options/polyurethane-processing-equipment",
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "This Application Architecture defines Kirkco Discontinuous Panel Line Systems designed for molded, press-based, and batch-oriented production environments. The architecture supports polyurethane (PU), polyisocyanurate (PIR), and structural composite foam panels where flexibility, geometry variation, and controlled cure environments are required without full continuous line infrastructure."
+        ]
+      },
+      {
+        "heading": "Market & Manufacturing Drivers",
+        "paragraphs": [
+          "Lower production volume or high product variability",
+          "Reduced initial capital investment versus continuous lines",
+          "Multi-geometry and multi-thickness flexibility",
+          "Controlled press cure and dimensional accuracy",
+          "Facility layout constraints or phased expansion strategy"
+        ]
+      },
+      {
+        "heading": "Material & Process Requirements",
+        "paragraphs": [
+          "Discontinuous production requires precision shot control, synchronized mold or press sequencing, and tightly managed cure timing. Systems must accommodate variable shot sizes, density targets, insert placement, and facer bonding while maintaining repeatable thickness and bond integrity.",
+          "Core variables controlled:",
+          "Ratio accuracy and shot repeatability",
+          "Mold temperature conditioning",
+          "Cream time and rise profile management",
+          "Press gap and platen pressure regulation",
+          "Cure dwell time and demold timing"
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Typical discontinuous molded panel line modules include:",
+          "Bulk chemical storage and conditioning systems",
+          "High- or mid-pressure metering and dynamic mixing systems",
+          "Precision shot delivery into mold or press cavity",
+          "Single or multi-daylight heated platen press systems",
+          "Vacuum-assisted mold or press options",
+          "Hydraulic or servo-driven press actuation",
+          "Thermal cure management and platen zone control",
+          "Demold, trimming, and downstream material handling integration"
+        ]
+      },
+      {
+        "heading": "Controls & Automation Architecture",
+        "paragraphs": [
+          "PLC-based control logic coordinates metering shot timing, mold or press sequencing, temperature conditioning, and safety interlocks. Recipe management enables rapid format changeover while preserving ratio stability and process repeatability.",
+          "Capabilities include:",
+          "Encoder-based shot synchronization",
+          "Mold temperature feedback loops",
+          "Hydraulic or servo press position control",
+          "Density and thickness validation support",
+          "Data logging for quality traceability"
+        ]
+      },
+      {
+        "heading": "Structural Composite Foam Integration",
+        "paragraphs": [
+          "This architecture supports structural composite foam systems where controlled density, insert encapsulation, and bond-critical performance are required. Systems can be configured for filled or unfilled formulations, reinforced facers, or integrated structural members."
+        ]
+      },
+      {
+        "heading": "Quality & Validation Framework Alignment",
+        "paragraphs": [
+          "The system aligns with Kirkco’s Polyurethane Foam Systems Quality Framework, ensuring standardized validation methodology, repeatability testing, and lifecycle scalability across discontinuous panel deployments."
+        ]
+      },
+      {
+        "heading": "Operational Performance",
+        "paragraphs": [
+          "High repeatability across variable panel geometries",
+          "Reduced scrap from shot or press misalignment",
+          "Stable density and bond integrity",
+          "Expandable cell-based production architecture"
+        ]
+      },
+      {
+        "heading": "Lifecycle & Scalability Strategy",
+        "paragraphs": [
+          "The architecture supports staged expansion through additional press stations, parallel molded cells, or automation upgrades without redesigning the core metering and control platform.",
+          "Lifecycle support includes:",
+          "Remote diagnostics and controls support",
+          "Preventive maintenance programs",
+          "Retrofit and modernization pathways",
+          "Backward-compatible controls integration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "refrigerated-vehicle-pu-panel-bonding",
+    "title": "PU Panel Bonding for Refrigerated Vehicles",
+    "nda": true,
+    "sections": [
+      {
+        "heading": "Executive Overview",
+        "paragraphs": [
+          "Kirkco engineered a high‑capacity polyurethane bonding architecture to increase output of insulated panels for temperature‑controlled vehicles."
+        ]
+      },
+      {
+        "heading": "Market Driver",
+        "paragraphs": [
+          "Rapid demand growth required immediate throughput expansion."
+        ]
+      },
+      {
+        "heading": "Material Complexity",
+        "paragraphs": [
+          "Filled high‑viscosity polyol paired with low‑viscosity isocyanate."
+        ]
+      },
+      {
+        "heading": "System Architecture",
+        "paragraphs": [
+          "Hybrid piston/gear pump metering with robotic multi‑nozzle application."
+        ]
+      },
+      {
+        "heading": "Performance Outcomes",
+        "paragraphs": [
+          "Higher output with ratio‑secure, automated dispensing."
         ]
       }
     ]

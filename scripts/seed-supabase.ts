@@ -154,6 +154,14 @@ const { error: studyError } = await supabase.from('applications').upsert(
 );
 stop(studyError, 'applications');
 
+const { data: existingStudies, error: studyListError } = await supabase.from('applications').select('id');
+stop(studyListError, 'applications list');
+const retiredStudies = (existingStudies ?? []).map((row) => row.id).filter((id) => !studyIds.has(id));
+for (const group of chunks(retiredStudies, 100)) {
+  const { error } = await supabase.from('applications').delete().in('id', group);
+  stop(error, 'applications delete');
+}
+
 const { error: equipmentError } = await supabase.from('equipment_pages').upsert(
   {
     href: adhesivesSealants.href,
@@ -180,5 +188,5 @@ const { error: equipmentError } = await supabase.from('equipment_pages').upsert(
 stop(equipmentError, 'equipment_pages');
 
 console.log(
-  `Seeded ${productCategories.length} categories, ${products.length} products, ${links.length} category links, ${studies.length} applications, and 1 equipment page. Removed ${retired.length} retired products.`,
+  `Seeded ${productCategories.length} categories, ${products.length} products, ${links.length} category links, ${studies.length} applications, and 1 equipment page. Removed ${retired.length} retired products and ${retiredStudies.length} retired applications.`,
 );

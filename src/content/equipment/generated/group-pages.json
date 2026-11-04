@@ -2,7 +2,7 @@
   "/equipment-options/process-control": {
     "href": "/equipment-options/process-control",
     "title": "Process Control",
-    "description": "In-line metering verification is Kirkco’s process-control framework for engineered dispensing, metering, and encapsulation: controlled delivery, stable process conditions, and verification with traceability.",
+    "description": "Process control for metering and dispensing lines: PLC integration, motion coordination, monitoring, and the computers that run the cell.",
     "breadcrumb": [
       {
         "label": "Home",
@@ -20,11 +20,9 @@
     "heroAlt": "Process Control equipment on a production line",
     "overviewImage": "/images/electronics.jpg",
     "overviewImageAlt": "Process monitoring and control equipment",
-    "overviewHeading": "In-Line Metering Verification",
+    "overviewHeading": "Controls for Metering, Motion, and Verification",
     "overview": [
-      "This application architecture defines a production-ready framework for engineered dispensing, metering, and encapsulation processes used in advanced manufacturing environments.",
-      "The process requires controlled material delivery, stable process conditions, and predictable execution. Material behavior, viscosity stability, and temperature control are critical to process integrity.",
-      "The system architecture integrates metering, dispensing, automation, and verification subsystems. Automation and controls coordinate motion, dispensing, and validation with traceability support."
+      "Kirkco process-control equipment ties metering, motion, and verification into the production cell. The catalog covers PLC integration and automation, sensors and analytics, and the process-control computer that runs the line."
     ],
     "systems": [
       {
@@ -83,9 +81,7 @@
       }
     ],
     "architectures": [],
-    "applicationIds": [
-      "equipment-options-process-control"
-    ],
+    "applicationIds": [],
     "closing": "Precision Metering System for Accuracy in your Process"
   },
   "/equipment-options/paint-coatings": {
@@ -157,9 +153,7 @@
       }
     ],
     "architectures": [],
-    "applicationIds": [
-      "equipment-options-paint-coatings"
-    ],
+    "applicationIds": [],
     "closing": "Precision Metering System for Accuracy in your Process"
   },
   "/equipment-options/polyurethane-processing-equipment": {
@@ -219,7 +213,14 @@
     "platforms": [],
     "architectures": [],
     "applicationIds": [
-      "equipment-options-polyurethane-processing-equipment"
+      "polyurethane-foam-quality-framework",
+      "high-pressure-pu-metering",
+      "discontinuous-molded-pu-foam",
+      "pu-foam-recycling",
+      "continuous-panel-line-systems",
+      "discontinuous-panel-line-systems",
+      "structural-composite-foam-systems",
+      "refrigerated-vehicle-pu-panel-bonding"
     ],
     "closing": "Precision Metering System for Accuracy in your Process"
   },
@@ -432,8 +433,16 @@
     "applicationIds": [
       "composites-quality-framework",
       "imc-quality-framework",
+      "marine-composite-quality-framework",
       "rtm-resin-infusion-systems",
       "structural-composite-panel-bonding",
+      "composite-panel-systems",
+      "structural-composite-foam-systems",
+      "anti-vibration-dampening-composites",
+      "marine-structural-composite-systems",
+      "marine-structural-encapsulation",
+      "marine-structural-bonding-deck-systems",
+      "marine-fendering-mooring-monitoring-buoys",
       "imc-coatec-system"
     ],
     "closing": "Precision Metering System for Accuracy in your Process"
@@ -501,7 +510,31 @@
     "platforms": [],
     "architectures": [],
     "applicationIds": [
-      "equipment-options-adhesives-sealants"
+      "adhesives-quality-framework",
+      "encapsulating-quality-framework",
+      "industrial-adhesive-dispensing",
+      "pu-adhesive-bonding-cell",
+      "water-tank-epoxy-bonding",
+      "gear-pump-high-viscosity-metering",
+      "elevator-panel-pu-bonding",
+      "automated-direct-glazing",
+      "automated-bonding-fipg",
+      "automated-2k-filter-encapsulation",
+      "industrial-electronics-epoxy-encapsulation",
+      "led-driver-epoxy-potting",
+      "industrial-sensor-epoxy-encapsulation",
+      "automotive-electronics-pu-encapsulation",
+      "precision-epoxy-electromechanical-encapsulation",
+      "connector-epoxy-encapsulation",
+      "led-silicone-sealing",
+      "transformer-potting-under-vacuum",
+      "glass-facade-dynamic-mixing-retrofit",
+      "elastomer-microdosing",
+      "utility-enclosure-adhesive-automation",
+      "solar-bulk-silicone-dispensing",
+      "solar-robotic-silicone-sealing",
+      "automotive-lighting-warm-melt-bonding",
+      "filter-element-resin-encapsulation"
     ],
     "closing": "Precision Metering System for Accuracy in your Process"
   }

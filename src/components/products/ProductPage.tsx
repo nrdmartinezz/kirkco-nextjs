@@ -150,6 +150,17 @@ export function ProductPage({
                     ))}
                   </ul>
                 )}
+                {section.downloads && section.downloads.length > 0 && (
+                  <ul className="mt-4 max-w-3xl space-y-2">
+                    {section.downloads.map((download) => (
+                      <li key={download.href}>
+                        <a href={download.href} className="text-brand-700 font-semibold underline underline-offset-4">
+                          {download.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 {section.images && section.images.length > 0 && (
                   <div className="mt-6 grid gap-4 sm:grid-cols-2">
                     {section.images.map((image) => (

@@ -1,0 +1,337 @@
+Received: from PH0PR17MB4424.namprd17.prod.outlook.com (2603:10b6:510:9::11)
+ by BYAPR17MB2886.namprd17.prod.outlook.com with HTTPS; Wed, 21 Oct 2026
+ 20:59:28 +0000
+Received: from MW4P223CA0015.NAMP223.PROD.OUTLOOK.COM (2603:10b6:303:80::20)
+ by PH0PR17MB4424.namprd17.prod.outlook.com (2603:10b6:510:9::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.522.19; Wed, 21 Oct
+ 2026 20:59:25 +0000
+Received: from MWH0EPF000A6734.namprd04.prod.outlook.com
+ (2603:10b6:303:80:cafe::42) by MW4P223CA0015.outlook.office365.com
+ (2603:10b6:303:80::20) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.546.15 via Frontend Transport; Wed,
+ 21 Oct 2026 20:59:25 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 149.72.127.201) smtp.mailfrom=em3412.em0001.sitemailerservice.com; dkim=pass
+ (signature was verified) header.d=em0001.sitemailerservice.com;dmarc=pass
+ action=none header.from=em0001.sitemailerservice.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ em3412.em0001.sitemailerservice.com designates 149.72.127.201 as permitted
+ sender) receiver=protection.outlook.com; client-ip=149.72.127.201;
+ helo=o2.ptr3068.em0002.sitemailerservice.com; pr=C
+Received: from o2.ptr3068.em0002.sitemailerservice.com (149.72.127.201) by
+ MWH0EPF000A6734.mail.protection.outlook.com (10.167.249.26) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.546.15
+ via Frontend Transport; Wed, 21 Oct 2026 20:59:24 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=em0001.sitemailerservice.com;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	reply-to:to:cc:content-type:date:from:subject:to;
+	s=s1; t=1792616363;
+	bh=aNio9PTSaT/1PcQ5YiFtry44/+hhj9uln/pCHrP/IQM=;
+	b=tbtUR7V9bCh2YEUU/rhgF8C9gEncFsupFYQb/7wwd8g4aTAcTREoFKcTYEEPG7Mz6wbC
+	jiwGJMc/09GN1YrdceS0UFnYtsb2SRN46FaMLA9hvaiJ6/StNsNZJtEOAp7G2N42znHkAD
+	/KlamcUwMBjD599vs/xge6J7Etvz3ml5IhUR1yU0nY20XWy8s/LLQ8c8WJg/bqzz5mKieS
+	1enjv3A15UCBb9nzHB6YtwCSmHGclaZF92d5IhpfzjiaPj4/+rtAkSeJa3syiZsgFUtVoq
+	QMIyWOoqNKKkr4kJW4/1Ss2+pRQPmOxdR4hjXFyt6T+SYH8lRRKtqV8KqrRhAXVA==
+Received: by recvd-5bb5b9cb76-ccprv with SMTP id recvd-5bb5b9cb76-ccprv-1-6AD927AB-35
+	2026-10-21 20:59:23.798834216 +0000 UTC m=+1915133.214690860
+Received: from OTc3MTY2NDk (unknown)
+	by geopod-ismtpd-14 (SG) with HTTP
+	id 3ggmbIopS2ik2T37sBaRJw
+	Wed, 21 Oct 2026 20:59:23.606 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Wed, 21 Oct 2026 20:59:23 +0000 (UTC)
+From: KirkCoCorp <site-3a87892f@em0001.sitemailerservice.com>
+Message-ID: <3ggmbIopS2ik2T37sBaRJw@geopod-ismtpd-14>
+Subject: Quote Request from Composite Part Solutions
+Reply-To: info@kirkcocorp.com
+X-ELEMENTOR-SENDER: Site Mail By Elementor
+X-EMAIL-TYPE: Transactional
+on-behalf-of: 3a87892f-9c4a-497e-a039-a07ee4ebe70b
+X-SG-EID: =?us-ascii?Q?u001=2Eznq7CQJPd5zH85r7nx64NBRAzfuiSnKqdT6YwA0sCrYfWbJDTn7q19hru?=
+ =?us-ascii?Q?bAKrT0PK2wJcPakVp4B+tdrRxvyWPq=2F2dsltij1?=
+ =?us-ascii?Q?UjBDNFov4NahpyX4AnphgfdtjVv4X92NkzRlXLQ?=
+ =?us-ascii?Q?w2uVjfhVsR=2FlZhv2prWBW9+wn8ADLqKLFrat8G2?=
+ =?us-ascii?Q?P8+ofgy1RsTqfBsmxV7enVSSMSewvuYKsOv5UlD?=
+ =?us-ascii?Q?SmJZ43QiTEoO8dwK8oynnA15ChlCzvauz1oekeZ?=
+ =?us-ascii?Q?z5OaaB6Y9LyxY3iW7nqYlU5jTA=3D=3D?=
+X-SG-ID: =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprA858t2L3DnPE639?=
+ =?us-ascii?Q?qc9ClYBYLAEkgoionCoENgASSOIuIiUELkF6bH+?=
+ =?us-ascii?Q?v2JPs26tb2Xm83efvHxeL0RejNlWKgi1oduu6jo?=
+ =?us-ascii?Q?Wq2c4kFpM02DbZ3YEqxsaFzaZGa4Yi5iecHhEDx?=
+ =?us-ascii?Q?yuXwM0nor2m1FRhKHtlsNFiuJZcceihxGA9deNq?=
+ =?us-ascii?Q?g7d=2F46L31uf9RR46UJKwk0Ns7vkJFRlv6tMZdmq?= =?us-ascii?Q?AyVa?=
+To: nate@webpro.com
+X-Entity-ID: u001.46nNcvgGl28KamHVnZyCCg==
+Return-Path: bounces+97716649-ab76-nate=webpro.com@em3412.em0001.sitemailerservice.com
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Oct 2026 20:59:24.9867
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: aefbdb11-2bba-49f5-b0e7-08df2fb6303e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 1c3e3fb2-906c-41b7-9666-b55f34ced854:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MWH0EPF000A6734:EE_|PH0PR17MB4424:EE_|BYAPR17MB2886:EE_
+X-MS-Exchange-Organization-AuthSource: MWH0EPF000A6734.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: aefbdb11-2bba-49f5-b0e7-08df2fb6303e
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704162311799003|260918224100599003|29132699027|69100299015|7049299003|7149299003|260918215300599003|3109299003|4076899003|19002099009|57112099003|261019143827099003|16102099003|10067099003|261019132127099003|261021123027099003|8096899003|18002099003|261021133027099003|261021130227099003|260925022911599003|260925021311599003|261021135927099003|261019141927099003|260925021911599003|261021121427099003|5063699009;
+X-Forefront-Antispam-Report: CIP:149.72.127.201;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.ptr3068.em0002.sitemailerservice.com;PTR:o2.ptr3068.em0002.sitemailerservice.com;CAT:NONE;SFS:(13230040)(704162311799003)(260918224100599003)(29132699027)(69100299015)(7049299003)(7149299003)(260918215300599003)(3109299003)(4076899003)(19002099009)(57112099003)(261019143827099003)(16102099003)(10067099003)(261019132127099003)(261021123027099003)(8096899003)(18002099003)(261021133027099003)(261021130227099003)(260925022911599003)(260925021311599003)(261021135927099003)(261019141927099003)(260925021911599003)(261021121427099003)(5063699009);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Oct 2026 20:59:24.7203
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: aefbdb11-2bba-49f5-b0e7-08df2fb6303e
+X-MS-Exchange-CrossTenant-Id: 1c3e3fb2-906c-41b7-9666-b55f34ced854
+X-MS-Exchange-CrossTenant-AuthSource: MWH0EPF000A6734.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR17MB4424
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.4657391
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0522.007
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;auth:0;dest:C;OFR:CustomRules;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009284)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?JQ74YaK/k/l9OnCQNqEHJcW1lLM9G+ItVgK4g+IraxkStOKjuWvHHM2/F2?=
+ =?iso-8859-1?Q?mR+PrhlkNWNSoK0FXwt085KAb+DvGgGNseyzCB7WHWtdrmJbtmCTAEUq0y?=
+ =?iso-8859-1?Q?3WWmpYztSBG4PSIGWXUQog+8OS6c8KI92FbhZ3zUKNcdjTjurYnvVKiPXw?=
+ =?iso-8859-1?Q?thqgEcYeCb4KkqT1sgGdwRZ6aox7x8I6vmm3zxImLFMJgDOtA13SgrFApY?=
+ =?iso-8859-1?Q?FqAEi1onUrNDNW4rP+ULtZfkPNeBusBWBTZbm06fkqMZePf4G/JsL4asyj?=
+ =?iso-8859-1?Q?KaftAYIcaHfZai1KYhEv0oPEoGi8qiBINsFY9KgpWvELjFPqYqlgCJiIsA?=
+ =?iso-8859-1?Q?loBU11tUpAI+qI/Shhmm0F4uQvajF3MDu347KXY5cQlT1xtQqIgZq9pipe?=
+ =?iso-8859-1?Q?yh8NYu4xmfnqS/uCoYsKyMdb1MHZTxU57qQLdOH8u7AWbVXWQAbQWalidi?=
+ =?iso-8859-1?Q?UKzZhKbClEY2VaIRq8LMj9aSorVUb5MKKL+Fvg0xDoDvefPMV9l5I3MnOr?=
+ =?iso-8859-1?Q?Z9RJp22ffeEWDcCYt8mjJ7SysTeJ6RT4IyPv6JC9J1ZmtzC12GnKqeZfyw?=
+ =?iso-8859-1?Q?IHbSBNbvlq61O0MtNzt9uzwFXcdlo+Ll5kcWXzekTUlZ1gk2+VptfKeHOk?=
+ =?iso-8859-1?Q?Oaid+88Czr7H/g52EpmgAXVAcxdTeS21hbMPWinl6HbLsUOxjmX3Mj1eYm?=
+ =?iso-8859-1?Q?/e/fOQ2jGwcxiJZXJcq5yJ1UyMWU3V+8UO1BJNxYBc8Ag789Oljv36W2g8?=
+ =?iso-8859-1?Q?f0vzpL0l1bk9/WU3mvLc+ELITZQdyp5IaKNUb6qUTaXjWv2o8sT2pVmKz5?=
+ =?iso-8859-1?Q?h7AyoBRB5PmwQFPyfblzagBgUuh2YGIpPx/81N1Yq+S7deYIONgVTReetf?=
+ =?iso-8859-1?Q?yrtFkvCEbzn5pr3HkwsmLz0X+98TWvkGFHLwU0EEW6jEFQan2EuTAU6Rxr?=
+ =?iso-8859-1?Q?t/rf+LwBphLgyxEIh4B380BYdhmrjzutD0L1DoQpm4llM+zbunqpA5zb96?=
+ =?iso-8859-1?Q?9vibIA1n8MlWlfC063ikuRZaKbtonqKk8IQwMbVx+sXCD1xNtG+yEd1NdC?=
+ =?iso-8859-1?Q?alGl5p3+n8BikC3cwQ1rLxpa0MjIfJKzzubEzYrnG72p2iYE0Txqm9qKuN?=
+ =?iso-8859-1?Q?IgaSAYh6ZNYvYQGh6G6ZvidDc7ShYHDntqOgUS6G0HYs/Rat9lo4INoIR/?=
+ =?iso-8859-1?Q?Lway75WnQqZwKxEm0IbeKnYVM2nMP4VlB6VxjBVB2zkwr8HqMZQ7/abfwa?=
+ =?iso-8859-1?Q?VpB5cKwcUrsV7ektrFzLozLl0/kbV2TAoTV87UMGdiLvvbCGR1ZeBCK+Ja?=
+ =?iso-8859-1?Q?H/Ah0YFP4X3vTRDAu09z1UKvNKgQZDlO0LAYPMXDR58SWmheDcDSS/AaX4?=
+ =?iso-8859-1?Q?KVZZYt8xMvyYD4WpkHXTMKcj2rq9zmAZO8bt1rhzE79Q3aZ53CsjP5aXFD?=
+ =?iso-8859-1?Q?+U7QkFrfvO/izHd/VduoAC+12Yd0b0jelnRN3npia6wIa3AycJXukxKhi8?=
+ =?iso-8859-1?Q?eI+y60e7KxE206HF0nz1+lfOEfS6T7Ii690rP32ZmBNopuleebA0tYrm9s?=
+ =?iso-8859-1?Q?i/o5eHWO7fAf/H7xIlioSNiNBwceDen1/+At9hWMnUMNuOJRjp2wnIGpL0?=
+ =?iso-8859-1?Q?kq7zCI5bN/N3jpRd80NRwXaQXmcy9ha9lDmzmLYJ+budWBcx+6z7IVYlkM?=
+ =?iso-8859-1?Q?2vsEA1DKSvrkkgTb0+P3XKVzwvhmIAIDcWA12S9XPIaDUQyWUr2F8w9dwq?=
+ =?iso-8859-1?Q?3w+9/LajSEHgWnWuAQd25AJ9JXOJcVVlpxp0I3DmQp7QPiJSEjjLt1fVZC?=
+ =?iso-8859-1?Q?Ll2Q+8CT5knanWf0ALSIbr7ZGnitR59TpOLgUvUEM/WzDPZGuMSbu+1Hho?=
+ =?iso-8859-1?Q?MYlmJro/KVkA+k+GM4OJ+9XoLzMjp8f6UVFSR4nVF9g+J+7j5kdkZ2Cv8s?=
+ =?iso-8859-1?Q?MMdzIaEK2Av/4E8SNiiHfXcfO17coJg4IDtffcFvOl6Qy3E+6WWq9HxJBu?=
+ =?iso-8859-1?Q?IrYlHSM4cfG5NT/wZm15SErw/D7/2FbT6qL5B7UwZhEMGwysHU80KJHWYg?=
+ =?iso-8859-1?Q?L7tLayTOuDTYfwRDrDSz7D6KRjfzwQukxOiwXZDENiFgPSkAcb8nMq2IeW?=
+ =?iso-8859-1?Q?86X8H/sSbWu/qXgMABytzk9TIUeO5H8i9q1WJhMdalqiFEPeDTbfWohQp2?=
+ =?iso-8859-1?Q?7cc2p1c9KYHb+qCdbRJXsxjPavrikhOOt+az/l909hvzKNRmeTyhFCNltF?=
+ =?iso-8859-1?Q?/ymtZLXrUd195zfOklpTQy1ntBlroK9TD2k/VKHFnJQAl18IiPcNi7foNc?=
+ =?iso-8859-1?Q?7In0jnJJQxv/kg6vUQs3nZSu+nyMNsy2Dc2zfiOrVvQnShQbSqJJBJ/GC1?=
+ =?iso-8859-1?Q?Hpkm2pE2NJ+jo8XeM573PV0lB4twMU3dh0PXoEs0V6miENxHNUNZW/qdIo?=
+ =?iso-8859-1?Q?34OTmZX1/muWzFiQ9sfu2ZPIKOs=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xml=
+ns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com=
+:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <meta name=3D"x-apple-disable-message-reformatting">
+  <title>Kirkco Corporation</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    /* Reset */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adju=
+st: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-he=
+ight: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; height: 100% !imp=
+ortant; }
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration:=
+ none !important; font-size: inherit !important; font-family: inherit !impo=
+rtant; font-weight: inherit !important; line-height: inherit !important; }
+
+    /* Responsive */
+    @media only screen and (max-width: 600px) {
+      .email-container { width: 100% !important; }
+      .fluid { max-width: 100% !important; height: auto !important; }
+      .stack-column { display: block !important; width: 100% !important; }
+      .stack-column-center { text-align: center !important; }
+      .center-on-narrow { text-align: center !important; display: block !im=
+portant; margin-left: auto !important; margin-right: auto !important; float=
+: none !important; }
+      table.center-on-narrow { display: inline-block !important; }
+      .padding-mobile { padding-left: 20px !important; padding-right: 20px =
+!important; }
+    }
+  </style>
+</head>
+<body style=3D"margin: 0; padding: 0; background-color: #f4f4f4;">
+  <!-- Preview Text -->
+  <div style=3D"display: none; font-size: 1px; line-height: 1px; max-height=
+: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+ =20
+    request from Christian Dale at .
+</div>
+
+  <!-- Email Wrapper -->
+  <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%" style=3D"background-color: #f4f4f4;">
+    <tr>
+      <td align=3D"center" style=3D"padding: 20px 0;">
+
+        <!-- Email Container -->
+        <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bo=
+rder=3D"0" width=3D"600" class=3D"email-container" style=3D"background-colo=
+r: #ffffff;">
+
+          <!-- Hero with Logo Overlay -->
+          <tr style=3D"max-height: 200px">
+            <td align=3D"center" style=3D"background-image: url('https://ki=
+rkcocorp.com/wp-content/uploads/2026/01/metering-application-kirkco-e176875=
+9396261.jpg'); background-size: cover; background-position: center center; =
+max-height: 200px; height: 200px;" class=3D"padding-mobile">
+              <!--[if gte mso 9]>
+              <v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"tru=
+e" stroke=3D"false" style=3D"width:600px;height:200px;">
+                <v:fill type=3D"frame" src=3D"https://kirkcocorp.com/wp-con=
+tent/uploads/2026/01/metering-application-kirkco-e1768759396261.jpg" />
+                <v:textbox inset=3D"0,0,0,0">
+              <![endif]-->
+              <div style=3D"max-height: 200px; height: 200px;">
+                <!-- Opaque Overlay -->
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" height=3D"200" style=3D"background-color=
+: rgba(47, 137, 247, 0.55);">
+                  <tr>
+                    <td align=3D"center" valign=3D"middle" style=3D"padding=
+: 40px 40px; height: 200px;">
+                      <img src=3D"https://kirkcocorp.com/wp-content/uploads=
+/2025/11/logo-main.jpg" alt=3D"Kirkco Corporation" width=3D"220" style=3D"d=
+isplay: block; max-width: 220px; width: 100%; height: auto;">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if gte mso 9]>
+                </v:textbox>
+              </v:rect>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <!-- Main Content -->
+          <tr>
+            <td style=3D"padding: 40px 40px 20px 40px; background-color: #f=
+fffff;" class=3D"padding-mobile">
+              <p>
+                Client Name: Christian Dale<br>
+                Client Email: contact@comparsol.com<br>  =20
+                Company Name: <br>
+                Phone Number: 9204712442<br>
+                Industry: Composite Manufacturing
+              </p>
+              <p>
+                Located in US, TX,75202
+              </p>
+
+              <p>
+                Their Message:<br>Quote request and sales info for=20
+Eldo-Mix 401T &amp; Tooling Mix
+
+Thanks!
+Christian
+              </p>
+            </td>
+          </tr>
+
+      =20
+
+          <!-- Footer -->
+          <tr>
+            <td style=3D"padding: 30px 40px; background-color: #233C8F;" cl=
+ass=3D"padding-mobile">
+              <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"100%">
+                <tr>
+                  <td style=3D"font-family: Arial, Helvetica, sans-serif; f=
+ont-size: 13px; line-height: 20px; color: #cccccc; text-align: center;">
+                    <p style=3D"margin: 0 0 10px 0; font-weight: bold; colo=
+r: #ffffff;">Kirkco Corporation</p>
+                    <p style=3D"margin: 0 0 5px 0;">
+                      <a href=3D"tel:+18008287234" style=3D"color: #cccccc;=
+ text-decoration: none;">800.828.7234</a>
+                    </p>
+                    <p style=3D"margin: 0 0 15px 0;">
+                      <a href=3D"mailto:sales@kirkcocorp.com" style=3D"colo=
+r: #cccccc; text-decoration: none;">sales@kirkcocorp.com</a>
+                    </p>
+                    <p style=3D"margin: 0 0 5px 0;">
+                      <a href=3D"https://u97716649.ct.sendgrid.net/ls/click=
+?upn=3Du001.QhEpxjPBpdqQAkc0SHkKorRJTzXsGbAJEB3iVkVFUHI-3DZDNv_Padi2P9cuokE=
+9KDj6lyVi538kA-2FkH5tdlqnm3h5owCBfKc7ZYcMJ-2B2zHLHTChNlGkgkY2SmQ5d2OeVVDRf0=
+twxaFf3MRIi85Off2-2FDOSnadFfKM-2BU2sqPWZqNO03XVpm24HVv7CbMul8p5x-2FrEi17-2F=
+3ZYJPY-2B-2Ft1-2FD-2FfKlOjyvcoV99kQtu4VKnVp5HhlZZ1tlbkLOMCVe7ZU26h8iVWrO-2B=
+yB9tAHN8sHZ7PmBX3FICdjKQwA7Y0kSGE4ddFfpecg-2F3wvjmrYYCLhvh3dveFfNmwZQo24Olx=
+iHOeOPGoe-2Bon-2Bxd5-2F6pd24gvyCzGMR9xevBQT2yKIpDPzclLStlYm-2FS1XYBzXtNrErb=
+Lnpi7uIOydcyNwDefAK2C4lJZdXKWqQ6FkCgrISrwWEfSmMkKHQ-3D-3D" style=3D"color: =
+#cccccc; text-decoration: none;">kirkcocorp.com</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style=3D"padding-top: 20px; font-family: Arial, Helve=
+tica, sans-serif; font-size: 11px; line-height: 16px; color: #999999; text-=
+align: center;">
+                    <p style=3D"margin: 0;">&copy; 2026 Kirkco Corporation.=
+ All Rights Reserved.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Email Container -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- End Email Wrapper -->
+<img src=3D"https://u97716649.ct.sendgrid.net/wf/open?upn=3Du001.UsQv8rfO3L=
+PghigZg-2Bc1hhCBAayKu4C3UZ8Xes6CgKk7HF7ou5aF1owNx316ejctykZCJqwnPBreat3KuLj=
+-2Bzvy-2FzOjyiXO536oiBArQkWOfh5B1QONuU7Yy1vb7JNnAOV1-2F-2F-2BdSOszaPjucRDnT=
+WnC8rqUk0tt28oQV-2FDQDyimLoR1qcymNqoVP9Vx5n4MUdk-2B8dsAraa772Bi4wfPDEc8SwyD=
+-2Fy68xpZ7FT0RA0VwuXVnzCo-2FnR-2BEXQcIKq2CaXwk-2FeKoqkLrIBmfY28ExvEJjqVSDVl=
+5CmMbwtN89dKDcDfLqGLa8fmURjijjoR5l6579sz6l2zWYkb-2ByS-2FR-2FbsSTBAOEsWnJzYs=
+3iBp4uFCoZo4R7uttNunjnuEVdLatlBEHURSUAMAbJpNfgx6KQGz0fYu8Z5fj2PVuQvedpMA-3D=
+" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !impor=
+tant;width:1px !important;border-width:0 !important;margin-top:0 !important=
+;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !import=
+ant;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !i=
+mportant;padding-left:0 !important;"></body>
+</html><br>---<br><br>Date: October 21, 2026<br>Time: 8:59 pm<br>Page URL: =
+https://kirkcocorp.com/request-a-quote/<br>User Agent: Mozilla/5.0 (Windows=
+ NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0=
+.0 Safari/537.36<br>Remote IP: 2600:387:15:3917::6<br>Powered by: Elementor=
+<br>

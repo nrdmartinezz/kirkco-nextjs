@@ -75,6 +75,8 @@ export interface SiteConfig {
     metaPixel: string;
     bingUet: string;
     clarity: string;
+    /** HubSpot portal ID. Script host is js-na2.hs-scripts.com. */
+    hubspot: string;
   };
 
   verification: {
@@ -124,6 +126,7 @@ export const site: SiteConfig = {
     metaPixel: '',
     bingUet: '',
     clarity: '',
+    hubspot: '244013800',
   },
 
   verification: {

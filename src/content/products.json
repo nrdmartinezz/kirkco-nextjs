@@ -318,6 +318,18 @@
         "paragraphs": [
           "This architecture directly interfaces with IMC and gelcoat supply systems, filament winding resin delivery, RTM/infusion processes, polyurethane foam metering units, and continuous panel production lines."
         ]
+      },
+      {
+        "heading": "Quality & Validation",
+        "paragraphs": [
+          "Validation confirms temperature stability, flow consistency, contamination control, alarm response, and system uptime under full production conditions."
+        ]
+      },
+      {
+        "heading": "Lifecycle & Expansion",
+        "paragraphs": [
+          "The system supports future expansion through additional tanks, pumps, and production interfaces without disruption to active operations."
+        ]
       }
     ],
     "image": {
@@ -1359,17 +1371,49 @@
   {
     "slug": "flow-meters",
     "title": "Flow Meters",
-    "updated": "2026-05-24",
+    "updated": "2026-11-02",
     "categories": [
       "flow-regulation",
       "monitoring-analytics"
     ],
     "tagline": "Precision Flow Meters for Accurate Lubricant Monitoring & Control",
     "summary": "Flow meters are instruments designed to measure the volume or rate of fluid moving through a system — essential for verifying delivery, monitoring performance, and controlling lubricant usage in industrial lubrication and metering applications. They provide real-time feedback that helps ensure accurate flow rates, track material usage, and enable better process control across lubrication networks and automated dispense stations.",
-    "thin": true,
+    "sections": [
+      {
+        "heading": "Gear flow meter",
+        "images": [
+          {
+            "src": "/products/gear-flow-meter-2.png",
+            "alt": "Positive displacement gear flow meter"
+          }
+        ]
+      },
+      {
+        "heading": "Application",
+        "images": [
+          {
+            "src": "/products/flow-meter-application.png",
+            "alt": "Flow meter installed on a dispensing system"
+          }
+        ]
+      },
+      {
+        "heading": "Data sheet",
+        "downloads": [
+          {
+            "label": "SRZ TC helical gear flow meter data sheet",
+            "href": "/products/datasheets/gear-flow-meter.pdf"
+          },
+          {
+            "label": "Positive displacement gear flow meter data sheet",
+            "href": "/products/datasheets/flow-meter.pdf"
+          }
+        ]
+      }
+    ],
     "image": {
-      "src": "/products/megaflowmelter_CLEAN.jpg",
-      "alt": "Flow Meters"
+      "src": "/products/gear-flow-meter.png",
+      "alt": "Helical gear flow meter"
     }
   },
   {
@@ -1497,7 +1541,7 @@
   {
     "slug": "gear-flow-meter",
     "title": "Gear Flow Meter",
-    "updated": "2025-12-26",
+    "updated": "2026-11-02",
     "categories": [
       "adhesives-sealants",
       "process-control-computer"
@@ -1516,6 +1560,24 @@
           "Plain or ball bearing version available",
           "Precisely fitted pair of gears placed in the housing of the flow meter. The rotation of the measuring element is detected by a contactless sensor system and converted into digital signals.",
           "A metering unit containing a gear based flowmeter combined with a flow-regulating and dispensing valve is ideal for an accurate dispensing or filling of larger quantities of fluids."
+        ]
+      },
+      {
+        "heading": "Gear flow meter",
+        "images": [
+          {
+            "src": "/products/gear-flow-meter-2.png",
+            "alt": "Positive displacement gear flow meter"
+          }
+        ]
+      },
+      {
+        "heading": "Data sheet",
+        "downloads": [
+          {
+            "label": "SRZ TC helical gear flow meter data sheet",
+            "href": "/products/datasheets/gear-flow-meter.pdf"
+          }
         ]
       }
     ],
@@ -1947,7 +2009,7 @@
   {
     "slug": "high-pressure-impingement-mixing-valve",
     "title": "High Pressure Impingement Mixing Valve",
-    "updated": "2025-12-26",
+    "updated": "2026-11-02",
     "categories": [
       "two-component",
       "urethane-foam-mixing-guns"
@@ -2026,11 +2088,32 @@
           "Double cleanout piston seals for longer life.",
           "Optional recirculating color groove."
         ]
+      },
+      {
+        "heading": "Examples",
+        "images": [
+          {
+            "src": "/products/high-pressure-impingement-1.png",
+            "alt": "High pressure impingement mixing head"
+          },
+          {
+            "src": "/products/high-pressure-impingement-2.png",
+            "alt": "High pressure impingement mixing head"
+          },
+          {
+            "src": "/products/high-pressure-impingement-3.png",
+            "alt": "High pressure impingement mixing head"
+          },
+          {
+            "src": "/products/high-pressure-impingement-4.png",
+            "alt": "High pressure impingement mixing head"
+          }
+        ]
       }
     ],
     "image": {
-      "src": "/products/800_800_image_291978_30907397_78805a221a988e79ef3f42d7c5bfd418.png",
-      "alt": "High Pressure impingement mixing valve"
+      "src": "/products/impingement-valve.png",
+      "alt": "Impingement mixing valves"
     },
     "variants": [
       {
@@ -2039,8 +2122,8 @@
         "tagline": "Impingement Mixing Valves for Urethane Foam & Elastomer: Enhancing Productivity",
         "summary": "Welcome to Kirkco, your trusted partner for advanced impingement mixing valves designed to elevate productivity in both filled and unfilled polyurethane applications. Our high-performance, high-pressure mixing heads stand at the forefront of foam processing units, featuring a precision tight-tolerance plunger design that sets industry standards.",
         "image": {
-          "src": "/products/800_800_image_291978_30907397_78805a221a988e79ef3f42d7c5bfd418.png",
-          "alt": "High Pressure impingement mixing valve"
+          "src": "/products/impingement-valve.png",
+          "alt": "Impingement mixing valves"
         },
         "sections": [
           {
@@ -2114,6 +2197,27 @@
               "Double cleanout piston seals for longer life.",
               "Optional recirculating color groove."
             ]
+          },
+          {
+            "heading": "Examples",
+            "images": [
+              {
+                "src": "/products/high-pressure-impingement-1.png",
+                "alt": "High pressure impingement mixing head"
+              },
+              {
+                "src": "/products/high-pressure-impingement-2.png",
+                "alt": "High pressure impingement mixing head"
+              },
+              {
+                "src": "/products/high-pressure-impingement-3.png",
+                "alt": "High pressure impingement mixing head"
+              },
+              {
+                "src": "/products/high-pressure-impingement-4.png",
+                "alt": "High pressure impingement mixing head"
+              }
+            ]
           }
         ]
       },
@@ -2123,8 +2227,8 @@
         "tagline": "Impingement Mixing Valves for Urethane Foam & Elastomer: Enhancing Productivity",
         "summary": "Welcome to Kirkco, your premier source for cutting-edge low-pressure impingement mixing valves designed to elevate productivity in filled and unfilled polyurethane applications. Our high-performance, low-pressure mixing heads lead the industry, featuring a precision tight-tolerance plunger design.",
         "image": {
-          "src": "/products/image1.png",
-          "alt": "Low Pressure impingement mixing valve"
+          "src": "/products/low-pressure-impingement-valve.png",
+          "alt": "Low pressure impingement mixing valve"
         },
         "sections": [
           {
@@ -2615,10 +2719,6 @@
     "tagline": "High-mix and multi-product automated spray environments.",
     "summary": "The M-Cube plastic booth is configured according to customer specifications. A quick color change is possible due to the PVC sandwich design. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible.",
     "thin": true,
-    "image": {
-      "src": "/products/M_Line_Image May 26_2026.png",
-      "alt": "M-Cube"
-    },
     "variants": [
       {
         "slug": "m-cube",
@@ -2636,7 +2736,11 @@
           "alt": "Super Cube"
         }
       }
-    ]
+    ],
+    "image": {
+      "src": "/products/M_Line_Image May 26_2026.png",
+      "alt": "M-Cube"
+    }
   },
   {
     "slug": "material-filter",
@@ -3106,7 +3210,7 @@
   {
     "slug": "needle-metering-valve",
     "title": "Needle Metering Valve",
-    "updated": "2025-12-11",
+    "updated": "2026-11-02",
     "categories": [
       "metering"
     ],
@@ -3122,11 +3226,20 @@
           "High-precision, reproducible dosage of very small volumes",
           "Handle for electric or pneumatic control"
         ]
+      },
+      {
+        "heading": "Application",
+        "images": [
+          {
+            "src": "/products/needle-metering-valve-application.png",
+            "alt": "Needle metering valve dispensing onto a part"
+          }
+        ]
       }
     ],
     "image": {
-      "src": "/products/Metering_Valves_2.jpg",
-      "alt": "Needle Metering devices for dispensing industrial application"
+      "src": "/products/needle-metering-valve.png",
+      "alt": "Needle metering valve"
     }
   },
   {
@@ -3241,17 +3354,27 @@
   {
     "slug": "pressure-sensors",
     "title": "Pressure Sensors",
-    "updated": "2026-05-24",
+    "updated": "2026-11-02",
     "categories": [
       "adhesives-sealants",
       "monitoring-analytics"
     ],
     "tagline": "Pressure Sensors for Adhesive & Sealant Dispensing",
     "summary": "Pressure sensors play a critical role in monitoring and verifying material conditions within adhesive and sealant dispensing systems. These devices measure real-time material pressure at key points in the dispensing process and provide feedback to process control computers, monitoring systems, and automation platforms. Within Kirkco’s Process & Control architecture, pressure sensors function as part of the Monitoring & Analytics layer, supplying essential data that supports consistent dispensing performance, system diagnostics, and closed-loop control. Compatible with: Shot Valves Spray Valves Integration into a system (digital / analogue)",
-    "thin": true,
+    "sections": [
+      {
+        "heading": "Data sheet",
+        "downloads": [
+          {
+            "label": "Pressure sensor data sheet",
+            "href": "/products/datasheets/pressure-sensor.pdf"
+          }
+        ]
+      }
+    ],
     "image": {
-      "src": "/products/Pressure-Regulators.jpg",
-      "alt": "Pressure Sensors"
+      "src": "/products/pressure-sensor.png",
+      "alt": "Pressure sensor with display"
     }
   },
   {
@@ -3386,7 +3509,7 @@
   {
     "slug": "pump-packages",
     "title": "Pump Packages",
-    "updated": "2025-12-24",
+    "updated": "2026-11-02",
     "categories": [
       "dispensing",
       "feeding-and-supply"
@@ -3398,6 +3521,12 @@
         "heading": "High-Pressure Pump Package",
         "paragraphs": [
           "This package integrates a high-pressure pump stage to support heavier lubrication drives, feeding metering valves, distribution manifolds, or systems requiring elevated operating pressure for proper delivery."
+        ],
+        "images": [
+          {
+            "src": "/products/pump-package-high-pressure.png",
+            "alt": "High pressure lubrication pump packages on pails and drums"
+          }
         ]
       },
       {
@@ -3422,6 +3551,12 @@
         "heading": "Medium-Pressure Pump Package",
         "paragraphs": [
           "A package engineered for controlled medium-pressure feed, balancing flow and pressure for applications that don’t require a dedicated high-pressure system but need more than a simple low-pressure pump."
+        ],
+        "images": [
+          {
+            "src": "/products/pump-package-medium-pressure.png",
+            "alt": "Medium pressure pump packages with drum supply"
+          }
         ]
       },
       {
@@ -3445,6 +3580,12 @@
         "heading": "Dual-Stage Pump Package",
         "paragraphs": [
           "Combines two pump stages (e.g., low and medium or low and high pressure) into one integrated package for flexible feed requirements — ideal when feeding both bulk supply and downstream metering simultaneously."
+        ],
+        "images": [
+          {
+            "src": "/products/pump-package-dual-stage.png",
+            "alt": "Dual stage lubrication pump package"
+          }
         ]
       },
       {
@@ -3464,7 +3605,11 @@
           "Systems feeding diverse lubrication requirements from one centralized rack"
         ]
       }
-    ]
+    ],
+    "image": {
+      "src": "/products/pump-package-high-pressure.png",
+      "alt": "High pressure lubrication pump packages on pails and drums"
+    }
   },
   {
     "slug": "rim-mix",
