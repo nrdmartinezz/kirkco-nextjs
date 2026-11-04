@@ -98,7 +98,7 @@
       }
     ],
     "image": {
-      "src": "/products/transferpump1a.png",
+      "src": "/products/Zip-Series-Diaphragm-Pumps.jpg",
       "alt": "Air operated Diaphragm pump for industrial applications"
     }
   },
@@ -858,7 +858,11 @@
           "Saving of costs for disposal of waste material"
         ]
       }
-    ]
+    ],
+    "image": {
+      "src": "/products/KC_GP18_Dyna Static.png",
+      "alt": "Dyna Static"
+    }
   },
   {
     "slug": "dynamic-static-mixers",
@@ -1469,7 +1473,11 @@
           "Easy integration with lubrication supply and metering systems"
         ]
       }
-    ]
+    ],
+    "image": {
+      "src": "/products/Flow Regulating Valve.png",
+      "alt": "Flow Regulating Valve"
+    }
   },
   {
     "slug": "frp-gel-coat-systems",
@@ -1512,7 +1520,7 @@
       }
     ],
     "image": {
-      "src": "/products/gear-flow.png",
+      "src": "/products/400.17.00 mix valve.jpg",
       "alt": "Flow Meter Expanded to see inside the device"
     }
   },
@@ -2283,13 +2291,21 @@
         "slug": "icf-integral-compact-filter-spray-system",
         "title": "ICF – Integral Compact Filter Spray System",
         "tagline": "Automated spray systems needing frequent filter changes.",
-        "summary": "The Integral Compact Filter (ICF) stainless steel filter booth is designed for automatic powder coating and manual coating. By changing the powder and filter trolleys, color changes can be carried out. It stands out for its stable and robust construction. The stainless steel floor is accessible."
+        "summary": "The Integral Compact Filter (ICF) stainless steel filter booth is designed for automatic powder coating and manual coating. By changing the powder and filter trolleys, color changes can be carried out. It stands out for its stable and robust construction. The stainless steel floor is accessible.",
+        "image": {
+          "src": "/products/ICF_Filter Recovery_Stainless Powder Booth_May 26_2026.png",
+          "alt": "ICF – Integral Compact Filter Spray System"
+        }
       },
       {
         "slug": "icm-integral-compact-multicyclone-spray-system",
         "title": "ICM – Integral Compact Multicyclone Spray System",
         "tagline": "Industrial automated powder lines where recovery and build quality matter.",
-        "summary": "The Integral Compact Multicyclone (ICM) stainless steel booth is designed for automatic powder coating and manual coating in multi-color operation. It stands out for its stable and robust construction. The stainless steel floor is accessible"
+        "summary": "The Integral Compact Multicyclone (ICM) stainless steel booth is designed for automatic powder coating and manual coating in multi-color operation. It stands out for its stable and robust construction. The stainless steel floor is accessible",
+        "image": {
+          "src": "/products/csm_M-Line_System_PXM_85314_bdae04b836.jpg",
+          "alt": "ICM – Integral Compact Multicyclone Spray System"
+        }
       }
     ]
   },
@@ -2599,6 +2615,10 @@
     "tagline": "High-mix and multi-product automated spray environments.",
     "summary": "The M-Cube plastic booth is configured according to customer specifications. A quick color change is possible due to the PVC sandwich design. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible.",
     "thin": true,
+    "image": {
+      "src": "/products/M_Line_Image May 26_2026.png",
+      "alt": "M-Cube"
+    },
     "variants": [
       {
         "slug": "m-cube",
@@ -2610,7 +2630,11 @@
         "slug": "super-cube",
         "title": "Super Cube",
         "tagline": "Automated powder coating where flexibility and changeovers are needed",
-        "summary": "The Super Cube plastic booth is configured according to customer specifications. Robot and axis technology can be integrated and the use of the PVC elements allows a fast color change. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible."
+        "summary": "The Super Cube plastic booth is configured according to customer specifications. Robot and axis technology can be integrated and the use of the PVC elements allows a fast color change. Due to their modular design, the manual coating platforms can be placed individually for pre and/or post coating. The plastic floor is accessible.",
+        "image": {
+          "src": "/products/S_Cube_Stainless Powder Booth_May 26_2026.png",
+          "alt": "Super Cube"
+        }
       }
     ]
   },
@@ -3565,7 +3589,11 @@
           "Importantly, the two components remain distinct until entering the mixer, guaranteeing that homogeneous mixing occurs precisely at that juncture. The mixed material is then dispensed with a carefully controlled snuff effect upon closure, preventing any residual dripping. This snuffer effect is fully customizable through the use of a user-friendly knurled knob. Remarkably, the entire process is achieved without the need for solvent flushing, emphasizing the system's efficiency and environmental consciousness."
         ]
       }
-    ]
+    ],
+    "image": {
+      "src": "/products/400.17.00 mix valve.jpg",
+      "alt": "Static Mixer System"
+    }
   },
   {
     "slug": "stroke-detection",
@@ -3594,8 +3622,8 @@
     "summary": "The Best solution for the control and transfer of liquids, fluids, and pastes. Facilitates precise transfer from storage tanks to blending or metering systems. Equipped with variable speed drives for sensitive handling of temperature and flow fluctuations. Depending on the application type, it may be useful to be able to supply material directly from the original containers using a transfer pump. Kirkco offers double-acting transfer pumps with fast-switching airmotors. It should be noted that the use of transfer pumps is always dependent on the material properties and the container type.",
     "thin": true,
     "image": {
-      "src": "/products/TransferPump1.png",
-      "alt": "Transfer pump diagram"
+      "src": "/products/transferpump1a.png",
+      "alt": "Transfer pump for direct supply from original containers"
     }
   },
   {

@@ -96,7 +96,12 @@ export function productByPath(href: string, products: Product[]) {
   const slug = href.replace(/^\//, '').split('/')[0];
   if (!slug) return undefined;
   const product = products.find((item) => item.slug === slug);
-  if (product) return { product };
+  if (product) {
+    // A product path selects the variant that shares its slug. That variant can
+    // hold the photo when the parent image is intentionally left unset.
+    const variant = product.variants?.find((entry) => entry.slug === slug);
+    return variant ? { product, variant } : { product };
+  }
   for (const item of products) {
     const variant = item.variants?.find((entry) => entry.slug === slug);
     if (variant) return { product: item, variant };
