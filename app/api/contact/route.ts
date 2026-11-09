@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import { site } from '@/config/site';
-import { clientIp, notifyLead, requestOrigin, requestPageUrl } from '@/lib/lead-mail';
+import { clientIp, notifyBlockedLead, notifyLead, requestOrigin, requestPageUrl } from '@/lib/lead-mail';
 import { findQuotedProduct, getProducts } from '@/lib/products';
+import { isPublicEmail } from '@/lib/public-email';
 import { parseQuoteCompany, parseSubmittedQuoteLines } from '@/lib/quote';
 import { supabaseAdmin } from '@/lib/supabase';
 
@@ -98,8 +99,16 @@ export async function POST(request: Request) {
     return invalid('Check the name, company email, and company.');
   }
 
+  const blocked = isPublicEmail(email);
   let payload: Record<string, unknown> = {};
-  if (formType === 'quote') {
+  if (blocked) {
+    const submitted = record.payload;
+    const raw =
+      submitted && typeof submitted === 'object' && !Array.isArray(submitted)
+        ? (submitted as Record<string, unknown>)
+        : {};
+    payload = { ...raw, blocked: 'public-email' };
+  } else if (formType === 'quote') {
     let parsed;
     try {
       parsed = await quotePayload(record);
@@ -110,7 +119,7 @@ export async function POST(request: Request) {
     payload = parsed.payload;
   }
 
-  if (site.recaptchaSiteKey) {
+  if (!blocked && site.recaptchaSiteKey) {
     const verdict = await recaptchaOk(text(record.recaptcha, 4000));
     if (verdict === 'missing-secret') return unavailable();
     if (verdict === 'failed') {
@@ -139,7 +148,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, message: 'Something went wrong. Please try again.' }, { status: 500 });
   }
 
-  await notifyLead({
+  const lead = {
     formType,
     name,
     email,
@@ -149,7 +158,14 @@ export async function POST(request: Request) {
     ip: clientIp(request),
     origin: requestOrigin(request),
     pageUrl: requestPageUrl(request),
-  });
+  };
+
+  if (blocked) {
+    await notifyBlockedLead(lead);
+    return NextResponse.json({ ok: true });
+  }
+
+  await notifyLead(lead);
 
   return NextResponse.json({ ok: true });
 }

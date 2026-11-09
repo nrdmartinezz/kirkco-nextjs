@@ -21,7 +21,9 @@ Browser form
 
 The stored row is the record. Notification mail runs on the same handler after
 the insert. A missing SendGrid setup, or a SendGrid error, must not drop the
-lead or change the thank-you response.
+lead or change the thank-you response. A public mailbox domain is described under
+"Public email domains": the row is still stored, the visitor still reaches
+`/thank-you`, and the notice is addressed to `NOTIFY_BCC`.
 
 **Config** (`src/config/site.ts`):
 
@@ -37,8 +39,8 @@ lead or change the thank-you response.
 | `SUPABASE_SERVICE_ROLE_KEY` | Inserts the submission row. Server only |
 | `RECAPTCHA_SECRET`   | Google reCAPTCHA v3 secret. Later, with the site key |
 | `SENDGRID_API_KEY`   | SendGrid Web API key. Server only            |
-| `NOTIFY_TO`          | Inbox that receives lead notifications       |
-| `NOTIFY_BCC`         | Optional. Comma-separated blind copies. Hidden from `NOTIFY_TO` |
+| `NOTIFY_TO`          | Inbox that receives accepted lead notifications. Public-email rejects are not sent here |
+| `NOTIFY_BCC`         | Optional. On an accepted lead, comma-separated blind copies hidden from `NOTIFY_TO`. On a public-email reject, these addresses are the To recipients |
 | `FROM_EMAIL`         | Verified SendGrid sender address             |
 | `FROM_NAME`          | Optional From display name. Falls back to the site name |
 
@@ -102,6 +104,18 @@ Return `200` with `{ ok: true }` on success so the client can navigate to
 is missing, or when the reCAPTCHA site key is set and `RECAPTCHA_SECRET` is
 not, with a short message safe to show in the form.
 
+### Public email domains
+
+After the name, email, and message checks, the handler compares the mailbox domain with `src/lib/public-email.ts`. A match still returns `200` with `{ ok: true }`, so the visitor goes to `/thank-you` and cannot tell the address was filtered. The quote parser and reCAPTCHA do not run, so a missing company, a bad address, or an unknown product still stores the row.
+
+The insert uses the submitted `form_type` and the same columns as an accepted lead. `payload.blocked` is `"public-email"`. When the request `payload` is an object, its fields are kept, including the company, address, and line titles the browser sent. The `submissions` check constraint stays `contact`, `quote`, and `request-a-quote`.
+
+The row is stored before mail. An insert error is `500` and sends nothing. A mail failure leaves the row and still returns `{ ok: true }`. Do not log message bodies.
+
+That notice does not call `notifyLead`. Each address in `NOTIFY_BCC` is placed in To, except `NOTIFY_TO` when it is also listed there. The message has no BCC header. If that To list is empty, or `SENDGRID_API_KEY` or `FROM_EMAIL` is missing, skip the send. The visitor gets no confirmation. Reply-To is the public sales address (`site.business.email`), not the submitter. The subject is `SPAM: ` plus the normal subject: `Contact from {who}` for contact, and `Quote Request from {who}` for quote and `request-a-quote`. `{who}` is company, then name, then email. The body is the staff card. Quote lines use the titles on the stored payload, because the catalog lookup is skipped.
+
+Accepted leads still go to `NOTIFY_TO`, with `NOTIFY_BCC` as BCC, plus the visitor confirmation.
+
 ## Per-form settings
 
 Each form sends `form_type`. Contact and quote share the Kirkco card. A new
@@ -112,8 +126,9 @@ navy footer. Quote mail also includes company, address, and line items.
 Reply-To on the staff message is the submitter. The same submit also sends a
 confirmation to the submitter, with their name, what they sent, `site.name`,
 and the public phone. Reply-To on that confirmation is the public sales
-address. A mail failure does not drop the lead. Use inline CSS. Do not log
-message bodies.
+address. A public-email reject is the exception: it is stored, the visitor is
+not emailed, and the `SPAM:` notice goes to `NOTIFY_BCC` as To. A mail failure
+does not drop the lead. Use inline CSS. Do not log message bodies.
 
 ## Form surfaces
 
@@ -169,7 +184,8 @@ submit also sends the staff notification. Do not log message bodies.
    and that `/thank-you` is what the visitor sees.
 4. Set `SENDGRID_API_KEY`, `NOTIFY_TO`, and `FROM_EMAIL` on the host. Verify
    `FROM_EMAIL` in SendGrid before the first live submit. `FROM_NAME` is optional.
-   `NOTIFY_BCC` is an optional comma-separated list of extra inboxes.
+   `NOTIFY_BCC` is an optional comma-separated list of extra inboxes on accepted
+   leads. The same list is the To address for public-email rejects.
 
 ## Security
 
@@ -188,4 +204,6 @@ submit also sends the staff notification. Do not log message bodies.
 | "Verification failed"           | Secret mismatch, or the domain is not on the reCAPTCHA key |
 | No row in `submissions`         | Migration not applied, or the honeypot field was filled  |
 | Row saved, no inbox mail        | One of `SENDGRID_API_KEY`, `NOTIFY_TO`, or `FROM_EMAIL` is unset, or `FROM_EMAIL` is not a verified SendGrid sender. Host logs say `SendGrid notification failed` |
+| Public email reaches `/thank-you` | Expected. The row is stored with `payload.blocked` of `public-email`. The visitor is not emailed, and `NOTIFY_TO` is not |
+| Spam row saved, no `SPAM:` mail | `NOTIFY_BCC` is unset, lists only `NOTIFY_TO`, or `SENDGRID_API_KEY` / `FROM_EMAIL` is missing. A SendGrid rejection logs `SendGrid spam failed` |
 | 500 on submit                   | Uncaught throw in the Route Handler — read the host logs  |

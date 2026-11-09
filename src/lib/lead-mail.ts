@@ -57,6 +57,28 @@ function configuredMail() {
   return { apiKey, to, fromEmail, fromName, bcc: bccList(to) };
 }
 
+function spamRecipients() {
+  const apiKey = process.env.SENDGRID_API_KEY?.trim() ?? '';
+  const fromEmail = process.env.FROM_EMAIL?.trim() ?? '';
+  const fromName = process.env.FROM_NAME?.trim() || site.name;
+  const notifyTo = process.env.NOTIFY_TO?.trim().toLowerCase() ?? '';
+  const raw = process.env.NOTIFY_BCC?.trim() ?? '';
+  if (!apiKey || !fromEmail || !raw) return null;
+
+  const seen = new Set<string>();
+  const to: string[] = [];
+  for (const part of raw.split(/[,;]/)) {
+    const email = part.trim();
+    const key = email.toLowerCase();
+    if (!emailPattern.test(email) || key === notifyTo || seen.has(key)) continue;
+    seen.add(key);
+    to.push(email);
+  }
+
+  if (to.length === 0) return null;
+  return { apiKey, fromEmail, fromName, to };
+}
+
 export function clientIp(request: Request) {
   const forwarded = request.headers.get('x-forwarded-for');
   const first = forwarded?.split(',')[0]?.trim();
@@ -393,5 +415,32 @@ export async function notifyLead(lead: LeadNotice) {
     });
   } catch (error) {
     mailFailure(error, 'confirmation');
+  }
+}
+
+export async function notifyBlockedLead(lead: LeadNotice) {
+  const config = spamRecipients();
+  if (!config) return;
+
+  let stamp: { date: string; time: string; year: string };
+  try {
+    stamp = formatStamp(new Date());
+    sgMail.setApiKey(config.apiKey);
+  } catch (error) {
+    mailFailure(error, 'spam');
+    return;
+  }
+
+  try {
+    await sgMail.send({
+      to: config.to,
+      from: { email: config.fromEmail, name: config.fromName },
+      replyTo: { email: site.business.email, name: site.legalName ?? site.name },
+      subject: `SPAM: ${subjectFor(lead)}`,
+      text: textBody(lead, stamp),
+      html: htmlBody(lead, stamp),
+    });
+  } catch (error) {
+    mailFailure(error, 'spam');
   }
 }
