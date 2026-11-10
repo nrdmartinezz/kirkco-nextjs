@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/Button';
 import { useQuote } from '@/components/quote/QuoteProvider';
 import { site } from '@/config/site';
 import { cn } from '@/lib/cn';
+import { recaptchaToken } from '@/lib/recaptcha';
 import { QUOTE_MAX_QTY, QUOTE_NOTES_MAX } from '@/lib/quote';
 import { isUsZip, parseRequiredUsAddress, US_STATES } from '@/lib/us-address';
 
@@ -196,6 +197,7 @@ function QuotePanel() {
     setPending(true);
 
     try {
+      const recaptcha = await recaptchaToken('quote');
       const response = await fetch(site.formEndpoint, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
@@ -205,6 +207,7 @@ function QuotePanel() {
           email: data.get('email'),
           phone: data.get('phone'),
           message: data.get('message'),
+          recaptcha,
           _gotcha: data.get('_gotcha'),
           payload: {
             lines: lines.map((line) => ({

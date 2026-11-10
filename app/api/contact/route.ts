@@ -99,6 +99,12 @@ export async function POST(request: Request) {
     return invalid('Check the name, company email, and company.');
   }
 
+  if (site.recaptchaSiteKey) {
+    const verdict = await recaptchaOk(text(record.recaptcha, 4000));
+    if (verdict === 'missing-secret') return unavailable();
+    if (verdict === 'failed') return invalid('Verification failed');
+  }
+
   const blocked = isPublicEmail(email);
   let payload: Record<string, unknown> = {};
   if (blocked) {
@@ -117,14 +123,6 @@ export async function POST(request: Request) {
     }
     if (!parsed.ok) return invalid(parsed.message);
     payload = parsed.payload;
-  }
-
-  if (!blocked && site.recaptchaSiteKey) {
-    const verdict = await recaptchaOk(text(record.recaptcha, 4000));
-    if (verdict === 'missing-secret') return unavailable();
-    if (verdict === 'failed') {
-      return invalid('Verification failed');
-    }
   }
 
   let supabase;

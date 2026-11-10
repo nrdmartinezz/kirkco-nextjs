@@ -136,7 +136,7 @@ export const site: SiteConfig = {
   foundingDate: '1985',
 
   formEndpoint: '/api/contact',
-  recaptchaSiteKey: '',
+  recaptchaSiteKey: '6Leg1RkuAAAAAPvKpvYAs2LMXDBnGAXpo7i1uYOd',
 
   analytics: {
     ga4: '',

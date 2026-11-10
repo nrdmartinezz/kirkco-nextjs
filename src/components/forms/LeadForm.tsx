@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState, type FormEvent } from 'react';
 import { Button } from '@/components/ui/Button';
 import { site } from '@/config/site';
+import { recaptchaToken } from '@/lib/recaptcha';
 
 const formTypes = ['contact', 'quote', 'request-a-quote'] as const;
 
@@ -28,6 +29,7 @@ export function LeadForm({ formType }: LeadFormProps) {
     setPending(true);
 
     try {
+      const recaptcha = await recaptchaToken(formType);
       const response = await fetch(site.formEndpoint, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
@@ -37,6 +39,7 @@ export function LeadForm({ formType }: LeadFormProps) {
           email: data.get('email'),
           phone: data.get('phone'),
           message: data.get('message'),
+          recaptcha,
           _gotcha: data.get('_gotcha'),
         }),
       });

@@ -106,7 +106,7 @@ not, with a short message safe to show in the form.
 
 ### Public email domains
 
-After the name, email, and message checks, the handler compares the mailbox domain with `src/lib/public-email.ts`. A match still returns `200` with `{ ok: true }`, so the visitor goes to `/thank-you` and cannot tell the address was filtered. The quote parser and reCAPTCHA do not run, so a missing company, a bad address, or an unknown product still stores the row.
+After the name, email, and message checks, the handler verifies reCAPTCHA when `recaptchaSiteKey` is set. A failed check returns `400` and stores nothing, including for a public mailbox. Then the handler compares the mailbox domain with `src/lib/public-email.ts`. A match still returns `200` with `{ ok: true }`, so the visitor goes to `/thank-you` and cannot tell the address was filtered. The quote parser does not run, so a missing company, a bad address, or an unknown product still stores the row.
 
 The insert uses the submitted `form_type` and the same columns as an accepted lead. `payload.blocked` is `"public-email"`. When the request `payload` is an object, its fields are kept, including the company, address, and line titles the browser sent. The `submissions` check constraint stays `contact`, `quote`, and `request-a-quote`.
 

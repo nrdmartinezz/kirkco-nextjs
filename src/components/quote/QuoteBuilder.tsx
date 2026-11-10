@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button';
 import { Heading } from '@/components/ui/Heading';
 import { site } from '@/config/site';
 import { QUOTE_MAX_QTY, QUOTE_NOTES_MAX, type QuoteCatalogItem } from '@/lib/quote';
+import { recaptchaToken } from '@/lib/recaptcha';
 import { isUsZip, parseRequiredUsAddress, US_STATES } from '@/lib/us-address';
 import { useQuote } from './QuoteProvider';
 
@@ -79,6 +80,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
     setPending(true);
 
     try {
+      const recaptcha = await recaptchaToken('quote');
       const response = await fetch(site.formEndpoint, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
@@ -88,6 +90,7 @@ export function QuoteBuilder({ catalog, initialProductSlug }: QuoteBuilderProps)
           email: data.get('email'),
           phone: data.get('phone'),
           message: data.get('message'),
+          recaptcha,
           _gotcha: data.get('_gotcha'),
           payload: {
             lines: lines.map((line) => ({
