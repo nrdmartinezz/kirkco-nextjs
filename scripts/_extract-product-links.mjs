@@ -1,7 +1,3 @@
-import { readFileSync } from 'node:fs';
-import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
 const url = process.argv[2];
 if (!url) {
   console.error('Usage: node scripts/_extract-product-links.mjs <page-url>');

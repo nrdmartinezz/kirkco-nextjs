@@ -7,7 +7,9 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import type { ResourceBlock, ResourceListItem, ResourcePageContent, ResourcePart } from '@/content/resources/pages';
 import { resourcePages } from '@/content/resources/pages';
+import { FaqSection } from '@/components/seo/FaqSection';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { faqsFor } from '@/content/faqs/pages';
 import { site } from '@/config/site';
 import { descriptiveAlt } from '@/lib/image-alt';
 
@@ -115,6 +117,7 @@ function Blocks({ blocks }: { blocks: ResourceBlock[] }) {
 }
 
 export function ResourcePage({ page }: { page: ResourcePageContent }) {
+  const faq = faqsFor(page.href);
   return (
     <>
       <JsonLd
@@ -125,6 +128,8 @@ export function ResourcePage({ page }: { page: ResourcePageContent }) {
           { name: page.title, href: page.href },
         ]}
         service={{ name: page.title, description: page.description, url: page.href }}
+        faqs={faq?.items}
+        faqUrl={faq ? page.href : undefined}
       />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image src={page.heroImage} alt={page.heroAlt} fill priority className="object-cover" sizes="100vw" />
@@ -251,6 +256,8 @@ export function ResourcePage({ page }: { page: ResourcePageContent }) {
                   ))}
                 </ul>
               </div>
+
+              {faq && <FaqSection heading={faq.heading} items={faq.items} />}
 
               <div className="mt-12 rounded-[10px] bg-[#0d2244] p-6 md:p-8">
                 <p className="text-brand-500 text-sm font-semibold tracking-wide uppercase">Engineering Engagement</p>

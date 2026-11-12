@@ -10,7 +10,9 @@ import { overviewImageForEquipmentPage } from '@/content/equipment/overview-imag
 import { getPublicSections } from '@/content/pillar/sections';
 import { site } from '@/config/site';
 import { ApplicationStudyArticles } from '@/components/equipment/ApplicationStudyArticles';
+import { FaqSection } from '@/components/seo/FaqSection';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { faqsFor } from '@/content/faqs/pages';
 import { labeledCrumbs } from '@/lib/schema';
 import type { ApplicationStudy } from '@/lib/applications';
 import { EditorialSections } from '@/components/equipment/EditorialSections';
@@ -47,11 +49,17 @@ export async function EquipmentPage({
   const overviewImage = overviewImageForEquipmentPage(page.href);
   const searchProducts = toSearchProducts(await getProducts());
   const editorial = getPublicSections(page.href);
+  const faq = faqsFor(page.href);
   const mainCategories = categories.filter((category) => category.name === category.group);
 
   return (
     <>
-      <JsonLd identity={false} breadcrumbs={labeledCrumbs(page.breadcrumb, page.href)} />
+      <JsonLd
+        identity={false}
+        breadcrumbs={labeledCrumbs(page.breadcrumb, page.href)}
+        faqs={faq?.items}
+        faqUrl={faq ? page.href : undefined}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image src={hero.heroImage} alt={hero.heroAlt} fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-brand-700/35" />
@@ -302,6 +310,8 @@ export async function EquipmentPage({
             {editorial && <EditorialSections page={editorial} />}
 
             <ApplicationStudyArticles studies={studies} pillarLabel={page.title} showPillarLink={false} />
+
+            {faq && <FaqSection heading={faq.heading} items={faq.items} />}
 
             <div className="border-brand-500 mt-12 border-t pt-8">
               <Heading level={2} size="lg">

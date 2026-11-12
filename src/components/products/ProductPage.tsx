@@ -6,7 +6,9 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import { EditorialSections } from '@/components/equipment/EditorialSections';
 import { ProductBreadcrumb } from '@/components/products/ProductBreadcrumb';
+import { FaqSection } from '@/components/seo/FaqSection';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { faqsFor } from '@/content/faqs/pages';
 import { descriptiveAlt } from '@/lib/image-alt';
 import {
   breadcrumbTrails,
@@ -52,6 +54,7 @@ export function ProductPage({
     originHref ? withOrigin(variantPath(product, option), originHref) : variantPath(product, option);
 
   const productHref = variantPath(product, variant);
+  const faq = faqsFor(`/${product.slug}`);
 
   return (
     <Section spacing="none" className="pt-6 pb-section md:pt-8">
@@ -67,6 +70,8 @@ export function ProductPage({
           image: hero?.src,
           url: productHref,
         }}
+        faqs={faq?.items}
+        faqUrl={faq ? `/${product.slug}` : undefined}
       />
       <Container gap="lg">
         <ProductBreadcrumb trails={followedTrail ? [followedTrail] : trails} choices={choices} locked={Boolean(followedTrail)} />
@@ -181,6 +186,7 @@ export function ProductPage({
           </div>
         )}
         {editorial && <EditorialSections page={editorial} />}
+        {faq && <FaqSection heading={faq.heading} items={faq.items} />}
       </Container>
     </Section>
   );

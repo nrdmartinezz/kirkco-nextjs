@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useMemo, useSyncExternalStore, type ReactNode } from 'react';
 import {
   addQuoteLine,
   QUOTE_STORAGE_KEY,
@@ -24,55 +24,63 @@ type QuoteContextValue = {
 };
 
 const QuoteContext = createContext<QuoteContextValue | null>(null);
+const emptyLines: QuoteLine[] = [];
+const quoteChange = 'kirkco-quote-change';
+
+function onStorage(onChange: () => void) {
+  return (event: StorageEvent) => {
+    if (event.key !== QUOTE_STORAGE_KEY) return;
+    onChange();
+  };
+}
+
+function subscribeQuote(onChange: () => void) {
+  const storage = onStorage(onChange);
+  window.addEventListener('storage', storage);
+  window.addEventListener(quoteChange, onChange);
+  return () => {
+    window.removeEventListener('storage', storage);
+    window.removeEventListener(quoteChange, onChange);
+  };
+}
+
+function publish(lines: QuoteLine[]) {
+  writeQuoteDraft(lines);
+  window.dispatchEvent(new Event(quoteChange));
+}
 
 export function QuoteProvider({ children }: { children: ReactNode }) {
-  const [lines, setLines] = useState<QuoteLine[]>([]);
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    setLines(readQuoteDraft());
-    setReady(true);
-  }, []);
-
-  useEffect(() => {
-    if (!ready) return;
-    writeQuoteDraft(lines);
-  }, [lines, ready]);
-
-  useEffect(() => {
-    function onStorage(event: StorageEvent) {
-      if (event.key !== QUOTE_STORAGE_KEY) return;
-      setLines(readQuoteDraft());
-    }
-    window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
-  }, []);
+  const lines = useSyncExternalStore(subscribeQuote, readQuoteDraft, () => emptyLines);
+  const ready = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   const add = useCallback((item: { slug: string; title: string }) => {
-    setLines((current) => addQuoteLine(current, item));
+    publish(addQuoteLine(readQuoteDraft(), item));
   }, []);
 
   const addIfMissing = useCallback((item: { slug: string; title: string }) => {
-    setLines((current) => {
-      if (current.some((line) => line.slug === item.slug)) return current;
-      return addQuoteLine(current, item);
-    });
+    const current = readQuoteDraft();
+    if (current.some((line) => line.slug === item.slug)) return;
+    publish(addQuoteLine(current, item));
   }, []);
 
   const setQty = useCallback((slug: string, qty: number) => {
-    setLines((current) => setQuoteQty(current, slug, qty));
+    publish(setQuoteQty(readQuoteDraft(), slug, qty));
   }, []);
 
   const setNotes = useCallback((slug: string, notes: string) => {
-    setLines((current) => setQuoteNotes(current, slug, notes));
+    publish(setQuoteNotes(readQuoteDraft(), slug, notes));
   }, []);
 
   const remove = useCallback((slug: string) => {
-    setLines((current) => removeQuoteLine(current, slug));
+    publish(removeQuoteLine(readQuoteDraft(), slug));
   }, []);
 
   const clear = useCallback(() => {
-    setLines([]);
+    publish([]);
   }, []);
 
   const value = useMemo(

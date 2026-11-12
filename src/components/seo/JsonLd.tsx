@@ -4,6 +4,7 @@ type JsonLdProps = {
   identity?: boolean;
   breadcrumbs?: BreadcrumbEntry[];
   faqs?: FaqEntry[];
+  faqUrl?: string;
   service?: { name: string; description?: string; url?: string };
   product?: ProductSchema;
 };

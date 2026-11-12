@@ -108,7 +108,8 @@ export function setQuoteNotes(lines: QuoteLine[], slug: string, notes: string): 
   return lines.map((line) => {
     if (line.slug !== slug) return line;
     if (!next.trim()) {
-      const { notes: _notes, ...rest } = line;
+      const rest = { ...line };
+      delete rest.notes;
       return rest;
     }
     return { ...line, notes: next };
@@ -119,22 +120,37 @@ export function removeQuoteLine(lines: QuoteLine[], slug: string): QuoteLine[] {
   return lines.filter((line) => line.slug !== slug);
 }
 
+const emptyLines: QuoteLine[] = [];
+let cachedQuoteRaw: string | null | undefined;
+let cachedQuoteLines: QuoteLine[] = emptyLines;
+
 export function readQuoteDraft(): QuoteLine[] {
-  if (typeof window === 'undefined') return [];
+  if (typeof window === 'undefined') return emptyLines;
   try {
     const raw = window.localStorage.getItem(QUOTE_STORAGE_KEY);
-    if (!raw) return [];
+    if (raw === cachedQuoteRaw) return cachedQuoteLines;
+    cachedQuoteRaw = raw;
+    if (!raw) {
+      cachedQuoteLines = emptyLines;
+      return cachedQuoteLines;
+    }
     const parsed = JSON.parse(raw) as unknown;
     const record = asRecord(parsed);
-    return parseQuoteLines(record?.lines ?? parsed);
+    cachedQuoteLines = parseQuoteLines(record?.lines ?? parsed);
+    return cachedQuoteLines;
   } catch {
-    return [];
+    cachedQuoteRaw = undefined;
+    cachedQuoteLines = emptyLines;
+    return cachedQuoteLines;
   }
 }
 
 export function writeQuoteDraft(lines: QuoteLine[]) {
   if (typeof window === 'undefined') return;
-  window.localStorage.setItem(QUOTE_STORAGE_KEY, JSON.stringify({ lines } satisfies QuoteDraft));
+  const raw = JSON.stringify({ lines } satisfies QuoteDraft);
+  window.localStorage.setItem(QUOTE_STORAGE_KEY, raw);
+  cachedQuoteRaw = raw;
+  cachedQuoteLines = lines;
 }
 
 export function parseQuoteCompany(value: unknown): { ok: true; company: QuoteCompany } | { ok: false; message: string } {

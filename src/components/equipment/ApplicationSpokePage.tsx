@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
+import { FaqSection } from '@/components/seo/FaqSection';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { faqsFor } from '@/content/faqs/pages';
 import { getEquipmentSubcategoryPage } from '@/lib/equipment-content';
 import { getEquipmentPage } from '@/lib/equipment';
 import { spokeHref, type ApplicationStudy } from '@/lib/applications';
@@ -9,6 +11,7 @@ import { spokeHref, type ApplicationStudy } from '@/lib/applications';
 export async function ApplicationSpokePage({ study }: { study: ApplicationStudy }) {
   const href = spokeHref(study);
   if (!href || !study.pillarHref) return null;
+  const faq = faqsFor(href);
 
   const pillar = await getEquipmentPage(study.pillarHref);
   const subcategory = study.subcategoryHref ? getEquipmentSubcategoryPage(study.subcategoryHref) : undefined;
@@ -22,7 +25,7 @@ export async function ApplicationSpokePage({ study }: { study: ApplicationStudy 
 
   return (
     <>
-      <JsonLd identity={false} breadcrumbs={crumbs} />
+      <JsonLd identity={false} breadcrumbs={crumbs} faqs={faq?.items} faqUrl={faq ? href : undefined} />
       <Container className="py-10">
         <nav aria-label="Breadcrumb" className="text-ink-muted text-sm">
           <ol className="flex flex-wrap items-center gap-x-1 gap-y-1">
@@ -66,6 +69,7 @@ export async function ApplicationSpokePage({ study }: { study: ApplicationStudy 
             </section>
           ))}
         </div>
+        {faq && <FaqSection heading={faq.heading} items={faq.items} />}
         <p className="mt-10 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold">
           <Link href={study.pillarHref} className="text-brand-700 no-underline hover:text-brand-500">
             {pillarLabel}
