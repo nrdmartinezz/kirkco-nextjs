@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
-import { useEffect, useRef, useState, type FocusEvent, type MouseEvent } from 'react';
+import { useRef, useState, type FocusEvent, type MouseEvent } from 'react';
 import { navigation, type MegaColumn, type NavItem } from '@/config/navigation';
 import { isCurrentPath, matchingMegaColumn, megaColumnKey, panelLinks } from '@/lib/nav';
 import { cn } from '@/lib/cn';
@@ -12,11 +12,13 @@ const productPanelId = 'products-systems-panel';
 
 function ProductSystemsMenu({ columns, pathname }: { columns: MegaColumn[]; pathname: string }) {
   const matched = matchingMegaColumn(columns, pathname);
-  const [activeKey, setActiveKey] = useState(() => megaColumnKey(matched));
-
-  useEffect(() => {
-    setActiveKey(megaColumnKey(matchingMegaColumn(columns, pathname)));
-  }, [columns, pathname]);
+  const matchedKey = megaColumnKey(matched);
+  const [activeKey, setActiveKey] = useState(matchedKey);
+  const [pathKey, setPathKey] = useState(matchedKey);
+  if (pathKey !== matchedKey) {
+    setPathKey(matchedKey);
+    setActiveKey(matchedKey);
+  }
 
   const active = columns.find((column) => megaColumnKey(column) === activeKey) ?? columns[0];
 

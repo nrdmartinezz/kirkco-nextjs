@@ -72,10 +72,6 @@ const parentMeta = {
   },
 };
 
-function decodeHtml(s) {
-  return s.replace(/&#038;/g, '&').replace(/&amp;/g, '&').replace(/&#8217;/g, "'").replace(/\s+/g, ' ').trim();
-}
-
 const navSlugSkip = new Set([
   'feed',
   'wp-json',

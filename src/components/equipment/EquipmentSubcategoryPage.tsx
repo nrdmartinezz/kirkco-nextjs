@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ApplicationStudyArticles } from '@/components/equipment/ApplicationStudyArticles';
+import { FaqSection } from '@/components/seo/FaqSection';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { faqsFor } from '@/content/faqs/pages';
 import { descriptiveAlt } from '@/lib/image-alt';
 import { labeledCrumbs } from '@/lib/schema';
 import { EditorialSections, visibleEditorialSections } from '@/components/equipment/EditorialSections';
@@ -78,10 +80,16 @@ export function EquipmentSubcategoryPage({
   const extras = categorySlug
     ? products.filter((product) => product.categories.includes(categorySlug) && !matchedSlugs.has(product.slug))
     : [];
+  const faq = faqsFor(page.href);
 
   return (
     <>
-      <JsonLd identity={false} breadcrumbs={labeledCrumbs(breadcrumb, page.href)} />
+      <JsonLd
+        identity={false}
+        breadcrumbs={labeledCrumbs(breadcrumb, page.href)}
+        faqs={faq?.items}
+        faqUrl={faq ? page.href : undefined}
+      />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image src={hero.heroImage} alt={hero.heroAlt} fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-brand-700/35" />
@@ -311,6 +319,8 @@ export function EquipmentSubcategoryPage({
                   </div>
                 )
               )}
+
+              {faq && <FaqSection heading={faq.heading} items={faq.items} />}
             </div>
 
             <aside className="border-neutral-200 w-full shrink-0 rounded-lg border p-5 lg:sticky lg:top-28 lg:w-72">

@@ -1,6 +1,6 @@
 'use client';
 
-import { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import type { BreadcrumbCrumb } from '@/lib/products';
@@ -29,6 +29,14 @@ function pathFromReferrer(choices: Choice[]) {
   }
 }
 
+function preferredIndex(choices: Choice[], locked: boolean) {
+  if (locked || typeof window === 'undefined') return 0;
+  const fromReferrer = pathFromReferrer(choices);
+  const saved = sessionStorage.getItem(EQUIPMENT_PATH_KEY);
+  const fromSaved = saved ? matchingChoice(saved, choices) : -1;
+  return fromReferrer >= 0 ? fromReferrer : fromSaved >= 0 ? fromSaved : 0;
+}
+
 export function ProductBreadcrumb({
   trails,
   choices,
@@ -38,19 +46,18 @@ export function ProductBreadcrumb({
   choices: Choice[];
   locked?: boolean;
 }) {
-  const [index, setIndex] = useState(0);
+  const index = useSyncExternalStore(
+    () => () => {},
+    () => preferredIndex(choices, locked),
+    () => 0,
+  );
   const trail = trails[index] ?? trails[0] ?? [];
 
   useLayoutEffect(() => {
     if (locked) return;
-    const fromReferrer = pathFromReferrer(choices);
-    const saved = sessionStorage.getItem(EQUIPMENT_PATH_KEY);
-    const fromSaved = saved ? matchingChoice(saved, choices) : -1;
-    const next = fromReferrer >= 0 ? fromReferrer : fromSaved >= 0 ? fromSaved : 0;
-    setIndex(next);
-    const href = choices[next]?.href;
+    const href = choices[index]?.href;
     if (href) sessionStorage.setItem(EQUIPMENT_PATH_KEY, href);
-  }, [choices, locked]);
+  }, [choices, index, locked]);
 
   if (trail.length === 0) return null;
 

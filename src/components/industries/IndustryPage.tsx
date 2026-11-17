@@ -7,7 +7,9 @@ import { Heading } from '@/components/ui/Heading';
 import { Section } from '@/components/ui/Section';
 import type { ContentBlock, IndustryPageContent, TextPart } from '@/content/industries';
 import { industryPages } from '@/content/industries';
+import { FaqSection } from '@/components/seo/FaqSection';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { faqsFor } from '@/content/faqs/pages';
 import { site } from '@/config/site';
 import { descriptiveAlt } from '@/lib/image-alt';
 
@@ -98,6 +100,7 @@ export function IndustryPage({ page }: { page: IndustryPageContent }) {
     { label: page.title },
   ];
   const groups = industryPages.filter((entry) => !entry.parentHref);
+  const faq = faqsFor(page.href);
 
   return (
     <>
@@ -109,6 +112,8 @@ export function IndustryPage({ page }: { page: IndustryPageContent }) {
           ...(page.parentHref && page.parentTitle ? [{ name: page.parentTitle, href: page.parentHref }] : []),
           { name: page.title, href: page.href },
         ]}
+        faqs={faq?.items}
+        faqUrl={faq ? page.href : undefined}
       />
       <section className="relative isolate min-h-[400px] overflow-hidden bg-brand-500">
         <Image src={page.heroImage} alt={descriptiveAlt(page.heroImageAlt, page.title)} fill priority className="object-cover" sizes="100vw" />
@@ -285,6 +290,8 @@ export function IndustryPage({ page }: { page: IndustryPageContent }) {
                   </ul>
                 </div>
               )}
+
+              {faq && <FaqSection heading={faq.heading} items={faq.items} />}
 
               <div className="mt-12 rounded-[10px] bg-[#0d2244] p-6 md:p-8">
                 <p className="text-brand-500 text-sm font-semibold tracking-wide uppercase">Talk with Kirkco</p>

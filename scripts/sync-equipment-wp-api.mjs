@@ -103,7 +103,6 @@ const equipment = raw
       overview = firstP?.text ?? '';
     }
 
-    const parentPath = href.split('/').slice(0, 3).join('/') || href;
     const parentKey = Object.keys(PARENT_META).find((key) => href === key || href.startsWith(`${key}/`));
     const parent = parentKey ? PARENT_META[parentKey] : undefined;
 

@@ -109,11 +109,12 @@ export function WaltherPage() {
         <div className="absolute inset-0 bg-brand-700/35" />
         <Container className="relative flex min-h-[400px] justify-center py-8">
           <div className="w-full max-w-3xl rounded-2xl bg-[rgba(19,89,187,0.28)] p-6 backdrop-blur-md md:p-9">
-            <img
+            <Image
               src="/images/walther/ws-mark-white.svg"
               alt="Walther Systemtechnik"
               width={56}
               height={56}
+              unoptimized
               className="mb-4 size-14"
             />
             <nav aria-label="Breadcrumb" className="text-sm text-white">

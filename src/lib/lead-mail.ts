@@ -1,13 +1,7 @@
 import sgMail from '@sendgrid/mail';
 import { site } from '@/config/site';
 
-const formLabels = {
-  contact: 'Contact',
-  quote: 'Quote',
-  'request-a-quote': 'Request a quote',
-} as const;
-
-type FormType = keyof typeof formLabels;
+type FormType = 'contact' | 'quote' | 'request-a-quote';
 
 type QuoteLine = {
   title: string;

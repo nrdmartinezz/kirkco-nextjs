@@ -28,6 +28,11 @@ export function ContactDrawer() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [panel, setPanel] = useState<Panel>('contact');
+  const [currentPath, setCurrentPath] = useState(pathname);
+  if (currentPath !== pathname) {
+    setCurrentPath(pathname);
+    setOpen(false);
+  }
   const buttonRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -37,12 +42,9 @@ export function ContactDrawer() {
   const quotePanelId = useId();
 
   useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
     if (!open) return;
     const dialog = dialogRef.current;
+    const button = buttonRef.current;
     const previous = document.activeElement;
     const frame = window.requestAnimationFrame(() => dialog?.focus());
     const previousOverflow = document.body.style.overflow;
@@ -75,7 +77,7 @@ export function ContactDrawer() {
       document.removeEventListener('keydown', onKeyDown);
       document.body.style.overflow = previousOverflow;
       if (previous instanceof HTMLElement) previous.focus();
-      else buttonRef.current?.focus();
+      else button?.focus();
     };
   }, [open]);
 

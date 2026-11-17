@@ -23,6 +23,8 @@ type SchemaProps = {
   identity?: boolean;
   breadcrumbs?: BreadcrumbEntry[];
   faqs?: FaqEntry[];
+  /** Canonical path for the FAQPage url and @id. Required when faqs are passed. */
+  faqUrl?: string;
   service?: { name: string; description?: string; url?: string };
   product?: ProductSchema;
 };
@@ -41,6 +43,7 @@ export function buildJsonLd({
   identity = true,
   breadcrumbs,
   faqs,
+  faqUrl,
   service,
   product,
 }: SchemaProps = {}) {
@@ -129,8 +132,10 @@ export function buildJsonLd({
   }
 
   if (faqs?.length) {
+    const faqPageUrl = faqUrl ? absoluteUrl(faqUrl) : undefined;
     graph.push({
       '@type': 'FAQPage',
+      ...(faqPageUrl ? { '@id': `${faqPageUrl}#faq`, url: faqPageUrl } : {}),
       mainEntity: faqs.map((faq) => ({
         '@type': 'Question',
         name: faq.question,

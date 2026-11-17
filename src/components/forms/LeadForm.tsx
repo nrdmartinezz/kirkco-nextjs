@@ -6,10 +6,8 @@ import { Button } from '@/components/ui/Button';
 import { site } from '@/config/site';
 import { recaptchaToken } from '@/lib/recaptcha';
 
-const formTypes = ['contact', 'quote', 'request-a-quote'] as const;
-
 type LeadFormProps = {
-  formType: (typeof formTypes)[number];
+  formType: 'contact' | 'quote' | 'request-a-quote';
 };
 
 const fieldClass =

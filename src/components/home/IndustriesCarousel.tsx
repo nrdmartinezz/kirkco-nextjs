@@ -19,6 +19,11 @@ export function IndustriesCarousel() {
   const [offset, setOffset] = useState(0);
   const [dragging, setDragging] = useState(false);
   const [animate, setAnimate] = useState(true);
+  if (index > count + 1 || index < 0) {
+    const wrapped = ((index % count) + count) % count;
+    setAnimate(false);
+    setIndex(wrapped === 0 ? count : wrapped);
+  }
   const drag = useRef({ startX: 0, dx: 0 });
   const suppressClick = useRef(false);
 
@@ -40,12 +45,6 @@ export function IndustriesCarousel() {
   }, [animate]);
 
   useEffect(() => {
-    if (index > count + 1 || index < 0) {
-      setAnimate(false);
-      const wrapped = ((index % count) + count) % count;
-      setIndex(wrapped === 0 ? count : wrapped);
-      return;
-    }
     if (index !== 0 && index !== count + 1) return;
     const timer = window.setTimeout(() => {
       setAnimate(false);

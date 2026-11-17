@@ -149,17 +149,11 @@ export function MobileNav() {
   const [open, setOpen] = useState(false);
   const [openSection, setOpenSection] = useState<string | null>(null);
   const [openGroup, setOpenGroup] = useState<string | null>(null);
-
-  useEffect(() => {
+  const [currentPath, setCurrentPath] = useState(pathname);
+  if (currentPath !== pathname) {
+    setCurrentPath(pathname);
     setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    if (!open) return;
-    const match = matchingMobileSection(navigation.primary, pathname);
-    setOpenSection(match?.label ?? null);
-    setOpenGroup(match?.group ?? null);
-  }, [open, pathname]);
+  }
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -190,7 +184,16 @@ export function MobileNav() {
         aria-expanded={open}
         aria-controls="mobile-nav"
         className="inline-flex size-11 items-center justify-center rounded-md hover:bg-neutral-100 lg:hidden"
-        onClick={() => setOpen((value) => !value)}
+        onClick={() => {
+          if (open) {
+            setOpen(false);
+            return;
+          }
+          const match = matchingMobileSection(navigation.primary, pathname);
+          setOpenSection(match?.label ?? null);
+          setOpenGroup(match?.group ?? null);
+          setOpen(true);
+        }}
       >
         <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
         {open ? <X className="size-6" aria-hidden="true" /> : <Menu className="size-6" aria-hidden="true" />}
