@@ -13,6 +13,9 @@ const products = JSON.parse(
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    agentUpgrade: 'security',
+  },
   async redirects() {
     const rules = [
       { source: '/contact-us', destination: '/contact', permanent: true },

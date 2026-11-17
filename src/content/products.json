@@ -3627,6 +3627,156 @@
     }
   },
   {
+    "slug": "rotary-dosing-unit-axdv-r1-o",
+    "title": "Rotary Dosing Unit AXDV-R1-O",
+    "updated": "2026-11-17",
+    "categories": [
+      "metering"
+    ],
+    "tagline": "Operation Medium Oil",
+    "summary": "The AXDV-R1-O is the oil version of the ABNOX rotary dosing unit. It applies oil inside cylindrical parts through a Vario metering valve, with a choice of centrifugal plate diameters and lance lengths.",
+    "sections": [
+      {
+        "heading": "Specifications",
+        "video": "/videos/ABNOX-Rotary-Dosing-Demonstration.mp4",
+        "items": [
+          "Article-No. 0009639 / 0009640 / 0009641 / 0009642 / 0009643",
+          "Modell AXDV-R1-O",
+          "Design with Vario-Metering Valve AXDV-V1",
+          "Version for Operation Medium Oil"
+        ]
+      },
+      {
+        "heading": "Selection",
+        "items": [
+          "AXDV-R1-O-D08-L050-V1 — 8 mm plate, 50 mm lance — Article-No. 0009639",
+          "AXDV-R1-O-D08-L140-V1 — 8 mm plate, 140 mm lance — Article-No. 0009640",
+          "AXDV-R1-O-D16-L010-V1 — 16 mm plate, 10 mm lance — Article-No. 0009641",
+          "AXDV-R1-O-D16-L100-V1 — 16 mm plate, 100 mm lance — Article-No. 0009642",
+          "AXDV-R1-O-D16-L160-V1 — 16 mm plate, 160 mm lance — Article-No. 0009643"
+        ]
+      },
+      {
+        "heading": "Technical Data",
+        "items": [
+          "Centrifugal plate diameter: 8 mm or 16 mm",
+          "Lance length: 50 or 140 mm with the 8 mm plate; 10, 100, or 160 mm with the 16 mm plate",
+          "Speed: 3,000–6,000 rpm",
+          "Operation medium: oil",
+          "Maximum working pressure at the medium inlet: depends on the material supply",
+          "Medium inlet connection: 1/8 in BSP external thread",
+          "Frequency: 50 Hz",
+          "Voltage: 230 V DC",
+          "Operating temperature: 10–40 °C"
+        ]
+      },
+      {
+        "heading": "Dimensioned Sketches",
+        "images": [
+          {
+            "src": "/products/axdv-r1-d08.webp",
+            "alt": "Dimensioned sketch of the AXDV-R1-O with an 8 mm centrifugal plate"
+          },
+          {
+            "src": "/products/axdv-r1-d16.webp",
+            "alt": "Dimensioned sketch of the AXDV-R1-O with a 16 mm centrifugal plate"
+          }
+        ]
+      },
+      {
+        "heading": "Downloads",
+        "downloads": [
+          {
+            "label": "Assembly instruction",
+            "href": "/products/datasheets/axdv-r1-assembly-instruction.pdf"
+          },
+          {
+            "label": "ABNOX product page",
+            "href": "https://www.abnox.com/en/products/metering-technology/dosage-units/rotary-dosing-units/rotary-dosing-unit-axdv-r1-o-operation-medium-oil/rotary-dosing-unit-axdv-r1-o-operation-medium-oil"
+          }
+        ]
+      }
+    ],
+    "image": {
+      "src": "/products/axdv-r1.webp",
+      "alt": "ABNOX rotary dosing unit AXDV-R1-O"
+    },
+    "variants": [
+      {
+        "slug": "rotary-dosing-unit-axdv-r1-o",
+        "title": "Rotary Dosing Unit AXDV-R1-O",
+        "tagline": "Operation Medium Oil",
+        "summary": "The AXDV-R1-O is the oil version of the ABNOX rotary dosing unit. It applies oil inside cylindrical parts through a Vario metering valve, with a choice of centrifugal plate diameters and lance lengths.",
+        "image": {
+          "src": "/products/axdv-r1.webp",
+          "alt": "ABNOX rotary dosing unit AXDV-R1-O"
+        },
+        "sections": [
+          {
+            "heading": "Specifications",
+            "video": "/videos/ABNOX-Rotary-Dosing-Demonstration.mp4",
+            "items": [
+              "Article-No. 0009639 / 0009640 / 0009641 / 0009642 / 0009643",
+              "Modell AXDV-R1-O",
+              "Design with Vario-Metering Valve AXDV-V1",
+              "Version for Operation Medium Oil"
+            ]
+          },
+          {
+            "heading": "Selection",
+            "items": [
+              "AXDV-R1-O-D08-L050-V1 — 8 mm plate, 50 mm lance — Article-No. 0009639",
+              "AXDV-R1-O-D08-L140-V1 — 8 mm plate, 140 mm lance — Article-No. 0009640",
+              "AXDV-R1-O-D16-L010-V1 — 16 mm plate, 10 mm lance — Article-No. 0009641",
+              "AXDV-R1-O-D16-L100-V1 — 16 mm plate, 100 mm lance — Article-No. 0009642",
+              "AXDV-R1-O-D16-L160-V1 — 16 mm plate, 160 mm lance — Article-No. 0009643"
+            ]
+          },
+          {
+            "heading": "Technical Data",
+            "items": [
+              "Centrifugal plate diameter: 8 mm or 16 mm",
+              "Lance length: 50 or 140 mm with the 8 mm plate; 10, 100, or 160 mm with the 16 mm plate",
+              "Speed: 3,000–6,000 rpm",
+              "Operation medium: oil",
+              "Maximum working pressure at the medium inlet: depends on the material supply",
+              "Medium inlet connection: 1/8 in BSP external thread",
+              "Frequency: 50 Hz",
+              "Voltage: 230 V DC",
+              "Operating temperature: 10–40 °C"
+            ]
+          },
+          {
+            "heading": "Dimensioned Sketches",
+            "images": [
+              {
+                "src": "/products/axdv-r1-d08.webp",
+                "alt": "Dimensioned sketch of the AXDV-R1-O with an 8 mm centrifugal plate"
+              },
+              {
+                "src": "/products/axdv-r1-d16.webp",
+                "alt": "Dimensioned sketch of the AXDV-R1-O with a 16 mm centrifugal plate"
+              }
+            ]
+          },
+          {
+            "heading": "Downloads",
+            "downloads": [
+              {
+                "label": "Assembly instruction",
+                "href": "/products/datasheets/axdv-r1-assembly-instruction.pdf"
+              },
+              {
+                "label": "ABNOX product page",
+                "href": "https://www.abnox.com/en/products/metering-technology/dosage-units/rotary-dosing-units/rotary-dosing-unit-axdv-r1-o-operation-medium-oil/rotary-dosing-unit-axdv-r1-o-operation-medium-oil"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "shot-valves",
     "title": "Shot Dispensing Valves",
     "updated": "2026-09-19",

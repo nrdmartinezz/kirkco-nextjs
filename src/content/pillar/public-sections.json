@@ -1413,6 +1413,12 @@
               "detailHref": "/impulse-dosing-valve-idv"
             },
             {
+              "contentKey": "rotary-dosing-unit-axdv-r1-o",
+              "title": "Rotary Dosing Unit AXDV-R1-O",
+              "models": [],
+              "detailHref": "/rotary-dosing-unit-axdv-r1-o"
+            },
+            {
               "contentKey": "metering-valve-stations",
               "title": "Metering Station - Manual, 30-500 cm³",
               "models": [

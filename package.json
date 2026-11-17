@@ -32,7 +32,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@vercel/analytics": "^2.0.1",
     "lucide-react": "^1.41.0",
-    "next": "^16.3.4",
+    "next": "16.4.6",
     "postcss": "^8.5.28",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

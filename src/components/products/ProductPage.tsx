@@ -137,7 +137,17 @@ export function ProductPage({
           <div className="flex w-full flex-col gap-10">
             {sections.map((section, index) => (
               <div key={`${section.heading ?? 'section'}-${index}`}>
-                {section.heading && <Heading level={2}>{section.heading}</Heading>}
+                {section.video && (
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    src={section.video}
+                    aria-label={section.heading || variant.title}
+                    className="bg-neutral-50 w-full max-w-3xl rounded-lg"
+                  />
+                )}
+                {section.heading && <Heading level={2} className={section.video ? 'mt-6' : undefined}>{section.heading}</Heading>}
                 {section.paragraphs?.map((paragraph) => (
                   <p key={paragraph} className="text-ink-muted mt-4 max-w-3xl leading-relaxed">
                     {paragraph}

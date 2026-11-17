@@ -26,6 +26,8 @@ export type ProductSection = {
   items?: string[];
   images?: ProductImage[];
   downloads?: ProductDownload[];
+  /** Site-relative video shown at the start of the section, under the product image. */
+  video?: string;
 };
 
 export type ProductVariant = {
